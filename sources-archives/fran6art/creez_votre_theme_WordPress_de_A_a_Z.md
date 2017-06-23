@@ -54,6 +54,7 @@ Sources et références utilisées pour la création des différents tutoriels p
 * [Matt read](http://mattread.com/2005/04/wordpress-is-not-php/)
 
 [Fran6](http://www.fran6art.com/wordpress/creez-votre-theme-wordpress-de-a-a-z/)
+
 ============================================
 
 ## Création Thème WordPress | Tutorial 1: Installation de WordPress en local
@@ -328,7 +329,7 @@ Ce tutoriel est le sixième d’une série articles sur la création d’un thè
 
 Aujourd’hui, nous allons mettre du contenu dans nos templates. On va commencer par faire apparaître le titre et la description du blog en haut de la page. Ces informations vont être « stockées » dans le Template header.php. Vous vous souvenez sûrement que dans le précédent tutoriel, on a « dit » à l’index, via un template tag, d’aller chercher dans le header les informations à afficher sur la page web. On y a ajouté les différentes informations d’entête de la page web, sous les balises head, mais on n’a pas encore mis quoi que ce soit dans les balises body, celles qui affichent le corps de texte.
 
-###1. Insertion du titre du blog
+### 1. Insertion du titre du blog
 
 On va tout d’abord ajouter le titre du blog, que l’on va appeler par le biais d’une commande PHP:
 
@@ -1058,10 +1059,10 @@ Il arrive parfois qu’une URL est disparue mais qu’elle soit toujours référ
 
 1. pour l’index.php:
 
-<?php else : ?>
-    <h2>Oooopppsss...</h2>
-    <p>Désolé, mais vous cherchez quelque chose qui ne se trouve pas ici .</p> <?php include (TEMPLATEPATH . "/searchform.php");
-?>
+    <?php else : ?>
+        <h2>Oooopppsss...</h2>
+        <p>Désolé, mais vous cherchez quelque chose qui ne se trouve pas ici .</p> <?php include (TEMPLATEPATH . "/searchform.php");
+    ?>
 
 2. pour le single.php:
 
