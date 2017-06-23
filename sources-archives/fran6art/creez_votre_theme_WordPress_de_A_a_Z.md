@@ -55,7 +55,7 @@ Sources et références utilisées pour la création des différents tutoriels p
 
 [Fran6](http://www.fran6art.com/wordpress/creez-votre-theme-wordpress-de-a-a-z/)
 
-============================================
+***
 
 ## Création Thème WordPress | Tutorial 1: Installation de WordPress en local
 
@@ -96,7 +96,7 @@ Sources: [Michael Doig](http://michaeldoig.net/?p=4) et [Ben Bleikamp](http://bl
 
 [Fran6](http://www.fran6art.com/tutoriels/creation-theme-wp-lecon-1-installation-de-wordpress-en-local/)
 
-=========================
+***
 
 ## Création Thème WordPress | Tutorial #2: Pourquoi créer son propre thème ?
 
@@ -124,7 +124,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 
 [Fran6](http://www.fran6art.com/tutoriels/creation-theme-wp-lecon-2-pourquoi-creer-son-propre-theme/)
 
-=========================
+***
 
 ## Création Thème WordPress | Tutorial #3: Présentation des templates
 
@@ -162,7 +162,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 
 [Fran6](http://www.fran6art.com/tutoriels/creation-theme-wordpress-tutorial-3-presentation-des-templates/)
 
-=========================
+***
 
 ## Création Thème WordPress | Tutorial #4: Hiérarchie des templates
 
@@ -197,7 +197,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 
 [Fran6](http://www.fran6art.com/tutoriels/creation-theme-wordpress-tutorial-4-hierarchie-des-templates/)
 
-=========================
+***
 
 ## Création Thème WordPress | Tutorial #5: Création des Templates
 
@@ -319,7 +319,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 [Fran6](http://www.fran6art.com/tutoriels/creation-theme-wordpress-tutorial-5-creation-des-templates/)
 
 
-=========================
+***
 
 ## Création Thème WordPress | Tutorial #6: le Header
 
@@ -400,7 +400,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 
 [Fran6](http://www.fran6art.com/tutoriels/creation-theme-wordpress-tutorial-6-le-header/)
 
-=========================
+***
 
 ## Création Thème WordPress | Tutorial #7: Introduction au Loop WordPress
 
@@ -478,7 +478,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 
 [Fran6](http://www.fran6art.com/tutoriels/creation-theme-wordpress-tutorial-7-introduction-au-loop-wordpress/)
 
-=========================
+***
 
 ## Création Thème WordPress | Tutorial #8: le Loop WordPress, 2ème partie
 
@@ -543,7 +543,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 
 [Fran6](http://www.fran6art.com/tutoriels/creation-theme-wordpress-tutorial-8-le-loop-wordpress-2eme-partie/)
 
-=========================
+***
 
 ## Création Thème WordPress | Tutorial #9: le Loop WordPress, 3ème et dernière partie
 
@@ -583,7 +583,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 
 [Fran6](http://www.fran6art.com/tutoriels/creation-theme-wordpress-tutorial-9-le-loop-wordpress-3eme-et-derniere-partie/)
 
-=========================
+***
 
 ## Création Thème WordPress | Tutorial #10: la Sidebar: le formulaire de recherche
 
@@ -641,7 +641,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 
 [Fran6](http://www.fran6art.com/tutoriels/creation-theme-wordpress-tutorial-10-la-sidebar-le-formulaire-de-recherche/)
 
-=========================
+***
 
 ## Création Thème WordPress | Tutorial #11: la Sidebar: Calendrier, catégories et pages
 
@@ -705,7 +705,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 [Fran6](http://www.fran6art.com/tutoriels/creation-theme-wordpress-tutorial-11-la-sidebar-2eme-partie/)
 
 
-=========================
+***
 
 ## Création Thème WordPress | Tutorial #12: la Sidebar: suite et fin
 
@@ -798,7 +798,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 
 [Fran6](http://www.fran6art.com/tutoriels/creation-theme-wordpress-tutorial-12-la-sidebar-suite-et-fin/)
 
-=========================
+***
 
 ## Création Thème WordPress | Tutorial #13: Widgetisez votre sidebar pour WordPress 2.2
 
@@ -859,7 +859,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 
 [Fran6](http://www.fran6art.com/tutoriels/creation-theme-wordpress-tutorial-13-widgetisez-votre-sidebar-pour-wordpress-22/)
 
-=========================
+***
 
 ## Création Thème WordPress | Tutorial #14: Le footer
 
@@ -913,7 +913,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 
 [fran6](http://www.fran6art.com/tutoriels/creation-theme-wordpress-tutorial-14-le-footer/)
 
-=========================
+***
 
 ## Création Thème WordPress | Tutorial #15: Création des « sous-templates »
 
@@ -983,7 +983,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 [Fran6](http://www.fran6art.com/tutoriels/creation-theme-wordpress-tutorial-15-creation-des-sous-templates/)
 
 
-=========================
+***
 
 ## Création Thème WordPress | Tutorial #16: Insertion des commentaires
 
@@ -1019,7 +1019,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 
 
 
-=========================
+***
 
 ## Création Thème WordPress | Tutorial #17: navigation, page non trouvée et validation XHTML du thème
 
@@ -1101,7 +1101,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 
 [Fran6](http://www.fran6art.com/tutoriels/creation-theme-wordpress-tutorial-17-navigation-page-non-trouvee-et-validation-xhtml-du-theme/)
 
-=========================
+***
 
 ## Création Thème WordPress | Tutorial #18: Présentation de la feuille de style (CSS)
 
@@ -1139,7 +1139,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 
 [Fran6](http://www.fran6art.com/tutoriels/creation-theme-wordpress-tutorial-18-presentation-de-la-feuille-de-style-css/)
 
-=========================
+***
 
 ## Création Thème WordPress | Tutorial #19: CSS: placement des différentes parties du thème
 
@@ -1251,7 +1251,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 
 [Fran6](http://www.fran6art.com/tutoriels/creation-theme-wordpress-tutorial-19-css-placement-des-differentes-parties-du-theme/)
 
-=========================
+***
 
 ## Création Thème WordPress | Tutoriel #20: CSS: customisation du header et du contenu
 
@@ -1334,7 +1334,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 
 [Fran6](http://www.fran6art.com/tutoriels/creation-theme-wordpress-tutoriel-20-css-customisation-du-header-et-du-contenu/)
 
-=========================
+***
 
 ## Création Thème WordPress | Tutoriel #21: CSS: customisation de la sidebar et du footer
 
@@ -1403,7 +1403,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 
 [Fran6](http://www.fran6art.com/tutoriels/creation-theme-wordpress-tutoriel-21-css-customisation-de-la-sidebar-et-du-footer/)
 
-=========================
+***
 
 ## Création Thème WordPress | Tutoriel #22: CSS: customisation des commentaires
 
@@ -1502,7 +1502,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 
 [Francis](http://www.fran6art.com/tutoriels/creation-theme-wordpress-tutoriel-22-css-customisation-des-commentaires/)
 
-=========================
+***
 
 ## Création Thème WordPress | Tutoriel #23: CSS: les liens
 
