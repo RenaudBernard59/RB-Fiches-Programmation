@@ -141,7 +141,7 @@ Donc, aujourd’hui nous allons commencer à s’intéresser de plus près au bl
 * Les **images**: on va trouver dans le thème toutes les images utilisées par la feuille de style pour habiller votre blog.
 * Les **Templates**: ce sont les fichiers, les différents éléments en PHP, qui vont composer la page web de votre blog visuellement. Les plus connus sont le header, index, sidebar et footer:
 
-![Templates](img/templates.jpg)
+![Templates](../../img/archives/fran6art/wordpress/templates.jpg)
 
 Remarque: dans le schéma ci-dessus, on assimilera pour l’instant le contenu, « Content » au fichier index.php, étant donné que l’on ne va aborder que celui-ci pour le moment. Sachez cependant que le contenu peut se référer à d’autres fichiers que l’index.
 
@@ -175,7 +175,7 @@ home.php, single.php, yourname.php, page.php, category.php, category-6.php, auth
 
 Tous ces fichiers templates sont reliés entre eux sous une forme de hiérarchie. Le graphique suivant vous montre cette hiérarchisation des templates:
 
-![Wordpress_Template_Hierarchy](img/wp_Template_Hierarchy-1.png)
+![Wordpress_Template_Hierarchy](../../img/archives/fran6art/wordpress/wp_Template_Hierarchy-1.png)
 
 
 Pour bien comprendre la hiérarchie des templates sous WordPress, il suffit de comprendre le raisonnement suivant: Tout template créé réfère à index.php. C’est le template, le fichier central. Ca veut dire que si un visiteur arrive directement sur la page d’un article (single.php) et que ce fichier n’existe pas, il sera directement renvoyé vers le fichier index.php. Ainsi, vous pourrez créer autant de templates que vous voudrez dans la liste proposée par ce schéma, il vont tous être sous la « responsabilité » de l’index.php.
@@ -302,7 +302,7 @@ Vous pouvez modifier ces informations en les remplaçant par celles que vous vou
 
 Enregistrez votre fichier et fermez maintenant votre éditeur de texte et allez sur l’administration de votre blog, onglet « Thème » ou « Présentation » selon la version de WordPress que vous avez. Si vous avez bien tout fait comme je vous l’ai indiqué ci-dessus, vous devez voir apparaître le nouveau thème créé:
 
-![image de la creation du theme WordPress](img/creation_theme_thumbnail.jpg)
+![image de la creation du theme WordPress](../../img/archives/fran6art/wordpress/creation_theme_thumbnail.jpg)
 
 Sélectionnez-le et « affichez le site ». Pour le moment, vous n’avez qu’une page blanche mais votre titre apparaît déjà dans la barre d’entête de votre navigateur.
 
@@ -385,7 +385,7 @@ et on va la refermer dans le template index, juste au-dessus de la balise de fer
 
 Votre code dans le header et sous la balise body doit ressembler à ça maintenant:
 
-![Code pour le template header](img/code_header.jpg)
+![Code pour le template header](../../img/archives/fran6art/wordpress/code_header.jpg)
 
 Sauvegardez vos fichiers. On vient de créer l’enveloppe de la page web pour les futures mises en forme.
 
@@ -1151,7 +1151,7 @@ Aujourd’hui, on va commencer à remplir notre feuille de style pour que notre 
 
 On va donc donner des attributs aux principales « boîtes » du thème que sont le « body », la « page », le « header », le « content », la « sidebar », et le « footer »: (il est pas « design » mon plan ? ;-))
 
-![Plan-Theme](img/plan-theme.jpg)
+![Plan-Theme](../../img/archives/fran6art/wordpress/plan-theme.jpg)
 
 ###Attributs pour l’élément « body »:
 
@@ -1240,7 +1240,7 @@ Allez donc voir un peu ce que ça donne !
 
 Votre blog n’est pas encore très joli mais au moins il ressemble à un blog. Voici une copie d’écran de ce que vous devez avoir:
 
-![Creation Theme](img/creation-theme-tm.jpg)
+![Creation Theme](../../img/archives/fran6art/wordpress/creation-theme-tm.jpg)
 
 Dans les prochains tutoriels, on va continuer la mise en page, de manière simple, avant de rentrer dans la customisation plus personnalisée. Mais déjà, là, vous avez les bases pour commencer à tirer profit de votre thème. Vous pouvez commencer la customisation, tenter des trucs pour vous familiariser avec l’organisation du thème mais aussi avec les CSS !
 
@@ -1417,7 +1417,7 @@ Si vous vous souvenez bien, il y a quelques temps, [je vous avais demandé d’i
 
 La partie réservée pour les commentaires est divisée en 2 grandes parties. En fait, vous allez voir qu’il en existe 2 autres, mais ce n’est que les titres pour annoncer le nombre de commentaires et du formulaire de réponse. Donc je me permets de ne pas les considérer comme un bloc principal. Voici donc le premier découpage des blocs pour les commentaires:
 
-![Blocs-Commentaires-Wp](img/blocs-commentaires-wp.jpg)
+![Blocs-Commentaires-Wp](../../img/archives/fran6art/wordpress/blocs-commentaires-wp.jpg)
 
 Expliquons un peu plus dans le détail ces différentes parties:
 
@@ -1433,7 +1433,7 @@ Maintenant, analysons le contenu de chacune de ces parties:
 
 Dans la liste des commentaires, on va retrouver différents blocs pour l’auteur, les infos métadata, ou encore le contenu même du commentaire. Voici donc comment s’organise un commentaire dans le template comments.php:
 
-![Lignes-Commentaires](img/lignes-commentaires.jpg)
+![Lignes-Commentaires](../../img/archives/fran6art/wordpress/lignes-commentaires.jpg)
 
 En fonction du thème que vous utiliserez, vous aurez des nominations différentes pour chaque partie, mais le « fond » restera généralement le même. Et une fois que vous avez compris la construction des commentaires, vous pourrez les customiser à souhait. Détaillons, ici encore, le contenu du bloc « liste des commentaires »:
 
@@ -1445,7 +1445,7 @@ En fonction du thème que vous utiliserez, vous aurez des nominations différent
 
 *Nous allons maintenant détailler le contenu du formulaire destiné à rédiger un commentaire:**
 
-![Form-Commentaires](img/form-commentaires.jpg)
+![Form-Commentaires](../../img/archives/fran6art/wordpress/form-commentaires.jpg)
 
 Ici, le formulaire est crée sous formes de paragraphes et non pas sous forme de liste. Certains blogs utilisent des listes ou encore des div pour créer leur formulaire de commentaires. Ici, j’ai choisi l’option « paragraphe » parce que c’est celle fournie par défaut par WordPress.
 
