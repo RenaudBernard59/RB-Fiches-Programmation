@@ -1,4 +1,4 @@
-#Créez votre thème WordPress de A à Z
+# Créez votre thème WordPress de A à Z
 
 *19 MARS 2007 / 1 116 045 LECTURES  CSS, DEAAZ, LOOP-WORDPRESS, PHP, TEMPLATES, THEMES, TUTORIALS, WORDPRESS, XHTML  THEMESWP, WORDPRESS*
 
@@ -16,11 +16,11 @@ Articles déjà en ligne:
 
 * [Leçon 1: Installer WordPress en local sur votre ordinateur]()
 * [Leçon 2: Pourquoi créer son propre thème ?]()
-* [* [Leçon 3: Présentation des Templates]()
+* [Leçon 3: Présentation des Templates]()
 * [Leçon 4: Hiérarchie des Templates]()
 * [Leçon 5: Création des Templates]()
 * [Leçon 6: Le Header]()
-* [Leçon 7: Introduction au Loop WordPress
+* [Leçon 7: Introduction au Loop WordPress]()
 * [Leçon 8: Le Loop WordPress, 2ème partie]()
 * [Leçon 9: Le Loop WordPress, 3ème et dernière partie]()
 * [Leçon 10: La sidebar: le formulaire de recherche]()
@@ -97,7 +97,7 @@ Sources: [Michael Doig](http://michaeldoig.net/?p=4) et [Ben Bleikamp](http://bl
 
 =========================
 
-##Création Thème WordPress | Tutorial #2: Pourquoi créer son propre thème ?
+## Création Thème WordPress | Tutorial #2: Pourquoi créer son propre thème ?
 
 *23 MARS 2007 / 161 487 LECTURES  CSS, DEAAZ, PHOTOSHOP, PHP, TEMPLATES, THEMES, TUTORIALS, WORDPRESS, XHTML  TUTORIELS*
 
@@ -125,7 +125,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 
 =========================
 
-##Création Thème WordPress | Tutorial #3: Présentation des templates
+## Création Thème WordPress | Tutorial #3: Présentation des templates
 
 *26 MARS 2007 / 216 998 LECTURES  CSS, DEAAZ, LOOP-WORDPRESS, PHP, TEMPLATES, THEMES, TUTORIALS, WORDPRESS, XHTML  TUTORIELS*
 
@@ -133,7 +133,7 @@ Aujourd’hui, nous allons commencer à entrer dans le vif du sujet. Je vais ess
 
 Si vous tombez par hasard sur cet article, mieux vaut que vous commenciez par le début, sinon vous risquez d’être rapidement perdu…
 
-###Présentation des fichiers templates:
+### Présentation des fichiers templates:
 
 Donc, aujourd’hui nous allons commencer à s’intéresser de plus près au blog sous WordPress et notamment à son thème et à ses templates. Tout d’abord, il faut savoir qu’un thème pour WordPress est composé de 3 éléments:
 
@@ -204,7 +204,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 
 Aujourd’hui, nous allons entrer dans le vif du sujet puisque nous allons commencer la création de notre thème en créant le dossier du thème ainsi que les différents templates de base que nous allons utiliser. Si vous découvrez la série de tutoriels aujourd’hui, je vous conseille fortement de commencer par le début sinon vous risquez de ne pas tout comprendre.
 
-###1. Création du dossier du thème
+### 1. Création du dossier du thème
 
 Vous connaissez déjà sûrement où se situent les dossiers pour les différents thèmes que vous avez sur votre serveur, mais un petit rappel ne sera pas de trop. Le dossier des thèmes se situe sous: WordPress > wp_content > themes. Au départ, nous n’allons créer nos différents fichiers de base, l’index.php, le header.php, le sidebar.php, le footer.php et la feuille de style style.css.
 
@@ -214,15 +214,15 @@ Vous connaissez déjà sûrement où se situent les dossiers pour les différent
 * Vous devez maintenant avoir 5 fichiers sous le dossier « Creation Theme », lui-même sous le dossier « Themes » de WordPress.
 * Nous allons maintenant travailler sous ces différents fichiers et les renseigner au minimum au fur et à mesure.
 
-###2. Création du header et de l’index
+### 2. Création du header et de l’index
 
-####2.1. Création du template header.php
+#### 2.1. Création du template header.php
 
 Nous allons commencer par le **HEADER** (header.php) et l’**INDEX** (index.php). Pourquoi ? Parce que c’est le header qui contient les informations de base qui vont permettre à la page web de bien s’afficher dans le navigateur. Le header comprend notamment:
 
-** Le DOCTYPE, qui nous fournit les informations sur le codage utilisé par la page web,
-** La balise HEAD et tout ce qu’elle comporte: les balises META, le titre du blog, le lien vers la feuille de style et vers les flux RSS.
-** L’ouverture de la balise BODY.
+* Le DOCTYPE, qui nous fournit les informations sur le codage utilisé par la page web,
+* La balise HEAD et tout ce qu’elle comporte: les balises META, le titre du blog, le lien vers la feuille de style et vers les flux RSS.
+* L’ouverture de la balise BODY.
 
 Toutes ces informations sont les bases pour créer votre blog. Sans le doctype, le navigateur ne saura pas quoi ni comment afficher la page web. Sans la balise HEAD et ses différentes infos, le navigateur ne saura pas non plus quel type de code utiliser, comment s’appelle le blog, où sont les infos de style et s’il y a un flux RSS. Bref, c’est la base de la base. Sans ça, on ne va nulle part.
 
@@ -262,7 +262,7 @@ On retrouve dans ces informations tout ce que l’on a évoqué ci-dessus. La ba
 
 N’oubliez pas d’enregistrer votre fichier et ouvrez maintenant le template index.php.
 
-####2.2 Création du template index.php et présentation des template tags
+#### 2.2 Création du template index.php et présentation des template tags
 
 En fait, l’index va nous donner les instructions pour nous permettre d’aller chercher les informations au bon endroit. Ici, on va commencer par lui dire d’aller chercher les infos du header dans le template header,php. Pour cela, on va utiliser des **template tags**. Les template tags sont des petits morceaux de code en PHP qui cont relier les fichiers entre eux. Ici, ce petit bout de code va être inséré dans l’index et va nous dire que l’info concernant le header se trouve dans le fichier header.php. Cette ligne de code c’est la suivante:
 
@@ -285,7 +285,7 @@ A droite de la requête PHP, vous pouvez voir un commentaire. Ces commentaires s
 
 Enregistrez votre template index.php.
 
-####2.3 Création de la feuille de style, style.css
+#### 2.3 Création de la feuille de style, style.css
 
 Ouvrez le fichier CSS créé précédemment et saisissez-y les informations suivantes:
 
@@ -355,7 +355,7 @@ Ce titre, on va lui donner un lien. C’est le titre du blog, et donc en cliquan
 
 On a ici les informations classiques XHTML pour un lien hypertexte et comme destination du lien, on va aller chercher l’information dans la base, toujours sous les informations du blog (bloginfo) et cette fois-ci, on va récupérer l’URL du blog (‘url’). Ajoutez donc ce code, sauvegarder et rafraîchissez le navigateur. Le titre du blog est maintenant souligné et de couleur bleu. Il s’est transformé en lien.
 
-###2. Insertion de la description du blog
+### 2. Insertion de la description du blog
 
 On va maintenant ajouter la description du blog sous le titre. Si vous avez compris le fonctionnement les tags PHP ci-dessus, vous devez déjà avoir trouvé comment on va afficher la description du blog: tout simplement en ajoutant une commande PHP qui va nous permettre d’aller dans les informations du blog (bloginfo) et d’y récupérer la description du blog, appelée tout simplement ‘description’. On obtient alors la ligne de code suivante:
 
@@ -363,7 +363,7 @@ On va maintenant ajouter la description du blog sous le titre. Si vous avez comp
 
 On va venir la mettre sous la ligne de code du titre du blog. Sauvegarder et rafraîchissez votre navigateur. La description du blog apparaît maintenant sous son titre.
 
-###3. Préparation de la mise en forme
+### 3. Préparation de la mise en forme
 
 Pour terminer ce tutoriel, on va s’intéresser à la mise en forme du header. Par la suite, quand on étudiera les feuilles de style, les CSS, on va vouloir modifier l’apparence du header. Et pour se faire, on va donc devoir créer des balises de mise en forme, div ou span. Je ne vais pas expliquer ici comment fonctionnent les CSS. Si vous ne les connaissez pas, je conseille un de ces livres, très bien faits et qui vous aideront rapidement à comprendre ce que sont les CSS.
 
@@ -441,7 +441,7 @@ Les commandes « endwhile » et « endif » sont là pour fermer cette requête.
     <?php endif; ?>
     </div>
 
-###2. Affichage du titre de l’article:
+### 2. Affichage du titre de l’article:
 
 Maintenant qu’on a trouvé le ou les articles que l’on veut voir s’afficher, on va appeler le titre de l’article ou des articles. Sous la première ligne de php précédente qui appelle les billets, insérer le code suivant:
 
@@ -607,7 +607,7 @@ Ajouter donc le code suivant à votre template « sidebar »:
 
 Tout ce que l’on va ajouter par la suite devra être compris entre ces deux balises.
 
-###1. Insertion du formulaire de recherche:
+### 1. Insertion du formulaire de recherche:
 
 On va commencer à remplir notre sidebar avec le formulaire de recherche. On ne commence pas forcément avec le plus simple, mais bon, c’est le genre d’outil qui peut être utile et donc ce sera toujours mieux de le placer dans les premières places de la sidebar pour être facilement accessible.
 
@@ -651,7 +651,7 @@ Ce tutoriel est le onzième d’une série articles sur la création d’un thè
 
 Aujourd’hui, on va continuer à « construire » notre sidebar. Après le formulaire de recherche la semaine dernière, cette semaine on va créer un calendrier, les catégories et les pages du blog. Ici, pas grand chose de bien compliqué, on va surtout insérer des templates tags.
 
-###1. Insertion du calendrier
+## #1. Insertion du calendrier
 
 Ici, on va insérer le calendrier par défaut de WordPress dans notre template sidebar.php sous le formulaire de recherche. On va lui donner une ID, que l’on va appeler « calendrier » pour pouvoir le customiser par la suite. On va également lui donner un titre, avec la balise H2. Voici donc le code à insérer pour votre calendrier:
 
@@ -662,7 +662,7 @@ Ici, on va insérer le calendrier par défaut de WordPress dans notre template s
 
 Ces informations sont toujours insérées dans une ligne de liste (balise LI), comme je vous l’avais expliqué dans le tutoriel précédent. Enregistrez votre template et ouvrez votre navigateur, le calendrier apparaît sous le formulaire de recherche.
 
-###2. Insertion des catégories
+### 2. Insertion des catégories
 
 Ici, on va également ajouter un titre en H2, mais pas d’ID. Je ne vois pas trop l’intérêt mais vous pourrez l’ajouter par la suite si vous souhaitez modifier le style de l’affichage des catégories. Par contre, ici on ajouter une liste dans la liste. En effet, les catégories sont présentées sous forme de liste. Enfin, on va ici introduire un template tag un peu particulier que je vais vous expliquer. Avant tout, ajouter le code suivant, sous le calendrier:
 
@@ -679,7 +679,7 @@ On est toujours sur une ligne de la liste de la sidebar, mais on a créé une «
 2. « optioncount=1 » va afficher le nombre de billets pour chaque catégorie. Si on avait pris le chiffre 0 à la place de 1, le nombre de billets ne s’afficherait pas.
 3. « hierarchical=0 » ne permet pas l’affichage des sous-catégories. Si vous voulez les voir apparaître, mettez 1 à la place de 0.
  
-###3. Insertion des pages du blog
+### 3. Insertion des pages du blog
 
 Quand on crée un blog, on a souvent envie de créer d’autres pages statiques. On les retrouve souvent dans un menu de navigation, en haut du blog, comme sur le mien. Ici, histoire de faire simple, on va les mettre dans la sidebar. C’est la manière « classique » de les insérer dans votre blog.
 
@@ -722,7 +722,7 @@ Aujourd’hui, on va terminer notre sidebar en y ajoutant les éléments suivant
 
 Ces ajouts vont être relativement simples puisqu’il ne va s’agir que d’ajouter des template tags aux bons endroits.
 
-###1. Les Archives
+### 1. Les Archives
 
 Commençons par les archives. Généralement, celles-ci sont proposées mensuellement. Vous pouvez donc aller voir tous les articles, « triés » par mois. Pour afficher ces archives, on va ajouter le code suivant, sous la liste des pages, toujours dans notre template sidebar.php. Cette insertion se fait de la même manière que pour les catégories, vu dans le tutoriel précédent.
 
@@ -735,7 +735,7 @@ Commençons par les archives. Généralement, celles-ci sont proposées mensuell
 
 On a créé une nouvelle ligne pour la liste de notre sidebar, mais on a également créé une nouvelle liste à l’intérieur de la première pour pouvoir faire apparaître les différents mois d’archives sous forme de liste. Ici, on appelle la fonction « wp_get_archives », que l’on va afficher par mois, d’où le « type=monthly ». Enregistrez votre fichier et rafraîchissez votre navigateur. Les archives apparaîssent maintenant sous les différentes pages du blog.
 
-###2. La blogroll
+### 2. La blogroll
 
 On va maintenant afficher la fameuse « blogroll » du blog. La blogroll, c’est une sorte de liste de sites que vous visitez ou que vous aimez bien. C’est un peu vos amis ! 😉 Pour intégrer cette blogroll, rien de plus simple, il vous faut ajouter la ligne de code suivante sous les archives:
 
@@ -743,7 +743,7 @@ On va maintenant afficher la fameuse « blogroll » du blog. La blogroll, c’es
 
 Ici, pas besoin de créer une ligne ou une « sous-liste », tout est déjà prévu par WordPress. Appeler la fonction « get_links_list » va automatiquement créer une liste, puisque c’est une liste qu’on appelle…Enregistrez votre fichier et rafraîchissez votre navigateur. La blogroll apparaît maintenant sous les archives.
 
-###3. Les infos Méta et les liens de validation
+### 3. Les infos Méta et les liens de validation
 
 Les infos « Méta », c’est ce qui va vous permettre de vous « logger » à votre blog directement à partir de la homepage. C’est également là que vous pourrez vous « délogger ». Je n’ai encore jamais utilisé ces liens, mais bon, c’est dans le standard, et peut-être que certains d’entre vous les utilisent !! Avec ces infos « méta », on va ajouter les différents liens pour la validation de votre page web au niveau du XHTML. On va également y inclure un lien vers WordPress et son homologue francophone. Je vous rassure, vous n’êtes pas obligé de tout mettre !! 😀 Voici donc le code à insérer:
 
@@ -772,7 +772,7 @@ On a créé un titre pour nos infos « Méta », puis on a créé une « sous-li
 
 Enregistrez votre fichier et rafraîchissez votre navigateur. Les infos Méta apparaîssent maintenant sous la blogroll.
 
-###4. Les flux RSS
+### 4. Les flux RSS
 
 On va terminer notre sidebar avec les flux RSS. On va insérer ici le lien vers le flux RSS des billets, mais aussi celui vers les commentaires du blog. Insérez donc ces quelques lignes de code sous celles des infos Méta:
 
@@ -808,7 +808,7 @@ Ce tutoriel est le treizième d’une série d’articles sur la création d’u
 
 Avec l’arrivée de la [version 2.2 de WordPress](http://www.wordpress-fr.net/2007/05/16/publication-de-wordpress-22-version-francaise-dispo/), arrive aussi « en série » les Sidebar Widgets. Les Sidebar Widgets vous permettent de modifier votre sidebar comme vous le souhaitez, sans avoir à toucher au code dans les templates. Mais rapidement, un problème se pose: tous les thèmes ne sont pas « widget ready ». Alors que vous ayez un de ces thèmes qui ne supporte pas les widgets ou que vous avez vous-même créé votre thème et que vous aimeriez le widgetiser, je vais vous expliquer la marche à suivre.
 
-###1. Création du template functions.php
+### 1. Création du template functions.php
 
 Pour commencer, vous allez devoir créer un nouveau fichier, sous le dossier de votre thème. Ce fichier s’appelle functions.php. Dans ce template, vous allez y ajouter le code suivant:
 
@@ -826,7 +826,7 @@ Si vous avez plus d’une colonne dans votre sidebar, entrez le chiffre correspo
 
 Enregistrez votre fichier et fermez-le. Vous n’en aurez plus besoin.
 
-###2. Modifications du template sidebar.php
+### 2. Modifications du template sidebar.php
 
 Maintenant, nous allons ajouter quelques lignes de code dans le template sidebar.php pour permettre aux widgets de s’afficher correctement. Placez la ligne de code suivante directement sous l' »ouverture » de la liste de la sidebar, sous la balise UL:
 
@@ -922,7 +922,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 Ce tutoriel est le quinzième d’une série d’articles sur la création d’un thème pour WordPress de A à Z. Si vous prenez le train en cours et si vous souhaitez créer votre propre thème de A à Z, je vous conseille fortement de commencer par le premier tutoriel de la série.
 Aujourd’hui, nous allons créer ce que j’appelle les « sous-templates ». Ces templates vont vous permettre d’afficher correctement les archives, les résultats des recherche, les pages d’article ou les pages de votre blog. C’est aussi dans ces templates que vous pourrez « styliser » différemments certaines pages de la page d’accueil. Ces templates ne sont pas obligatoires pour faire tourner le blog mais sont fortement recommandés ! Commençons par la page d’archives.
 
-###1. Création du template archive.php
+### 1. Création du template archive.php
 
 Ici, on va créer un template pour les archives qui va nous permettre de donner uniquement les premières lignes des articles. Pourquoi faire ça ? Pour deux raisons: la première est que lorsqu’un visiteur va vouloir naviguer sur votre blog, il voudra trouver rapidement ce qu’il cherche. Afficher les premières lignes des articles lui donnera déjà un aperçu et lui permettra de passer plus rapidement d’un article à un autre. La deuxième raison est une histoire de référencement. Google n’aime pas les doublons, donc dès lors qu’il trouve trop de choses identiques sur différentes pages du blog, il voudra les blacklister ou les mettre au bac à sable. C’est pas très bon pour votre référencement. Mettre uniquement les premières lignes des articles vous évitera ce désagrément. On fera d’ailleurs de même pour les résultats de recherche, dans le template search.php que l’on va créer par la suite, ainsi que pour les pages de catégories.
 
@@ -940,11 +940,11 @@ Alors, je suis sûr que vous vous demandez comment tout ça fonctionne. On n’a
 
 Si vous regardez bien ce schéma de hiérarchie des templates, vous voyez que le template archive.php est en aval de category.php. Ca veut donc dire que jusqu’à présent, les pages des catégories étaient affichées selon le même résultat que l’index. Maintenant que l’on a créé un nouveau template en amont, c’est archive.php qui va prendre la main et les pages des catégories seront affichées avec uniquement les premières lignes des articles. Vérifiez sur votre navigateur ! Vous pouvez très bien créer un template category.php si vous voulez customiser de manière indépendante les pages des catégories. Il vous faudra pour cela copier le contenu de l’index dans votre template et faire les modification souhaitées. Ici, on ne va pas le faire. Je veux juste que mes articles ne soient pas affichés en entier pour faciliter la navigation et pour éviter des soucis de référencement.
 
-###2. Création du template search.php
+### 2. Création du template search.php
 
 Ici, on prend les mêmes et on recommence ! Créez votre template search.php et copiez le contenu d’archive.php. Enregistrez le tout et rafraîchissez votre navigateur. Les résultat des recherches apparaissent maintenant avec les premières lignes des articles. Au niveau de la [hiérarchie des templates](http://www.fran6art.com/images%20site/2007/03/wp_Template_Hierarchy-1.png), pas de modification au niveau d’autres requêtes.
 
-###3. Création du template page.php
+### 3. Création du template page.php
 
 Ce template est celui qui vous permet d’ajouter d’autres pages à votre blog. Si on applique l’index à ces pages, on va avoir les postmétadata, comme la date, les catégories et les commentaires. C’est le cas actuellement avec notre thème, si vous regardez bien ! Mais bien souvent, quand on crée une autre page, c’est souvent pour se présenter ou pour tout autre chose d’ailleurs. Donc ces informations ne sont souvent pas utiles et peuvent déguiser ces pages. Ici, on va donc créer un template qui va nous permettre d’afficher le contenu des pages sans ces postmétadata.
 
@@ -963,7 +963,7 @@ Ce code va insérer une ligne, sous l’article, qui vous permettra d’aller mo
 
 Enregistrez le fichier, rafraîchissez le navigateur. Maintenant les autres pages de votre blog apparaissent sans les postmétadata.
 
-###4. Création du template single.php
+### 4. Création du template single.php
 
 Ce template est celui qui va permettre d’afficher un article. Avec votre page d’accueil, ce sont les pages les plus visitées du blog. Ici, on va reprendre le contenu de l’index et y faire quelques petites modifications pour afficher ou supprimer quelques informations.
 
@@ -984,7 +984,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 
 =========================
 
-##Création Thème WordPress | Tutorial #16: Insertion des commentaires
+## Création Thème WordPress | Tutorial #16: Insertion des commentaires
 
 **6 JUIN 2007 / 108 389 LECTURES  CSS, DEAAZ, PHP, SIDEBAR, TEMPLATES, THEMES, TUTORIALS, WORDPRESS, XHTML  TUTORIELS**
 
@@ -992,13 +992,13 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 Ce tutoriel est le seizième d’une série d’articles sur la création d’un thème pour WordPress de A à Z. Si vous prenez le train en cours et si vous souhaitez créer votre propre thème de A à Z, je vous conseille fortement de commencer par le premier tutoriel de la série.
 Si vous avez bien tout suivi, vous avez dû vous rendre compte qu’il manque quelque chose d’important à notre thème: les commentaires ! Aujourd’hui, nous allons les ajouter à nos articles. Sans commentaires, un billet et son blog ne sont plus les mêmes ! 😉
 
-###Création du template comments.php
+### Création du template comments.php
 
 Nous allons devoir créer un nouveau template, comments.php et y insérer le contenu de [ce document](http://www.fran6art.com/documents/comments.txt). Ici, et pour la première fois dans cette série de tutoriels, je ne vais pas trop vous expliquer le contenu de ce template. Ce serait trop long et trop compliqué. Ce qu’il faut savoir c’est que c’est le template par défaut pour les commentaires et celui utilisé le plus souvent sur les différents thèmes. Dans un prochain billet, je ferai une description détaillée du fichier mais ici, on n’en a pas vraiment besoin. Dès lors que l’on changera quelque chose, ce sera au niveau des feuilles de style, des CSS.
 
 Donc, une fois votre template créé et le contenu du [fichier](http://www.fran6art.com/documents/comments.txt) copié, enregistrez le document et fermez-le.
 
-###Mise à jour du template single.php
+### Mise à jour du template single.php
 
 Dans le tutoriel précédent on a créé le template single.php qui nous permet d’afficher les articles un par un, et surtout qui nous permettra de paramétrer différemment ces pages des autres pages du blog. Dans ce template, on va insérer une ligne de code qui va nous permettre d’aller chercher dans le template comments.php l’info dont a besoin pour afficher les commentaires. Cette ligne, on va l’insérer avant le « php endwhile », et après le « php the_content » pour que les commentaires s’affichent directement sous le contenu des articles:
 
@@ -1020,7 +1020,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 
 =========================
 
-##Création Thème WordPress | Tutorial #17: navigation, page non trouvée et validation XHTML du thème
+## Création Thème WordPress | Tutorial #17: navigation, page non trouvée et validation XHTML du thème
 
 *7 JUIN 2007 / 95 301 LECTURES  CSS, DEAAZ, PHP, SIDEBAR, TEMPLATES, THEMES, TUTORIALS, WORDPRESS, XHTML  TUTORIELS*
 
@@ -1028,7 +1028,7 @@ Ce tutoriel est le dix-septième d’une série d’articles sur la création d�
 
 Aujourd’hui, on va terminer la partie HTML de notre thème ! On va insérer les liens nous permettant de passer de page en page et d’article en article, insérer un peu de code pour guider le visiteur au cas où il tomberait sur une URL qui n’existerait plus (par exemple…), puis enfin nous validerons notre thème pour qu’i soit conforme aux règles du W3C.
 
-###1. Lier les différentes pages avec le « post nav link »
+### 1. Lier les différentes pages avec le « post nav link »
 
 Quand on est sur la page de garde ou dans les archives par exemple, on a parfois envie d’aller voir un peu plus loin, de voir les articles précédents, donc d’aller aux pages précédentes. Pour ce faire, il va nous falloir insérer un peu de code dans l’index, sous le « php endwhile », et avant le « php endif ». Ce code est le suivant:
 
@@ -1042,7 +1042,7 @@ Par la suite, on verra que l’on peut donner une apparence différente à ces l
 
 Enregistrez votre fichier, rafraîchissez votre navigateur et regardez ce que ça donne!
 
-###2. Lier les différents articles entre eux
+### 2. Lier les différents articles entre eux
 
 Ici, on va reproduire un peu la même chose qu’au-dessus, si ce n’est que l’on va appliquer une requête pour pouvoir naviguer d’article en article. Pour cela, on va ouvrir le template single.php, qui affiche l’article seul, et toujours sous le « php endwhile », et avant le « php endif », on va insérer le code suivant:
 
@@ -1052,7 +1052,7 @@ Ici, la première fonction va appeler le billet précédent et la deuxième, le 
 
 Que ce soit pour la navigation de page en page ou de billet en billet, il y a plusieurs endroits où on pourrait les placer. Sur mon thème actuel, basé sur k2, naviguer d’article en article se fait au dessus du titre de chaque article. Ca c’est un peu au goût de chacun.
 
-3. « La page que vous recherchez n’existe pas ! »
+### 3. « La page que vous recherchez n’existe pas ! »
 
 Il arrive parfois qu’une URL est disparue mais qu’elle soit toujours référencé par les moteurs de recherche. Le visiteur ne va donc pas trouver l’article qu’il cherche en venant sur votre blog. Il va donc falloir afficher un message pour lui dire que cette page n’exite pas ou n’existe plus ! Pour cela, on va insérer un peu de code, à la fois dans le template « index.php », « page.php », « search.php » et « single.php » et directement sous les informations de navigation, que ce soit de page en page ou d’article en article. Pour le template « page.php », vous insérerez le code sous le « php endwhile », et avant le « php endif ». Voici donc ce code à insérer:
 
@@ -1084,7 +1084,7 @@ Alors, que je vous explique un peu comment ça fonctionne. En fait, lorsqu’une
 
 Enfin, petit plus que j’ai trouvé sur le thème par défaut et que je trouve assez sympa, c’est la possibilité de proposer au visiteur de faire une recherche pour essayer de trouver l’article. Les formulaires n’étant pas toujours facilement accessibles, c’est une bonne manière de lui proposer de ne pas s’en aller tout de suite ailleurs ! D’où la dernière ligne, qui va appeler le template « searchform.php ».
 
-###4. Validation XHTML du thème
+### 4. Validation XHTML du thème
 
 Et oui, on arrive à la fin de la partie HTML de la création du thème ! Maintenant, nous allons pouvoir [valider notre thème](http://validator.w3.org/) auprès des instances qualifiées, le [W3C](http://www.w3.org/). Le W3C est un consortium qui fixe les règles du web en termes de développement. Cette validation n’est pas obligatoire d’une certaine manière mais est très fortement recommandé car elle permet de voir les erreurs de code, mais des moteurs de recherche comme Google n’aiment pas trop les sites web avec de grosses erreurs non validées. Donc faîtes valider votre thème et vous serez tranquille.
 
@@ -1153,7 +1153,7 @@ On va donc donner des attributs aux principales « boîtes » du thème que sont
 
 ![Plan-Theme](../../img/archives/fran6art/wordpress/plan-theme.jpg)
 
-###Attributs pour l’élément « body »:
+### Attributs pour l’élément « body »:
 
 Tout d’abord, on va définir des attributs simples pour la balise « body », cette balise qui enveloppe l’ensemble de notre thème. Tant que vous ne changerez rien à un niveau plus précis de votre thème, ce sera les attributs de la balise « body » qui seront utilisés.
 
@@ -1172,7 +1172,7 @@ Alors, ici on va définir la famille de polices (font-family) qui va être utili
 
 Enregistrez votre feuille de style et allez voir dans le navigateur ce que ça donne. Vous pouvez d’ores et déjà commencer à vous amuser avec les CSS !
 
-###Attributs pour l’élément « page »:
+### Attributs pour l’élément « page »:
 
 Retournez sur la feuille de style et insérez le code suivant, pour l’élément « page »:
 
@@ -1222,7 +1222,7 @@ Pour ce qui est de la sidebar, on la positionne à droite, donc « float:right �
 
 N’oubliez pas d’enregistrer le fichier et de voir ce que ça donne sur votre navigateur. Et oui ! Maintenant, votre blog ressemble à un blog !! C’est pas encore le top mais ça prend forme ! On va terminer avec les attributs du footer:
 
-###Attributs pour les éléments « content » et « sidebar »:
+### Attributs pour les éléments « content » et « sidebar »:
 
 Insérez le code suivant sous les attributs précédents:
 
@@ -1262,7 +1262,7 @@ Ce tutoriel est le vingtième d’une série d’articles sur la création d’u
 
 Aujourd’hui, on va reprendre chaque partie du thème, et à chaque fois, on va essayer de donner un peu plus de style à ce qui existe déjà, histoire de bien positionner et dimensionner chaque bloc et sous-bloc, individuellement.
 
-###1. Titre et description dans le header
+### 1. Titre et description dans le header
 
 Dans le dernier tutoriel, on a donné les informations de style pour le bloc « header ». Ce sont les infos de base, le minimum requis. Maintenant, ce qui serait intéressant, c’est de pouvoir appliquer un style, de manière autonome, au titre et à sa description. Pour cela, il faut que ces deux informations soient contenues, indépendamment dans une boîte. C’est le cas pour le titre, qui est dans la balise h1 mais ce n’est pas le cas pour la description. On va donc lui ajouter une classe « p ». Pour cela, ouvrez le template header.php, et au niveau de la ligne pour la description du blog, vous allez ajouter une classe p, nommée « description ». La ligne de code que vous devez avoir est la suivante:
 
@@ -1290,11 +1290,11 @@ Alors, qu’est-ce qu’on a fait ici ? Et bien, tout d’abord, on « nomme » 
 
 Pour ce qui est de la description, c’est la même chose, sauf que je lui attribue une taille plus petite.
 
-###2. Customisation du contenu
+### 2. Customisation du contenu
 
 Maintenant, on va s’attaquer à la customisation du contenu. Je vais diviser ce contenu en 3 sections: le titre de l’article, les postmetadata, et l’article lui-même. Ce sont d’ailleurs, les 3 principales sections du Loop WordPress !
 
-####2.1. Le titre de l’article
+#### 2.1. Le titre de l’article
 
 Les titres des articles sont balisés par la balise h2. C’est donc celle-ci que l’on va utiliser pour modifier le style des titres de notre thème. Cependant, la balise h2 n’est pas seulement utilisée par le contenu mais l’est également par la sidebar, au niveau des titres de chaque ligne de la liste. Ici, on va donc différencier les titres h2 du contenu en les intégrant sous le contenu de la manière suivante: #content h2 {}. Ici, on ne va pas faire de grosses modifications, mais juste définir une taille pour le titre. J’ai pris ici 1.3em. Je ne modifie pas son positionnement ni sa police.
 
@@ -1304,7 +1304,7 @@ Voici donc le code à insérer:
         font-size: 1.3em;
     }
 
-####2.2. Les postmétadata
+#### 2.2. Les postmétadata
 
 Bien souvent, les postmétadata sont sujets à pas mal de modifications et à une customisation plutôt poussée. On peut leur ajouter des images, positionner la date devant le titre, mettre les commentaires à la fin de l’article, etc. Ici, on va prendre l’ensemble de ces informations comme un seul bloc. Si vous voulez modifier chaque élément de ce bloc, vous pourrez ajouter des classes à chaque élément et les paramétrer individuellement. Ici, je ne veux pas trop rentrer dans les détails. Je ferai des tutoriels séparés pour expliquer comment customiser chacun de ces éléments.
 
@@ -1315,7 +1315,7 @@ Ici, on va juste modifier la taille du texte pour la différencier du billet et 
         color: #999;
     }
 
-####2.3. Customisation du corps de l’article
+#### 2.3. Customisation du corps de l’article
 
 Ici, on va pouvoir modifier la police du billet, sa taille, sa couleur, ses marges, les hauteurs de ligne. Bref, tout ce qui touche au corps du texte. Dans mon exemple, je modifie la taille de la police pour la porter à 1em et je modifie un peu sa couleur pour faire ressortir les titres. Vraiment, ce n’est qu’un exemple, et c’est à vous de jouer avec vos goûts et votre créativité. N’oubliez pas auparavant de sauvegarder une copie de votre feuille de style de départ !! 😉 Voici donc le style à insérer:
 
@@ -1342,7 +1342,7 @@ Et si ça vous intéresse, avec des amis, on a créé notre boutique de ventes d
 
 Ce tutoriel est le vingt-et-unième d’une série d’articles sur la création d’un thème pour WordPress de A à Z. Si vous prenez le train en cours et si vous souhaitez créer votre propre thème de A à Z, je vous conseille fortement de commencer par le premier tutoriel de la série.
 
-###1. Customisation de la sidebar
+### 1. Customisation de la sidebar
 
 S’il y a une chose qui n’est pas très élégante dans cette sidebar, ce sont bien les boutons précédent chaque ligne des différentes listes. On va donc déjà commencer par les retirer. Pour cela, on va insérer du code qui va nous retirer chaque style de la liste principale de la sidebar, d’où « .sidebar ul {}. Voici donc le code à insérer:
 
@@ -1378,7 +1378,7 @@ vous permettra de customiser chaque ligne de la liste principale de la sidebar. 
 
 vous permettra de faire la même chose mais au niveau inférieur, sur les lignes des listes comprises dans la liste principale de la sidebar.
 
-###2. Customisation du footer
+### 2. Customisation du footer
 
 Ici, on ne va apporter beaucoup de customisation supplémentaire. Cependant, séparer le texte du footer et le footer lui-même nous permettra de travailler séparément. Ici, si on regarde dans le template « footer.php », on se rend compte que le texte du footer est entouré par une balise p. On va donc l’utiliser pour créer son propre style: #header p {}.
 
@@ -1413,7 +1413,7 @@ Ce tutoriel est le vingt-deuxième d’une série d’articles sur la création 
 
 Si vous vous souvenez bien, il y a quelques temps, [je vous avais demandé d’intégrer un nouveau template](http://www.fran6art.com/2007/06/06/creation-theme-wordpress-tutorial-16-insertion-des-commentaires/) (coomments.php) sans trop vous préoccuper du contenu. Aujourd’hui, on va reprendre ce template et je vais vous expliquer les grandes parties à connaître, et qui vous seront utiles pour la customisation des commentaires. Ici, nous n’aborderons pas le PHP. Ce qui va nous intéresser, c’est repérer les blocs et les différencier pour pouvoir mieux customiser l’ensemble.
 
-###Présentation des principaux blocs
+### Présentation des principaux blocs
 
 La partie réservée pour les commentaires est divisée en 2 grandes parties. En fait, vous allez voir qu’il en existe 2 autres, mais ce n’est que les titres pour annoncer le nombre de commentaires et du formulaire de réponse. Donc je me permets de ne pas les considérer comme un bloc principal. Voici donc le premier découpage des blocs pour les commentaires:
 
@@ -1429,7 +1429,7 @@ Expliquons un peu plus dans le détail ces différentes parties:
 On a déjà un aperçu de ce que sont ces différents blocs et vous pourrez déjà travailler sur ces mêmes blocs pour customiser vos commentaires. Par exemple, vous pouvez donner un background au formulaire de commentaire, que ce soit par une couleur ou par une image réalisée préalablement sous Photoshop.
 Maintenant, analysons le contenu de chacune de ces parties:
 
-###Présentation du bloc « Liste des commentaires »
+### Présentation du bloc « Liste des commentaires »
 
 Dans la liste des commentaires, on va retrouver différents blocs pour l’auteur, les infos métadata, ou encore le contenu même du commentaire. Voici donc comment s’organise un commentaire dans le template comments.php:
 
@@ -1441,7 +1441,7 @@ En fonction du thème que vous utiliserez, vous aurez des nominations différent
 * **div.commentmetadata**, c’est le bloc pour les informations concernant l’auteur du commentaire, mais aussi la date et l’heure à laquelle le commentaire a été rédigé. Si vous souhaitez customiser différemment le nom de l’auteur des autres informations, il vous faudra « envelopper » séparément l’auteur.
 * **p**, c’est le paragraphe pour le commentaire.
 
-###Présentation du bloc « Formulaire des commentaires »
+### Présentation du bloc « Formulaire des commentaires »
 
 *Nous allons maintenant détailler le contenu du formulaire destiné à rédiger un commentaire:**
 
@@ -1530,14 +1530,12 @@ Dans un thème, il y a différentes parties qui utilisent les liens. Il y a par 
 
 Ici, on va juste modifier la couleur des liens pour un gris sombre. Je n’ai pas forcément envie non plus de voir les liens soulignés, donc j’ajoute un « text-decoration: none » qui retire le soulignage. Vous pouvez aussi dire que vous ne voulez pas le soulignage à l’affichage des liens mais que vous aimeriez l’avoir quand on passe dessus. Pas de soucis, il suffit de le paramétrer sur a:hover:
 
-1 2 3 
     a:hover {
         text-decoration: underline;
     }
 
 Vous pouvez également choisir de mettre les liens au survol dans une autre couleur, un gris plus pâle peut-être:
 
-1 2 3 4 
     a:hover {
         color: #777;
         text-decoration: underline;
@@ -1561,7 +1559,7 @@ On va juste ajouter un petit attribut supplémentaire pour que le lien change de
 
 Les couleurs ne sont pas forcément top, mais c’est uniquement pour vous montrer ce que ça donne. A vous de choisir vos couleurs selon vos goûts et votre thème.
 
-###Exemple complet de customisation des liens sur un thème:
+### Exemple complet de customisation des liens sur un thème:
 
 Je vais juste vous donner quelques petits trucs simples que j’utilise et qui peuvent donner un peu plus de style à votre thème. Voici les hypothèses pour mon thème:
 * Je veux donner un background de couleur à tous les liens dans les articles quand je les survole. Je trouve que ça les met bien en relief et en plus je trouve ça plutôt sympa. Par contre, je ne veux pas qu’ils soient soulignés au survol.
