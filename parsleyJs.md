@@ -1,12 +1,12 @@
 # ParsleyJs - Documentation
 
-## Overview
+## I) Overview
 
-### Frontend form validation
+### A) Frontend form validation
 
 Parsley is a javascript form validation library. It helps you provide your users with feedback on their form submission before sending it to your server. It saves you bandwidth, server load and it saves time for your users.
 
-Javascript form validation is not necessary, and if used, it `does not replace strong backend server validation`.
+Javascript form validation is not necessary, and if used, it **does not replace strong backend server validation**.
 
 That's why Parsley is here: to let you define your general form validation, implement it on the backend side, and simply port it frontend-side, with maximum respect to user experience best practices.
 
@@ -14,17 +14,17 @@ That's why Parsley is here: to let you define your general form validation, impl
 >
 >>	Parsley's current stable and supported versions are 2.x. If you still use a 1.x version, [here is the related doc](http://parsleyjs.github.io/Parsley-1.x). But don't forget to [upgrade](https://github.com/guillaumepotier/Parsley.js/blob/master/UPGRADE-2.0.md)!
 
-### Data attributes
+### B) Data attributes
 
 Parsley uses a specific DOM API which allows you to configure pretty much everything directly from your DOM, without writing a single javascript configuration line or custom function. Parsley's default DOM API is `data-parsley-`. That means that if in config you see a `foo` property, it can be set/modified via DOM with `data-parsley-foo="value"`.
 
-### Configuration
+### C) Configuration
 
 You'll see along this documentation and through [examples](http://parsleyjs.org/doc/examples.html) various available configuration options. You can also view [here](http://parsleyjs.org/doc/annotated-source/defaults.html) all of Parsley's default configuration options.
 
-## Installation
+## II) Installation
 
-### Basic installation
+### A) Basic installation
 
 Parsley relies on [jQuery](http://jquery.com/) **(>= 1.8)**, and it will need to be included before including Parsley.
 
@@ -49,7 +49,7 @@ That would look pretty much like this:
 >
 >>	Parsley adds many classes and elements in the DOM when it validates. You are strongly encouraged to customize them in your own stylesheets, but here is the "standard" [Parsley css file](http://parsleyjs.org/src/parsley.css) that is used here on the documentation and examples, if you want to use it to bootstrap your projects with Parsley.
 
-## Javascript installation
+### B) Javascript installation
 
 Like for [Basic installation](http://parsleyjs.org/doc/index.html#installation-basic), first include **jQuery** and Parsley. Then, simply use `$('#form').parsley(options);` or `new Parsley('#form', options);` (where `options` is an optional configuration object) to manually bind Parsley to your forms.
 
@@ -73,7 +73,7 @@ That would look pretty much like this:
 >>	Please be aware that Parsley looks at all `data-parsley-validate` occurrences in DOM on document load and automatically binds them if valid.
 >>	Once a form or field instance is bound by Parsley, doing `$('#form').parsley(options);` will update the existing options but not replace them.
 
-### Localization
+### C) Localization
 
 Parsley comes with various error messages for its built-in validators. They are shipped in English by default, but many other languages are available, thanks to the awesome international Parsley community. [See the available localizations here](https://github.com/guillaumepotier/Parsley.js/tree/master/dist/i18n).
 
@@ -88,15 +88,15 @@ To load a different locale and its messages, include them after Parsley:
 
 The last loaded file will automatically set the messages locale for Parsley. In the example above, we load both French and Italian translations, and use Italian.
 
-### Plugins
+### D) Plugins
 
 Parsley strives to be highly decoupled and modular. It uses events and inheritance, and allows various plugins.
 
 Current available plugins are in [Extras](http://parsleyjs.org/doc/index.html#extras) for additional validators.
 
-## Usage
+ ## III) Usage
 
-### Overview
+### A) Overview
 
 Parsley is a decoupled library that uses different classes to do the heavy work. You'll see here the different protagonists involved and how you can configure them to fit your desired validation.
 
@@ -111,9 +111,9 @@ Parsley is a decoupled library that uses different classes to do the heavy work.
 >
 >>	Of course, this documentation tries to be the most exhaustive possible and relatively easy to understand. This documentation also provides the [complete annotated source](http://parsleyjs.org/doc/annotated-source/main.html). Please take 5 minutes of your time to have a quick glance at it, and at least understand the architecture (Parsley, ParsleyForm, ParsleyField, ParsleyValidator, ParsleyUI, Utils, Pub/Sub..), it will heavily ease the lecture below.
 
-### Configuration
+### B) Configuration
 
-#### Data attributes and javascript
+#### 1) Data attributes and javascript
 
 The multiple options can be specified using data attributes and javascript:
 
@@ -138,7 +138,7 @@ The multiple options can be specified using data attributes and javascript:
 
 As shown in the previous example, Parsley will actualize the options from the data attributes whenever it needs to validate a field.
 
-#### Option inheritance
+#### 2) Option inheritance
 
 Field instances inherit their options from Form instances, and both inherit from the global options. This is a handy way to configure all your form's inputs in a row by passing their config through form.
 
@@ -160,7 +160,7 @@ Field instances inherit their options from Form instances, and both inherit from
 
 The previous example shows that the inheritance of options is automagic. In case you are wondering, they are linked through `prototype` to achieve this.
 
-#### Naming
+#### 3) Naming
 
 You can change the DOM API namespace directly using the `namespace` option. Data attributes with compound names are camelcased for javascript, and their values are automatically converted to the appropriate type (boolean, integer, etc.). For example:
 
@@ -173,21 +173,21 @@ You can change the DOM API namespace directly using the `namespace` option. Data
 	console.log("priorityEnabled was set to false");
 	```
 
-### Form
+### C) Form
 
 When doing `$('#target').parsley()` or `new Parsley('#target');` on a `<form id="target">` element, it will bind the whole form and its various inputs and return a `ParsleyForm` instance.
 
-#### Options
+#### 1) Options
  
 | Property | Default | Description |
 |----------|---------|-------------|
 | `data-parsley-namespace` *#2.0* | `data-parsley-` | Namespace used by Parsley DOM API to bind options from DOM. [See more](http://parsleyjs.org/doc/index.html#data-attrs) |
-| `data-parsley-validate` *#2.0* | Auto bind your form with Parsley validation on document load. |
+| `data-parsley-validate` *#2.0* |  | Auto bind your form with Parsley validation on document load. |
 | `data-parsley-priority-enabled` *#2.0* | true | Either validate higher priority constraints first and stop on first failure (`true`), or validate all constraints simultaneously and show all the failing ones (`false`). |
 | `data-parsley-inputs` *#2.0* | `input`, `textarea`,`select` | When looking for fields within a form, Parsley uses this selector. The fields found will then be filtered using the `excluded` option below. |
 | `data-parsley-excluded` *#2.0* | `input[type=button]`, `input[type=submit]`, `input[type=reset]`, `input[type=hidden]` | Form fields that won't be validated by Parsley. For example, if you want to add |disabled| and hidden fields to the existing list, use: `data-parsley-excluded="input[type=button], input[type=submit], input[type=reset], input[type=hidden], [disabled], :hidden"` |
 
-#### Methods
+#### 2) Methods
 
 | Method | Returns | Description |
 |--------|---------|-------------|
@@ -199,15 +199,15 @@ When doing `$('#target').parsley()` or `new Parsley('#target');` on a `<form id=
 | `reset()` *#2.0* | | Reset UI for this form and for its fields. |
 | `destroy()` *#2.0* | |Disable and destroy Parsley for this form and its fields. |
 
-#### UI
+#### 3) UI
 
 See [UI for Form](http://parsleyjs.org/doc/index.html#ui-for-form) section.
 
-### Field
+### D) Field
 
 When doing `$('#target').parsley()` or `new Parsley('#target');` on a `<input id="target">` element (or `<textarea>`, `<select>`), it will bind the field and return a `ParsleyField` instance. Except for input types radio and checkbox that don't have a `name` attribute or a `data-parsley-multiple` attribute, they won't be bound (ignored) and will eventually raise a warning in the console.
 
-#### Options
+#### 1) Options
 
 | Property | Description |
 |----------|-------------|
@@ -225,24 +225,23 @@ When doing `$('#target').parsley()` or `new Parsley('#target');` on a `<input id
 >
 >> These fields are a bit different than regular input, textarea or simple select. They need to have either a name or an id attribute to be correctly bound and validated by Parsley. Otherwise, they will be ignored and a warning will be put in the console.
 
-#### Methods
+#### 2) Methods
 
 | Method | Returns | Description |
 |--------|---------|-------------|
-| `isValid({force})` *#2.0* | `true` if all ok `null` if some validations are still pending `[Violation, ...]]` if fails | Returns if the field is valid or not. **Does not affect UI nor fires [events](http://parsleyjs.org/doc/index.html#events)**. If force is set, it **forces** validation even on non-required fields ([See example](http://parsleyjs.org/doc/examples/events.html)) |
-| `validate({force, group})` *#2.0* | `true` if all ok `null` if some validations are still pending
-`[Violation, ...]]` if fails | Validate Field. **Fires [events](http://parsleyjs.org/doc/index.html#events) and affects UI**. If `force` is set, force validate even non required fields ([See example](http://parsleyjs.org/doc/examples/events.html)) |
+| `isValid({force})` *#2.0* | `true` if all ok `null` if some validations are still pending `[Violation, ...]` if fails | Returns if the field is valid or not. **Does not affect UI nor fires [events](http://parsleyjs.org/doc/index.html#events)**. If force is set, it **forces** validation even on non-required fields ([See example](http://parsleyjs.org/doc/examples/events.html)) |
+| `validate({force, group})` *#2.0* | `true` if all ok `null` if some validations are still pending `[Violation, ...]` if fails | Validate Field. **Fires [events](http://parsleyjs.org/doc/index.html#events) and affects UI**. If `force` is set, force validate even non required fields ([See example](http://parsleyjs.org/doc/examples/events.html)) |
 | `getErrorsMessages()` *#2.0* | `array` | Returns an array of field's error messages |
 | `reset()` *#2.0* | | Reset UI for this field. |
 | `destroy()` *#2.0* | | Disable and destroy Parsley for this field. |
 
-#### UI
+#### 3) UI
 
-See [UI for Field]() section.
+See [UI for Field](http://parsleyjs.org/doc/index.html#ui-for-field) section.
 
-## Built-in validators
+## IV) Built-in validators
 
-### Overview
+### A) Overview
 
 A *validator* is a method to determine if a given value (or sometimes sets of values) is acceptable or not, given some *requirement* parameters.
 
@@ -273,9 +272,9 @@ Parsley comes with many builtin validators and provides tools to specify your ow
 
 These `validators` are shipped in parsley.js. Have a look at [Parsley Extras](http://parsleyjs.org/doc/index.html#extras) for more validators.
 
-## Custom Validators
+## V) Custom Validators
 
-### Craft yours
+### A) Craft yours
 
 Of course, Parsley built-in validators are commonly used validators, and you'll need some more that fit your specific forms and validations. That's why Parsley lets you easily create your own validators.
 
@@ -301,7 +300,7 @@ The preferred way to register them (after `parsley.js` is loaded) looks like:
 
 The following sections go over the details on how to define a custom validator
 
-### Validating function
+### B) Validating function
 
 There are many ways a validator can specify how to validate data:
 
@@ -318,7 +317,7 @@ Validating functions should return either `true` if the value is valid, or `fals
 
 Validators can reject with a custom error message as a first argument if desired.
 
-### Requirement parameters
+### C) Requirement parameters
 
 You can specify what kind of requirement parameter your custom validator is expecting:
 
@@ -341,9 +340,9 @@ You can specify error messages, in as many locales as desired, using the `messag
 
 This is equivalent to calling `addMessage` for each locale.
 
-## UI/UX
+## VI) UI/UX
 
-### Overview
+### A) Overview
 
 Parsley ships a UI/UX component that is the only one responsible for classes, error messages, focus or trigger events that alter your page. It strives to be the most UX friendly. Here are the main mottos for ParsleyUI:
 
@@ -362,14 +361,14 @@ Parsley adds its share of classes and elements, to ease nice UI validation resul
 >
 >> You could change these classes' names in configuration, and the class holder element too.
 
-### UI for form
+### B) UI for form
 
 | Name | API | Description |
 |------|-----|-------------|
 | UI Enabled *#2.0* | `data-parsley-ui-enabled="false"` | Activate or deactivate UI |
 | Focus *#2.0* | `data-parsley-focus="first"` | Focus failing field on form validation. Possible values: `'first' | 'last' | 'none'` |
 
-### UI for field
+### C) UI for field
 
 | Name | API | Description |
 |------|-----|-------------|
@@ -382,7 +381,7 @@ Parsley adds its share of classes and elements, to ease nice UI validation resul
 | Error message *#2.0* | `data-parsley-error-message="my message"` | Customize a unique global message for the field. |
 | Validator error message *#2.0* | `data-parsley-`constraint`-message="my message"` | Customize the error message for the field constraint. eg: `data-parsley-required-message="this field is required"` |
 
-### UI for javascript
+### D) UI for javascript
 
 Field instances have low level methods to add, update & remove manage error messages. You have to manage these errors completely manually and they should be independant with other validations. Prefer using custom validations whenever possible. Note that `getErrorsMessages` only return errors from validations and not manually added errors.
 
@@ -392,9 +391,9 @@ Field instances have low level methods to add, update & remove manage error mess
 | Update error *#2.0* | `updateError(name, {message: , assert: , updateClass: true});` | Update an already added error message error. |
 | Remove error *#2.0* | `removeError(name, {updateClass: true});` | Remove an already present error. |
 
-## Events
+## VII) Events
 
-### Overview
+### A) Overview
 
 Parsley triggers events that allows ParsleyUI to work. Further more, it could allow you to do some powerful magic if you listen properly to the right events!
 
@@ -415,7 +414,7 @@ Similarly to jQuery events, parsley events will bubble up. For example, if a fie
 	});
 	```
 
-### Events List
+### B) Events List
 
 | Name | Instance | Fired by | Description |
 |------|----------|----------|-------------|
@@ -431,11 +430,11 @@ Similarly to jQuery events, parsley events will bubble up. For example, if a fie
 | `field:error` *#2.1* | `ParsleyField` | `.validate()` | Triggered when a field validation fails. |
 | `field:validated` *#2.1* | `ParsleyField` | `.validate()` | Triggered after a field is validated (with success or with errors). |
 
-## Parsley Remote
+## VIII) Parsley Remote
 
 Parsley [remote](http://parsleyjs.org/doc/annotated-source/remote.html) is an easy to use **ajax asynchronous validator**.
 
-### Options
+### A) Options
 
 | Name | API | Description |
 |------|-----|-------------|
@@ -444,18 +443,18 @@ Parsley [remote](http://parsleyjs.org/doc/annotated-source/remote.html) is an ea
 | Options* | `data-parsley-remote-options` *#2.0* | You could pass a json object to the `$.ajax()` method used by remote validator. eg: `data-parsley-remote-options='{ "type": "POST", "dataType": "jsonp", "data": { "token": "value" } }'` **Warning:** you must format your JSON string wrapping all the keys/values with " like above otherwise it won't be correctly parsed by `$.parseJSON()` used behind the scenes by remote validator ([See jQuery doc](https://api.jquery.com/jQuery.parseJSON/)) |
 | Validator* | `data-parsley-remote-validator` *#2.0* | Use a specific remote validator. By default, there are 2 built-in remote validators: `default` and `reverse`. Default one is used by default and Reverse one used when `data-parsley-remote-reverse` is set to true. (this is an alias, you could use data-parsley-remote-validator="reverse"`). Inside the function, `this` keyword refers to the `ParsleyField` instance attached to the form element. You have access to the plugin as well as the element if you need to perform other actions before returning the validation result. To learn how to craft your custom remote validators, go [here](http://parsleyjs.org/doc/index.html#remote-custom). |
 
-### Events
+### B) Events
 
 | Name | Instance | Fired by | Description |
 |------|----------|----------|-------------|
 | `field:ajaxoptions` *#2.2* | `ParsleyField` | `whenIsValid & al.` | Triggered just before an ajax request is sent, so one can tweak the options passed to `$.ajax`. Options are passed as a second parameter. |
 
-### Methods
+### C) Methods
 
 | Method | Description |
 | `Parsley.addAsyncValidator(name, fn)` *#2.0* | Specify custom validator for Ajax results. |
 
-### Custom remote validators
+### D) Custom remote validators
 
 If you need some custom processing of Ajax responses, configure your custom remote as follows:
 
@@ -472,7 +471,7 @@ If you need some custom processing of Ajax responses, configure your custom remo
 	</script>
 	```
 
-### Combining Remote Validations with Groups
+### E) Combining Remote Validations with Groups
 
 If you need to trigger validate outside of form submission, such as with `data-parsley-group="group-name"`, you'll need to make use of the promises provided in `whenValidate({group, force})`. The `validate({group, force})` method that returns a `boolean` or `null` will always return null due to remote validation always returning open promises.
 
@@ -486,11 +485,11 @@ If you need to trigger validate outside of form submission, such as with `data-p
 	</script>
 	```
 
-## Parsley Extras
+## IX) Parsley Extras
 
 You'll find in the `src/extra/` directory in Parsley .zip or Github projects many more or less useful validators crafted by the community. A doc here is coming.
 
-### Validators list
+### A) Validators list
 
 | Name | API | Description |
 |------|-----|-------------|
