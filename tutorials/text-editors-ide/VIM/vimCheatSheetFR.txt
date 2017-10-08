@@ -1,0 +1,157 @@
+
+Vim Cheat Sheet
+Global
+:help keyword - ouvrir l'aide pour le mot clé
+:o file - ouvrir un fichier
+:saveas file - sauvegarder un fichier sous
+:close - fermer le fichier en cours
+K - ouvre la page du manuel (man) du mot sous le curseur
+Mouvement du curseur
+h - déplacer le curseur vers la gauche
+j - déplacer le curseur vers le bas
+k - déplacer le curseur vers le haut
+l - déplacer le curseur vers la droite
+H - aller en haut de l'écran
+M - aller au milieu de l'écran
+L - aller en bas de l'écran
+w - aller en avant au début d'un mot
+W - aller en avant au début d'un mot (les mots peuvent contenir de la ponctuation)
+e - aller en avant à la fin d'un mot
+E - aller en avant à la fin d'un mot (les mots peuvent contenir de la ponctuation)
+b - aller en arrière au début d'un mot
+B - aller en arrière au début d'un mot (les mots peuvent contenir de la ponctuation)
+% - aller au caractère associé (paires par défaut: '()', '{}', '[]' - utiliser :h matchpairs dans vim pour plus d'informations)
+0 - aller au début de la ligne
+^ - aller au premier caractère non-espace de la ligne
+$ - aller à la fin de la ligne
+g_ - aller au dernier charactère non-espace de la ligne
+gg - aller à la première ligne du document
+G - aller à la dernière ligne du document
+5G - aller à la ligne 5
+fx - atteindre la prochaine occurence du caractère x
+tx - atteindre la précédente occurence du caractère x
+} - atteindre le prochain paragraphe (ou function/bloc, en mode édition)
+{ - atteindre le précédent paragraphe (ou function/bloc, en mode édition)
+zz - centre le curseur sur l'écran
+Ctrl + b - Descendre d'une hauteur d'écran
+Ctrl + f - Monte d'une hauteur d'écran
+Ctrl + d - Monte d'une demie-hauteur d'écran
+Ctrl + u - Descendre d'une demie-hauteur d'écran
+Tip Préfixez un mouvement avec un nombre pour le répeter. Par exemple, 4j déplace le curseur de 4 lignes vers le bas.
+Mode insertion - insérer/ajouter du texte
+i - insérer avant le curseur
+I - insérer au début de la ligne
+a - insérer (ajouter) après le curseur
+A - insérer (ajouter) à la fin de la ligne
+o - ajouter (ouvrir) une nouvelle ligne vers le bas
+O - ajouter (ouvrir) une nouvelle ligne vers le haut
+ea - insérer (ajouter) a la fin d'un mot
+Esc - quitter le mode insertion
+Éditer
+r - remplacer un caractère
+J - joindre la ligne suivante à la ligne en cours
+cc - changer (remplacer) une ligne entière
+cw - changer (remplacer) jusqu'à la fin d'un mot
+c$ - changer (remplacer) jusqu'à la fin d'une ligne
+s - supprimer un caractère et le remplacer par du texte
+S - supprimer une ligne et la remplacer par du texte (comme cc)
+xp - transposer deux lettres (supprimer et coller)
+u - annuler
+Ctrl + r - rétablir
+. - répéter la commande précédente
+Marquer du texte (mode visuel)
+v - passer en mode visuel, marquer du texte, exécuter des commandes (comme y)
+V - passer en mode visuel ligne par ligne
+o - se déplacer à l'autre extrémité de la zone marquée
+Ctrl + v - passer en mode visuel par bloc
+O - se déplacer à l'autre angle du bloc
+aw - marquer un mot
+ab - marquer un bloc avec ()
+aB - marquer un bloc avec {}
+ib - marquer par bloc le contenu de ()
+iB - marquer par bloc le contenu de {}
+Esc - quitter le mode visuel
+Commandes du mode visuel
+> - décaler le texte vers la droite
+< - décaler le texte vers la gauche
+y - copier le texte marqué
+d - supprimer le texte marqué
+~ - modifier la casse
+Registres
+:reg - afficher le contenu des registres
+"xy - copier dans le registre X
+"xp - coller le contenu du registre X
+Tip Les registres sont stockés dans ~/.viminfo, et seront encore chargé au prochain démarrage de vim.
+Tip Le registre 0 contient toujours la valeur de la derniere commande copiée.
+Marques
+:marks - lister des marques
+ma - définir la position actuelle pour la marque A
+`a - accéder à la position de la marque A
+y`a - copier le texte à la position de la marque A
+Macros
+qa - enregistre la macro a
+q - arrêter l'enregistrement de la macro
+@a - exécuter la macro a
+@@ - re-exécuter la dernière macro executée
+Copier-coller
+yy - copier une ligne
+2yy - copier 2 lignes
+yw - copier un mot
+y$ - copier jusqu'à la fin de la ligne
+p - coller le presse-papier après le curseur
+P - coller le presse-papier avant le curseur
+dd - supprimer (couper) une ligne
+2dd - supprimer (couper) 2 lignes
+dw - supprimer (couper) un mot
+D - supprimer (couper) jusqu'à la fin de la ligne
+d$ - supprimer (couper) jusqu'à la fin de la ligne
+x - supprimer (couper) un caractère
+Quitter
+:w - écrire (sauver) le fichier
+:w !sudo tee % - écrire (sauver) le fichier en utilisant sudo
+:wq or :x or ZZ - écrire (sauver) et quitter
+:q - quitter (échoue s'il y a des modifications non sauvegardées)
+:q! or ZQ - quitter et abandonner les modifications non sauvegardées
+Rechercher et remplacer
+/pattern - chercher le motif
+?pattern - chercher en arrière le motif
+\vpattern - motif 'très magique': les caractères non alphanumériques sont interprétés comme des caracètres spéciaux regex (pas besoin d'échapper)
+n - répéter la recherche dans la même direction
+N - répéter la recherche dans la direction opposée
+:%s/old/new/g - remplacer toutes les occurrences de old avec new dans tout le fichier
+:%s/old/new/gc - remplacer toutes les occurrences de old avec new dans tout le fichier (demande confirmation)
+:noh - supprime le surlignage du résultat des recherches
+Rechercher dans plusieurs fichiers
+:vimgrep /pattern/ {file} - rechercher un motif dans plusieurs fichiers
+e.g. :vimgrep /foo/ **/*
+:cn - atteindre le prochain résultat
+:cp - atteindre le précédent résultat
+:copen - ouvre une fenetre contenant une liste des resultats
+Travailler avec plusieurs fichiers
+:e file - modifier un fichier dans un nouveau tampon
+:bnext or :bn - aller au tampon suivant
+:bprev or :bp - aller au tampon précédent
+:bd - supprimer un tampon (fermer le fichier)
+:ls - liste tout les tampons ouverts
+:sp file - ouvrir un fichier dans un nouveau tampon et diviser la fenêtre
+:vsp file - ouvrir un fichier dans un nouveau tampon et diviser la fenêtre verticalement
+Ctrl + ws - diviser la fenêtre
+Ctrl + ww - changer de fenêtre
+Ctrl + wq - fermer la fenêtre
+Ctrl + wv - diviser la fenêtre verticalement
+Ctrl + wh - déplacer le curseur vers la fenêtre de gauche (division verticale)
+Ctrl + wl - déplacer le curseur vers la fenêtre de droite (division verticale)
+Ctrl + wj - déplacer le curseur vers la fenêtre en dessous (division horizontale)
+Ctrl + wk - déplacer le curseur vers la fenêtre au dessus (division horizontale)
+Onglets
+:tabnew or :tabnew file - ouvrir un fichier dans un nouvel onglet
+Ctrl + wT - déplacer la fenêtre en cours dans son propre onglet
+gt or :tabnext or :tabn - aller à l'onglet suivant
+gT or :tabprev or :tabp - aller à l'onglet précédent
+#gt - aller à l'onglet #
+:tabmove # - déplacer l'onglet à la position # (commence à 0)
+:tabclose or :tabc - fermer l'onglet en cours et toutes ses fenêtres
+:tabonly or :tabo - fermer tous les onglets sauf l'onglet courant
+:tabdo command - exécute la commande sur tout les onglets (ex: :tabdo q - ferme tout les onglets ouverts)
+
+
