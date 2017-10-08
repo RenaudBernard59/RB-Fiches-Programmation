@@ -1,0 +1,148 @@
+# Qu'est-ce que le Responsive Web Design ?
+Mis à jour le jeudi 12 février 2015
+30 minutes Facile
+Licence
+Introduction du cours
+Ne plus suivre
+Plus personne ne doute aujourd'hui que l'usage des smartphones est en train d'exploser. De plus en plus de personnes visitent aujourd'hui des sites web depuis leur navigateur mobile. Sur le Site du Zéro, déjà plus de 5% des visiteurs viennent depuis un appareil mobile. Ils étaient la moitié (2,5%) un an plus tôt.
+
+Le site statcounter.com montre des courbes éloquentes par rapport à l'évolution du mobile par rapport aux ordinateurs de bureau :
+
+Evolution de l'usage des ordinateurs et mobiles
+Evolution de l'usage des ordinateurs et mobiles
+Vous avez un site ou vous prévoyez d'en faire un ? Vous vous demandez certainement "Comment je peux faire en sorte que mon site soit adapté aux mobiles ?".
+
+De plus en plus de monde parle de responsive web design, qui semble être une solution magique à ce problème... mais qu'est-ce que c'est concrètement ? Comment fait-on un site en responsive web design, est-ce que c'est dur, est-ce que c'est adapté pour tous les sites ? Ce tutoriel vous propose une courte introduction au sujet pour que vous puissiez décider si vous ferez votre prochain site en responsive web design... et comment vous devrez vous y prendre. :)
+
+Un site dédié aux mobiles : une fausse bonne idée ?
+
+Quand on voit qu'il y a de plus en plus de personnes qui vont sur le web depuis leur mobile, le premier réflexe est en général de dire :
+
+Mais c'est simple ! Je n'ai qu'à faire un site dédié aux mobiles ! Non ?
+Cela paraît sensé. Après tout, beaucoup de sites l'ont déjà fait. Ils ont :
+
+Le site principal, destiné aux ordinateurs (par exemple www.lemonde.fr)
+Un site mobile, destiné aux appareils mobiles (par exemple mobile.lemonde.fr)
+Les deux sites du journal Le Monde
+Cependant, il y a un problème qui apparaît de façon évidente : ça fait 2 sites à créer, et donc 2 sites à gérer.
+
+Un autre problème est apparu au fil du temps, un peu moins évident à voir venir celui-là : d'autres appareils sont nés, à la frontière entre les mobiles et les ordinateurs. Je parle bien entendu des tablettes. Allez-vous faire en plus un troisième site spécial tablettes ?
+
+Attendez, comme si ça ne suffisait pas, il existe maintenant des smartphones grand format, comme le Galaxy Note, à mi-chemin entre le smartphone et la tablette. Et demain, qui sait quel autre appareil va apparaître ? Peut-être un écran très large ? La télé connectée ?
+
+Au secours, il y a trop d'appareils mobiles différents !
+Au secours, il y a trop d'appareils mobiles différents !
+Etes-vous sûr de vouloir créer plusieurs sites web ? Non, ce que vous voulez, c'est créer un site que tout le monde pourra visiter, aussi bien les personnes qui viennent depuis un ordinateur que ceux qui viennent depuis leur mobile, tablette ou que sais-je encore.
+
+On voit bien que faire un site dédié aux mobiles ne tient pas, car il y a trop d'appareils mobiles avec des tailles différentes sur le marché. Plutôt que de s'essouffler à gérer plusieurs sites, les créateurs de sites web se sont mis à imaginer une solution qui permette de gérer tous ces appareils... d'un seul coup. Cette solution a pris le nom de responsive web design. Qu'est-ce que c'est ? C'est ce que nous allons voir maintenant.
+
+Il y a un autre défaut à la création de multiples sites : vous avez au final plusieurs adresses web pour un même contenu. En effet, le même contenu se trouve à la fois sur votre site "standard" et sur votre site mobile. Cette duplication de contenu est une mauvaise pratique bien connue du référencement web (SEO). Les moteurs de recherche, comme Google, n'aiment pas retrouver le même contenu "copié" d'un site à un autre.
+De plus, si je partage le lien d'un article d'un site mobile, bien souvent les gens qui cliqueront sur ce lien le verront sur la version mobile même s'ils sont sur un ordinateur ! Essayez d'aller sur cet article du Monde version mobile depuis votre ordinateur. Ce n'est pas franchement très joli à voir sur un ordinateur de bureau !
+Le principe du responsive web design
+
+Alors, concrètement, le responsive web design, qu'est-ce que c'est ? C'est une technique de réalisation de site web, qui permet de faire des sites qui s'adaptent automatiquement à l'espace disponible sur l'écran.
+
+En général, on se base sur la largeur de l'écran pour déterminer comment les éléments du site doivent s'afficher :
+
+Organisation des blocs du site en fonction de la largeur disponible
+Organisation des blocs du site en fonction de la largeur disponible
+Quand on dispose de moins de place en largeur, on peut mettre moins de blocs côte à côte. Dans ce cas, on les positionne plutôt de haut en bas.
+Mais attention, ce n'est pas une règle. Comme vous le voyez, on peut aussi considérer que certains blocs moins importants sont inutiles sur des mobiles et les faire disparaître (vous remarquerez que le bloc gris n'apparaît plus dans la version mobile). On peut aussi, à l'inverse, faire apparaître de nouveaux blocs et outils de navigation sur mobile si on le souhaite.
+
+Techniquement, le responsive web design se base sur les Media Queries. C'est une fonctionnalité offerte par le langage CSS, qui permet de mettre en page les sites web. Lorsqu'on fait du responsive web design, on utilise les Media Queries de CSS pour faire en sorte que le design s'adapte à toutes les résolutions d'écran. Je reviendrai sur l'aspect technique un peu plus loin.
+En responsive web design, on ne dit pas "on va faire un site mobile, un site tablette et un site ordinateur". On fait un seul site, conçu pour exploiter au mieux la taille de l'écran. L'avantage, c'est qu'on peut ainsi gérer toutes les tailles d'écran d'un coup.
+
+Testez des sites web responsive
+
+Pour comprendre le principe, le mieux est de regarder comment un site web responsive s'adapte en fonction de la largeur de l'écran. Le Site du Zéro est lui-même responsive : essayez de réduire la largeur de la fenêtre, vous verrez les éléments se réorganiser tous seuls !
+
+Histoire de ne pas être trop nombriliste, je vous propose de prendre pour exemple un autre site, Smashing Magazine. Il est célèbre pour ses articles sur le responsive web design et il est lui-même conçu en responsive (ça vaut mieux pour leur crédibilité ;) ). Regardez l'animation ci-dessous qui montre comment le site change d'apparence en fonction de sa largeur :
+
+(animation gif smashing mag)
+
+N'hésitez pas à tester par vous-mêmes ! Il suffit de redimensionner la fenêtre de votre navigateur pour observer comment le site s'adapte en fonction de la largeur disponible.
+
+Vidéo design responsive smashing magazine
+
+Si vous voulez d'autres exemples, allez faire un tour sur le célèbre site mediaqueri.es qui référence de nombreux sites web responsive (ça pourrait vous donner des idées !).
+
+Concevoir un site web responsive
+
+Avant de rentrer dans la technique, il faut imaginer notre site web responsive. Là, les choses deviennent plus compliquées. En effet, on ne fait pas un site responsive comme on faisait un site avant. C'est une technique nouvelle, qui commence tout juste à être maîtrisée et qui demande d'adapter notre organisation.
+
+Avant, on concevait un design. Il suffisait de faire une maquette et c'était fini.
+Aujourd'hui, on conçoit une infinité de designs. On doit imaginer comment les éléments de la page s'organisent dans toutes les résolutions, de la plus petite (généralement 480px, ce qui correspond à un smartphone) à la plus grande (1920px par exemple). On peut aussi limiter la largeur à 1024px et centrer le site si l'écran est plus large, à vous de décider.
+Ah bon ? Je croyais qu'il suffisait de faire le design de la version ordinateur et le design de la version mobile et c'était bon ?!
+Cette approche fonctionne mais elle est imparfaite. Souvenez-vous : je vous ai dit qu'il y avait de plus en plus d'appareils de taille variable. Avez-vous pensé aux tablettes ? Au fait qu'on peut les tenir verticalement ou horizontalement ?
+
+Plusieurs personnes disent faire du responsive web design en concevant juste 2 versions de leur design. Personnellement je recommande, même si c'est un peu plus dur, d'imaginer une infinité de designs. Je vous rassure, ce n'est pas aussi dur que ça en a l'air. :p
+
+Imaginez que votre site est élastique. Faites en sorte que chacun des blocs de votre site s'adapte en largeur et, s'il n'y a pas assez de place (ou si bloc devient trop petit), alors à ce moment-là réorganisez les blocs sur votre page... Ou choisissez carrément de ne plus afficher le bloc s'il n'est pas "si" important.
+
+Les éléments d'un site responsive se réorganisent automatiquement
+Les éléments d'un site responsive se réorganisent automatiquement
+Chaque moment où vous réorganisez les blocs de votre design est appelé un point de rupture. Cela ne correspond pas forcément à une largeur dite "tablette" ou "mobile" (car, comme on l'a vu, il existe plusieurs largeurs type pour des tablettes et des mobiles). Ces points de rupture dépendent complètement de votre site. C'est votre webdesigner qui doit vous indiquer à quel moment ces points de rutpure doivent être créés. Sur l'animation ci-dessus, il y a 3 points de rupture :
+
+Point de rupture 1 : lorsque le bloc gris disparaît
+Point de rupture 2 : lorsque les blocs rouges passent en-dessous du bloc bleu
+Point de rupture 3 : lorsque tous les blocs rouges sont les uns en-dessous des autres (les 2 blocs rouges ne tenant plus côte à côte)
+Un peu de technique
+
+Les Media Queries
+
+Maintenant que nous savons comment notre design doit se comporter en fonction de la largeur et que nous avons nos maquettes, il reste à donner vie à notre design responsive. C'est le travail de l'intégrateur web.
+Bien que le responsive web design soit une technique relativement nouvelle, la plupart des intégrateurs s'y mettent (avec des niveaux de compétence parfois variables sur le sujet). Ce qui compte en tout cas, c'est de pratiquer pour s'améliorer au fil du temps, alors allons-y !
+
+L'intégrateur aura besoin de connaître le fonctionnement technique des Media Queries CSS, qui permettent d'adapter le design en fonction de certains critères comme la largeur de l'écran. Ca tombe bien j'ai justement rédigé un tutoriel sur les Media Queries !
+
+Ce que tout le monde a besoin de comprendre et de retenir, c'est que les Media Queries permettent d'écrire des règles qui disent à l'ordinateur par exemple :
+
+"Si la largeur de l'écran est supérieure à X et inférieure à Y, alors placer ce bloc en-dessous du précédent"
+
+Par exemple, voici une règle concrète en CSS qui affecte le menu de navigation lorsque l'écran est de largeur inférieure ou égale à 480 pixels :
+
+@media screen and (max-width: 480px)
+{
+    nav
+    {
+        display: block;
+        width: 100%;
+    }
+}
+Evidemment, il faut des connaissances en CSS pour écrire ce genre de règles. La bonne nouvelle c'est qu'on peut absolument tout faire : changer la couleur du texte (pour augmenter le contraste sur les petites résolutions ?), placer les blocs côte à côte ou en-dessous des autres, faire disparaître un bloc, faire apparaître un autre bloc, etc.
+
+Le viewport sur les mobiles
+
+Les navigateurs mobiles ont tendance à simuler une largeur d'écran plus grande, ce qui fait que même si vous avez fait un design responsive, il faut zoomer pour voir correctement votre site. Heureusement, on peut régler ça. Il suffit d'ajouter la ligne de code HTML suivante dans l'en-tête de votre site :
+
+<meta name="viewport" content="width=device-width" />
+Ainsi, le navigateur des appareils mobiles comprendra qu'il ne doit pas simuler de largeur d'écran plus grande et votre site s'affichera correctement. :)
+
+Les enjeux du responsive
+
+Soyons clairs : le web design responsive reste relativement nouveau et il y a encore peu d'experts sur le sujet. Il faut avouer qu'il n'est pas évident à maîtriser, surtout quand on a eu l'habitude de construire un seul et unique design fixe pendant de longues années. Heureusement, les choses évoluent vite, mais il faudra être prudent : si les personnes avec qui vous travaillez n'ont jamais fait de design responsive, vos premiers essais ne seront probablement pas les meilleurs. Prenez le temps de vous former, sur plusieurs projets si possible.
+
+Le cas des images volumineuses
+
+Le responsive web design a aussi ses défauts que certains détracteurs ne manquent pas de signaler. Par exemple, il ne permet pas de régler les problèmes de bande passante liés au téléchargement de grosses images. On ne peut en effet pas vraiment proposer plusieurs versions d'une image en fonction de l'appareil qui la télécharge. Sur un réseau mobile 3G, on sent la différence si l'image est grosse.
+
+Que répondre à cela ? Tout d'abord qu'on sait que les débits vont aller en augmentant (la 4G bientôt par exemple) et qu'à l'avenir on ne sentira plus de différence de vitesse entre un ordinateur et un mobile. C'est donc un investissement pour l'avenir.
+Ensuite, que le W3C (l'organisme qui définit les nouvelles versions de HTML et CSS) a bien vu le problème et proposera bientôt une solution à cela.
+Enfin, il existe des bidouilles techniques qui permettent de limiter ou contourner le problème, mais je ne m'étendrai pas ici car c'est un peu complexe et je ne les conseille pas forcément (le serveur peut par exemple essayer de se baser sur le user agent, le nom du navigateur, pour déterminer si c'est un mobile et décider alors de renvoyer une image plus petite).
+
+Pensez d'abord mobile ("Mobile first")
+
+La tendance actuelle est au mobile first. Plutôt que de faire votre première maquette complète (version "desktop"), les webdesigners sont incités à commencer par proposer la version mobile, qui est généralement la plus simple. On pourrait penser que cela consiste à construire son site "à l'envers" mais en fait c'est plutôt justement le bon sens (on imagine des résolutions de plus en plus grandes).
+
+Le gros avantage de cette technique est qu'il vous fera développer d'abord la version mobile, puis ensuite des adaptations pour la version de bureau. Ainsi, les navigateurs mobiles, qui sont moins puissants, récupèreront les règles CSS destinées au mobile et ignoreront les autres destinées au desktop.
+Quand vous ne faites pas du "Mobile first", c'est l'inverse qui se produit : les navigateurs mobiles récupèrent toutes les règles de votre site pour les ordinateurs puis suppriment ou adaptent les éléments, ce qui leur fait plus de travail.
+
+Un site construit en mobile first sera donc plus rapide à télécharger et à afficher sur un mobile, et il sera tout aussi efficace sur un ordinateur de bureau. :)
+
+Puis-je adapter mon site existant en responsive ?
+
+La réponse courte est : "oui, mais il y a de fortes chances que ça aboutisse à de la bidouille et pas à un vrai site responsive".
+
+Je vous recommande vraiment d'en profiter pour refondre le design de votre site et partir sur de nouvelles maquettes en pensant toutes les résolutions possibles de votre site comme je vous l'ai montré un peu plus tôt. Si vous partez d'une base existante qui n'a pas été prévue pour le responsive, vous risquez fort de tomber dans des pièges qui vous feront regretter de faire du responsive web design.
+
+En effet, c'est bien toute la difficulté du responsive web design : bien exécuté, c'est vraiment du bonheur. Mais si on l'exécute mal et que le site a au final certains problèmes de design, ce qui est fréquent quand on débute, on a tendance à penser que c'est la faute au responsive. Non : c'est simplement que vous ne maîtrisez pas encore bien la technique, mais patience, persévérez et ça va venir. ;)

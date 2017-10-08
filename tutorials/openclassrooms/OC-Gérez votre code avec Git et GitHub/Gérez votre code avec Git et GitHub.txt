@@ -1,0 +1,1058 @@
+Gérez votre code avec Git et GitHub
+6 heures Facile
+Licence
+
+Vous écrivez un peu de code et souhaitez collaborer avec d'autres développeurs ? Vous voulez toujours savoir pourquoi une modification a été faite et ne plus risquer de perdre des jours de travail ? Vous avez clairement besoin de versionner votre code !
+
+Un logiciel de gestion de versions est un outil incontournable pour tout développeur. Il en existe de nombreux, et dans ce cours vous découvrirez Git, le logiciel créé par Linus Torvald, auteur du Kernel Linux. Vous découvrirez ce qu'est la gestion de version et les avantages que cela apporte. Puis, vous plongerez dans l'univers de Git : commit, branches, merge... tous ces termes n'auront plus de secrets pour vous ! Enfin vous apprendrez à utiliser GitHub pour héberger votre code et collaborer facilement sur des projets open-source.
+
+Venez découvrir Git et GitHub dans ce cours en vidéo !
+
+#
+Continuer le cours
+Ne plus suivre
+Partie 1 - Premiers pas avec Git
+
+Partie 2 - Prenez GitHub en main
+
+Partie 3 - Collaborez et maîtrisez votre historique
+
+Certificat de réussite (voir un exemple)
+
+Qu'est-ce que versionner son code ?
+ 
+
+
+ Télécharger la vidéo
+Dans ce cours, vous allez prendre en main Git, un outil qui va vous permettre de versionner votre code, c'est-à-dire gérer les versions de votre code au fur et à mesure que vous le modifiez.
+
+Pourquoi versionner votre code ? 
+Lorsque vous travaillez sur un projet de code, vous allez régulièrement y apporter des modifications, et par moments ces modifications vont provoquer des bugs. Lorsque vous revenez sur votre projet après quelques jours ou même quelques heures, il peut être difficile de vous souvenir des dernières modifications que vous avez effectuées et de retrouver vos repères dans votre code. 
+
+Avec un logiciel de versioning comme Git, vous pouvez garder la trace de toutes les modifications faites sur votre code pour pouvoir vous y retrouver à tout moment. À chaque fois que vous faites une série de modifications (créer un fichier, supprimer un fichier, modifier un texte dans un fichier, etc.),  vous allez pouvoir enregistrer ces modifs dans un commit.
+
+Par exemple, si vous travaillez sur un formulaire de newsletter en ligne :
+
+Vous allez d'abord faire une 1re série de modifications pour créer la base HTML/CSS de votre formulaire.  
+=> Une fois ces modifications faites, vous pourrez faire un premier commit dans Git et le nommer "1re passe sur le formulaire de newsletter".
+Ensuite, vous rendrez peut-être votre formulaire dynamique avec du PHP.  
+=> 2e commit : "PHP ajouté".
+Enfin, un collègue vous demandera de changer le wording sur le champs du formulaire.  
+=> 3e commit : "Texte reformulé".
+
+
+Un commit correspond donc à une version de votre code à un instant t.
+La somme de tous les commits constitue l'historique de votre projet. Et l'intérêt d'un logiciel de versioning comme Git, c'est que vous pouvez vous placer à n'importe quel endroit de cet historique. En cas de bug par exemple, ou lorsque vous êtes plusieurs à travailler sur un même projet, revenir en arrière sur une précédente version du code peut s'avérer bien utile... tellement utile qu'utiliser un logiciel de versioning est considéré comme une habitude indispensable pour tout développeur digne de ce nom ! 
+
+Comme dit Jeff Atwood, un développeur très actif qui a notamment créé Stack Overflow, un forum d'entraide pour les développeurs que vous serez souvent amenés à utiliser lorsque vous vous poserez des questions dans vos projets de code :
+
+"Si le code n'est pas enregistré dans un logiciel de gestion de version, il n'existe pas."
+
+Alors c'est parti pour donner vie à votre code avec Git et GitHub ! 
+
+Git par rapport aux autres solutions de versioning
+
+ Télécharger la vidéo
+En résumé
+Il existe de nombreux logiciels de gestion de version, qui peuvent être basés sur différents modèles :
+
+Modèle centralisé : un serveur central contrôle toute la base de code du logiciel. 
+Exemples de logiciels de versioning utilisant un modèle centralisé : SVN, CVS.
+Modèle distribué : toutes les machines ont accès à la base de code, pas besoin de passer par un serveur central. 
+Exemples de logiciels de versioning utilisant un modèle distribué : Git, Mercurial, Bazaar.
+Le modèle distribué présente plusieurs avantages : 
+
+Moins de risques de perdre son code puisqu'il est accessible par plusieurs sources.
+On peut travailler plus rapidement et sans être connecté à Internet puisqu'il n'y a pas besoin de se connecter à un serveur central.
+En plus des avantages du modèle distribué, Git a un autre atout : une grande communauté ! Cela facilite la collaboration et les échanges fructueux entre développeurs. :)
+
+Installez Git
+Maintenant que vous avez compris le principe du versioning, il est temps de vous équiper pour découvrir en pratique les avantages de Git.
+
+Tout d'abord, pour utiliser Git, vous allez avoir besoin d'utiliser la console. Si vous n'êtes pas très (ou pas du tout !) à l'aise avec, consultez le Rappel sur la console ci-dessous. Sinon, vous pouvez passer directement à la section suivante "Installer Git" où vous trouverez les étapes pour installer Git sur votre machine. 
+
+Rappel sur la console
+Dans ce cours, nous allons utiliser la console, également appelée “terminal”.  Pour suivre le cours, vous n’aurez pas besoin d’être expert avec la console, mais il est quand même nécessaire d’avoir un minimum de bases pour comprendre comment faire des actions basiques. Si vous souhaitez en savoir plus sur le sujet, n’hésitez pas à lire cette explication détaillée dans le chapitre d'un cours de Mathieu Nebra.
+
+La console permet de naviguer dans son arborescence de fichiers (pour ouvrir un fichier, changer de répertoire, etc.) de la même façon qu’une interface graphique. Cependant, au lieu de cliquer sur des icônes, comme l'icône "Ouvrir" du menu suivant : 
+
+Navigation avec une interface graphique
+Navigation avec une interface graphique
+Nous allons écrire de courtes lignes de texte appelées “commandes”. Toutes ces commandes seront exécutées dans le “répertoire courant”. Voyons ensemble les commandes utiles à connaître pour ce cours. 
+
+Les commandes de base de la console
+
+La commande pwd vous permet de connaître votre répertoire courant (tapez pwd puisEntrée) : 
+
+pwd
+/Users/marcgg
+Ici, pwd est  la commande à écrire, et /Users/marcgg est ce que la console affichera en réponse. Sur votre machine le résultat sera, bien évidemment, différent.
+
+La commande ls vous permet de voir la liste des fichiers et répertoires dans le dossier courant : 
+
+ls
+Applications Desktop Documents
+Ici, la console me répond que mon répertoire courant contient trois répertoires : Applications, Dekstop et Documents. Si vous souhaitez voir les éléments de votre répertoire courant sous forme de liste, vous pouvez ajouter l'option '-l' à la commande ls. Vous pouvez également afficher plus d'informations sur ces éléments en utilisant l'option '-a' :
+
+ls -l -a
+drwxr-xr-x 2 marcgg staff 68 Jan 10 2014 Applications
+drwx------+ 44 marcgg staff 1496 Aug 29 12:11 Desktop
+drwx------+ 21 marcgg staff 714 May 7 11:14 Documents
+À noter qu’il est possible de passer toutes les options ensemble sous la forme `ls -la` pour que ce soit plus rapide à écrire.
+La commande cd vous permet de vous placer dans un répertoire.
+
+cd Applications
+Notez que pour revenir au répertoire parent, vous pouvez utiliser 'cd ..' , et pour revenir dans votre répertoire principal il suffit de taper 'cd ~'.
+
+La commande touch vous permet de créer un fichier.
+
+touch fichieracreer.txt
+La commande mkdir vous permet de créer un dossier.
+
+mkdir repertoireacreer
+La commande cat vous permet d'afficher le contenu d’un fichier. 
+
+cat monfichier.txt
+Chapitre 3 : Installer Git
+C'est parti !
+Ici, la console nous répond que monfichier.txt contient 2 lignes de texte : la ligne "Chapitre 3 : Installer Git" et la ligne "C'est parti !". Allons-y pour installer Git alors !
+
+Installer Git
+Mac
+
+Téléchargez la dernière version de Git sur : http://git-scm.com/downloads
+Ouvrez le fichier ainsi téléchargé et suivez les instructions en laissant toutes les valeurs par défaut.
+
+Lancez l’application “Terminal” que vous pouvez trouver dans le dossier 'Utilitaires' de vos Applications ou bien en faisant une recherche avec spotlight.
+
+Terminal dans Applications/Utilitaires
+Terminal dans Applications/Utilitaires
+Exécutez la commande suivante pour définir votre nom et l’email que vous utiliserez ensuite pour créer votre compte gratuit sur GitHub:
+
+git config --global user.name "Votre nom ou pseudo"
+git config --global user.email "Votre@email.com"
+Pour vérifier que tout va bien, relancez votre console et tapez simplement 'git'. Si l’installation a fonctionné, vous devriez voir du texte en anglais expliquant l’utilisation de Git.
+
+Linux
+
+Téléchargez la dernière version de Git sur : http://git-scm.com/downloads
+Ouvrez le fichier ainsi téléchargé et suivez les instructions en laissant toutes les valeurs par défaut.
+
+Ouvrez la console. Si vous ne savez pas utiliser cette console, allez jeter un œil au rappel au début de ce chapitre. 
+
+Exécutez la commande suivante pour définir votre nom et l’email que vous utiliserez ensuite pour créer votre compte gratuit sur GitHub:
+
+git config --global user.name "Votre nom ou pseudo"
+git config --global user.email "Votre@email.com"
+Pour vérifier que tout va bien, relancez votre console et tapez simplement 'git'. Si l’installation a fonctionné, vous devriez voir du texte en anglais expliquant l’utilisation de Git.
+
+Windows
+
+Rendez vous sur http://msysgit.github.io et téléchargez la dernière version disponible. Une fois le fichier récupéré, lancez-le et suivez les instructions. Vous pouvez laisser toutes les configurations par défaut. Cela va vous donner accès à Git ainsi qu’à une console émulant le comportement de Bash, la console sous Linux. Du coup, vous aurez accès aux mêmes commandes que tout le monde (ls, cd, mkdir…).
+
+Maintenant vous allez pouvoir ouvrir l’application “git bash” qui se situe maintenant dans votre menu Démarrer. Si vous ne savez pas utiliser cette console, allez jeter un œil aux rappels du début de ce chapitre.
+
+Exécutez la commande suivante pour définir votre nom et l’email que vous utiliserez ensuite pour créer un compte gratuit sur Github:
+
+git config --global user.name "Votre nom ou pseudo"
+git config --global user.email "votre@email.com"
+Pour vérifier que tout va bien, relancez votre console et tapez simplement 'git'. Si l’installation a fonctionné, vous devriez voir du texte en anglais expliquant l’utilisation de Git.
+
+Petite astuce : utilisez la touche "Insert" de votre clavier pour coller du texte dans git bash (ctrl + v ne fonctionnera sur Windows)
+L'éditeur de texte
+Vous êtes maintenant prêt à entrer dans le vif de Git!
+
+Dernier point à noter avant de vous lancer : dans ce cours, il m'arrivera de modifier des fichiers de texte. Pour cela, j'utiliserai Vim, qui est un éditeur de texte disponible dans la console. C’est ma préférence, et il n’est pas nécessaire d’apprendre Vim pour utiliser Git. Vim est un éditeur puissant, mais relativement difficile d’accès, donc n’hésitez pas à utiliser votre éditeur préféré si vous ne voulez pas passer du temps à apprendre Vim, que ce soit Notepad ou bien Sublime ! Tout ce qui sera fait avec Vim peut très bien être fait avec n’importe quel autre éditeur.
+
+Voici les quelques manipulations utiles pour Vim que j'utiliserais lors de ce cours :
+
+Commande 'vim' pour ouvrir un fichier dans Vim. Par exemple : 
+vim mon fichier.txt
+Commandes exécutables depuis Vim : ':w' pour sauvegarder le fichier, ':q' pour quitter Vim. Dans les vidéos du cours, j'utiliserai aussi souvent le raccourci ':x' qui permet de sauvegarder et quitter Vim.
+Il est maintenant temps de rentrer dans Git et de faire votre premier commit...
+
+#
+ Indiquer que ce chapitre n'est pas terminé
+
+Faites votre premier commit
+
+ Télécharger la vidéo
+Pour suivre ce chapitre, vous allez avoir besoin de vous servir de votre console ! Si vous n'êtes pas encore à l'aise pour la manipuler, retournez faire un tour des rappels sur la console dans le chapitre précédent. C'est  vraiment important que vous maîtrisiez les commandes de base de la console pour tout le reste du cours, donc c'est le moment de vous y attarder si vous en avez besoin ! 
+... ça y est, vous avez les bases de votre console dans la poche ? C'est parti alors !
+
+Pour commencer, créez un nouveau dossier et positionnez vous dedans avec la console. Vous ne voulez pas versionner l'intégralité de votre ordinateur en lançant  git init dans un dossier comme "Mes Documents" ou "Applications" !
+
+Une fois que vous vous êtes placés dans votre nouveau dossier grâce à la commandecd de votre Terminal, créez un nouveau dossier 'monPremierRepo' en lançant la commande suivante : 
+
+mkdir monPremierRepo
+Vous remarquerez que j'ai appelé ce dossier 'Repo', qui est le petit nom de repository.. car nous allons utiliser ce dossier comme repository, c'est-à-dire comme répertoire de travail géré par Git ! Voici un petit résumé des étapes à suivre : 
+
+Pour activer un dossier comme repository Git, il suffit de se placer dans ce dossier avec le Terminal puis d'utiliser la commande git init. 
+Pour gérer un repository, Git génère un index de tous les fichiers dont il doit faire le suivi. Lorsque vous créez un fichier dans un repository, vous devez donc l'ajouter à l'index Git à l'aide de la commande git add nomDeVotreFichier.extension. Par exemple :
+git add checklist-vacances.md
+Pour gagner du temps, vous pouvez ajouter tous les fichiers dans le répertoire courant en tapant
+git add .
+ dans la console. Évidemment, faites bien attention quand vous utilisez ce raccourci à ne pas rajouter trop de fichiers à l'index.
+Lorsque vous modifiez votre repository, vous devez demander à Git d'enregistrer vos modifications en faisant un git commit. L'option-m vous permet de lui envoyer un message décrivant les modifications effectuées, ce qui s'avèrera très utile pour vous par la suite, you'll see! :) Par exemple : 
+git commit -m "Ajouté ma checklist-vacances.md (woohoo!)"
+Bravo, vous avez effectué votre premier commit ! Voyons ce qui se passe lorsque vous en aurez fait plein et que vous aurez besoin de remonter dans le temps... 
+
+#
+ Indiquer que ce chapitre n'est pas terminé
+
+Lisez l'historique
+
+ Télécharger la vidéo
+Vous savez enregistrer les modifications de votre repository avec la commande  git commit. Au cours d'un projet, vous allez être amenés à faire beaucoup de modifications...
+
+Comment vous y retrouver dans l'historique de vos commits ?
+Grâce à la commande  git log qui vous affiche la liste de tous les commits que vous avez réalisés ! 
+
+Le sens de lecture du log est le suivant : on part du commit le plus récent en haut de la liste, au commit le plus vieux en bas de la liste. 
+Dans la liste de cet historique, chaque commit est répertorié avec :
+
+son SHA : son identifiant unique, qui se présente sous forme d'une longue chaîne de caractères et de nombres. Par exemple : "87753191cef0bdb955a4cb4ff841f7c2cce4cb1c".
+son auteur : qui a fait le commit (utile lorsque vous travaillez à plusieurs sur un projet !)
+sa date
+sa description : vous vous rappelez, c'est le message de description que vous indiquez avec l'option  -m lorsque vous faites votre git commit ? Exemple, avec le fichier que l'on a "commité" dans le chapitre précédent :
+git commit -m "Ajouté ma checklist-vacances.md (woohoo!)"
+... le Git log vous affichera le message "Ajouté ma checklist-vacances (woohoo!)" pour ce commit. 
+ 
+Vous comprenez maintenant pourquoi il est important d'écrire un message de description clair lorsque vous faites un commit, vous serez bien content de le retrouver parmi votre pile de commits divers et variés ! 
+Et voilà, pour quitter le log, appuyez sur la touche Q de votre clavier.
+
+Le tip du chapitre
+
+Petite astuce avant de passer à la suite si vous voulez gagner du temps, maintenant que vous êtes parés pour créer des milliers de commits sans vous perdre ;) . 
+
+Jusqu'ici, lorsque vous mettez à jour un fichier dans votre repository, vous devez procéder en deux étapes : 
+
+Ajouter votre fichier à l'index avec la commande  git add,
+git add checklist-vacances.md
+Faire un commit qui décrit la mise à jour de votre fichier avec la commande  git commit.
+git commit -m "Ajouté itinéraire dans checklist-vacances.md"
+Et bien, si vous ne faites que mettre à jour un fichier que vous aviez déjà ajouté à l'index, vous pouvez condenser ces deux étapes de la façon suivante : 
+
+git commit -a -m "Ajouté itinéraire dans checklist-vacances.md"
+L'option   -a demande à Git de mettre à jour les fichiers déjà existants dans son index. Pratique, non ? 
+
+C'est parti pour le prochain chapitre : vous avez consulté l'historique de tous vos commits, et vous voulez remonter dans le temps pour vous positionner sur un de ces commits. Suivez le guide ! 
+
+ 
+
+ 
+
+#
+ Indiquer que ce chapitre n'est pas terminé
+
+Positionnez-vous sur un commit donné
+
+ Télécharger la vidéo
+Lorsque vous effectuez une série de commits sur un projet, il peut vous arriver de vouloir remonter dans le temps à la recherche d'erreurs éventuelles par exemple. Pour vous positionner sur un commit donné de votre historique, il vous suffit d'utiliser la commande git checkout de la façon suivante : 
+
+git checkout SHADuCommit
+Pour revenir à votre branche principale (au commit le plus récent), on utilise la même commande : 
+
+git checkout master
+Quelques astuces
+
+Je suis sur Windows, je n'arrive pas à copier-coller le SHA du commit dans lequel je veux me positionner depuis ma console...
+Je vous conseille d'aller faire un tour sur cet article, oui c'est en anglais... mais c'est le cas de beaucoup de ressources dans le monde du développement, mieux vaut vous y habituer dès maintenant :).
+
+J'ai fait mon commit un peu trop vite... est-ce que je peux l'annuler ?
+On ne peut pas vraiment "supprimer" un commit, mais on a plusieurs options pour l'annuler. Cependant, ces options ont des limites et sont à utiliser avec prudence et parcimonie !
+
+Je vous présente une de ces options : vous pouvez "revert" un commit, c'est-à-dire créer un nouveau commit qui fait l'inverse du précédent, avec la commande suivante :
+
+git revert SHADuCommit
+Attention, ça crée un nouveau commit dans l'historique du coup ! (le commit "inverse" du précédent)
+Sinon, si vous voulez simplement modifier le message de votre dernier commit, vous pouvez utiliser la commande suivante :
+
+git commit --amend -m "Votre nouveau message"
+... mais attention, vous ne pouvez modifier ce message que si vous n'avez pas encore pushé votre commit sur l'origine !
+Je n'ai pas encore fait mon nouveau commit, mais je veux annuler tous les changements que je n'ai pas encore commités. Possible ?
+ Possible avec un reset !
+
+git reset --hard‌
+ 
+
+#
+ Indiquer que ce chapitre n'est pas terminé
+
+Quiz 1
+Votre score
+90%
+Bravo ! Vous avez réussi cet exercice !
+Question 1
+Versionner son code ne permet pas de...
+
+
+Travailler en équipe sur un même projet
+
+Avoir une liste des modifications effectuées sur le code
+
+Vérifier automatiquement la validité du code écrit par un autre développeur
+
+Savoir qui a écrit quelle ligne de code
+Question 2
+Git est un système...
+
+
+Distribué
+
+Centralisé
+
+Localisé
+
+Délocalisé
+Question 3
+Si git status retourne : 
+
+"nothing added to commit but untracked files present",
+
+qu'est-ce que cela signifie ?
+
+
+Il n'y a rien dans le dossier.
+
+Git n'est pas initialisé.
+
+Il existe des fichiers qui ne sont pas ajoutés à l'index.
+
+Il faut effectuer un commit.
+Question 4
+Le créateur de Git est également le créateur de :
+
+
+SVN
+
+Linux
+
+Windows
+
+Mercurial
+Question 5
+Quelle est une des raisons pour lesquelles Git est plus rapide que des systèmes comme SVN ?
+
+
+L'historique du code est en local.
+
+L'historique du code est sur le cloud.
+
+L'historique du code n'est pas utilisé entièrement.
+
+L'historique du code est sur plusieurs machines.
+Question 6
+Quelle commande de Git permet de voir l'historique de ses modifications ?
+
+
+commit
+
+log
+
+diff
+
+hist
+Question 7
+Quel est l'unique identifiant d'un commit ?
+
+
+Sa clé de hachage, le SHA
+
+Son message de commit
+
+Sa date
+
+Son auteur
+Question 8
+À quoi sert un message de commit ?
+
+
+Indiquer quels fichiers ont été modifiés
+
+Noter la date de modification des fichiers
+
+Indiquer quelles modifications ont été faites et pourquoi
+Question 9
+Quelle est la commande de Git qui permet de se positionner sur un ancien commit ?
+
+
+revert
+
+checkout
+
+log
+
+commit
+Question 10
+Que signifie l'option -a de la commande commit ?
+
+
+Ajouter tous les fichiers du projet au commit
+
+Ajouter tous les fichiers déjà présents dans l'index au commit
+
+Ajouter tous les fichiers du projet à l'index
+
+Ajouter l'index à Git
+
+Découvrez les remotes
+
+ Télécharger la vidéo
+Lorsque vous travaillez sur un projet sur votre machine, il est important d'avoir un backup de votre code sur une autre machine, au cas où la vôtre tombe en panne par exemple. Une fois que vous avez travaillé sur votre code et effectué vos commits, vous allez donc les envoyer sur un remote, c'est-à-dire une autre machine qui peut être : 
+
+interne (si vous avez la chance d'avoir plusieurs ordinateurs ;) )
+ou externe (grâce à des services comme GitHub ou BitBucket). Utiliser un remote externe va aussi vous permettre de travailler sur des projets à plusieurs, pour que tout le monde ait accès aux dernières modifications de chacun sur un remote partagé. 
+#
+ Indiquer que ce chapitre n'est pas terminé
+
+GitHub, qu'est-ce que c'est ?
+
+ Télécharger la vidéo
+ 
+
+ 
+
+ 
+
+ 
+
+Comme nous l'avons vu dans le chapitre précédent, GitHub est un service en ligne qui permet d'héberger ses repositories de code. GitHub est un outil gratuit pour héberger du code open source, et propose également des plans payants pour les projets de code privés. C'est le numéro 1 mondial et il héberge plus d'une dizaine de millions de repositories ! 
+
+Pour créer votre compte GitHub, rendez-vous sur sa page d'accueil où vous pourrez entrer un nom d'utilisateur, un mot de passe, etc. Une fois votre compte créé, vous aurez accès à votre dashboard et découvrirez toutes les fonctionnalités de GitHub. Vous allez pouvoir notamment : 
+
+Communiquer avec d'autres développeurs et signaler des problèmes de code en déclarant des "issues" ;
+Partager des morceaux de code en ligne à l'aide de "gists" ;
+Proposer des modifications de code à d'autres repos en faisant des "pull requests" ;
+Et même récupérer du code depuis un autre repository.
+Ça tombe bien, ce dernier point est justement l'objet du prochain chapitre !
+
+Mais avant ça, une dernière petite astuce pour mieux vous y retrouver dans votre code en ligne : appuyez sur la touche t, vous pourrez alors faire une recherche dans vos noms de fichiers en tapant un mot / des lettres clé ! 
+
+Récupérez du code d'un autre repository
+Vous devez maintenant avoir un compte sur GitHub. Si ce n'est pas le cas, rendez-vous au chapitre précédent pour créer votre compte. Connectez-vous à votre compte avec les identifiants que vous venez de créer dans le chapitre précédent, vous arriverez sur votre tableau de bord ou "dashboard". Voyons dans cette vidéo comment récupérer du code d'un autre repository à partir de ce dashboard !
+
+
+ Télécharger la vidéo
+ 
+
+À partir de GitHub, vous pouvez copier un repository sur votre machine. Pour cela, il vous suffit de rechercher le repository qui vous intéresse sur GitHub, de vous y placer, puis d'utiliser l'option "clone URL" en bas à droite de l'écran. 
+
+Cette option vous propose un lien SSH, HTTPS ou Subversion. Ici, nous allons choisir un lien HTTPS, le copier, puis coller ce lien en utilisant la commande git clone dans le dossier que vous aurez choisi sur votre machine : 
+
+git clone lienFourniParGitHub 
+Dans cette vidéo, nous avons cloné le repo de la librairie React.js, une librairie créée par Facebook et qui permet de mieux gérer ses interfaces graphiques grâce à JavaScript. Nous avons donc effectué sur notre machine la commande :
+git clone https://github.com/facebook/react.git
+ 
+
+#
+ Indiquer que ce chapitre n'est pas terminé
+
+Créez votre premier repository
+
+ Télécharger la vidéo
+Dans le chapitre précédent, vous avez vu comment récupérer un repository partagé sur GitHub. À votre tour de partager vos projets sur GitHub ! Vous allez voir ici comment créer un repository sur votre compte GitHub. 
+
+Petit rappel : GitHub est gratuit pour partager du code open-source donc public à tous. Si vous voulez créer des repository privés, GitHub propose des plans payants. 
+C'est parti pour créer votre premier repository open-source :) . Tout d'abord, si ce n'est pas déjà fait, connectez-vous à votre compte GitHub. Cliquez sur le bouton "Create new" symbolisé par un signe "+" en haut à droite de votre écran, puis "New repository". 
+
+GitHub vous demandera alors de préciser quelques détails sur votre repository:
+
+son nom
+sa description
+son statut public ou privé. Ici, nous partageons du code open-source, c'est donc public et gratuit :).
+Vous avez également une option "Initialise with a README", qui vous permet de cloner votre repository sur votre machine. Cette option est à cocher uniquement dans le cas où vous n'avez pas encore créé le repository en question sur votre machine (ce qui est bien notre cas ici, cochez donc !) 
+Et voilà, vous avez créé votre premier repository sur GitHub ! Vous pouvez maintenant :
+
+voir les commits effectués sur votre repository (par vous et vos éventuels contributeurs) 
+cloner votre projet et le ramener sur votre machine avec la commande git clone que l'on a vue dans le chapitre précédent. 
+... et en parlant de la commande git clone, notez que vous pouvez cloner votre repo avec deux options : 
+
+L'option HTTPS que je vous ai  invité à utiliser dans ce cours : c'est l'option la plus simple, qui demande de fournir vos identifiants GitHub (nom d'utilisateur et mot de passe) à chaque fois que vous faites un git clone. 
+L'option SSH qui est plus pratique car elle ne vous demande pas vos identifiants à chaque fois. Par contre, pour l'utiliser, il faut générer une clé SSH, ce qui est un peu plus compliqué pour ce cours d'initiation. Mais une fois que vous vous sentez plus à l'aise, je vous invite à consulter la marche à suivre dans la documentation de GitHub et à utiliser cette option SSH.  
+ 
+#
+ Indiquer que ce chapitre n'est pas terminé
+
+Envoyez votre code sur GitHub
+
+ Télécharger la vidéo
+ 
+
+Vous avez clôné votre repo GitHub sur votre machine. Comment faire pour synchroniser les modifications que vous faites dans votre repo sur votre machine avec votre repo sur GitHub ?
+
+À vos marques... Ouvrez votre terminal et placez-vous dans votre repo local.
+Prêts... Faites un/des commit(s) des modifications que vous avez ajoutées sur ce repo.
+Pushez! Envoyez ces modifications sur votre repo GitHub en utilisant la commande git push:
+git push origin master
+Cette commande demande à Git :
+
+"Envoie mes modifs dans la branche master de mon remote origin."
+
+ La branche master est la branche qui contient le code courant de votre repo GitHub. Ne vous préoccupez pas trop du terme "branche", on y reviendra par la suite.
+Le remote sur lequel vous envoyez votre code est appelé origin par défaut. Ici, ce remote est GitHub. Si vous aviez plusieurs remotes (par exemple, votre téléphone portable ou un 2e ordinateur), vous pourriez envoyer votre code sur un remote "téléphone" ou "ordi2".
+Lorsque vous lancez la commande git push, il est possible que l'on vous demande vos identifiants GitHub. Renseignez-les dans le terminal !
+Une fois que vous avez "pushé" votre code en ligne, vous pouvez aller consulter votre repo sur GitHub. Vous y retrouverez les derniers commits effectués en cliquant sur l'option "Commits" dans votre repo : 
+
+
+
+Ça vous donne l'historique de vos commits, comme la commande git log, mais dans une interface graphique plus agréable qui vous permet de cliquer sur chaque commit et de voir les modifications associées dans chaque fichier. 
+
+ 
+
+ 
+
+#
+ Indiquer que ce chapitre n'est pas terminé
+
+Récupérez des modifications
+
+ Télécharger la vidéo
+ 
+
+Dans le chapitre précédent, vous avez vu comment envoyer vos modifications locales vers votre repo GitHub avec git push. Mais si vous modifiez votre repo GitHub en ligne, ou si vous travaillez avec d'autres personnes dessus et qu'elles envoient leurs modifications locales sur le repo en ligne, votre code local ne sera plus à jour.
+
+Pour récupérer en local les dernières modifications du repo GitHub, il vous faut utiliser la commande git pull : 
+
+git pull origin master
+Vous reconnaissez la même syntaxe que pour la commande git push, qui demande ici à GitHub : 
+
+Envoie dans mon répertoire local les dernières modifications de la branche master située sur mon remote origin (qui correspond ici à GitHub). 
+
+Pensez à synchroniser régulièrement votre code local avec vos repos en ligne à l'aide des commandes git push et pull. C'est particulièrement important lorsque vous travaillez à plusieurs sur un projet, pour que tout le monde avance sur la même base !
+#
+ Indiquer que ce chapitre n'est pas terminé
+
+Quiz 2
+Votre score
+100%
+Bravo ! Vous avez réussi cet exercice !
+Question 1
+Dans quel ordre les actions suivantes sont le plus souvent utilisées ?
+
+
+push, commit, écrire du code
+
+écrire du code, push, commit
+
+écrire du code, commit, push
+
+push, écrire du code, commit
+Question 2
+Quel type de machine ne peut pas servir de remote Git ?
+
+
+La machine sur laquelle je code
+
+Une autre machine chez moi
+
+Un serveur chez GitHub
+
+Toutes les machines citées peuvent servir de remote Git 
+Cela peut paraître contre-intuitif, mais toutes les machines peuvent servir de remote.
+En effet,  je peux me servir de ma propre machine comme d'un remote. Je définis ainsi un autre repertoire comme étant "remote" et je vais pouvoir envoyer mon code vers lui avec la commande "push" sans soucis. Ce n'est pas nécessairement la meilleure des idées car un des intérêts d'utiliser un remote est de pouvoir garder une copie de sauvegarde ailleurs (pour éviter les problèmes matériels) et/ou donner accès à d'autres développeurs (en mettant le code en ligne). Un cas d'utilisation intéressant serait de définir comme remote son dossier "Dropbox" par exemple, ce qui garantit une synchronisation sur Internet à peu de frais.
+De plus un autre développeur peut se servir de ma machine comme remote pour son repository Git.
+ 
+
+Question 3
+Qu'est-ce qu'un gist ?
+
+
+Le mode d'affichage d'un commit sur GitHub
+
+Une façon de partager son code avec GitHub
+
+Un utilisateur de GitHub
+
+Une commande Git
+Question 4
+Comment s'appelle l'action de récupérer un repository entier sur sa machine ?
+
+
+Un clonage
+
+Une duplication
+
+Un "fork"
+
+Un "pull"
+Question 5
+Comment est nommé le remote par défaut ?
+
+
+Origin
+
+Base
+
+Master
+
+GitHub
+Question 6
+Quelle est la commande Git qui permet d'envoyer ses modifications sur un remote ?
+
+
+Push
+
+Commit
+
+Pull
+
+Clone
+Question 7
+Quelle est la commande Git qui permet de récupérer uniquement les dernières modifications faites sur un remote ?
+
+
+Push
+
+Fork
+
+Clone
+
+Pull
+Question 8
+Quand faut-il se mettre à jour par rapport au remote distant partagé ?
+
+
+Fréquemment, pour éviter de trop diverger
+
+Rarement, pour éviter les conflits
+
+Jamais, c'est un risque de sécurité
+
+Il est impossible de se mettre à jour si le remote est partagé
+Question 9
+Avec quelle commande de Git peut-on voir les modifications effectuées par d'autres développeurs après avoir effectué la commande git pull ?
+
+
+Push
+
+Status
+
+Origin
+
+Log
+Question 10
+GitHub ne permet pas de...
+
+
+Partager du code
+
+Modifier du code en ligne
+
+Discuter par chat
+
+Organiser un projet avec des tickets
+
+Git & GitHub - Partie 2 Activité
+Temps d'attente moyen pour être corrigé sur cet exercice : 1 jour
+
+ Retour au cours
+
+Cet exercice a pour objectif de mettre en pratique les notions que vous avez acquises dans les deux premières parties de ce cours sur Git et Github.
+
+Vous devez créer un repository Git simple contenant :
+
+Un fichier nommé "README.txt" qui présente le projet;
+Au moins 2 autres fichiers de votre choix (ils peuvent contenir des scripts de code, du texte sur un projet personnel...);
+Au moins 4 commits distincts montrant l’ajout puis la modification de certains fichiers.
+Prêtez attention à la qualité de vos messages de commit et essayez d’être précis. Par exemple, évitez des commentaires comme “commit 1”, “commit 2” etc. qui n'expliquent pas les modifications que vous avez effectuées.
+
+Une fois que vous avez créé votre repository Git, envoyez-le sur GitHub, puis copiez l’URL du repository GitHub créé spécialement pour cette activité (format: https://github.com/votrenomd'utilisateur/votreprojet). Par exemple, voici l'URL du repository GitHub nommé "Simple-Placeholder" que j'ai créé pour cette activité : https://github.com/marcgg/Simple-Placeholder
+
+Enfin, téléchargez ce document texte. Indiquez votre URL après "L'URL de mon repository sur GitHub" dans ce document texte, et enregistrez-le. Pour envoyer votre travail, compressez le document .txt que vous avez modifié dans un fichier .zip, et envoyez ce .zip.
+
+ Créez des branches
+
+ Télécharger la vidéo
+ 
+
+Un élément que vous allez être souvent amenés à utiliser lorsque vous travaillez sur un repo, ce sont les branches. Les branches permettent de travailler sur des versions de code qui divergent de la branche principale contenant votre code courant. 
+
+À quoi ça sert de créer des variations de la branche principale ?
+Travailler sur plusieurs branches est très utile lorsque vous souhaitez tester un expérimentation sur votre projet, ou encore pour vous concentrer sur le développement d'une fonctionnalité spécifique. 
+
+Voyons les commandes Git qui vous permettent de manipuler les branche.
+
+Lorsque vous initialisez un repo Git, votre code est placé dans la branche principale appelée master par défaut. 
+Pour voir les branches présentes dans votre repo, utilisez la commande git branch. Elle vous retournera les branches présentes, et ajoutera une étoile devant la branche dans laquelle vous êtes placés. Par exemple, dans le 1er repos que vous avez créé dans la partie précédente, la commande git branch n'affichera qu'une seule branche, la branche principale dans laquelle vous vous situez : * master. 
+Pour créer une nouvelle branche, il vous suffit d'ajouter le nom de la branche à créer à la suite de la commande précédente :
+git branch nouvelle-branche
+ Pour vous placer dans une autre branche à l'intérieur de votre repo, vous allez avoir besoin d'un nouveau mot-clé : checkout : 
+git checkout nouvelle-branche
+ 
+
+Petite astuce pour manipuler vos branches : vous pouvez utiliser la commande 'git checkout -b' pour créer une branche et vous y positionner. Ainsi, au lieu de taper la commande suivante pour créer votre branche :
+
+git branch ma-branche
+, puis une deuxième commande pour vous y positionner :
+
+git checkout ma-branche
+, vous pouvez regrouper ces deux opérations en une seule commande : 
+
+git checkout -b ma-branche
+ 
+ 
+
+#
+ Indiquer que ce chapitre n'est pas terminé
+
+Fusionnez des branches
+
+ Télécharger la vidéo
+ Lorsque vous travaillez sur plusieurs branches, il va souvent vous arriver de vouloir ajouter  dans une branche A les mises à jour que vous avez faites dans une autre branche B. Pour cela, on se place dans la branche A :
+
+git checkout brancheA
+Puis on utilise la commande git merge : 
+
+git merge brancheB
+Fusionner des branches est une pratique courante lorsque vous travaillez sur un projet : vous devez toujours chercher à remettre les modifications faites sur vos différentes branches dans la branche principale master.  
+ 
+
+#
+ Indiquer que ce chapitre n'est pas terminé
+
+Résolvez un conflit
+ 
+
+
+ Télécharger la vidéo
+Vous avez vu dans le chapitre précédent comment fusionner des branches. Nous avons utilisé un exemple assez simple où tout s'est bien passé. Mais il arrive très souvent qu'il y aie des conflits entre les deux branches qui empêchent de les fusionner, par exemple lorsque plusieurs personnes travaillent en même temps sur un même fichier.
+
+Exemple : votre branche master contient un fichier Hello.md avec une ligne de texte : "Hello les amis !". Votre branche universal contient un fichier Hello.md avec une ligne de texte : "Hello tout le monde !".
+
+Si vous tentez de fusionner la branche universal dans la branche master :
+
+git checkout master
+git merge universal
+Git va reconnaître qu'il existe un conflit entre les deux branches car la 1re ligne du fichier Hello est différente dans chacune des branches et afficher le message suivant : 
+
+Auto-merging hello.md
+CONFLICT (content): Merge conflict in hello.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+Vous allez donc devoir ouvrir le fichier hello.md dans votre éditeur de texte. Si vous utilisez l'éditeur Vim, vous pouvez le faire à partir du terminal avec la commande : 
+
+vim hello.md
+Vous allez alors voir les différences de contenu du fichier hello.md entre les deux branches, et vous pouvez choisir quel contenu garder pour la branche master dans laquelle vous faites le merge. Par exemple, vous pouvez garder "Hello les amis", sauvegarder le fichier et revenir dans la console.
+
+Maintenant que vous avez résolu le conflit, il vous reste à le dire à Git ! Car pour l'instant, si vous faites un git status, git vous dira que vous avez des branches non fusionnées ("unmerged paths"). Pour cela, faites un commit sans message : 
+
+git commit
+Git va détecter que vous avez résolu le conflit et vous proposer un message de commit par défaut :
+
+ 
+
+Vous pouvez  alors personnaliser le message du commit si vous le souhaitez. Dans notre cas, la résolution étant assez simple, nous allons garder le message proposé par défaut et le sauvegarder en tapant :x. 
+
+Git va alors vous confirmer que vos branches ont été fusionnées, et si vous consulter l'historique des commits avec git log, vous verrez apparaître le dernier commit de résolution du conflit avec le message :
+
+ Merge branch 'universal'
+Conflicts:
+       hello.md
+
+Ici, nous avons résolu le conflit en ouvrant directement le fichier posant problème dans la console. Sachez qu'il existe aussi des outils proposant des interfaces graphiques pour comparer les différences de versions d'un fichier. Personnellement je préfère rester dans la console, mais c'est une question de goût ; n'hésitez pas à tester ces outils si vous êtes plus visuels ! À vous de tester parmi les nombreux outils existants : vimdiff, meld, opendiff, kdiff3, tkdiff, xxdiff, tortoisemerge, gvimdiff, diffuse, ecmerge, p4merge, araxis, emerge. Pour lancer l'un de ces outils externes de merge avec la commande git mergetool, par exemple : 
+
+git mergetool vimdiff 
+ 
+ 
+
+#
+ Indiquer que ce chapitre n'est pas terminé
+
+Retrouvez qui a fait une modification
+ 
+
+
+ Télécharger la vidéo
+ 
+
+Pour retrouver qui a modifié une ligne précise de code dans un projet, faire une recherche avec git log peut s'avérer compliqué, surtout si le projet contient beaucoup de commits. Il existe un autre moyen plus direct de retrouver qui a fait une modification particulière dans un fichier : la commande git blame.
+
+git blame nomdufichier.extension
+Cette commande liste toutes les modifications qui ont été faites sur le fichier ligne par ligne. À chaque modification est associé le début du sha du commit correspondant. Par exemple : 
+
+^05b1233 (Marc Gauthier 2014-08-08 00:31:02 1) # Une liste
+
+Pour retrouver pourquoi cette modification a été faite, vous avez deux possibilités : 
+
+Faire un git log et rechercher le commit dont le sha commence par 05b1233. 
+Utiliser la commande git show qui vous renvoie directement les détails du commit recherché en saisissant le début de son sha : 
+git show 05b1233
+On en revient à un point essentiel : pensez à écrire des messages clairs et précis lorsque vous faites vos commits. Cela vous facilitera la vie lorsque vous y reviendrez dessus plus tard, et la vie de vos collaborateurs ! Et si vous tombez sur une modification pour laquelle le message de commit n'est pas assez explicite, gardez en tête que vous pouvez contacter l'auteur du commit pour en savoir plus. 
+ 
+
+ 
+
+#
+ Indiquer que ce chapitre n'est pas terminé
+
+Ignorez des fichiers
+ 
+
+Ne manquez pas ce chapitre ! Pour des raisons de sécurité et de clarté, il est important d'ignorer certains fichiers dans Git, tels que :
+
+Tous les fichiers de configuration (config.xml, databases.yml, .env...)
+Les fichiers et dossiers temporaires (tmp, temp/...)
+Les fichiers inutiles comme ceux créés par votre IDE ou votre OS (.DS_Store, .project...)
+Le plus crucial est de ne JAMAIS versionner une variable de configuration, que ce soit un mot de passe, une clé secrète ou quoi que ce soit de ce type. Versionner une telle variable conduirait à une large faille de sécurité, surtout si vous mettez votre code en ligne sur GitHub !
+
+ 
+Si vous avez ce type de variables de configuration dans votre code, déplacez-les dans un fichier de configuration et ignorez ce fichier dans Git : nous allons voir comment faire cela dans la vidéo ci-dessous en utilisant le fichier .gitignore.
+
+Si le code a déjà été envoyé sur GitHub, partez du principe que quelqu'un a pu voir vos données de configuration et mettez-les à jour (changez votre mot de passe ou bien générez une nouvelle clé secrète).
+
+ Télécharger la vidéo
+Créez le fichier .gitignore pour y lister les fichiers que vous ne voulez pas versionner dans Git (les fichiers comprenant les variables de configuration, les clés d'APIs et autres clés secrètes, les mots de passe, etc.). Listez ces fichiers ligne par ligne dans .gitignore en indiquant leurs chemins complets, par exemple : 
+
+motsdepasse.txt
+config/application.yml
+Le fichier .gitignore doit être tracké comme vos autres fichiers dans Git : vous devez donc l'ajouter à l'index et le committer. 
+#
+ Indiquer que ce chapitre n'est pas terminé
+
+
+Évitez des commits superflus
+
+ Télécharger la vidéo
+Imaginez le scénario suivant : vous êtes en train de travailler sur une fonction, lorsque tout à coup une urgence survient et un collègue vous demande de résoudre un bug dans un autre fichier et/ou une autre branche. 
+
+Si vous faites un commit des modifications sur votre fonction à ce stade, cela va alourdir votre historique car vous n'avez pas terminé votre tâche.
+
+Comment faire pour ne pas perdre vos modifications en cours avant de passer à l'urgence à traiter ?
+Et bien vous pouvez mettre de côté vos modifications en cours avec la commande :
+
+git stash
+Vous pouvez alors vous rendre dans la branche/le fichier que vous devez traiter à l'instant, finir et committer vos modifs. Une fois que vous avez réglé cette urgence, revenez sur la branche sur laquelle vous étiez en train de travailler, et récupérez les modifications que vous aviez mises de côté avec la commande : 
+
+git stash pop
+ 
+
+Attention, pop vide votre stash des modifications que vous aviez rangées dedans. Donc une fois que vous avez récupéré ces modifications dans votre branche, il vous faut finir votre tâche et les committer ! (ou bien les remettre de côté en exécutant à nouveau la commande git stash).
+
+Si vous voulez garder les modifications dans votre stash, vous pouvez utiliser apply à la place de pop : 
+git stash apply
+ 
+
+ 
+
+#
+ Indiquer que ce chapitre n'est pas terminé
+
+Contribuez à des projets open source
+
+ Télécharger la vidéo
+Un des aspects passionnants lorsque vous faites du développement, c'est que vous pouvez apporter votre pierre à plein d'édifices en contribuant à des projets open-source. :magicien:
+
+Nous allons voir ici comment proposer une modification à un projet hébergé sur GitHub.  On appelle ça faire une pull request (PR).
+
+Le premier réflexe à avoir est de regarder dans la documentation du projet si des recommandations sont précisées sur comment faire une pull request. Certains peuvent demander d'utiliser un format spécifique pour les messages de commit et de PR, d'ajouter des tests, etc. En général, vous trouverez ces recommandations dans le fichier README, avec un intitulé "Contributing" ou "Pull requests". 
+
+Voici le procédé classique que vous aurez à adapter en fonction des recommandations trouvées dans la doc : 
+
+Step 1 – Récupérez le repo auquel vous souhaitez contribuer
+Tout d'abord, faites un fork du repo auquel vous souhaitez contribuer
+
+Cela signifie simplement faire une copie du repo en question sur votre compte GitHub. Pour cela, rendez-vous sur le repo GitHub (ici pour exemple : https://github.com/oc-courses/intro-git-github) et cliquez sur "fork" en haut à droite de la page :
+
+
+
+ 
+
+ Ensuite, clonez votre copie depuis GitHub sur votre machine
+
+Vous savez faire, il vous suffit de copier l'URL https de la copie du repo que vous avez "forké" sur votre compte GitHub et de la coller dans votre terminal en faisant un git clone. Dans notre exemple, ça donnerait quelque chose comme ça : 
+
+git clone https://github.com/votre-username/intro-git-github.git
+Step 2 – Faites vos modifications
+Sur votre machine, placez-vous dans le repo que vous venez de créer, créez une nouvelle branche où vous allez faire vos modifications et placez-vous dedans :
+
+git checkout -b my-new-feature
+ Faites vos modifications dans la nouvelle branche et "committez"-les dans Git en veillant à rédiger des messages de commit clairs, par exemple : 
+
+git commit -m "Added feature allowing users to comment on the blog articles"
+Notez que j'ai écrit la nouvelle branche et le message en anglais. Beaucoup de projets sur GitHub sont en anglais, vous devrez donc souvent faire vos contributions en Anglais. You can do it! ;) 
+ Envoyez vos modifications sur GitHub en faisant un git push de votre nouvelle branche : 
+
+git push origin my-new-feature
+Notez que nous ne faisons pas un "git push origin master" : ce n'est pas votre branche principale "master" mais bien votre nouvelle branche "my-new-feature" que vous envoyez sur GitHub ! 
+Step 3 – Proposez vos modifications au projet
+Une fois vos modifications envoyées sur votre fork GitHub, il vous reste à transmettre votre demande de modifications en faisant une pull request. Pour cela, placez-vous sur votre fork GitHub, sur votre nouvelle branche, et cliquez sur "Compare & pull request".
+
+
+
+ Vous allez alors être amenés à rédiger un message pour présenter votre proposition de modifications à l'auteur du projet.
+
+Là encore, ce sera souvent en anglais, pensez à vous adapter à votre interlocuteur ! Soignez votre message : soyez poli, clair et concis et tout se passera bien ! 
+Vous remarquerez que sous votre message, GitHub propose un comparatif détaillé de vos modifications par rapport au projet auquel vous souhaitez contribuer. 
+
+Une fois votre pull request envoyée, l'auteur du projet consultera vos propositions, et vous recevrez une notification par GitHub lorsqu'il/elle les aura intégrées ou refusées. Il se peut aussi qu'il/elle vous contacte pour vous demander des précisions avant d'accepter ou non votre PR. 
+
+ Compléments
+Congrats, vous avez fini votre tour des bases de Git et GitHub, vous allez pouvoir maintenant continuer vos aventures de développement sans vous perdre dans vos versions de code !
+
+Mais avant de reprendre vos repos, jetez un œil à la vidéo ci-dessous ;).
+
+
+ Télécharger la vidéo
+#
+ Indiquer que ce chapitre n'est pas terminé
+
+ Quiz 3
+Votre score
+70%
+Bravo ! Vous avez réussi cet exercice !
+Question 1
+Comment s'appelle habituellement la branche principale d'un repository Git ?
+
+
+Master
+
+Base
+
+Origin
+
+Remote
+Question 2
+Quelle commande Git permet de voir sur quelle branche on se trouve ?
+
+
+git checkout
+
+git rebase
+
+git branch
+
+git commit
+Question 3
+Quelle est la bonne syntaxe pour créer une branche ?
+
+
+git status
+
+git branch
+
+git branch ma-branche
+
+git checkout ma-branche
+Question 4
+Quelle est la bonne syntaxe pour créer une branche et se positionner dessus ?
+
+
+git checkout -b ma-branche
+
+git branch -b ma-branche
+
+git branch ma-branche
+
+git branch checkout ma-branche
+Question 5
+Quel cas génère systématiquement une situation de conflit dans Git ?
+
+
+Si un autre utilisateur a rendu une branche invalide
+
+Si certains commits des deux branches que l'on fusionne affectent les mêmes lignes de code
+
+Si on fusionne deux branches qui ont été modifiées par deux utilisateurs différents
+
+Si on fusionne deux branches dont l'une contient plusieurs commits appliqués à un même fichier
+Question 6
+Comment supprimer une branche dans Git ?
+
+
+git delete ma-branche
+
+git branch -d ma-branche
+
+git remove -d ma-branche
+
+git branche delete ma-branche
+Question 7
+Quelle commande permet de savoir qui a modifié une ligne donnée d'un fichier ?
+
+
+git blame
+
+git status
+
+git checkout
+
+git hist
+Question 8
+Quelle est une bonne façon d'ignorer un fichier définitivement ?
+
+
+Utiliser la commande git ignore
+
+Utiliser un fichier .gitignore
+
+Enlever le fichier de l'index
+Question 9
+Comment faire pour mettre de côté ses modifications de façon temporaire sans faire de commit ?
+
+
+En copiant son code dans un autre répertoire
+
+En utilisant la commande git stash
+
+En utilisant la commande git checkout
+
+En copiant son code dans une nouvelle branche
+Question 10
+Comment s'appelle le processus qui consiste à proposer une suite de commits pour qu'ils soient acceptés dans un projet open source ?
+
+
+Un Fork
+
+Une Fork Request
+
+Une Pull Request
+
+Une Push Request
+
+
+
+
+Git & GitHub - Partie 3 Activité
+Temps d'attente moyen pour être corrigé sur cet exercice : corrigé dans la journée !
+
+ Retour au cours
+
+À votre tour de faire le cours ! 
+
+Je vais vous demander d'expliquer, avec vos propres mots, les points suivants : 
+
+Qu'est-ce qu'un commit;
+À quoi sert la commande git log;
+Qu'est-ce qu'une branche.
+Imaginez que vous parlez à un ami qui connaît le développement web, mais n'a jamais utilisé Git. Comment lui présenteriez-vous le principe de ces concepts importants de Git ?
+
+Plus votre explication est simple, juste et claire, mieux c'est ! Cela va de soi, mais vous ne pouvez pas reprendre mes explications du cours. Il faut reformuler avec vos propres mots/schémas/etc. Vous avez le choix du format :
+
+Texte : vous pouvez présenter vos explications dans un format texte, avec éventuellement des illustrations et schémas. Utilisez le format PDF uniquement pour partager votre texte !
+Taille maxi : 2 pages A4.
+Audio : vous pouvez vous enregistrer (juste le son) en expliquant de façon claire les commit, la commande git log et les branches. Vous pouvez joindre le fichier audio dans le .zip ou l'uploader sur un site (comme SoundCloud) en indiquant l'url dans un fichier texte inclus dans le .zip.
+Durée maxi : 5 min.
+Vidéo : même chose que l'audio, mais vous pouvez y rajouter la vidéo (votre webcam, des explications enregistrées sous forme de screencast ou de dessin sur une feuille blanche)... Vous pouvez joindre la vidéo dans le .zip ou l'uploader sur un site (comme Youtube) en indiquant l'url dans un fichier texte inclus dans le .zip.
+Durée maxi : 5 min.
+Le format n'aura pas d'impact sur votre note finale : c'est la qualité de vos explications qui compte ! On peut faire de très bonnes explications en texte et rater sa vidéo... ou l'inverse. Choisissez le format dans lequel vous vous sentez le plus à l'aise. 
+
+Bon courage ! 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1154 @@
+﻿
+# Develop your venture
+
+    10 heures Moyenne 
+
+Licence
+
+Introduction du cours
+Télécharger toutes les vidéos de ce cours
+Created by Polytechnique School of Engineering - Technology Venture Series
+Created by Polytechnique School of Engineering - Technology Venture Series
+
+There you are: you have a venture idea, which seems reasonably good. Or not, and then, you may want to follow my first MOOC, Decode the entrepreneur's DNA, which will help you to find an idea.
+
+Well, if you have this idea, then the next step is to transform that promising opportunity into a real life venture! This is where the real challenge starts for the entrepreneur, and this is where the subtle chemistry of entrepreneurial success mostly lies. 
+
+And the key is to get out of your building ! Go meet your customers, and try to find what they want, what they need and what they would buy. Having good ideas, identifying big problems and shaping them into promising opportunities is important, carrying a vision is good, even crucial... But is not the toughest part of the entrepreneurial journey. You should now bring your idea to life, and I would like to suggest a 4-times path :
+
+ 
+
+    Define your market? Who will you sell to?
+
+    Prototype your ideas: it's the only way to see if an idea works.
+
+    Build your business model thanks to the framework I will give you.
+
+    Think strategic, think ahead, and identify your potential issues!
+
+There is some work left to do, let's do it together. 
+
+If you are still on the French version of the website and want to experience the whole course in English, you can change your language at the bottom‌ right of this page and in the settings of your web browser.
+
+    Partie 1 - Characterize your market
+    Partie 2 - Test and prototype your idea
+    Partie 3 - Use the business model as a guide for execution
+    Partie 4 - Leverage the business model for early strategic thinking
+    Certificat de réussite (voir un exemple)
+
+______________________________________________________________________
+
+
+
+The Sweetch case
+Télécharger la vidéo
+
+    #
+
+Develop your venture Analysing the Sweetch case
+
+
+
+______________________________________________________________________
+
+
+
+
+Analysing the Sweetch case
+Part 1: Analyse the Sweetch business case
+Télécharger la vidéo
+Part 2: What did they miss? 
+Télécharger la vidéo
+
+    #
+
+The Sweetch case Why bother yourself about the market?
+
+
+
+______________________________________________________________________
+
+Why bother yourself about the market?
+Télécharger la vidéo
+
+    #
+
+Analysing the Sweetch case Differentiate the various levels of market
+Le professeur
+Bruno Martinaud
+
+Bruno Martinaud, serial entrepreneur, teaches E
+
+
+
+
+______________________________________________________________________
+
+Assessing the addressable market: the process?
+Télécharger la vidéo
+
+    #
+
+Differentiate the various levels of market Assessing the addressable market: the value proposition
+
+
+
+
+
+______________________________________________________________________
+
+
+Assessing the addressable market: the value proposition
+Part 1: The job to be done
+Télécharger la vidéo
+
+Additional material
+
+Mcdonald's: increasing the sales of milkshake
+Part 2: Remove the pain
+Télécharger la vidéo
+Part 3: Adding new value dimension
+Télécharger la vidéo
+Additional material
+
+Steve Jobs introduces the iPhone in 2007
+
+Part 4: To remember
+
+    #
+
+Assessing the addressable market: the process? Assessing the addressable market: profiling the customer ?
+
+
+
+______________________________________________________________________
+
+Assessing the addressable market: profiling the customer ?
+Télécharger la vidéo
+
+Additional material
+
+What is market segmentation?, by Erdin Beshimov (MIT)
+
+How to segment?
+Introduction to Sensable Technologies:
+
+The example of Sensable Technologies
+
+The website of Sensable Technologies
+Example of potential market early investigation:
+
+Sensable tech Part I, by MIT OpenCourseWare
+
+Sensable Tech Part II, by MIT OpenCourseWare
+
+    #
+
+Assessing the addressable market: the value proposition Assessing the addressable market: the remaining questions?
+
+
+
+
+
+______________________________________________________________________
+
+Assessing the addressable market: the remaining questions?
+Part 1: understand the buyer decision 
+Télécharger la vidéo
+
+Part 2: what about competition? 
+Télécharger la vidéo
+
+  
+
+    #
+
+Assessing the addressable market: profiling the customer ? Assessing the addressable market: what to remember? 
+
+
+
+
+______________________________________________________________________
+
+
+Assessing the addressable market: the remaining questions?
+Part 1: understand the buyer decision 
+Télécharger la vidéo
+
+Part 2: what about competition? 
+Télécharger la vidéo
+
+  
+
+    #
+
+Assessing the addressable market: profiling the customer ? Assessing the addressable market: what to remember? 
+
+
+
+______________________________________________________________________
+
+Find information
+Télécharger la vidéo
+
+Additional material
+Talking to your customers: identifying and refining use-case hypothesis
+
+Conducting customer discovery interviews by Steve Blank
+
+Rules for customer interviews by LIFFFTInc
+
+Good and bad examples of customer interview questions by LIFFFTInc
+
+How to approach strangers for customer interviews by LIFFFTInc
+
+Techniques for getting customer stories by LIFFFTInc
+
+Example of Phone interview: “a temperature app” (MIT Mooc Who is your customer)
+
+Example of in-person interview: “a temperature app” (MIT Mooc Who is your customer)
+Focus Groups
+
+Example of Focus Groups, by Vox Pops International
+
+Conducting Focus Groups by The University of British Columbia
+
+Example of observations by Vox Pops International
+
+Synthesis: How to build an end-user profile by Bill Aulet (MIT)
+Designing the customer persona: 
+
+Guide for designing customer persona
+
+Download link to the template
+
+Do you Really need a persona? by Bill Aulet (MIT)
+
+How to create a customer Persona? by Matt Forman (founder of Traffika)
+
+How do I create a customer persona? by Heather L. Martin (SEO Copywriting)
+
+Customer Persona at Sensable Technology by Bill Aulet (MIT)
+
+    #
+
+
+
+
+
+
+______________________________________________________________________
+
+
+Summing up
+
+This first period of our MOOC "Develop your venture" was devoted to the challenge of characterizing the market for a venture project. This can be summarized into the following principles: 
+
+    Market assessment is a challenge that has to be overcome with enough humility, recognizing that assessing the market for a new venture is a slippery question because it is very easy to be wrong about whether or not you have a market and where is that market.
+
+    It is, in essence, a learning process that starts, before the venture exists, and that never stops. Throughout that process, the understanding of who is your customer, why would they buy, will change and get refined. Being wrong at the beginning doesn’t matter, as long as you are asking yourself the right questions.
+
+The core questions that need to be addressed are:
+
+ Who is your customer?
+
+Why would he buy?
+
+How many of them ? How big is the opportunity?
+
+Which beachhead to focus initial efforts and resources ?
+
+This being stated, we developed a framework for approaching this issue.
+
+    Realizing that markets carry several levels of definition. The entrepreneur is usually appealed by the potential market, as it draws the big picture and leads to big number. But it doesn’t bring any valuable insight on the reality of the venture. The relevant level is the “addressable market” that capture the sub segment of the potential market that has a need, high enough to consider buying from you, and that you can physically reach.
+
+The process for characterizing the addressable market is the following:
+
+    Build the matrix representing the potential market on 2 axes: 
+
+        Various hypothesis of customers segments
+
+        Various hypothesis of usage scenario / value proposition
+
+    Conduct secondary research to assess the most promising one
+
+    Confirm or not, by conducting customer interviews, eventually complemented by short surveys on the best use cases
+
+    Among the cases under consideration, analyze the decision process to eliminate the use cases where it’s unlikely the venture may close sales
+
+    And position competition (in its largest meaning: direct competitors, potential entrants, substitutes), in order to eliminate too crowded places, where closing sales will be more difficult
+
+The outcome of the process is a small list of use case profiles of customers where there is a need that is critical enough so you may expect get some sales.
+
+The last part of this week lecture is about where you can find relevant information.
+
+We shared with you a number of additional content, mostly video conferences. We strongly encourage you to watch these videos, as a key complement to the ideas developed in the course of these lectures. 
+
+
+
+
+______________________________________________________________________
+
+
+Quiz 1
+
+    Question 1
+
+    Remember the Sweetch business case, about exchanging parking spots in real time in San Francisco, through an app for 5$. When the founders describe their market as: 247 000 drivers in San Francisco with a smartphone x 2 sweetches per week: 100 M sweetch per year in SF.
+
+    What do they describe?
+
+        Their target market    
+
+        The size of the opportunity they are addressing
+
+        The growth potential of their venture    
+
+        The addressable market    
+
+        Their typical customer as a driver with a smartphone    
+
+        Nothing really useful    
+    Question 2
+
+    Market assessment has to be approached as a difficult and slippery question for an innovative venture, why that?    
+
+        Because often customers don’t even know what they want    
+
+        Because it’s very easy to be wrong about if and where is your market    
+
+        Because the entrepreneur has a vision of what customer wants
+
+        Because it’s often a waste of time and resource    
+
+        Because as long as the product is not there it’s pointless
+
+        Because it is costly    
+
+          
+    Question 3
+
+    What does the following sentence “The set of potential buyers who have a common need that your product or service could satisfy” describe?    
+
+        Your potential market    
+
+        Your addressable market    
+
+        Your market 
+
+        Your target customers
+
+        The long-term potential of your venture
+
+        How large is the competitive landscape    
+    Question 4
+
+    What is the best definition of the addressable market?
+
+        The set of customers that are already using a comparable value proposition, in the form of a competitive product or substitute    
+
+        The customers that will always prefer competitive products    
+
+        The set of customers that I am targeting initially    
+
+        The set of customers that my venture may physically serve, and that have a strong enough need to actually consider buying my product or service in the short term
+
+        The set of customers I can easily reach through online marketing
+
+        The set of customers who might buy but will likely never    
+    Question 5
+
+    The Palm Pilot when introduced in the late 90’s succeeded, where all the former PDA’s, electronic organizers, including the Apple Newton failed. What is the reason for this success?
+
+        Technology: it came with a better handscript recognition technology
+
+        Price : it was much more affordable 
+
+        Value proposition: it was the first PDA to really address the core job that a PDA was supposed to do    
+
+        Marketing: Palm developed some very efficient and innovative 
+
+        Connectivity: it could be used either way with PC’s, Mac’s or without.    
+
+        Storage: it was possible to store more contacts, meeting notes, agenda informations than on any other device.    
+    Question 6
+
+    When Steve Jobs introduced the iPhone in 2007, he repeated several times in his legendary pitch, “it”s a phone, an iPod, and Internet device”. What does it mean from a value proposition perspective?
+
+        It will open up a new market
+
+        It introduces new dimensions in the value proposition that may/will create a breakthrough in the user experience, by expanding dramatically the use of a phone    
+
+        The mobile market and PC market are merging, because you can do it all on one device    
+
+        A cell phone is indeed a small computer    
+
+        The iPod is dead    
+
+        Mobile web surfing will soon explode
+    Question 7
+
+    Why understanding buyer behavior and the purchase process is important? 
+
+        It helps anticipating on competition    
+
+        It helps understanding where you may never close deals, though it seems there might be potential    
+
+        It helps refining the marketing strategy
+
+        It is crucial for closing deals    
+
+        You never know enough about your customers    
+
+        You will learn how to price your product / service
+
+
+
+______________________________________________________________________
+
+
+Assessment_part 1
+
+Temps d'attente moyen pour être corrigé sur cet exercice : 192 jours
+
+Retour au cours
+
+Welcome guys !
+
+The activity that we proposed in this 1st period is a peer graded activity on the topic of the 1st period of this mooc: "characterizing the market”.
+
+You can either conduct it on a venture idea that you have or work on one of the following idea:
+
+    A connected bracelet for senior people
+    A product or service for monitoring the air quality
+    A robot companion
+
+The first step of the market characterization is to represent the potential market as a 2 dimensional matrix with the various customer segments on one axis, and the various hypothesis of value proposition, usage scenario, core problem on the 2Nd axis, as represented below:
+
+ 
+
+ 
+
+After choosing a venture idea of yours or among the list above, please do what follows:
+
+Download the .doc form by clicking here. You will have to:
+
+    Build the representation of the potential market matrix (refer to the connected toothbrush example in the video)
+    Identify the top 3 use cases (cross between a customer segment and a usage scenario) that seem the most interesting to you
+    Conduct on the web some quick secondary research (or even better customer interviews) to gather some minimum information on the short list of the top 3 use case
+
+Remember that, on one side this touches at the very heart of the process for developing innovative ventures. It is long and difficult so it is important that you put enough commitment so you can overcome the hurdle and finalize this peer graded activity.
+
+You will also, of course, learn a lot from assessing other’s work. 
+
+Do not forget to save once you have completed it, then you will have to zip it and submit it below. Good luck !
+
+ 
+Sélection du travail
+
+
+
+______________________________________________________________________
+
+From the idea to the product
+Part 1: From the idea to the product
+Télécharger la vidéo
+
+Part 2: Why businesses fail?
+Télécharger la vidéo
+
+Part 3: Rules for customer exploration
+Télécharger la vidéo
+Additional material
+
+Acting on Customer Discovery, by Steve Blank (Conference at Stanford - 2008)
+
+
+
+
+
+______________________________________________________________________
+
+
+Conceive your MVP
+Part 1: prototype as soon as possible
+Télécharger la vidéo
+
+ 
+Part 2: finding what matters?
+Télécharger la vidéo
+Part 3: the MVP Conclusion
+Télécharger la vidéo
+Additional material
+Prototyping 
+
+IDEO Workshop : prototyping, by Thayer School of Engineering at Dartmouth
+
+Rapid prototyping entrepreneurship, by Tom Chi (TEDx Tokyo)
+Tools for building mock-ups, MVP’s of your product
+
+Website design: a very simple drag-and-drop tool for mocking up a website
+
+App design for iPhone: a simple drag-and-drop Apple app-mockup tool
+
+App Design for Android: to build the mock-up of any android based app
+
+Flowchart –UI – App design: to mock up website designs, iPhone apps, site maps.
+
+MIT App Inventor
+
+Graphic Design: an online graphic design platform
+
+Home Design
+
+3D Design library: a large library of items
+
+A 3D Design platform
+
+Electronics Design: for rapid prototyping and designing custom circuit boards
+
+ 
+
+
+
+______________________________________________________________________
+
+Learn from designers about how to prototype
+Part 1: prototyping in design thinking-theory
+Télécharger la vidéo
+
+Created in partnership with Strate Ecole de design
+Created in partnership with Strate,  School of design
+
+More about Strate, School of design
+Part 2: prototyping in design thinking-practice
+Télécharger la vidéo
+Additional material
+
+How design thinking transformed Airbnb from failing startup to billion-dollar business (timing: 7:47 – 18:49) 
+
+    #
+
+
+
+
+
+
+______________________________________________________________________
+
+
+Don’t forget about pivoting
+Télécharger la vidéo
+
+    #
+
+Learn from designers about how to prototype How Let It Wave pivoted 5 times throughout its life ? 
+
+
+
+______________________________________________________________________
+
+
+How Let It Wave pivoted 5 times throughout its life ?
+Part 1: Let It Wave
+Télécharger la vidéo
+
+Part 2: learnings from the story of Let It Wave
+Télécharger la vidéo
+
+    #
+
+
+
+
+
+
+______________________________________________________________________
+
+
+Summing up
+
+In the 2nd period we discuss about prototyping, how to turn your idea into a real life product or service.
+
+In the introduction, we take a number of examples illustrating that converting an idea into a product is a tricky process, because the same opportunity can lead to a successful product or a big failure.
+
+The convergent Technologies example illustrates in a striking manner, how without altering the project, but by changing some features in design of the final product, the venture can multiply its sales potential by a thousand.
+
+Building a product starts with remembering why businesses fail: in 78% of the case, the root of the failure lies in market issues: customers don’t buy or competition kills your venture.
+
+The practical advice for conducting that process are:
+
+    Avoid using friends and family or any close network as a test base, because their feedback is always biased
+
+    Founder must do the job. It can not be outsourced, as the feedback is usually negative, so it must be conducted by the people who have the power to change the course of actions, make decision, when they are forced to listen to bad news.
+
+    Do not sell: it is not about persuading customers that your product is great. It is about understanding, exploring, learning what matters
+
+The whole process is organized around the idea of prototyping as soon as possible your idea, leading to the concept of MVP (Minimum Viable Product), coined in the Lean Startup method, that is about finding, as early as possible, a representation (even very rough) of your product or service, with the smallest number of features (or no feature at all sometimes) that allows to interact with customer and gather relevant feedback.
+
+The Design approach focuses on “experience prototyping” instead of the product itself: it consists in putting the emphasis on the context of usage, the environment, the feeling, the experience, more than the product itself. We give several examples and tools for putting experience prototyping in action.
+
+And the last important topic covered in this week lecture is “pivoting”. Throughout that process of discovering, learning about what works, what a product or service should be doing, every venture gets stuck from time to time in a dead end. This is the moment to consider pivoting.
+
+Pivoting is about considering a major change in the product, the business model. It is difficult, because the signs that it is time to pivot never come loud and clear. It is in essence a judgment call, and it raises some serious leadership and management issues, as it is about explaining to the team that what has been done doesn’t work, and the venture needs to consider a totally different direction, while keeping at the same time the team energy, focus and drive at its maximum.
+
+We shared with you a number of additional content, including places and resources where you can build prototypes for your next venture. We strongly encourage you to visit these places, watch the video, as a key complement to the ideas developed in the course of these lectures…
+
+
+
+
+______________________________________________________________________
+
+
+Quiz 2
+
+    Question 1
+
+    Facebook was not the 1st social network, Friendster and mySpace got some significant traction before. What was the essence of FaceBook win over these earlier entrants?
+
+        More funding    
+
+        Timing : people were more inclined to using SN in 2008-2009, than in 2002-2003 when Friendster and Myspace first came    
+
+        The roadmap of FaceBook, starting from University campuses    
+
+        The monetization: FaceBook was quicker able to convert users, usage, into an efficient revenue model    
+
+        Different focus in the social interaction induced by each platform
+
+        The huge value of the social graph for FaceBook partners    
+    Question 2
+
+    Why do innovations mostly fail? 
+
+        Customers who don’t buy ?    
+
+        Competition, later entrant, substitute who beat you up?    
+
+        Technology that doesn’t match with market requirements?
+
+        Lack of funding?
+
+        Legislation?
+
+        Quality issue?
+    Question 3
+
+    What is the best base for testing your early prototypes?
+
+        Friends
+
+        Family    
+
+        Close network    
+
+        Reachable but not close network    
+
+        Total strangers    
+
+        Yourself and your ventures early team
+    Question 4
+
+    What is the best characterization of the MVP (minimum viable product)?
+
+        A workable product that embeds the core technology of the final product, even though unstable
+
+        The first fully functional version of your product, which can take a while to produce    
+
+        The simplest representation of your idea that allows customers to react. It is sometimes a paper drawing    
+
+        A mockup (small model) of your product    
+
+        The first prototype of your product that customers actually like
+
+        The first salable product that you have
+    Question 5
+
+    What is the best definition of pivoting?
+
+        This characterizes the lack of focus of bad entrepreneurs    
+
+        It is a major change in direction that a venture embarks on, when trapped in a dead end
+
+        This is about refining the business model, pricing, strategy    
+
+        It is about realizing that customers most of the time don’t know what they want and that leads to big changes in the life of a venture    
+
+        It is about Venture Capital investors who force you to change your business, because they disagree with you about the right path for the venture    
+
+        It describes the fact that sometimes the founders don’t know where they’re going and change direction very often, leading to little progress    
+    Question 6
+
+    What is the right definition of experience prototyping?
+
+        It is about organizing the test process of your prototype    
+
+        It is about engaging users in feeling experiencing the use of a product or a situation, as opposed to testing a prototype of a product    
+
+        It is about prototyping service based businesses    
+
+        It is about experimenting potential services around your product    
+
+        It about testing how to optimize the product strategy 
+
+        It is about testing different versions your product    
+    Question 7
+
+    In design and prototyping, what is stop motion?
+
+        It consists in animating a series of still images in order to describe a usage scenario.
+
+        It is a short demonstration of your final product.  
+
+        It consists in breaking down in short sequences the different uses for a product.
+
+        It is the first operational version of your product. 
+
+        It consists in recording short sequences of a user while he is using your product. 
+
+        It is a video that explains the story of your product.
+
+Il vous reste encore 7 questions à répondre.
+
+
+
+______________________________________________________________________
+
+
+What is the business model framework?
+Télécharger la vidéo
+
+Additional material
+
+Value proposition canvas, by Alex Osterwalder
+
+    #
+
+Quiz : Quiz 2 Part 1 of the business model framework
+
+
+
+
+______________________________________________________________________
+Part 1 of the business model framework
+material
+
+The story of Xerox, by Alex Osterwalder (13’31 – 16’33)
+
+    #
+
+
+
+
+
+
+______________________________________________________________________
+
+Part 2 of the business model framework
+Télécharger la vidéo
+
+ 
+
+    #
+
+Part 1 of the business model framework Optiways Business case
+
+
+
+
+
+______________________________________________________________________
+
+Optiways Business case
+Télécharger la vidéo
+
+﻿﻿
+
+    #
+
+Part 2 of the business model framework Let’s apply the framework to a real opportunity
+
+
+
+
+______________________________________________________________________
+
+
+
+Let’s apply the framework to a real opportunity
+Télécharger la vidéo
+
+  
+
+    #
+
+Optiways Business case Summing up 
+
+
+______________________________________________________________________
+
+
+Summing up
+Business Model Canvas – The Framework
+
+Once you’ve started to address the market characterization and prototyping, the next big issue in the entrepreneurial process is the Business Model Canvas.
+
+We look at it, at 1st, in this week lecture, as a framework to guide the execution of a venture. We use the canvas developed in the Business Model Generation by Alexander Osterwalder. There are other valuable representations of the business model, but this one is, by far, the most popular due to the very large reach of the book.
+
+From this execution perspective, the business model canvas is a system comprised of 9 building blocs, each one describing a core question in the process of turning a project into a real life venture.
+
+The 9 bloc business model canvas are:
+
+    The value proposition (and how it is turned into a product or a service)
+
+    The target market (these 2 blocs represent the foundation of the venture and preparation work before actually designing the business model)
+
+    The sales channel or distribution strategy
+
+    The customer relationship (how you interact with your customer outside the product/service offering)
+
+    The revenue model (who pays and for what)
+
+    The Key activities (what you need to do to build and operate the business)
+
+    The Key resources (what are the resources you need to build and operate the business)
+
+    The Key Partners (Who are the key partners you plan to outsource part of the job)
+
+    The resulting cost structure (represented in investment, fixed cost variable cost)
+
+This 9 blocs can be viewed as the value on the right part (bloc 1, 2, 3, 4) and how it is turned into a revenue engine (bloc 5). The left part captures the organization (bloc 6, 7, 8) and the resulting cost structure (bloc 9).
+
+This framework comes as a very helpful guide for conducting the execution job, leading to address one by one the core questions to build and later on operate the venture.
+
+We recommend to print the Business Model Canvas and write down physically on post-it’s the initial set of hypothesis for each bloc and then start testing them one by one. Every time a hypothesis is confirmed, it is written as a confirmed learning directly on the canvas.
+
+The first round of execution is then complete, when all the post-its have been replaced by confirmed learning.
+
+This is the first level of use of the Business Model Canvas.
+
+    #
+
+
+
+
+
+
+______________________________________________________________________
+
+Assessment_part 3
+
+Temps d'attente moyen pour être corrigé sur cet exercice : 263 jours
+
+Retour au cours
+
+Welcome guys !
+
+The activity for this period is a peer graded activity.
+
+It consists in building a proposal of the Business Model Canvas for a startup we studied in the course of the 1st mooc: Adamence.com
+
+At first, you must watch (again, maybe) the pitch to understand what the venture is about.
+
+Then you should fill the Business Model canvas template that we provide here below, expressing for each of the 9 blocs, your idea of
+
+    The key questions to address
+    The relevant options available
+
+We provide as a reminder, an example of the business model canvas we built for Optiways, the startup we studied this week HERE.
+
+Click here to access the canvas, fill it up for Adamence's case, zip it and upload it below. Good luck !
+
+NB: in the cost structure bloc, we understand you cannot come up with actual numbers, so we ask you to list there the main component of the cost structure. 
+
+ 
+
+
+
+
+
+______________________________________________________________________
+
+
+How business model decisions impact strategy?
+Télécharger la vidéo
+
+ 
+
+    #
+
+Activité : Build a business model The value as a subsystem 
+
+
+
+______________________________________________________________________
+
+
+The value as a subsystem
+Télécharger la vidéo
+
+Additional material
+
+Ecorner conference on Nespresso by Alexander Osterwalder (15’30 – 25'17)
+
+
+
+______________________________________________________________________
+
+
+What can we learn from Dell and other about the organization as a subsystem?
+Télécharger la vidéo
+
+    #
+
+
+
+
+
+______________________________________________________________________
+
+Discover how the economic subsystem can lower adoption hurdles
+Télécharger la vidéo
+
+    #
+
+What can we learn from Dell and other about the organization as a subsystem? Keep in mind the strategic dynamic of the system
+
+
+
+
+
+______________________________________________________________________
+
+
+Keep in mind the strategic dynamic of the system
+Télécharger la vidéo
+
+ 
+
+    #
+
+Discover how the economic subsystem can lower adoption hurdles Summing up 
+
+
+
+______________________________________________________________________
+
+
+Summing up
+Télécharger la vidéo
+
+Business Model Canvas – The System
+
+Beyond the framework for guiding the execution, the Business Model Canvas also proves to be a very helpful tool for starting to address key strategic growth issues, and understand how some short-term business model decision may have a long term decisive impact on the long term trajectory of the venture.
+
+In the introduction we took the example of a software company that may decide to sell directly its product, which may seem like a good decision as it allows to generate more control over customers and more revenue on the short term. But it will likely turn the venture into a service based business, which will hardly grow beyond close customers range (local or regional). On the contrary if they choose to outsource to integrators, on the short term it will lower the revenue and growth, but the venture has the potential to turn into a global player.
+
+From this strategic perspective, the Business Model Canvas can be viewed as a system comprised of 3 subsystems:
+
+    The Value
+
+    The Organization
+
+    The Economics
+
+The value subsystem consists in either identifying assets (know how, technology, etc.) or value engines that can be turned into a sustainable competitive advantage. It basically consists in analyzing the value proposition (job, pain, gain) from the largest possible perspective (purchase and usage cycle, time, usage ecosystem) and identifying lever to bring new value to customers through the various building blocks of the value subsystem.
+
+The organization consists in rethinking the organization of operation to, here again, gain a competitive advantage that can be shorten or lower the cost of development (investment), or gain a cost advantage.
+
+And the 3rd subsystem is the economics that counter intuitively also opens up some large space for overcoming adoption hurdles and boosting growth.
+
+And these 3 subsystems all together define the overall system dynamic, which has an impact on 3 strategic dimensions:
+
+    Business growth (overcoming adoption hurdles)
+
+    Barriers for competition (making it very hard for competitors to copy what the venture is doing)
+
+    Financial dynamic: by optimizing the cash flow dynamic and the required initial investment
+
+This perspective on the business model is tricky for the entrepreneur as it may seem far from the short term pressure: building the product, getting the first paying customers, but it is key, because it is about thinking how the venture is going to move from 1st sales, to a market leader.
+
+This strategic questioning should start from the very early days, because the initial short term design of the business model often carries a strong impact on this longer term perspective.
+
+
+
+
+______________________________________________________________________
+
+Conclusion
+
+This is the end of our 2nd mooc dedicated to developing your venture. It is organized as a flexible questioning process to guide you in the journey from the opportunity to the venture.
+
+We covered 4 main topics:
+
+    Characterizing your market
+
+    Prototyping and designing your ideas
+
+    The Business Model Canvas as an execution framework
+
+    The Business Model Canvas as a system for strategic thinking
+
+The first topic, “Characterizing your market” is based on the idea that it is a very slippery issue where it is very easy to miss the point. Therefore, it should be organized as an on-going exploration process that never stops organized around the following principles:
+
+    Markets carry several levels of definition. Entrepreneurs often focus on the potential market because it drives big numbers. But the only relevant level is the “addressable market” that comprises the sub segment of the potential market that has a need, high enough to consider buying from you, and that you can physically reach
+
+    The process to assess the addressable market, from the big picture, goes from secondary research to refine the picture and direct customer interview to confirm some use case scenario (cross between a customer segment and a value proposition hypothesis)
+
+    This primary work must be refined through analysis of customer decision process and competition to eliminate segment where it might be difficult to get some quick traction.
+
+Another important outcome of this process is the choice of a beachhead (a target) on which the venture will initially focus its (limited) resources to show it works and learn how.  
+
+Once the market picture starts clarifying, but mostly in parallel, a 2nd process should start: prototyping, which is about turning your idea into a real life representation that will allow customers to react.  It can be very far from the final product, it has to be cheap and should allow quick iteration and interaction with customers. This is the meaning of the word: MVP (Minimum Viable Product).
+
+A lot can be learned in that phase from Design and Design thinking, particularly in the emphasis put on experience design (representing the use experience, feelings, more than product features).
+
+And last that prototyping process leads in the majority of the cases to pivoting. It happens when the venture is trapped in a dead end, and some significant change must be considered. It is always a very tough judgment call made by the founders as the signs never come loud and clear.
+
+From there (market and prototyping) the next step is to start the remaining operational questions. This is the 1st role of the business model canvas, to propose a simple structure to guide the execution process. This representation is comprised of 9 building blocs:
+
+    The value proposition
+
+    The target market
+
+    The sales channel or distribution strategy
+
+    The customer relationship
+
+    The revenue model
+
+    The Key activities
+
+    The Key resources
+
+    Key Partners
+
+    The resulting cost structure
+
+And last, the Business Model canvas is also a systemic representation that can prove very helpful in trying to assess the impact of operational decision to the growth path of the business.
+
+This system is comprised of 3 subsystems: the value, the organization and the economics and they impact directly 3 core strategic dimensions:
+
+    Business growth
+
+    Competitive barriers 
+
+    Financial dynamic
+
+We hope you found this mooc interesting, and that it clarifies the questioning process of developing your venture.
+
+We would very much welcome any feedback, suggestion, and hope  to see you again there, for our next program on “launching your venture”. 
+
+
+
+
+
+______________________________________________________________________
+
+Quiz 3
+
+    Question 1
+
+    The software company quoted in the introduction video is facing 2 choices for selling their software to TV channels that requires a high level of customization service, going direct or going through integrators. What does going direct mean?
+
+        Generating more short term revenue but a harder to scale organization, leading to a small local player    
+
+        Selling more efficiently a complex product, which is always the best option
+
+        Selling the product at a higher price through better service offering    
+
+        Selling also more complementary products    
+
+        Gaining more control over customers, which means more sales, and an higher potential business    
+
+        Higher customer loyalty    
+    Question 2
+
+    How did Laguiole survive to the low cost Asian competition?
+
+        Pivoting to a totally new business    
+
+        Investing in a high volume capacity plant    
+
+        Reducing its workforce and cost structure    
+
+        Turning the century old know how into an asset, by repositioning the business in the high end small volume luxury segment    
+
+        Partnering with an Asian manufacturer    
+
+        Selling to a competitor
+    Question 3
+
+    What does finding new value engine in the value subsystem of the business model consist in?
+
+        Analyzing systematically throughout the entire usage ecosystem new sources of value
+
+        Finding ways to sell more services to your customers    
+
+        Selling at a higher price    
+
+        Repositioning your business as a luxury, high end service    
+
+        Going through selective distribution
+
+        Rethinking your revenue model
+    Question 4
+
+    Business model innovation based on the organization usually lead to 4 path for building an unfair competitive advantage. Which path was followed by DELL to become in 2007 the N#1 computer manufacturer? 
+
+        Shorten the development cycle    
+
+        Invest in a stronger brand    
+
+        Build long term competitive assets 
+
+        Gain a cost advantage    
+
+        Operate with smaller margins    
+
+        Use innovative pricing models    
+    Question 5
+
+    What is the best strategy for a startup company which is entering a market with a technological advantage?
+
+        Keep investing in technology to maintain its lead    
+
+        Convert its technology lead into a long term asset (user base, usage, brands, datas)
+
+         Keep hiring the best technology talent to preserve its leadership        
+
+        Convert the technology into financial resource; so it is possible to develop a new business when the technology becomes obsolete    
+
+        Put in place strategic partnership for slowing down competition    
+
+        Reduce prices to discourage any potential entrant    
+    Question 6
+
+    How did Ymagis resolve the barriers of adoption for Digital Projectors for movie theaters?
+
+        Leasing them to the movie theater, which reduced the perception of the price difference from the movie theater perspective    
+
+        Selling with a loss, that is covered by other services sold by Ymagis to the movie theater, like maintenance, distribution of the digital file, etc.
+
+        Negotiating with film distributors a fee that covers the prices difference between the analog projector and the digital projector, and integrate it in a global service agreement with a financial lease
+
+        Getting movie theaters to sell movie tickets at a higher price
+
+        Surfing on the move towards 3D projection 
+
+        Acquiring Movie Theaters to build some real life show cases for the rest of the industry    
+    Question 7
+
+    The business model, as a dynamic, impacts 3 strategic dimensions. Which are they?
+
+        Business growth, Competitive barriers, Economics (including funding need and cash flow dynamic)
+
+        Business growth, Target for potential acquirers, Cash flow dynamic
+
+        Competitive barriers, Target for potential acquirers, Funding requirement 
+
+        Target for potential acquirers, Business Growth, Economics (including funding need and cash flow dynamic)    
+
+        Competitive barriers, Target for potential acquirers, cash flow dynamic    
+
+        Business Growth, Competitive barriers, Funding requirements    

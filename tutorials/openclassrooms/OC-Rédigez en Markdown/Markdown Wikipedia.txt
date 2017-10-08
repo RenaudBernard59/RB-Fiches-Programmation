@@ -1,0 +1,155 @@
+Markdown Wikipedia
+From Wikipedia, the free encyclopedia
+  (Redirected from List of Markdown implementations)
+Markdown
+Markdown-mark.svg
+Filename extensions	.md, .markdown[1][2]
+Internet media type	text/markdown[2]
+Uniform Type Identifier (UTI)	net.daringfireball.markdown
+Developed by	John Gruber
+Initial release	March 19, 2004 (13 years ago)[3][4]
+Latest release	
+1.0.1
+(December 17, 2004 (12 years ago)[5])
+Type of format	Markup language
+Extended to	MultiMarkdown, Markdown Extra, CommonMark[6]
+Open format?	yes[7]
+Website	daringfireball.net/projects/markdown
+Markdown is a lightweight markup language with plain text formatting syntax. It is designed so that it can be converted to HTML and many other formats using a tool by the same name.[8] Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor. As the initial description of Markdown contained ambiguities and unanswered questions, many implementations and extensions of Markdown appeared over the years to answer these issues.
+Contents  [hide] 
+1	History
+1.1	Standardization
+1.2	CommonMark
+1.3	Markdown Extra
+2	Example
+3	Implementations
+4	See also
+5	References
+6	External links
+History[edit]
+John Gruber created the Markdown language in 2004 in collaboration with Aaron Swartz on the syntax,[3][4] with the goal of enabling people "to write using an easy-to-read, easy-to-write plain text format, and optionally convert it to structurally valid XHTML (or HTML)".[5]
+The key design goal is readability – that the language be readable as-is, without looking like it has been marked up with tags or formatting instructions,[9] unlike text formatted with a markup language, such as Rich Text Format (RTF) or HTML, which have obvious tags and formatting instructions. To this end, its main inspiration is the existing conventions for marking up plain text in email, though it also draws from earlier markup languages, notably setext, Textile, and reStructuredText.
+Gruber wrote a Perl script, Markdown.pl, which converts marked-up text input to valid, well-formed XHTML or HTML and replaces left-pointing angle brackets '<' and ampersands '&' with their corresponding character entity references. It can be used as a standalone script, as a plugin for Blosxom or Movable Type, or as a text filter for BBEdit.[5]
+Markdown has since been re-implemented by others as a Perl module available on CPAN (Text::Markdown), and in a variety of other programming languages.[10] It is distributed under a BSD-style license and is included with, or available as a plugin for, several content-management systems.[7][11][12]
+Sites such as GitHub, Bitbucket, Reddit, Diaspora, Stack Exchange, OpenStreetMap, and SourceForge use variants of Markdown to facilitate discussion between users.[13][14][15][16]
+Standardization[edit]
+There is no clearly defined Markdown standard, apart from the original writeup and implementation by John Gruber, which some consider abandonware.[17][18] This has led to fragmentation as different vendors write their own variants of the language to correct flaws or add missing features.
+A number of other lightweight markup languages extend Markdown by adding features (such as tables, footnotes, definition lists, and Markdown inside HTML blocks) not available in the original Markdown syntax. Among these are Markdown Extra, MultiMarkdown, and the Pandoc Markdown extension.[19]
+The original Markdown implementation interprets constructs like my_long_variable as a request to emphasize "long". Many users found this confusing, so many later implementations such as PHP Markdown and Python Markdown do not implement middle word emphasis with underscores.[20]
+Babelmark2[21] is a tool available to "[compare] the output of various implementations" to "promote discussion of how and whether certain vague aspects of the markdown spec should be clarified."[22] Gruber has argued that complete standardisation would be mistaken: "Different sites (and people) have different needs. No one syntax would make all happy."[23]
+In March 2016 RFC 7763 and RFC 7764 were published. RFC 7763 introduced MIME type text/markdown with the original variant. RFC 7764 discusses and registered the variants MultiMarkdown, GFM, Pandoc, CommonMark, and Markdown Extra among others.[24]
+CommonMark[edit]
+From 2012, a group of people including Jeff Atwood launched what Atwood characterized as a standardization effort.[25] A community website now aims to "document various tools and resources available to document authors and developers, as well as implementors of the various markdown implementations".[26] In September 2014, Gruber objected to the usage of "Markdown" in the name of this effort and it was rebranded as a new dialect named CommonMark.[27][28] CommonMark.org published several versions of a specification, reference implementation, and test suite, and "[plans] to announce a finalized 1.0 spec and test suite in 2017."[29]
+In 2017 GitHub released a formal specification of their GitHub Flavored Markdown that is based on CommonMark. It follows the CommonMark specification exactly except for tables, strikethrough, autolinks and task lists, which the GitHub spec has added as extensions[30].
+Markdown Extra[edit]
+Markdown Extra is a lightweight markup language based on Markdown implemented in PHP (originally), Python and Ruby. It adds features not available with plain Markdown syntax. Markdown Extra is supported in content management systems, for example Drupal,[31] TYPO3[32] and MediaWiki.[33]
+It adds the following features to Markdown:
+Markdown inside HTML blocks
+Elements with id/class attribute
+Fenced code blocks
+Tables[34]
+Definition lists
+Footnotes
+Abbreviations
+Example[edit]
+Text using Markdown syntax	Corresponding HTML produced by a Markdown processor	Text viewed in a browser
+# Heading
+
+## Sub-heading
+
+### Another deeper heading
+ 
+Paragraphs are separated
+by a blank line.
+
+Two spaces at the end of a line leave a  
+line break.
+
+Text attributes _italic_, *italic*, __bold__, **bold**, `monospace`.
+
+Horizontal rule:
+
+---
+
+Bullet list:
+
+  * apples
+  * oranges
+  * pears
+
+Numbered list:
+
+  1. apples
+  2. oranges
+  3. pears
+
+A [link](http://example.com).
+<h1>Heading</h1>
+
+<h2>Sub-heading</h2>
+
+<h3>Another deeper heading</h3>
+
+<p>Paragraphs are separated
+by a blank line.</p>
+
+<p>Two spaces at the end of a line leave a<br />
+line break.</p>
+
+<p>Text attributes <em>italic</em>, <em>italic</em>, <strong>bold</strong>, <strong>bold</strong>, <code>monospace</code>.</p>
+
+<p>Horizontal rule:</p>
+
+<hr />
+
+<p>Bullet list:</p>
+
+<ul>
+<li>apples</li>
+<li>oranges</li>
+<li>pears</li>
+</ul>
+
+<p>Numbered list:</p>
+
+<ol>
+<li>apples</li>
+<li>oranges</li>
+<li>pears</li>
+</ol>
+
+<p>A <a href="http://example.com">link</a>.</p>
+Heading
+Sub-heading
+Another deeper heading
+Paragraphs are separated by a blank line.
+Two spaces at the end of a line leave a
+line break.
+Text attributes italic, italic, bold, bold, monospace.
+Horizontal rule:
+Bullet list:
+apples
+oranges
+pears
+Numbered list:
+apples
+oranges
+pears
+A link.
+Implementations[edit]
+Implementations of Markdown are available for over a dozen programming languages; in addition, many platforms and frameworks support Markdown.[35] For example, Markdown plugins exist for every major blogging platform.[36]
+While Markdown is a minimal markup language and is easily read and edited with a normal text editor, there are specially designed editors that preview the files with styles, which are available for all major platforms. Many general purpose text and code editors have syntax highlighting plugins for Markdown built into them or available as optional download. Editors may feature a side-by-side preview window or render the code directly in a WYSIWYG fashion.
+The sourcecode documentation generator Doxygen supports Markdown with extra features.[37]
+RStudio, an IDE for R provides a C++ wrapper function for a markdown variant called sundown.[38]
+GitHub Flavored Markdown (GFM) treats newlines in paragraph-like content as real line breaks, ignores underscores in words, and adds syntax highlighting, task lists,[39] and tables.[40]
+Discount - a C implementation.[41][42]
+MarkAPL is a converter written in Dyalog APL. It supports fenced blocks, smart typography, link references, and special attributes, and can generate a table of contents.[43]
+PHP Markdown - a library package that includes the PHP Markdown parser and its sibling PHP Markdown Extra with additional features.[44]
+See also[edit]
+AsciiDoc, supports many document types
+Org-mode
+txt2tags
+Wiki markup
+Comparison of document markup languages
+Comparison of documentation generators
+Discord (software), utilizes Markdown formatting for text chat
