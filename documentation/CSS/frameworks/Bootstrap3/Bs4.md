@@ -1,8 +1,10 @@
 ## JavaScript
 
-Bring Bootstrap's components to life with over a dozen custom jQuery plugins. Easily include them all, or one by one.
-Overview
-Individual or compiled
+**Bring Bootstrap's components to life with over a dozen custom jQuery plugins. Easily include them all, or one by one.**
+
+### Overview
+
+#### Individual or compiled
 
 Plugins can be included individually (using Bootstrap's individual *.js files), or all at once (using bootstrap.js or the minified bootstrap.min.js).
 Using the compiled JavaScript
@@ -11,7 +13,8 @@ Both bootstrap.js and bootstrap.min.js contain all plugins in a single file. Inc
 Plugin dependencies
 
 Some plugins and CSS components depend on other plugins. If you include plugins individually, make sure to check for these dependencies in the docs. Also note that all plugins depend on jQuery (this means jQuery must be included before the plugin files). Consult our bower.json to see which versions of jQuery are supported.
-Data attributes
+
+#### Data attributes
 
 You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first-class API and should be your first consideration when using a plugin.
 
@@ -28,7 +31,8 @@ $(document).off('.alert.data-api')
 Only one plugin per element via data attributes
 
 Don't use data attributes from multiple plugins on the same element. For example, a button cannot both have a tooltip and toggle a modal. To accomplish this, use a wrapping element.
-Programmatic API
+
+#### Programmatic API
 
 We also believe you should be able to use all Bootstrap plugins purely through the JavaScript API. All public APIs are single, chainable methods, and return the collection acted upon.
 
@@ -50,7 +54,7 @@ You can change the default settings for a plugin by modifying the plugin's Const
 
 $.fn.modal.Constructor.DEFAULTS.keyboard = false // changes default for the modal plugin's `keyboard` option to false
 
-No conflict
+#### No conflict
 
 Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call .noConflict on the plugin you wish to revert the value of.
 
@@ -58,7 +62,7 @@ Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In 
 var bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
 $.fn.bootstrapBtn = bootstrapButton            // give $().bootstrapBtn the Bootstrap functionality
 
-Events
+#### Events
 
 Bootstrap provides custom events for most plugins' unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. show) is triggered at the start of an event, and its past participle form (ex. shown) is triggered on the completion of an action.
 
@@ -71,34 +75,38 @@ $('#myModal').on('show.bs.modal', function (e) {
   if (!data) return e.preventDefault() // stops modal from being shown
 })
 
-Version numbers
+#### Version numbers
 
 The version of each of Bootstrap's jQuery plugins can be accessed via the VERSION property of the plugin's constructor. For example, for the tooltip plugin:
 
 
 $.fn.tooltip.Constructor.VERSION // => "3.3.7"
 
-No special fallbacks when JavaScript is disabled
+#### No special fallbacks when JavaScript is disabled
 
 Bootstrap's plugins don't fall back particularly gracefully when JavaScript is disabled. If you care about the user experience in this case, use <noscript> to explain the situation (and how to re-enable JavaScript) to your users, and/or add your own custom fallbacks.
 Third-party libraries
 
 Bootstrap does not officially support third-party JavaScript libraries like Prototype or jQuery UI. Despite .noConflict and namespaced events, there may be compatibility problems that you need to fix on your own.
-Transitions transition.js
-About transitions
+
+### Transitions transition.js
+
+#### About transitions
 
 For simple transition effects, include transition.js once alongside the other JS files. If you're using the compiled (or minified) bootstrap.js, there is no need to include this—it's already there.
-What's inside
+
+#### What's inside
 
 Transition.js is a basic helper for transitionEnd events as well as a CSS transition emulator. It's used by the other plugins to check for CSS transition support and to catch hanging transitions.
-Disabling transitions
+
+#### Disabling transitions
 
 Transitions can be globally disabled using the following JavaScript snippet, which must come after transition.js (or bootstrap.js or bootstrap.min.js, as the case may be) has loaded:
 
 
 $.support.transition = false
 
-Modals modal.js
+### Modals modal.js
 
 Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.
 Multiple open modals not supported
@@ -118,8 +126,9 @@ $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').focus()
 })
 
-Examples
-Static example
+#### Examples
+
+##### Static example
 
 A rendered modal with header, body, and set of actions in the footer.
 Modal title
@@ -145,7 +154,7 @@ One fine body…
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-Live demo
+##### Live demo
 
 Toggle a modal via JavaScript by clicking the button below. It will slide down and fade in from the top of the page.
 
@@ -182,7 +191,8 @@ Additionally, you may give a description of your modal dialog with aria-describe
 Embedding YouTube videos
 
 Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. See this helpful Stack Overflow post for more information.
-Optional sizes
+
+#### Optional sizes
 
 Modals have two optional sizes, available via modifier classes to be placed on a .modal-dialog.
 
@@ -209,7 +219,7 @@ Modals have two optional sizes, available via modifier classes to be placed on a
   </div>
 </div>
 
-Remove animation
+#### Remove animation
 
 For modals that simply appear rather than fade in to view, remove the .fade class from your modal markup.
 
@@ -218,7 +228,7 @@ For modals that simply appear rather than fade in to view, remove the .fade clas
   ...
 </div>
 
-Using the grid system
+#### Using the grid system
 
 To take advantage of the Bootstrap grid system within a modal, just nest .rows within the .modal-body and then use the normal grid system classes.
 
@@ -264,7 +274,7 @@ To take advantage of the Bootstrap grid system within a modal, just nest .rows w
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-Varying modal content based on trigger button
+#### Varying modal content based on trigger button
 
 Have a bunch of buttons that all trigger the same modal, just with slightly different contents? Use event.relatedTarget and HTML data-* attributes (possibly via jQuery) to vary the contents of the modal depending on which button was clicked. See the Modal Events docs for details on relatedTarget,
 ...more buttons...
@@ -314,24 +324,25 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   modal.find('.modal-body input').val(recipient)
 })
 
-Usage
+#### Usage
 
 The modal plugin toggles your hidden content on demand, via data attributes or JavaScript. It also adds .modal-open to the <body> to override default scrolling behavior and generates a .modal-backdrop to provide a click area for dismissing shown modals when clicking outside the modal.
-Via data attributes
+
+##### Via data attributes
 
 Activate a modal without writing JavaScript. Set data-toggle="modal" on a controller element, like a button, along with a data-target="#foo" or href="#foo" to target a specific modal to toggle.
 
 
 <button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
 
-Via JavaScript
+##### Via JavaScript
 
 Call a modal with id myModal with a single line of JavaScript:
 
 
 $('#myModal').modal(options)
 
-Options
+##### Options
 
 Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-, as in data-backdrop="".
 Name    type    default     description
@@ -347,7 +358,8 @@ If a remote URL is provided, content will be loaded one time via jQuery's load m
 
 <a data-toggle="modal" href="remote.html" data-target="#modal">Click me</a>
 
-Methods
+##### Methods
+
 .modal(options)
 
 Activates your content as a modal. Accepts an optional options object.
@@ -387,7 +399,7 @@ Only needed when the height of the modal changes while it is open.
 
 $('#myModal').modal('handleUpdate')
 
-Events
+##### Events
 
 Bootstrap's modal class exposes a few events for hooking into modal functionality.
 
@@ -404,11 +416,15 @@ $('#myModal').on('hidden.bs.modal', function (e) {
   // do something...
 })
 
-Dropdowns dropdown.js
-Examples
+
+### Dropdowns dropdown.js
+
+#### Examples
 
 Add dropdown menus to nearly anything with this simple plugin, including the navbar, tabs, and pills.
-Within a navbar
+
+##### Within a navbar
+
 Project Name
 
     Dropdown
@@ -416,21 +432,22 @@ Project Name
 
     Dropdown
 
-Within pills
+#####Within pills
 
     Regular link
     Dropdown
     Dropdown
     Dropdown
 
-Usage
+#### Usage
 
 Via data attributes or JavaScript, the dropdown plugin toggles hidden content (dropdown menus) by toggling the .open class on the parent list item.
 
 On mobile devices, opening a dropdown adds a .dropdown-backdrop as a tap area for closing dropdown menus when tapping outside the menu, a requirement for proper iOS support. This means that switching from an open dropdown menu to a different dropdown menu requires an extra tap on mobile.
 
 Note: The data-toggle="dropdown" attribute is relied on for closing dropdown menus at an application level, so it's a good idea to always use it.
-Via data attributes
+
+#### Via data attributes
 
 Add data-toggle="dropdown" to a link or button to toggle a dropdown.
 
@@ -459,7 +476,7 @@ To keep URLs intact with link buttons, use the data-target attribute instead of 
   </ul>
 </div>
 
-Via JavaScript
+#### Via JavaScript
 
 Call the dropdowns via JavaScript:
 
@@ -469,14 +486,18 @@ $('.dropdown-toggle').dropdown()
 data-toggle="dropdown" still required
 
 Regardless of whether you call your dropdown via JavaScript or instead use the data-api, data-toggle="dropdown" is always required to be present on the dropdown's trigger element.
-Options
+
+##### Options
 
 None
-Methods
+
+##### Methods
+
 $().dropdown('toggle')
 
 Toggles the dropdown menu of a given navbar or tabbed navigation.
-Events
+
+##### Events
 
 All dropdown events are fired at the .dropdown-menu's parent element.
 
@@ -492,8 +513,9 @@ $('#myDropdown').on('show.bs.dropdown', function () {
   // do something…
 })
 
-ScrollSpy scrollspy.js
-Example in navbar
+### ScrollSpy scrollspy.js
+
+#### Example in navbar
 
 The ScrollSpy plugin is for automatically updating nav targets based on scroll position. Scroll the area below the navbar and watch the active class change. The dropdown sub items will be highlighted as well.
 Project Name
@@ -532,7 +554,8 @@ Target elements that are not :visible according to jQuery will be ignored and th
 Requires relative positioning
 
 No matter the implementation method, scrollspy requires the use of position: relative; on the element you're spying on. In most cases this is the <body>. When scrollspying on elements other than the <body>, be sure to have a height set and overflow-y: scroll; applied.
-Via data attributes
+
+#### Via data attributes
 
 To easily add scrollspy behavior to your topbar navigation, add data-spy="scroll" to the element you want to spy on (most typically this would be the <body>). Then add the data-target attribute with the ID or class of the parent element of any Bootstrap .nav component.
 
@@ -553,14 +576,15 @@ body {
   ...
 </body>
 
-Via JavaScript
+#### Via JavaScript
 
 After adding position: relative; in your CSS, call the scrollspy via JavaScript:
 
 
 $('body').scrollspy({ target: '#navbar-example' })
 
-Methods
+#### Methods
+
 .scrollspy('refresh')
 
 When using scrollspy in conjunction with adding or removing of elements from the DOM, you'll need to call the refresh method like so:
@@ -570,12 +594,14 @@ $('[data-spy="scroll"]').each(function () {
   var $spy = $(this).scrollspy('refresh')
 })
 
-Options
+#### Options
 
 Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-, as in data-offset="".
 Name    type    default     description
 offset  number  10  Pixels to offset from top when calculating position of scroll.
-Events
+
+#### Events
+
 Event Type  Description
 activate.bs.scrollspy   This event fires whenever a new item becomes activated by the scrollspy.
 
@@ -584,8 +610,9 @@ $('#myScrollspy').on('activate.bs.scrollspy', function () {
   // do something…
 })
 
-Togglable tabs tab.js
-Example tabs
+### Togglable tabs tab.js
+
+#### Example tabs
 
 Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus. Nested tabs are not supported.
 
@@ -597,7 +624,8 @@ Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu s
 Extends tabbed navigation
 
 This plugin extends the tabbed navigation component to add tabbable areas.
-Usage
+
+#### Usage
 
 Enable tabbable tabs via JavaScript (each tab needs to be activated individually):
 
@@ -615,7 +643,7 @@ $('#myTabs a:first').tab('show') // Select first tab
 $('#myTabs a:last').tab('show') // Select last tab
 $('#myTabs li:eq(2) a').tab('show') // Select third tab (0-indexed)
 
-Markup
+##### Markup
 
 You can activate a tab or pill navigation without writing any JavaScript by simply specifying data-toggle="tab" or data-toggle="pill" on an element. Adding the nav and nav-tabs classes to the tab ul will apply the Bootstrap tab styling, while adding the nav and nav-pills classes will apply pill styling.
 
@@ -640,7 +668,7 @@ You can activate a tab or pill navigation without writing any JavaScript by simp
 
 </div>
 
-Fade effect
+##### Fade effect
 
 To make tabs fade in, add .fade to each .tab-pane. The first tab pane must also have .in to make the initial content visible.
 
@@ -652,7 +680,8 @@ To make tabs fade in, add .fade to each .tab-pane. The first tab pane must also 
   <div role="tabpanel" class="tab-pane fade" id="settings">...</div>
 </div>
 
-Methods
+##### Methods
+
 $().tab
 
 Activates a tab element and content container. Tab should have either a data-target or an href targeting a container node in the DOM. In the above examples, the tabs are the <a>s with data-toggle="tab" attributes.
@@ -663,7 +692,7 @@ Selects the given tab and shows its associated content. Any other tab that was p
 
 $('#someTab').tab('show')
 
-Events
+##### Events
 
 When showing a new tab, the events fire in the following order:
 
@@ -685,24 +714,27 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
   e.relatedTarget // previous active tab
 })
 
-Tooltips tooltip.js
+### Tooltips tooltip.js
 
 Inspired by the excellent jQuery.tipsy plugin written by Jason Frame; Tooltips are an updated version, which don't rely on images, use CSS3 for animations, and data-attributes for local title storage.
 
 Tooltips with zero-length titles are never displayed.
-Examples
+
+#### Examples
 
 Hover over the links below to see tooltips:
 
 Tight pants next level keffiyeh you probably haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel have a terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan whatever keytar, scenester farm-to-table banksy Austin twitter handle freegan cred raw denim single-origin coffee viral.
-Static tooltip
+
+##### Static tooltip
 
 Four options are available: top, right, bottom, and left aligned.
 Tooltip on the left
 Tooltip on the top
 Tooltip on the bottom
 Tooltip on the right
-Four directions
+
+##### Four directions
 
 
 <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
@@ -724,7 +756,7 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
-Usage
+#### Usage
 
 The tooltip plugin generates content and markup on demand, and by default places tooltips after their trigger element.
 
@@ -733,7 +765,7 @@ Trigger the tooltip via JavaScript:
 
 $('#example').tooltip(options)
 
-Markup
+##### Markup
 
 The required markup for a tooltip is only a data attribute and title on the HTML element you wish to have a tooltip. The generated markup of a tooltip is rather simple, though it does require a position (by default, set to top by the plugin).
 
@@ -764,7 +796,8 @@ For users navigating with a keyboard, and in particular users of assistive techn
 Tooltips on disabled elements require wrapper elements
 
 To add a tooltip to a disabled or .disabled element, put the element inside of a <div> and apply the tooltip to that <div> instead.
-Options
+
+##### Options
 
 Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-, as in data-animation="".
 Name    Type    Default     Description
@@ -810,7 +843,9 @@ If a function is given, it is called with the triggering element DOM node as its
 Data attributes for individual tooltips
 
 Options for individual tooltips can alternatively be specified through the use of data attributes, as explained above.
-Methods
+
+##### Methods
+
 $().tooltip(options)
 
 Attaches a tooltip handler to an element collection.
@@ -842,7 +877,8 @@ Hides and destroys an element's tooltip. Tooltips that use delegation (which are
 
 $('#element').tooltip('destroy')
 
-Events
+##### Events
+
 Event Type  Description
 show.bs.tooltip     This event fires immediately when the show instance method is called.
 shown.bs.tooltip    This event is fired when the tooltip has been made visible to the user (will wait for CSS transitions to complete).
@@ -855,7 +891,7 @@ $('#myTooltip').on('hidden.bs.tooltip', function () {
   // do something…
 })
 
-Popovers popover.js
+### Popovers popover.js
 
 Add small overlays of content, like those on the iPad, to any element for housing secondary information.
 
@@ -886,8 +922,10 @@ To add a popover to a disabled or .disabled element, put the element inside of a
 Multiple-line links
 
 Sometimes you want to add a popover to a hyperlink that wraps multiple lines. The default behavior of the popover plugin is to center it horizontally and vertically. Add white-space: nowrap; to your anchors to avoid this.
-Examples
-Static popover
+
+#### Examples
+
+##### Static popover
 
 Four options are available: top, right, bottom, and left aligned.
 Popover top
@@ -902,12 +940,13 @@ Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare
 Popover left
 
 Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-Live demo
+
+##### Live demo
 
 
 <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
 
-Four directions
+###### Four directions
 
 
 <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
@@ -927,7 +966,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
   Popover on right
 </button>
 
-Dismiss on next click
+###### Dismiss on next click
 
 Use the focus trigger to dismiss popovers on the next click that the user makes.
 Specific markup required for dismiss-on-next-click
@@ -937,14 +976,14 @@ For proper cross-browser and cross-platform behavior, you must use the <a> tag, 
 
 <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
 
-Usage
+#### Usage
 
 Enable popovers via JavaScript:
 
 
 $('#example').popover(options)
 
-Options
+##### Options
 
 Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-, as in data-animation="".
 Name    Type    Default     Description
@@ -997,7 +1036,9 @@ If a function is given, it is called with the triggering element DOM node as its
 Data attributes for individual popovers
 
 Options for individual popovers can alternatively be specified through the use of data attributes, as explained above.
-Methods
+
+##### Methods
+
 $().popover(options)
 
 Initializes popovers for an element collection.
@@ -1029,7 +1070,8 @@ Hides and destroys an element's popover. Popovers that use delegation (which are
 
 $('#element').popover('destroy')
 
-Events
+##### Events
+
 Event Type  Description
 show.bs.popover     This event fires immediately when the show instance method is called.
 shown.bs.popover    This event is fired when the popover has been made visible to the user (will wait for CSS transitions to complete).
@@ -1042,8 +1084,9 @@ $('#myPopover').on('hidden.bs.popover', function () {
   // do something…
 })
 
-Alert messages alert.js
-Example alerts
+### Alert messages alert.js
+
+#### Example alerts
 
 Add dismiss functionality to all alert messages with this plugin.
 
@@ -1053,7 +1096,7 @@ Oh snap! You got an error!
 
 Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.
 
-Usage
+#### Usage
 
 Just add data-dismiss="alert" to your close button to automatically give an alert close functionality. Closing an alert removes it from the DOM.
 
@@ -1063,14 +1106,17 @@ Just add data-dismiss="alert" to your close button to automatically give an aler
 </button>
 
 To have your alerts use animation when closing, make sure they have the .fade and .in classes already applied to them.
-Methods
+
+##### Methods
+
 $().alert()
 
 Makes an alert listen for click events on descendant elements which have the data-dismiss="alert" attribute. (Not necessary when using the data-api's auto-initialization.)
 $().alert('close')
 
 Closes an alert by removing it from the DOM. If the .fade and .in classes are present on the element, the alert will fade out before it is removed.
-Events
+
+##### Events
 
 Bootstrap's alert plugin exposes a few events for hooking into alert functionality.
 Event Type  Description
@@ -1082,13 +1128,15 @@ $('#myAlert').on('closed.bs.alert', function () {
   // do something…
 })
 
-Buttons button.js
+### Buttons button.js
 
-Do more with buttons. Control button states or create groups of buttons for more components like toolbars.
+**Do more with buttons. Control button states or create groups of buttons for more components like toolbars.**
+
 Cross-browser compatibility
 
 Firefox persists form control states (disabledness and checkedness) across page loads. A workaround for this is to use autocomplete="off". See Mozilla bug #654072.
-Stateful
+
+####Stateful
 
 Add data-loading-text="Loading..." to use a loading state on a button.
 
@@ -1110,7 +1158,7 @@ For the sake of this demonstration, we are using data-loading-text and $().butto
   })
 </script>
 
-Single toggle
+#### Single toggle
 
 Add data-toggle="button" to activate toggling on a single button.
 Pre-toggled buttons need .active and aria-pressed="true"
@@ -1122,7 +1170,7 @@ For pre-toggled buttons, you must add the .active class and the aria-pressed="tr
   Single toggle
 </button>
 
-Checkbox / Radio
+#### Checkbox / Radio
 
 Add data-toggle="buttons" to a .btn-group containing checkbox or radio inputs to enable toggling in their respective styles.
 Preselected options need .active
@@ -1159,7 +1207,8 @@ If the checked state of a checkbox button is updated without firing a click even
   </label>
 </div>
 
-Methods
+#### Methods
+
 $().button('toggle')
 
 Toggles push state. Gives the button the appearance that it has been activated.
@@ -1181,13 +1230,14 @@ Swaps text to any data defined text state.
   })
 </script>
 
-Collapse collapse.js
+### Collapse collapse.js
 
 Flexible plugin that utilizes a handful of classes for easy toggle behavior.
 Plugin dependency
 
 Collapse requires the transitions plugin to be included in your version of Bootstrap.
-Example
+
+#### Example
 
 Click the buttons below to show and hide another element via class changes:
 
@@ -1211,7 +1261,7 @@ You can use a link with the href attribute, or a button with the data-target att
   </div>
 </div>
 
-Accordion example
+#### Accordion example
 
 Extend the default collapse behavior to create an accordion with the panel component.
 Collapsible Group Item #1
@@ -1272,7 +1322,8 @@ Make expand/collapse controls accessible
 Be sure to add aria-expanded to the control element. This attribute explicitly defines the current state of the collapsible element to screen readers and similar assistive technologies. If the collapsible element is closed by default, it should have a value of aria-expanded="false". If you've set the collapsible element to be open by default using the in class, set aria-expanded="true" on the control instead. The plugin will automatically toggle this attribute based on whether or not the collapsible element has been opened or closed.
 
 Additionally, if your control element is targeting a single collapsible element – i.e. the data-target attribute is pointing to an id selector – you may add an additional aria-controls attribute to the control element, containing the id of the collapsible element. Modern screen readers and similar assistive technologies make use of this attribute to provide users with additional shortcuts to navigate directly to the collapsible element itself.
-Usage
+
+#### Usage
 
 The collapse plugin utilizes a few classes to handle the heavy lifting:
 
@@ -1281,25 +1332,29 @@ The collapse plugin utilizes a few classes to handle the heavy lifting:
     .collapsing is added when the transition starts, and removed when it finishes
 
 These classes can be found in component-animations.less.
-Via data attributes
+
+##### Via data attributes
 
 Just add data-toggle="collapse" and a data-target to the element to automatically assign control of a collapsible element. The data-target attribute accepts a CSS selector to apply the collapse to. Be sure to add the class collapse to the collapsible element. If you'd like it to default open, add the additional class in.
 
 To add accordion-like group management to a collapsible control, add the data attribute data-parent="#selector". Refer to the demo to see this in action.
-Via JavaScript
+
+##### Via JavaScript
 
 Enable manually with:
 
 
 $('.collapse').collapse()
 
-Options
+##### Options
 
 Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-, as in data-parent="".
 Name    type    default     description
 parent  selector    false   If a selector is provided, then all collapsible elements under the specified parent will be closed when this collapsible item is shown. (similar to traditional accordion behavior - this is dependent on the panel class)
 toggle  boolean     true    Toggles the collapsible element on invocation
-Methods
+
+##### Methods
+
 .collapse(options)
 
 Activates your content as a collapsible element. Accepts an optional options object.
@@ -1318,7 +1373,8 @@ Shows a collapsible element. Returns to the caller before the collapsible elemen
 .collapse('hide')
 
 Hides a collapsible element. Returns to the caller before the collapsible element has actually been hidden (i.e. before the hidden.bs.collapse event occurs).
-Events
+
+##### Events
 
 Bootstrap's collapse class exposes a few events for hooking into collapse functionality.
 Event Type  Description
@@ -1332,10 +1388,11 @@ $('#myCollapsible').on('hidden.bs.collapse', function () {
   // do something…
 })
 
-Carousel carousel.js
+### Carousel carousel.js
 
 A slideshow component for cycling through elements, like a carousel. Nested carousels are not supported.
-Examples
+
+#### Examples
 
 First slide [900x500]
 Previous
@@ -1390,7 +1447,8 @@ The .active class needs to be added to one of the slides. Otherwise, the carouse
 Glyphicon icons not necessary
 
 The .glyphicon .glyphicon-chevron-left and .glyphicon .glyphicon-chevron-right classes are not necessarily needed for the controls. Bootstrap provides .icon-prev and .icon-next as plain unicode alternatives.
-Optional captions
+
+#### Optional captions
 
 Add captions to your slides easily with the .carousel-caption element within any .item. Place just about any optional HTML within there and it will be automatically aligned and formatted.
 
@@ -1410,23 +1468,26 @@ Next
   </div>
 </div>
 
-Usage
-Multiple carousels
+#### Usage
+
+##### Multiple carousels
 
 Carousels require the use of an id on the outermost container (the .carousel) for carousel controls to function properly. When adding multiple carousels, or when changing a carousel's id, be sure to update the relevant controls.
-Via data attributes
+
+##### Via data attributes
 
 Use data attributes to easily control the position of the carousel. data-slide accepts the keywords prev or next, which alters the slide position relative to its current position. Alternatively, use data-slide-to to pass a raw slide index to the carousel data-slide-to="2", which shifts the slide position to a particular index beginning with 0.
 
 The data-ride="carousel" attribute is used to mark a carousel as animating starting at page load. It cannot be used in combination with (redundant and unnecessary) explicit JavaScript initialization of the same carousel.
-Via JavaScript
+
+##### Via JavaScript
 
 Call carousel manually with:
 
 
 $('.carousel').carousel()
 
-Options
+##### Options
 
 Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-, as in data-interval="".
 Name    type    default     description
@@ -1434,7 +1495,9 @@ interval    number  5000    The amount of time to delay between automatically cy
 pause   string | null   "hover"     If set to "hover", pauses the cycling of the carousel on mouseenter and resumes the cycling of the carousel on mouseleave. If set to null, hovering over the carousel won't pause it.
 wrap    boolean     true    Whether the carousel should cycle continuously or have hard stops.
 keyboard    boolean     true    Whether the carousel should react to keyboard events.
-Methods
+
+##### Methods
+
 .carousel(options)
 
 Initializes the carousel with an optional options object and starts cycling through items.
@@ -1459,7 +1522,8 @@ Cycles to the previous item.
 .carousel('next')
 
 Cycles to the next item.
-Events
+
+##### Events
 
 Bootstrap's carousel class exposes two events for hooking into carousel functionality.
 
@@ -1478,16 +1542,20 @@ $('#myCarousel').on('slide.bs.carousel', function () {
   // do something…
 })
 
-Affix affix.js
-Example
+
+### Affix affix.js
+
+#### Example
 
 The affix plugin toggles position: fixed; on and off, emulating the effect found with position: sticky;. The subnavigation on the right is a live demo of the affix plugin.
-Usage
+
+#### Usage
 
 Use the affix plugin via data attributes or manually with your own JavaScript. In both situations, you must provide CSS for the positioning and width of your affixed content.
 
 Note: Do not use the affix plugin on an element contained in a relatively positioned element, such as a pulled or pushed column, due to a Safari rendering bug.
-Positioning via CSS
+
+##### Positioning via CSS
 
 The affix plugin toggles between three classes, each representing a particular state: .affix, .affix-top, and .affix-bottom. You must provide the styles, with the exception of position: fixed; on .affix, for these classes yourself (independent of this plugin) to handle the actual positions.
 
@@ -1498,7 +1566,8 @@ Here's how the affix plugin works:
     If a bottom offset is defined, scrolling past it should replace .affix with .affix-bottom. Since offsets are optional, setting one requires you to set the appropriate CSS. In this case, add position: absolute; when necessary. The plugin uses the data attribute or JavaScript option to determine where to position the element from there.
 
 Follow the above steps to set your CSS for either of the usage options below.
-Via data attributes
+
+##### Via data attributes
 
 To easily add affix behavior to any element, just add data-spy="affix" to the element you want to spy on. Use offsets to define when to toggle the pinning of an element.
 
@@ -1507,7 +1576,7 @@ To easily add affix behavior to any element, just add data-spy="affix" to the el
   ...
 </div>
 
-Via JavaScript
+##### Via JavaScript
 
 Call the affix plugin via JavaScript:
 
@@ -1521,7 +1590,7 @@ $('#myAffix').affix({
   }
 })
 
-Options
+##### Options
 
 Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-, as in data-offset-top="200".
 Name    type    default     description
@@ -1544,7 +1613,7 @@ Recalculates the state of the affix based on the dimensions, position, and scrol
 
 $('#myAffix').affix('checkPosition')
 
-Events
+##### Events
 
 Bootstrap's affix plugin exposes a few events for hooking into affix functionality.
 Event Type  Description

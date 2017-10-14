@@ -1,8 +1,10 @@
 ## Components
 
-Over a dozen reusable components built to provide iconography, dropdowns, input groups, navigation, alerts, and much more.
-Glyphicons
-Available glyphs
+**Over a dozen reusable components built to provide iconography, dropdowns, input groups, navigation, alerts, and much more.**
+
+### Glyphicons
+
+#### Available glyphs
 
 Includes over 250 glyphs in font format from the Glyphicon Halflings set. Glyphicons Halflings are normally not available for free, but their creator has made them available for Bootstrap free of cost. As a thank you, we only ask that you include a link back to Glyphicons whenever possible.
 
@@ -270,7 +272,7 @@ Includes over 250 glyphs in font format from the Glyphicon Halflings set. Glyphi
     glyphicon glyphicon-menu-down
     glyphicon glyphicon-menu-up
 
-How to use
+#### How to use
 
 For performance reasons, all icons require a base class and individual icon class. To use, place the following code just about anywhere. Be sure to leave a space between the icon and text for proper padding.
 Don't mix with other components
@@ -299,7 +301,7 @@ If you're creating controls with no other text (such as a <button> that only con
 
 <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
 
-Examples
+#### Examples
 
 Use them in buttons, button groups for a toolbar, navigation, or prepended form inputs.
 
@@ -322,10 +324,11 @@ Error: Enter a valid email address
   Enter a valid email address
 </div>
 
-Dropdowns
+### Dropdowns
 
-Toggleable, contextual menu for displaying lists of links. Made interactive with the dropdown JavaScript plugin.
-Example
+**Toggleable, contextual menu for displaying lists of links. Made interactive with the dropdown JavaScript plugin.**
+
+#### Example
 
 Wrap the dropdown's trigger and the dropdown menu within .dropdown, or another element that declares position: relative;. Then add the menu's HTML.
 
@@ -366,7 +369,7 @@ Dropdown menus can be changed to expand upwards (instead of downwards) by adding
   </ul>
 </div>
 
-Alignment
+#### Alignment
 
 By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its parent. Add .dropdown-menu-right to a .dropdown-menu to right align the dropdown menu.
 May require additional positioning
@@ -381,7 +384,7 @@ As of v3.1.0, we've deprecated .pull-right on dropdown menus. To right-align a m
   ...
 </ul>
 
-Headers
+#### Headers
 
 Add a header to label sections of actions in any dropdown menu.
 
@@ -400,7 +403,7 @@ Add a header to label sections of actions in any dropdown menu.
   ...
 </ul>
 
-Divider
+#### Divider
 
 Add a divider to separate series of links in a dropdown menu.
 
@@ -417,7 +420,7 @@ Add a divider to separate series of links in a dropdown menu.
   ...
 </ul>
 
-Disabled menu items
+#### Disabled menu items
 
 Add .disabled to a <li> in the dropdown to disable the link.
 
@@ -433,9 +436,10 @@ Add .disabled to a <li> in the dropdown to disable the link.
   <li><a href="#">Another link</a></li>
 </ul>
 
-Button groups
+### Button groups
 
-Group a series of buttons together on a single line with the button group. Add on optional JavaScript radio and checkbox style behavior with our buttons plugin.
+**Group a series of buttons together on a single line with the button group. Add on optional JavaScript radio and checkbox style behavior with our buttons plugin.**
+
 Tooltips & popovers in button groups require special setting
 
 When using tooltips or popovers on elements within a .btn-group, you'll have to specify the option container: 'body' to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the tooltip or popover is triggered).
@@ -446,7 +450,8 @@ In order for assistive technologies – such as screen readers – to convey tha
 One exception are groups which only contain a single control (for instance the justified button groups with <button> elements) or a dropdown.
 
 In addition, groups and toolbars should be given an explicit label, as most assistive technologies will otherwise not announce them, despite the presence of the correct role attribute. In the examples provided here, we use aria-label, but alternatives such as aria-labelledby can also be used.
-Basic example
+
+#### Basic example
 
 Wrap a series of buttons with .btn in .btn-group.
 
@@ -457,7 +462,7 @@ Wrap a series of buttons with .btn in .btn-group.
   <button type="button" class="btn btn-default">Right</button>
 </div>
 
-Button toolbar
+#### Button toolbar
 
 Combine sets of <div class="btn-group"> into a <div class="btn-toolbar"> for more complex components.
 
@@ -468,7 +473,7 @@ Combine sets of <div class="btn-group"> into a <div class="btn-toolbar"> for mor
   <div class="btn-group" role="group" aria-label="...">...</div>
 </div>
 
-Sizing
+#### Sizing
 
 Instead of applying button sizing classes to every button in a group, just add .btn-group-* to each .btn-group, including when nesting multiple groups.
 
@@ -481,7 +486,7 @@ Instead of applying button sizing classes to every button in a group, just add .
 <div class="btn-group btn-group-sm" role="group" aria-label="...">...</div>
 <div class="btn-group btn-group-xs" role="group" aria-label="...">...</div>
 
-Nesting
+#### Nesting
 
 Place a .btn-group within another .btn-group when you want dropdown menus mixed with a series of buttons.
 
@@ -502,7 +507,7 @@ Place a .btn-group within another .btn-group when you want dropdown menus mixed 
   </div>
 </div>
 
-Vertical variation
+#### Vertical variation
 
 Make a set of buttons appear vertically stacked rather than horizontally. Split button dropdowns are not supported here.
 
@@ -511,18 +516,21 @@ Make a set of buttons appear vertically stacked rather than horizontally. Split 
   ...
 </div>
 
-Justified button groups
+#### Justified button groups
 
 Make a group of buttons stretch at equal sizes to span the entire width of its parent. Also works with button dropdowns within the button group.
+
 Handling borders
 
 Due to the specific HTML and CSS used to justify buttons (namely display: table-cell), the borders between them are doubled. In regular button groups, margin-left: -1px is used to stack the borders instead of removing them. However, margin doesn't work with display: table-cell. As a result, depending on your customizations to Bootstrap, you may wish to remove or re-color the borders.
+
 IE8 and borders
 
 Internet Explorer 8 doesn't render borders on buttons in a justified button group, whether it's on <a> or <button> elements. To get around that, wrap each button in another .btn-group.
 
 See #12476 for more information.
-With <a> elements
+
+##### With <a> elements
 
 Just wrap a series of .btns in .btn-group.btn-group-justified.
 
@@ -535,7 +543,8 @@ Just wrap a series of .btns in .btn-group.btn-group-justified.
 Links acting as buttons
 
 If the <a> elements are used to act as buttons – triggering in-page functionality, rather than navigating to another document or section within the current page – they should also be given an appropriate role="button".
-With <button> elements
+
+##### With <button> elements
 
 To use justified button groups with <button> elements, you must wrap each button in a button group. Most browsers don't properly apply our CSS for justification to <button> elements, but since we support button dropdowns, we can work around that.
 
@@ -552,13 +561,15 @@ To use justified button groups with <button> elements, you must wrap each button
   </div>
 </div>
 
-Button dropdowns
+### Button dropdowns
 
-Use any button to trigger a dropdown menu by placing it within a .btn-group and providing the proper menu markup.
+**Use any button to trigger a dropdown menu by placing it within a .btn-group and providing the proper menu markup.**
+
 Plugin dependency
 
 Button dropdowns require the dropdown plugin to be included in your version of Bootstrap.
-Single button dropdowns
+
+#### Single button dropdowns
 
 Turn a button into a dropdown toggle with some basic markup changes.
 
@@ -577,7 +588,7 @@ Turn a button into a dropdown toggle with some basic markup changes.
   </ul>
 </div>
 
-Split button dropdowns
+#### Split button dropdowns
 
 Similarly, create split button dropdowns with the same markup changes, only with a separate button.
 
@@ -598,7 +609,7 @@ Similarly, create split button dropdowns with the same markup changes, only with
   </ul>
 </div>
 
-Sizing
+#### Sizing
 
 Button dropdowns work with buttons of all sizes.
 
@@ -633,7 +644,7 @@ Button dropdowns work with buttons of all sizes.
   </ul>
 </div>
 
-Dropup variation
+#### Dropup variation
 
 Trigger dropdown menus above elements by adding .dropup to the parent.
 
@@ -649,10 +660,10 @@ Trigger dropdown menus above elements by adding .dropup to the parent.
   </ul>
 </div>
 
-Input groups
+### Input groups
 
-Extend form controls by adding text or buttons before, after, or on both sides of any text-based <input>. Use .input-group with an .input-group-addon or .input-group-btn to prepend or append elements to a single .form-control.
-Textual <input>s only
+**Extend form controls by adding text or buttons before, after, or on both sides of any text-based <input>. Use .input-group with an .input-group-addon or .input-group-btn to prepend or append elements to a single .form-control.
+Textual <input>s only**
 
 Avoid using <select> elements here as they cannot be fully styled in WebKit browsers.
 
@@ -668,7 +679,8 @@ Always add labels
 Screen readers will have trouble with your forms if you don't include a label for every input. For these input groups, ensure that any additional label or functionality is conveyed to assistive technologies.
 
 The exact technique to be used (visible <label> elements, <label> elements hidden using the .sr-only class, or use of the aria-label, aria-labelledby, aria-describedby, title or placeholder attribute) and what additional information will need to be conveyed will vary depending on the exact type of interface widget you're implementing. The examples in this section provide a few suggested, case-specific approaches.
-Basic example
+
+#### Basic example
 
 Place one add-on or button on either side of an input. You may also place one on both sides of an input.
 
@@ -707,7 +719,7 @@ https://example.com/users/
   <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
 </div>
 
-Sizing
+#### Sizing
 
 Add the relative form sizing classes to the .input-group itself and contents within will automatically resize—no need for repeating the form control size classes on each element.
 @
@@ -732,7 +744,7 @@ Add the relative form sizing classes to the .input-group itself and contents wit
   <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
 </div>
 
-Checkboxes and radio addons
+### Checkboxes and radio addons
 
 Place any checkbox or radio option within an input group's addon instead of text.
 
@@ -756,7 +768,7 @@ Place any checkbox or radio option within an input group's addon instead of text
   </div><!-- /.col-lg-6 -->
 </div><!-- /.row -->
 
-Button addons
+#### Button addons
 
 Buttons in input groups are a bit different and require one extra level of nesting. Instead of .input-group-addon, you'll need to use .input-group-btn to wrap the buttons. This is required due to default browser styles that cannot be overridden.
 
@@ -780,7 +792,7 @@ Buttons in input groups are a bit different and require one extra level of nesti
   </div><!-- /.col-lg-6 -->
 </div><!-- /.row -->
 
-Buttons with dropdowns
+#### Buttons with dropdowns
 
 
 <div class="row">
@@ -816,7 +828,7 @@ Buttons with dropdowns
   </div><!-- /.col-lg-6 -->
 </div><!-- /.row -->
 
-Segmented buttons
+#### Segmented buttons
 
 
 <div class="input-group">
@@ -833,7 +845,7 @@ Segmented buttons
   </div>
 </div>
 
-Multiple buttons
+#### Multiple buttons
 
 While you can only have one add-on per side, you can have multiple buttons inside a single .input-group-btn.
 
@@ -852,16 +864,18 @@ While you can only have one add-on per side, you can have multiple buttons insid
   </div>
 </div>
 
-Navs
+### Navs
 
-Navs available in Bootstrap have shared markup, starting with the base .nav class, as well as shared states. Swap modifier classes to switch between each style.
+**Navs available in Bootstrap have shared markup, starting with the base .nav class, as well as shared states. Swap modifier classes to switch between each style.**
+
 Using navs for tab panels requires JavaScript tabs plugin
 
 For tabs with tabbable areas, you must use the tabs JavaScript plugin. The markup will also require additional role and ARIA attributes – see the plugin's example markup for further details.
 Make navs used as navigation accessible
 
 If you are using navs to provide a navigation bar, be sure to add a role="navigation" to the most logical parent container of the <ul>, or wrap a <nav> element around the whole navigation. Do not add the role to the <ul> itself, as this would prevent it from being announced as an actual list by assistive technologies.
-Tabs
+
+#### Tabs
 
 Note the .nav-tabs class requires the .nav base class.
 
@@ -877,7 +891,7 @@ Note the .nav-tabs class requires the .nav base class.
   <li role="presentation"><a href="#">Messages</a></li>
 </ul>
 
-Pills
+#### Pills
 
 Take that same HTML, but use .nav-pills instead:
 
@@ -905,7 +919,7 @@ Pills are also vertically stackable. Just add .nav-stacked.
   ...
 </ul>
 
-Justified
+#### Justified
 
 Easily make tabs or pills equal widths of their parent at screens wider than 768px with .nav-justified. On smaller screens, the nav links are stacked.
 
@@ -932,7 +946,7 @@ As of v9.1.2, Safari exhibits a bug in which resizing your browser horizontally 
   ...
 </ul>
 
-Disabled links
+#### Disabled links
 
 For any nav component (tabs or pills), add .disabled for gray links and no hover effects.
 Link functionality not impacted
@@ -951,10 +965,11 @@ This class will only change the <a>'s appearance, not its functionality. Use cus
   ...
 </ul>
 
-Using dropdowns
+#### Using dropdowns
 
 Add dropdown menus with a little extra HTML and the dropdowns JavaScript plugin.
-Tabs with dropdowns
+
+##### Tabs with dropdowns
 
     Home
     Help
@@ -975,7 +990,7 @@ Tabs with dropdowns
   ...
 </ul>
 
-Pills with dropdowns
+##### Pills with dropdowns
 
     Home
     Help
@@ -996,8 +1011,9 @@ Pills with dropdowns
   ...
 </ul>
 
-Navbar
-Default navbar
+### Navbar
+
+#### Default navbar
 
 Navbars are responsive meta components that serve as navigation headers for your application or site. They begin collapsed (and are toggleable) in mobile views and become horizontal as the available viewport width increases.
 
@@ -1086,7 +1102,7 @@ Brand
   </div><!-- /.container-fluid -->
 </nav>
 
-Brand image
+#### Brand image
 
 Replace the navbar brand with your own image by swapping the text for an <img>. Since the .navbar-brand has its own padding and height, you may need to override some CSS depending on your image.
 Brand
@@ -1102,7 +1118,7 @@ Brand
   </div>
 </nav>
 
-Forms
+#### Forms
 
 Place form content within .navbar-form for proper vertical alignment and collapsed behavior in narrow viewports. Use the alignment options to decide where it resides within the navbar content.
 
@@ -1123,7 +1139,8 @@ There are some caveats regarding using form controls within fixed elements on mo
 Always add labels
 
 Screen readers will have trouble with your forms if you don't include a label for every input. For these inline forms, you can hide the labels using the .sr-only class. There are further alternative methods of providing a label for assistive technologies, such as the aria-label, aria-labelledby or title attribute. If none of these is present, screen readers may resort to using the placeholder attribute, if present, but note that use of placeholder as a replacement for other labelling methods is not advised.
-Buttons
+
+#### Buttons
 
 Add the .navbar-btn class to <button> elements not residing in a <form> to vertically center them in the navbar.
 Brand
@@ -1134,7 +1151,8 @@ Brand
 Context-specific usage
 
 Like the standard button classes, .navbar-btn can be used on <a> and <input> elements. However, neither .navbar-btn nor the standard button classes should be used on <a> elements within .navbar-nav.
-Text
+
+#### Text
 
 Wrap strings of text in an element with .navbar-text, usually on a <p> tag for proper leading and color.
 Brand
@@ -1144,7 +1162,7 @@ Signed in as Mark Otto
 
 <p class="navbar-text">Signed in as Mark Otto</p>
 
-Non-nav links
+#### Non-nav links
 
 For folks using standard links that are not within the regular navbar navigation component, use the .navbar-link class to add the proper colors for the default and inverse navbar options.
 Brand
@@ -1154,7 +1172,7 @@ Signed in as Mark Otto
 
 <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
 
-Component alignment
+#### Component alignment
 
 Align nav links, forms, buttons, or text, using the .navbar-left or .navbar-right utility classes. Both classes will add a CSS float in the specified direction. For example, to align nav links, put them in a separate <ul> with the respective utility class applied.
 
@@ -1164,7 +1182,8 @@ Right aligning multiple components
 Navbars currently have a limitation with multiple .navbar-right classes. To properly space content, we use negative margin on the last .navbar-right element. When there are multiple elements using that class, these margins don't work as intended.
 
 We'll revisit this when we can rewrite that component in v4.
-Fixed to top
+
+#### Fixed to top
 
 Add .navbar-fixed-top and include a .container or .container-fluid to center and pad navbar content.
 Brand
@@ -1189,7 +1208,8 @@ The fixed navbar will overlay your other content, unless you add padding to the 
 body { padding-top: 70px; }
 
 Make sure to include this after the core Bootstrap CSS.
-Fixed to bottom
+
+#### Fixed to bottom
 
 Add .navbar-fixed-bottom and include a .container or .container-fluid to center and pad navbar content.
 Brand
@@ -1214,7 +1234,8 @@ The fixed navbar will overlay your other content, unless you add padding to the 
 body { padding-bottom: 70px; }
 
 Make sure to include this after the core Bootstrap CSS.
-Static top
+
+#### Static top
 
 Create a full-width navbar that scrolls away with the page by adding .navbar-static-top and include a .container or .container-fluid to center and pad navbar content.
 
@@ -1233,7 +1254,7 @@ Brand
   </div>
 </nav>
 
-Inverted navbar
+#### Inverted navbar
 
 Modify the look of the navbar by adding .navbar-inverse.
 Brand
@@ -1248,9 +1269,9 @@ Brand
   ...
 </nav>
 
-Breadcrumbs
+### Breadcrumbs
 
-Indicate the current page's location within a navigational hierarchy.
+**Indicate the current page's location within a navigational hierarchy.**
 
 Separators are automatically added in CSS through :before and content.
 
@@ -1268,10 +1289,11 @@ Separators are automatically added in CSS through :before and content.
   <li class="active">Data</li>
 </ol>
 
-Pagination
+### Pagination
 
-Provide pagination links for your site or app with the multi-page pagination component, or the simpler pager alternative.
-Default pagination
+**Provide pagination links for your site or app with the multi-page pagination component, or the simpler pager alternative.**
+
+#### Default pagination
 
 Simple pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.
 
@@ -1308,7 +1330,8 @@ Simple pagination inspired by Rdio, great for apps and search results. The large
 Labelling the pagination component
 
 The pagination component should be wrapped in a <nav> element to identify it as a navigation section to screen readers and other assistive technologies. In addition, as a page is likely to have more than one such navigation section already (such as the primary navigation in the header, or a sidebar navigation), it is advisable to provide a descriptive aria-label for the <nav> which reflects its purpose. For example, if the pagination component is used to navigate between a set of search results, an appropriate label could be aria-label="Search results pages".
-Disabled and active states
+
+##### Disabled and active states
 
 Links are customizable for different circumstances. Use .disabled for unclickable links and .active to indicate the current page.
 
@@ -1347,7 +1370,7 @@ We recommend that you swap out active or disabled anchors for <span>, or omit th
   </ul>
 </nav>
 
-Sizing
+##### Sizing
 
 Fancy larger or smaller pagination? Add .pagination-lg or .pagination-sm for additional sizes.
 
@@ -1381,10 +1404,11 @@ Fancy larger or smaller pagination? Add .pagination-lg or .pagination-sm for add
 <nav aria-label="..."><ul class="pagination">...</ul></nav>
 <nav aria-label="..."><ul class="pagination pagination-sm">...</ul></nav>
 
-Pager
+#### Pager
 
 Quick previous and next links for simple pagination implementations with light markup and styles. It's great for simple sites like blogs or magazines.
-Default example
+
+##### Default example
 
 By default, the pager centers links.
 
@@ -1399,7 +1423,7 @@ By default, the pager centers links.
   </ul>
 </nav>
 
-Aligned links
+##### Aligned links
 
 Alternatively, you can align each link to the sides:
 
@@ -1415,7 +1439,7 @@ Alternatively, you can align each link to the sides:
   </ul>
 </nav>
 
-Optional disabled state
+##### Optional disabled state
 
 Pager links also use the general .disabled utility class from the pagination.
 
@@ -1431,8 +1455,10 @@ Pager links also use the general .disabled utility class from the pagination.
   </ul>
 </nav>
 
-Labels
-Example
+### Labels
+
+#### Example
+
 Example heading New
 Example heading New
 Example heading New
@@ -1443,7 +1469,7 @@ Example heading New
 
 <h3>Example heading <span class="label label-default">New</span></h3>
 
-Available variations
+#### Available variations
 
 Add any of the below mentioned modifier classes to change the appearance of a label.
 Default Primary Success Info Warning Danger
@@ -1459,9 +1485,11 @@ Default Primary Success Info Warning Danger
 Have tons of labels?
 
 Rendering problems can arise when you have dozens of inline labels within a narrow container, each containing its own inline-block element (like an icon). The way around this is setting display: inline-block;. For context and an example, see #13219.
-Badges
 
-Easily highlight new or unread items by adding a <span class="badge"> to links, Bootstrap navs, and more.
+### Badges
+
+**Easily highlight new or unread items by adding a <span class="badge"> to links, Bootstrap navs, and more.**
+
 Inbox 42
 
 
@@ -1472,7 +1500,7 @@ Inbox 42
   Messages <span class="badge">4</span>
 </button>
 
-Self collapsing
+#### Self collapsing
 
 When there are no new or unread items, badges will simply collapse (via CSS's :empty selector) provided no content exists within.
 Cross-browser compatibility
@@ -1494,7 +1522,7 @@ Built-in styles are included for placing badges in active states in pill navigat
   <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
 </ul>
 
-Jumbotron
+### Jumbotron
 
 A lightweight, flexible component that can optionally extend the entire viewport to showcase key content on your site.
 Hello, world!
@@ -1518,7 +1546,7 @@ To make the jumbotron full width, and without rounded corners, place it outside 
   </div>
 </div>
 
-Page header
+### Page header
 
 A simple shell for an h1 to appropriately space out and segment sections of content on a page. It can utilize the h1's default small element, as well as most other components (with additional styles).
 Example page header Subtext for header
@@ -1528,12 +1556,13 @@ Example page header Subtext for header
   <h1>Example page header <small>Subtext for header</small></h1>
 </div>
 
-Thumbnails
+### Thumbnails
 
-Extend Bootstrap's grid system with the thumbnail component to easily display grids of images, videos, text, and more.
+**Extend Bootstrap's grid system with the thumbnail component to easily display grids of images, videos, text, and more.**
 
 If you're looking for Pinterest-like presentation of thumbnails of varying heights and/or widths, you'll need to use a third-party plugin such as Masonry, Isotope, or Salvattore.
-Default example
+
+#### Default example
 
 By default, Bootstrap's thumbnails are designed to showcase linked images with minimal required markup.
 100%x180
@@ -1551,7 +1580,7 @@ By default, Bootstrap's thumbnails are designed to showcase linked images with m
   ...
 </div>
 
-Custom content
+#### Custom content
 
 With a bit of extra markup, it's possible to add any kind of HTML content like headings, paragraphs, or buttons into thumbnails.
 100%x200
@@ -1584,10 +1613,11 @@ Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non m
   </div>
 </div>
 
-Alerts
+### Alerts
 
-Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
-Examples
+**Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.**
+
+#### Examples
 
 Wrap any text and an optional dismiss button in .alert and one of the four contextual classes (e.g., .alert-success) for basic alert messages.
 No default class
@@ -1604,7 +1634,7 @@ Oh snap! Change a few things up and try submitting again.
 <div class="alert alert-warning" role="alert">...</div>
 <div class="alert alert-danger" role="alert">...</div>
 
-Dismissible alerts
+#### Dismissible alerts
 
 Build on any alert by adding an optional .alert-dismissible and close button.
 Requires JavaScript alert plugin
@@ -1621,7 +1651,8 @@ Warning! Better check yourself, you're not looking too good.
 Ensure proper behavior across all devices
 
 Be sure to use the <button> element with the data-dismiss="alert" data attribute.
-Links in alerts
+
+#### Links in alerts
 
 Use the .alert-link utility class to quickly provide matching colored links within any alert.
 Well done! You successfully read this important alert message.
@@ -1643,16 +1674,18 @@ Oh snap! Change a few things up and try submitting again.
   <a href="#" class="alert-link">...</a>
 </div>
 
-Progress bars
+### Progress bars
 
-Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.
+**Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.**
+
 Cross-browser compatibility
 
 Progress bars use CSS3 transitions and animations to achieve some of their effects. These features are not supported in Internet Explorer 9 and below or older versions of Firefox. Opera 12 does not support animations.
 Content Security Policy (CSP) compatibility
 
 If your website has a Content Security Policy (CSP) which doesn't allow style-src 'unsafe-inline', then you won't be able to use inline style attributes to set progress bar widths as shown in our examples below. Alternative methods for setting the widths that are compatible with strict CSPs include using a little custom JavaScript (that sets element.style.width) or using custom CSS classes.
-Basic example
+
+#### Basic example
 
 Default progress bar.
 60% Complete
@@ -1664,7 +1697,7 @@ Default progress bar.
   </div>
 </div>
 
-With label
+#### With label
 
 Remove the <span> with .sr-only class from within the progress bar to show a visible percentage.
 60%
@@ -1692,7 +1725,7 @@ To ensure that the label text remains legible even for low percentages, consider
   </div>
 </div>
 
-Contextual alternatives
+#### Contextual alternatives
 
 Progress bars use some of the same button and alert classes for consistent styles.
 40% Complete (success)
@@ -1722,7 +1755,7 @@ Progress bars use some of the same button and alert classes for consistent style
   </div>
 </div>
 
-Striped
+#### Striped
 
 Uses a gradient to create a striped effect. Not available in IE9 and below.
 40% Complete (success)
@@ -1752,7 +1785,7 @@ Uses a gradient to create a striped effect. Not available in IE9 and below.
   </div>
 </div>
 
-Animated
+#### Animated
 
 Add .active to .progress-bar-striped to animate the stripes right to left. Not available in IE9 and below.
 45% Complete
@@ -1764,7 +1797,7 @@ Add .active to .progress-bar-striped to animate the stripes right to left. Not a
   </div>
 </div>
 
-Stacked
+#### Stacked
 
 Place multiple bars into the same .progress to stack them.
 35% Complete (success)
@@ -1784,10 +1817,11 @@ Place multiple bars into the same .progress to stack them.
   </div>
 </div>
 
-Media object
+### Media object
 
-Abstract object styles for building various types of components (like blog comments, Tweets, etc) that feature a left- or right-aligned image alongside textual content.
-Default media
+**Abstract object styles for building various types of components (like blog comments, Tweets, etc) that feature a left- or right-aligned image alongside textual content.**
+
+#### Default media
 
 The default media displays a media object (images, video, audio) to the left or right of a content block.
 64x64
@@ -1821,7 +1855,8 @@ Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante so
 </div>
 
 The classes .pull-left and .pull-right also exist and were previously used as part of the media component, but are deprecated for that use as of v3.3.0. They are approximately equivalent to .media-left and .media-right, except that .media-right should be placed after the .media-body in the html.
-Media alignment
+
+#### Media alignment
 
 The images or other media can be aligned top, middle, or bottom. The default is top aligned.
 64x64
@@ -1856,7 +1891,7 @@ Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum so
   </div>
 </div>
 
-Media list
+#### Media list
 
 With a bit of extra markup, you can use media inside list (useful for comment threads or articles lists).
 
@@ -1890,10 +1925,11 @@ With a bit of extra markup, you can use media inside list (useful for comment th
   </li>
 </ul>
 
-List group
+### List group
 
-List groups are a flexible and powerful component for displaying not only simple lists of elements, but complex ones with custom content.
-Basic example
+**List groups are a flexible and powerful component for displaying not only simple lists of elements, but complex ones with custom content.**
+
+#### Basic example
 
 The most basic list group is simply an unordered list with list items, and the proper classes. Build upon it with the options that follow, or your own CSS as needed.
 
@@ -1913,7 +1949,7 @@ The most basic list group is simply an unordered list with list items, and the p
   <li class="list-group-item">Vestibulum at eros</li>
 </ul>
 
-Badges
+#### Badges
 
 Add the badges component to any list group item and it will automatically be positioned on the right.
 
@@ -1930,7 +1966,7 @@ Add the badges component to any list group item and it will automatically be pos
   </li>
 </ul>
 
-Linked items
+#### Linked items
 
 Linkify list group items by using anchor tags instead of list items (that also means a parent <div> instead of an <ul>). No need for individual parents around each element.
 Cras justo odio
@@ -1950,7 +1986,7 @@ Vestibulum at eros
   <a href="#" class="list-group-item">Vestibulum at eros</a>
 </div>
 
-Button items
+#### Button items
 
 List group items may be buttons instead of list items (that also means a parent <div> instead of an <ul>). No need for individual parents around each element. Don't use the standard .btn classes here.
 
@@ -1963,7 +1999,7 @@ List group items may be buttons instead of list items (that also means a parent 
   <button type="button" class="list-group-item">Vestibulum at eros</button>
 </div>
 
-Disabled items
+#### Disabled items
 
 Add .disabled to a .list-group-item to gray it out to appear disabled.
 Cras justo odio
@@ -1983,7 +2019,7 @@ Vestibulum at eros
   <a href="#" class="list-group-item">Vestibulum at eros</a>
 </div>
 
-Contextual classes
+#### Contextual classes
 
 Use contextual classes to style list items, default or linked. Also includes .active state.
 
@@ -2011,7 +2047,7 @@ Vestibulum at eros
   <a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
 </div>
 
-Custom content
+#### Custom content
 
 Add nearly any HTML within, even for linked list groups like the one below.
 List group item heading
@@ -2032,10 +2068,11 @@ Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus v
   </a>
 </div>
 
-Panels
+### Panels
 
-While not always necessary, sometimes you need to put your DOM in a box. For those situations, try the panel component.
-Basic example
+**While not always necessary, sometimes you need to put your DOM in a box. For those situations, try the panel component.**
+
+#### Basic example
 
 By default, all the .panel does is apply some basic border and padding to contain some content.
 Basic panel example
@@ -2047,7 +2084,7 @@ Basic panel example
   </div>
 </div>
 
-Panel with heading
+#### Panel with heading
 
 Easily add a heading container to your panel with .panel-heading. You may also include any <h1>-<h6> with a .panel-title class to add a pre-styled heading. However, the font sizes of <h1>-<h6> are overridden by .panel-heading.
 
@@ -2074,7 +2111,7 @@ Panel content
   </div>
 </div>
 
-Panel with footer
+#### Panel with footer
 
 Wrap buttons or secondary text in .panel-footer. Note that panel footers do not inherit colors and borders when using contextual variations as they are not meant to be in the foreground.
 Panel content
@@ -2088,7 +2125,7 @@ Panel footer
   <div class="panel-footer">Panel footer</div>
 </div>
 
-Contextual alternatives
+#### Contextual alternatives
 
 Like other components, easily make a panel more meaningful to a particular context by adding any of the contextual state classes.
 Panel title
@@ -2109,7 +2146,7 @@ Panel content
 <div class="panel panel-warning">...</div>
 <div class="panel panel-danger">...</div>
 
-With tables
+#### With tables
 
 Add any non-bordered .table within a panel for a seamless design. If there is a .panel-body, we add an extra border to the top of the table for separation.
 Panel heading
@@ -2152,7 +2189,7 @@ Panel heading
   </table>
 </div>
 
-With list groups
+#### With list groups
 
 Easily include full-width list groups within any panel.
 Panel heading
@@ -2184,7 +2221,7 @@ Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aene
   </ul>
 </div>
 
-Responsive embed
+#### Responsive embed
 
 Allow browsers to determine video or slideshow dimensions based on the width of their containing block by creating an intrinsic ratio that will properly scale on any device.
 
@@ -2203,8 +2240,9 @@ Pro-Tip! You don't need to include frameborder="0" in your <iframe>s as we overr
   <iframe class="embed-responsive-item" src="..."></iframe>
 </div>
 
-Wells
-Default well
+### Wells
+
+#### Default well
 
 Use the well as a simple effect on an element to give it an inset effect.
 Look, I'm in a well!
@@ -2212,7 +2250,7 @@ Look, I'm in a well!
 
 <div class="well">...</div>
 
-Optional classes
+#### Optional classes
 
 Control padding and rounded corners with two optional modifier classes.
 Look, I'm in a large well!
