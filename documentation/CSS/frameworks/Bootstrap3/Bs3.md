@@ -6,1010 +6,1268 @@
 
 #### Available glyphs
 
-Includes over 250 glyphs in font format from the Glyphicon Halflings set. Glyphicons Halflings are normally not available for free, but their creator has made them available for Bootstrap free of cost. As a thank you, we only ask that you include a link back to Glyphicons whenever possible.
+Includes over 250 glyphs in font format from the Glyphicon Halflings set. [Glyphicons](http://glyphicons.com/) Halflings are normally not available for free, but their creator has made them available for Bootstrap free of cost. As a thank you, we only ask that you include a link back to  [Glyphicons](http://glyphicons.com/) whenever possible.
 
-    glyphicon glyphicon-asterisk
-    glyphicon glyphicon-plus
-    glyphicon glyphicon-euro
-    glyphicon glyphicon-eur
-    glyphicon glyphicon-minus
-    glyphicon glyphicon-cloud
-    glyphicon glyphicon-envelope
-    glyphicon glyphicon-pencil
-    glyphicon glyphicon-glass
-    glyphicon glyphicon-music
-    glyphicon glyphicon-search
-    glyphicon glyphicon-heart
-    glyphicon glyphicon-star
-    glyphicon glyphicon-star-empty
-    glyphicon glyphicon-user
-    glyphicon glyphicon-film
-    glyphicon glyphicon-th-large
-    glyphicon glyphicon-th
-    glyphicon glyphicon-th-list
-    glyphicon glyphicon-ok
-    glyphicon glyphicon-remove
-    glyphicon glyphicon-zoom-in
-    glyphicon glyphicon-zoom-out
-    glyphicon glyphicon-off
-    glyphicon glyphicon-signal
-    glyphicon glyphicon-cog
-    glyphicon glyphicon-trash
-    glyphicon glyphicon-home
-    glyphicon glyphicon-file
-    glyphicon glyphicon-time
-    glyphicon glyphicon-road
-    glyphicon glyphicon-download-alt
-    glyphicon glyphicon-download
-    glyphicon glyphicon-upload
-    glyphicon glyphicon-inbox
-    glyphicon glyphicon-play-circle
-    glyphicon glyphicon-repeat
-    glyphicon glyphicon-refresh
-    glyphicon glyphicon-list-alt
-    glyphicon glyphicon-lock
-    glyphicon glyphicon-flag
-    glyphicon glyphicon-headphones
-    glyphicon glyphicon-volume-off
-    glyphicon glyphicon-volume-down
-    glyphicon glyphicon-volume-up
-    glyphicon glyphicon-qrcode
-    glyphicon glyphicon-barcode
-    glyphicon glyphicon-tag
-    glyphicon glyphicon-tags
-    glyphicon glyphicon-book
-    glyphicon glyphicon-bookmark
-    glyphicon glyphicon-print
-    glyphicon glyphicon-camera
-    glyphicon glyphicon-font
-    glyphicon glyphicon-bold
-    glyphicon glyphicon-italic
-    glyphicon glyphicon-text-height
-    glyphicon glyphicon-text-width
-    glyphicon glyphicon-align-left
-    glyphicon glyphicon-align-center
-    glyphicon glyphicon-align-right
-    glyphicon glyphicon-align-justify
-    glyphicon glyphicon-list
-    glyphicon glyphicon-indent-left
-    glyphicon glyphicon-indent-right
-    glyphicon glyphicon-facetime-video
-    glyphicon glyphicon-picture
-    glyphicon glyphicon-map-marker
-    glyphicon glyphicon-adjust
-    glyphicon glyphicon-tint
-    glyphicon glyphicon-edit
-    glyphicon glyphicon-share
-    glyphicon glyphicon-check
-    glyphicon glyphicon-move
-    glyphicon glyphicon-step-backward
-    glyphicon glyphicon-fast-backward
-    glyphicon glyphicon-backward
-    glyphicon glyphicon-play
-    glyphicon glyphicon-pause
-    glyphicon glyphicon-stop
-    glyphicon glyphicon-forward
-    glyphicon glyphicon-fast-forward
-    glyphicon glyphicon-step-forward
-    glyphicon glyphicon-eject
-    glyphicon glyphicon-chevron-left
-    glyphicon glyphicon-chevron-right
-    glyphicon glyphicon-plus-sign
-    glyphicon glyphicon-minus-sign
-    glyphicon glyphicon-remove-sign
-    glyphicon glyphicon-ok-sign
-    glyphicon glyphicon-question-sign
-    glyphicon glyphicon-info-sign
-    glyphicon glyphicon-screenshot
-    glyphicon glyphicon-remove-circle
-    glyphicon glyphicon-ok-circle
-    glyphicon glyphicon-ban-circle
-    glyphicon glyphicon-arrow-left
-    glyphicon glyphicon-arrow-right
-    glyphicon glyphicon-arrow-up
-    glyphicon glyphicon-arrow-down
-    glyphicon glyphicon-share-alt
-    glyphicon glyphicon-resize-full
-    glyphicon glyphicon-resize-small
-    glyphicon glyphicon-exclamation-sign
-    glyphicon glyphicon-gift
-    glyphicon glyphicon-leaf
-    glyphicon glyphicon-fire
-    glyphicon glyphicon-eye-open
-    glyphicon glyphicon-eye-close
-    glyphicon glyphicon-warning-sign
-    glyphicon glyphicon-plane
-    glyphicon glyphicon-calendar
-    glyphicon glyphicon-random
-    glyphicon glyphicon-comment
-    glyphicon glyphicon-magnet
-    glyphicon glyphicon-chevron-up
-    glyphicon glyphicon-chevron-down
-    glyphicon glyphicon-retweet
-    glyphicon glyphicon-shopping-cart
-    glyphicon glyphicon-folder-close
-    glyphicon glyphicon-folder-open
-    glyphicon glyphicon-resize-vertical
-    glyphicon glyphicon-resize-horizontal
-    glyphicon glyphicon-hdd
-    glyphicon glyphicon-bullhorn
-    glyphicon glyphicon-bell
-    glyphicon glyphicon-certificate
-    glyphicon glyphicon-thumbs-up
-    glyphicon glyphicon-thumbs-down
-    glyphicon glyphicon-hand-right
-    glyphicon glyphicon-hand-left
-    glyphicon glyphicon-hand-up
-    glyphicon glyphicon-hand-down
-    glyphicon glyphicon-circle-arrow-right
-    glyphicon glyphicon-circle-arrow-left
-    glyphicon glyphicon-circle-arrow-up
-    glyphicon glyphicon-circle-arrow-down
-    glyphicon glyphicon-globe
-    glyphicon glyphicon-wrench
-    glyphicon glyphicon-tasks
-    glyphicon glyphicon-filter
-    glyphicon glyphicon-briefcase
-    glyphicon glyphicon-fullscreen
-    glyphicon glyphicon-dashboard
-    glyphicon glyphicon-paperclip
-    glyphicon glyphicon-heart-empty
-    glyphicon glyphicon-link
-    glyphicon glyphicon-phone
-    glyphicon glyphicon-pushpin
-    glyphicon glyphicon-usd
-    glyphicon glyphicon-gbp
-    glyphicon glyphicon-sort
-    glyphicon glyphicon-sort-by-alphabet
-    glyphicon glyphicon-sort-by-alphabet-alt
-    glyphicon glyphicon-sort-by-order
-    glyphicon glyphicon-sort-by-order-alt
-    glyphicon glyphicon-sort-by-attributes
-    glyphicon glyphicon-sort-by-attributes-alt
-    glyphicon glyphicon-unchecked
-    glyphicon glyphicon-expand
-    glyphicon glyphicon-collapse-down
-    glyphicon glyphicon-collapse-up
-    glyphicon glyphicon-log-in
-    glyphicon glyphicon-flash
-    glyphicon glyphicon-log-out
-    glyphicon glyphicon-new-window
-    glyphicon glyphicon-record
-    glyphicon glyphicon-save
-    glyphicon glyphicon-open
-    glyphicon glyphicon-saved
-    glyphicon glyphicon-import
-    glyphicon glyphicon-export
-    glyphicon glyphicon-send
-    glyphicon glyphicon-floppy-disk
-    glyphicon glyphicon-floppy-saved
-    glyphicon glyphicon-floppy-remove
-    glyphicon glyphicon-floppy-save
-    glyphicon glyphicon-floppy-open
-    glyphicon glyphicon-credit-card
-    glyphicon glyphicon-transfer
-    glyphicon glyphicon-cutlery
-    glyphicon glyphicon-header
-    glyphicon glyphicon-compressed
-    glyphicon glyphicon-earphone
-    glyphicon glyphicon-phone-alt
-    glyphicon glyphicon-tower
-    glyphicon glyphicon-stats
-    glyphicon glyphicon-sd-video
-    glyphicon glyphicon-hd-video
-    glyphicon glyphicon-subtitles
-    glyphicon glyphicon-sound-stereo
-    glyphicon glyphicon-sound-dolby
-    glyphicon glyphicon-sound-5-1
-    glyphicon glyphicon-sound-6-1
-    glyphicon glyphicon-sound-7-1
-    glyphicon glyphicon-right-mark
-    glyphicon glyphicon-registration-mark
-    glyphicon glyphicon-cloud-download
-    glyphicon glyphicon-cloud-upload
-    glyphicon glyphicon-tree-conifer
-    glyphicon glyphicon-tree-deciduous
-    glyphicon glyphicon-cd
-    glyphicon glyphicon-save-file
-    glyphicon glyphicon-open-file
-    glyphicon glyphicon-level-up
-    glyphicon glyphicon-
-    glyphicon glyphicon-paste
-    glyphicon glyphicon-alert
-    glyphicon glyphicon-equalizer
-    glyphicon glyphicon-king
-    glyphicon glyphicon-queen
-    glyphicon glyphicon-pawn
-    glyphicon glyphicon-bishop
-    glyphicon glyphicon-knight
-    glyphicon glyphicon-baby-formula
-    glyphicon glyphicon-tent
-    glyphicon glyphicon-blackboard
-    glyphicon glyphicon-bed
-    glyphicon glyphicon-apple
-    glyphicon glyphicon-erase
-    glyphicon glyphicon-hourglass
-    glyphicon glyphicon-lamp
-    glyphicon glyphicon-duplicate
-    glyphicon glyphicon-piggy-bank
-    glyphicon glyphicon-scissors
-    glyphicon glyphicon-bitcoin
-    glyphicon glyphicon-btc
-    glyphicon glyphicon-xbt
-    glyphicon glyphicon-yen
-    glyphicon glyphicon-jpy
-    glyphicon glyphicon-ruble
-    glyphicon glyphicon-rub
-    glyphicon glyphicon-scale
-    glyphicon glyphicon-ice-lolly
-    glyphicon glyphicon-ice-lolly-tasted
-    glyphicon glyphicon-education
-    glyphicon glyphicon-option-horizontal
-    glyphicon glyphicon-option-vertical
-    glyphicon glyphicon-menu-hamburger
-    glyphicon glyphicon-modal-window
-    glyphicon glyphicon-oil
-    glyphicon glyphicon-grain
-    glyphicon glyphicon-sunglasses
-    glyphicon glyphicon-text-size
-    glyphicon glyphicon-text-color
-    glyphicon glyphicon-text-background
-    glyphicon glyphicon-object-align-top
-    glyphicon glyphicon-object-align-bottom
-    glyphicon glyphicon-object-align-horizontal
-    glyphicon glyphicon-object-align-left
-    glyphicon glyphicon-object-align-vertical
-    glyphicon glyphicon-object-align-right
-    glyphicon glyphicon-triangle-right
-    glyphicon glyphicon-triangle-left
-    glyphicon glyphicon-triangle-bottom
-    glyphicon glyphicon-triangle-top
-    glyphicon glyphicon-console
-    glyphicon glyphicon-superscript
-    glyphicon glyphicon-subscript
-    glyphicon glyphicon-menu-left
-    glyphicon glyphicon-menu-right
-    glyphicon glyphicon-menu-down
-    glyphicon glyphicon-menu-up
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-asterisk
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-plus
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-euro
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-eur
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-minus
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-cloud
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-envelope
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-pencil
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-glass
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-music
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-search
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-heart
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-star
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-star-empty
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-user
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-film
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-th-large
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-th
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-th-list
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-ok
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-remove
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-zoom-in
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-zoom-out
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-off
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-signal
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-cog
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-trash
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-home
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-file
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-time
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-road
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-download-alt
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-download
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-upload
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-inbox
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-play-circle
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-repeat
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-refresh
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-list-alt
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-lock
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-flag
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-headphones
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-volume-off
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-volume-down
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-volume-up
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-qrcode
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-barcode
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-tag
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-tags
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-book
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-bookmark
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-print
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-camera
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-font
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-bold
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-italic
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-text-height
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-text-width
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-align-left
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-align-center
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-align-right
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-align-justify
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-list
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-indent-left
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-indent-right
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-facetime-video
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-picture
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-map-marker
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-adjust
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-tint
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-edit
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-share
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-check
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-move
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-step-backward
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-fast-backward
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-backward
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-play
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-pause
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-stop
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-forward
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-fast-forward
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-step-forward
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-eject
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-chevron-left
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-chevron-right
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-plus-sign
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-minus-sign
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-remove-sign
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-ok-sign
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-question-sign
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-info-sign
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-screenshot
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-remove-circle
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-ok-circle
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-ban-circle
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-arrow-left
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-arrow-right
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-arrow-up
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-arrow-down
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-share-alt
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-resize-full
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-resize-small
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-exclamation-sign
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-gift
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-leaf
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-fire
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-eye-open
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-eye-close
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-warning-sign
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-plane
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-calendar
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-random
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-comment
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-magnet
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-chevron-up
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-chevron-down
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-retweet
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-shopping-cart
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-folder-close
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-folder-open
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-resize-vertical
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-resize-horizontal
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-hdd
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-bullhorn
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-bell
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-certificate
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-thumbs-up
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-thumbs-down
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-hand-right
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-hand-left
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-hand-up
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-hand-down
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-circle-arrow-right
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-circle-arrow-left
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-circle-arrow-up
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-circle-arrow-down
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-globe
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-wrench
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-tasks
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-filter
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-briefcase
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-fullscreen
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-dashboard
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-paperclip
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-heart-empty
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-link
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-phone
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-pushpin
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-usd
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-gbp
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-sort
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-sort-by-alphabet
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-sort-by-alphabet-alt
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-sort-by-order
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-sort-by-order-alt
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-sort-by-attributes
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-sort-by-attributes-alt
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-unchecked
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-expand
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-collapse-down
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-collapse-up
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-log-in
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-flash
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-log-out
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-new-window
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-record
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-save
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-open
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-saved
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-import
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-export
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-send
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-floppy-disk
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-floppy-saved
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-floppy-remove
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-floppy-save
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-floppy-open
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-credit-card
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-transfer
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-cutlery
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-header
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-compressed
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-earphone
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-phone-alt
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-tower
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-stats
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-sd-video
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-hd-video
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-subtitles
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-sound-stereo
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-sound-dolby
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-sound-5-1
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-sound-6-1
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-sound-7-1
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-right-mark
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-registration-mark
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-cloud-download
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-cloud-upload
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-tree-conifer
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-tree-deciduous
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-cd
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-save-file
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-open-file
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-level-up
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-paste
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-alert
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-equalizer
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-king
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-queen
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-pawn
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-bishop
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-knight
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-baby-formula
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-tent
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-blackboard
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-bed
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-apple
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-erase
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-hourglass
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-lamp
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-duplicate
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-piggy-bank
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-scissors
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-bitcoin
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-btc
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-xbt
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-yen
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-jpy
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-ruble
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-rub
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-scale
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-ice-lolly
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-ice-lolly-tasted
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-education
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-option-horizontal
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-option-vertical
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-menu-hamburger
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-modal-window
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-oil
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-grain
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-sunglasses
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-text-size
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-text-color
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-text-background
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-object-align-top
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-object-align-bottom
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-object-align-horizontal
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-object-align-left
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-object-align-vertical
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-object-align-right
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-triangle-right
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-triangle-left
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-triangle-bottom
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-triangle-top
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-console
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-superscript
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-subscript
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-menu-left
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-menu-right
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-menu-down
+    ![Glyphicon](IMG) 
+ glyphicon glyphicon-menu-up
 
 #### How to use
 
 For performance reasons, all icons require a base class and individual icon class. To use, place the following code just about anywhere. Be sure to leave a space between the icon and text for proper padding.
-Don't mix with other components
 
-Icon classes cannot be directly combined with other components. They should not be used along with other classes on the same element. Instead, add a nested <span> and apply the icon classes to the <span>.
-Only for use on empty elements
+> **Don't mix with other components**
+>> Icon classes cannot be directly combined with other components. They should not be used along with other classes on the same element. Instead, add a nested `<span>` and apply the icon classes to the `<span>`.
 
-Icon classes should only be used on elements that contain no text content and have no child elements.
-Changing the icon font location
+> **Only for use on empty elements**
+>> Icon classes should only be used on elements that contain no text content and have no child elements.
 
-Bootstrap assumes icon font files will be located in the ../fonts/ directory, relative to the compiled CSS files. Moving or renaming those font files means updating the CSS in one of three ways:
+> **Changing the icon font location**
+>> Bootstrap assumes icon font files will be located in the `../fonts/` directory, relative to the compiled CSS files. Moving or renaming those font files means updating the CSS in one of three ways:
+>> * Change the `@icon-font-path` and/or `@icon-font-name` variables in the source Less files.
+>> * Utilize the [relative URLs option](http://lesscss.org/usage/#command-line-usage-relative-urls) provided by the Less compiler.
+>> * Change the `url()` paths in the compiled CSS.
+>> Use whatever option best suits your specific development setup.
 
-    Change the @icon-font-path and/or @icon-font-name variables in the source Less files.
-    Utilize the relative URLs option provided by the Less compiler.
-    Change the url() paths in the compiled CSS.
+>**Accessible icons**
+>> Modern versions of assistive technologies will announce CSS generated content, as well as specific Unicode characters. To avoid unintended and confusing output in screen readers (particularly when icons are used purely for decoration), we hide them with the `aria-hidden="true"` attribute.
+>> If you're using an icon to convey meaning (rather than only as a decorative element), ensure that this meaning is also conveyed to assistive technologies – for instance, include additional content, visually hidden with the `.sr-only` class.
+>> If you're creating controls with no other text (such as a `<button>` that only contains an icon), you should always provide alternative content to identify the purpose of the control, so that it will make sense to users of assistive technologies. In this case, you could add an `aria-label` attribute on the control itself.
 
-Use whatever option best suits your specific development setup.
-Accessible icons
-
-Modern versions of assistive technologies will announce CSS generated content, as well as specific Unicode characters. To avoid unintended and confusing output in screen readers (particularly when icons are used purely for decoration), we hide them with the aria-hidden="true" attribute.
-
-If you're using an icon to convey meaning (rather than only as a decorative element), ensure that this meaning is also conveyed to assistive technologies – for instance, include additional content, visually hidden with the .sr-only class.
-
-If you're creating controls with no other text (such as a <button> that only contains an icon), you should always provide alternative content to identify the purpose of the control, so that it will make sense to users of assistive technologies. In this case, you could add an aria-label attribute on the control itself.
-
-
-<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-
+    ```html
+    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+    ```
+    
 #### Examples
 
 Use them in buttons, button groups for a toolbar, navigation, or prepended form inputs.
 
+![IMG](IMG)
 
-<button type="button" class="btn btn-default" aria-label="Left Align">
-  <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
-</button>
+    ```html
+    <button type="button" class="btn btn-default" aria-label="Left Align">
+    <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+    </button>
 
-<button type="button" class="btn btn-default btn-lg">
-  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
-</button>
+    <button type="button" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+    </button>
+    ```
 
-An icon used in an alert to convey that it's an error message, with additional .sr-only text to convey this hint to users of assistive technologies.
-Error: Enter a valid email address
+An icon used in an [alert](https://getbootstrap.com/docs/3.3/components/#alerts) to convey that it's an error message, with additional `.sr-only` text to convey this hint to users of assistive technologies.
 
+![IMG](IMG)
 
-<div class="alert alert-danger" role="alert">
-  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-  <span class="sr-only">Error:</span>
-  Enter a valid email address
-</div>
+    ```html
+    <div class="alert alert-danger" role="alert">
+    <span class=" glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+    <span class="sr-only">Error:</span>
+    Enter a valid email address
+    </div>
+    ```
 
 ### Dropdowns
 
-**Toggleable, contextual menu for displaying lists of links. Made interactive with the dropdown JavaScript plugin.**
+**Toggleable, contextual menu for displaying lists of links. Made interactive with the [dropdown JavaScript plugin](https://getbootstrap.com/docs/3.3/javascript/#dropdowns).**
 
 #### Example
 
-Wrap the dropdown's trigger and the dropdown menu within .dropdown, or another element that declares position: relative;. Then add the menu's HTML.
+Wrap the dropdown's trigger and the dropdown menu within `.dropdown`, or another element that declares `position: relative;`. Then add the menu's HTML.
 
-    Action
-    Another action
-    Something else here
+![IMG](IMG)
 
-
-
-<div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Dropdown
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-</div>
+    ```html
+    <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Dropdown
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+    </ul>
+    </div>
+    ```
 
 Dropdown menus can be changed to expand upwards (instead of downwards) by adding .dropup to the parent.
 
+![IMG](IMG)
 
-<div class="dropup">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropup
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-</div>
+    ```html
+    <div class="dropup">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropup
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+    </ul>
+    </div>
+    ```
 
 #### Alignment
 
-By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its parent. Add .dropdown-menu-right to a .dropdown-menu to right align the dropdown menu.
-May require additional positioning
+By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its parent. Add `.dropdown-menu-right` to a `.dropdown-menu` to right align the dropdown menu.
 
-Dropdowns are automatically positioned via CSS within the normal flow of the document. This means dropdowns may be cropped by parents with certain overflow properties or appear out of bounds of the viewport. Address these issues on your own as they arise.
-Deprecated .pull-right alignment
+> **May require additional positioning**
+>> Dropdowns are automatically positioned via CSS within the normal flow of the document. This means dropdowns may be cropped by parents with certain overflow properties or appear out of bounds of the viewport. Address these issues on your own as they arise.
 
-As of v3.1.0, we've deprecated .pull-right on dropdown menus. To right-align a menu, use .dropdown-menu-right. Right-aligned nav components in the navbar use a mixin version of this class to automatically align the menu. To override it, use .dropdown-menu-left.
+> **Deprecated `.pull-right` alignment**
+>> As of v3.1.0, we've deprecated `.pull-right` on dropdown menus. To right-align a menu, use `.dropdown-menu-right`. Right-aligned nav components in the navbar use a mixin version of this class to automatically align the menu. To override it, use `.dropdown-menu-left`.
 
-
-<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel">
-  ...
-</ul>
+    ```html
+    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel">
+    ...
+    </ul>
+    ```
 
 #### Headers
 
 Add a header to label sections of actions in any dropdown menu.
 
-    Dropdown header
-    Action
-    Another action
-    Something else here
-    Dropdown header
-    Separated link
+![IMG](IMG)
 
-
-
-<ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
-  ...
-  <li class="dropdown-header">Dropdown header</li>
-  ...
-</ul>
+    ```html
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+    ...
+    <li class="dropdown-header">Dropdown header</li>
+    ...
+    </ul>
+    ```
 
 #### Divider
 
 Add a divider to separate series of links in a dropdown menu.
 
-    Action
-    Another action
-    Something else here
-    Separated link
+![IMG](IMG)
 
-
-
-<ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
-  ...
-  <li role="separator" class="divider"></li>
-  ...
-</ul>
+    ```html
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+    ...
+    <li role="separator" class="divider"></li>
+    ...
+    </ul>
+    ```
 
 #### Disabled menu items
 
 Add .disabled to a <li> in the dropdown to disable the link.
 
-    Regular link
-    Disabled link
-    Another link
+![IMG](IMG)
 
 
-
-<ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
-  <li><a href="#">Regular link</a></li>
-  <li class="disabled"><a href="#">Disabled link</a></li>
-  <li><a href="#">Another link</a></li>
-</ul>
+    ```html
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+    <li><a href="#">Regular link</a></li>
+    <li class="disabled"><a href="#">Disabled link</a></li>
+    <li><a href="#">Another link</a></li>
+    </ul>
+    ```
 
 ### Button groups
 
-**Group a series of buttons together on a single line with the button group. Add on optional JavaScript radio and checkbox style behavior with our buttons plugin.**
+**Group a series of buttons together on a single line with the button group. Add on optional JavaScript radio and checkbox style behavior with [our buttons plugin](https://getbootstrap.com/docs/3.3/javascript/#buttons).**
 
-Tooltips & popovers in button groups require special setting
+> **Tooltips & popovers in button groups require special setting**
+>> When using tooltips or popovers on elements within a `.btn-group`, you'll have to specify the option `container: 'body'` to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the tooltip or popover is triggered).
 
-When using tooltips or popovers on elements within a .btn-group, you'll have to specify the option container: 'body' to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the tooltip or popover is triggered).
-Ensure correct role and provide a label
-
-In order for assistive technologies – such as screen readers – to convey that a series of buttons is grouped, an appropriate role attribute needs to be provided. For button groups, this would be role="group", while toolbars should have a role="toolbar".
-
-One exception are groups which only contain a single control (for instance the justified button groups with <button> elements) or a dropdown.
-
-In addition, groups and toolbars should be given an explicit label, as most assistive technologies will otherwise not announce them, despite the presence of the correct role attribute. In the examples provided here, we use aria-label, but alternatives such as aria-labelledby can also be used.
+> **Ensure correct `role` and provide a label**
+>> In order for assistive technologies – such as screen readers – to convey that a series of buttons is grouped, an appropriate `role` attribute needs to be provided. For button groups, this would be role="group", while toolbars should have a `role="toolbar"`.
+>> One exception are groups which only contain a single control (for instance the [justified button groups](https://getbootstrap.com/docs/3.3/components/#btn-groups-justified) with `<button>` elements) or a dropdown.
+>> In addition, groups and toolbars should be given an explicit label, as most assistive technologies will otherwise not announce them, despite the presence of the correct `role` attribute. In the examples provided here, we use `aria-label`, but alternatives such as `aria-labelledby` can also be used.
 
 #### Basic example
 
-Wrap a series of buttons with .btn in .btn-group.
+Wrap a series of buttons with `.btn` in `.btn-group`.
 
+![IMG](IMG)
 
-<div class="btn-group" role="group" aria-label="...">
-  <button type="button" class="btn btn-default">Left</button>
-  <button type="button" class="btn btn-default">Middle</button>
-  <button type="button" class="btn btn-default">Right</button>
-</div>
+    ```html
+    <div class="btn-group" role="group" aria-label="...">
+    <button type="button" class="btn btn-default">Left</button>
+    <button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Right</button>
+    </div>
+    ```
 
 #### Button toolbar
 
-Combine sets of <div class="btn-group"> into a <div class="btn-toolbar"> for more complex components.
+Combine sets of `<div class="btn-group">` into a `<div class="btn-toolbar">` for more complex components.
 
+![IMG](IMG)
 
-<div class="btn-toolbar" role="toolbar" aria-label="...">
-  <div class="btn-group" role="group" aria-label="...">...</div>
-  <div class="btn-group" role="group" aria-label="...">...</div>
-  <div class="btn-group" role="group" aria-label="...">...</div>
-</div>
+    ```html
+    <div class="btn-toolbar" role="toolbar" aria-label="...">
+    <div class="btn-group" role="group" aria-label="...">...</div>
+    <div class="btn-group" role="group" aria-label="...">...</div>
+    <div class="btn-group" role="group" aria-label="...">...</div>
+    </div>
+    ```
 
 #### Sizing
 
-Instead of applying button sizing classes to every button in a group, just add .btn-group-* to each .btn-group, including when nesting multiple groups.
+Instead of applying button sizing classes to every button in a group, just add `.btn-group-*` to each `.btn-group`, including when nesting multiple groups.
 
+![IMG](IMG)
 
-
-
-
-<div class="btn-group btn-group-lg" role="group" aria-label="...">...</div>
-<div class="btn-group" role="group" aria-label="...">...</div>
-<div class="btn-group btn-group-sm" role="group" aria-label="...">...</div>
-<div class="btn-group btn-group-xs" role="group" aria-label="...">...</div>
+    ```html
+    <div class="btn-group btn-group-lg" role="group" aria-label="...">...</div>
+    <div class="btn-group" role="group" aria-label="...">...</div>
+    <div class="btn-group btn-group-sm" role="group" aria-label="...">...</div>
+    <div class="btn-group btn-group-xs" role="group" aria-label="...">...</div>
+    ```
 
 #### Nesting
 
-Place a .btn-group within another .btn-group when you want dropdown menus mixed with a series of buttons.
+Place a `.btn-group` within another `.btn-group` when you want dropdown menus mixed with a series of buttons.
 
+![IMG](IMG)
 
-<div class="btn-group" role="group" aria-label="...">
-  <button type="button" class="btn btn-default">1</button>
-  <button type="button" class="btn btn-default">2</button>
+    ```html
+    <div class="btn-group" role="group" aria-label="...">
+    <button type="button" class="btn btn-default">1</button>
+    <button type="button" class="btn btn-default">2</button>
 
-  <div class="btn-group" role="group">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Dropdown
-      <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu">
-      <li><a href="#">Dropdown link</a></li>
-      <li><a href="#">Dropdown link</a></li>
-    </ul>
-  </div>
-</div>
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown
+        <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+        <li><a href="#">Dropdown link</a></li>
+        <li><a href="#">Dropdown link</a></li>
+        </ul>
+    </div>
+    </div>
+    ```
 
 #### Vertical variation
 
-Make a set of buttons appear vertically stacked rather than horizontally. Split button dropdowns are not supported here.
+Make a set of buttons appear vertically stacked rather than horizontally. **Split button dropdowns are not supported here**.
 
+![IMG](IMG)
 
-<div class="btn-group-vertical" role="group" aria-label="...">
-  ...
-</div>
+    ```html
+    <div class="btn-group-vertical" role="group" aria-label="...">
+    ...
+    </div>
+    ```
 
 #### Justified button groups
 
 Make a group of buttons stretch at equal sizes to span the entire width of its parent. Also works with button dropdowns within the button group.
 
-Handling borders
+> **Handling borders**
+>> Due to the specific HTML and CSS used to justify buttons (namely `display: table-cell`), the borders between them are doubled. In regular button groups, `margin-left: -1px` is used to stack the borders instead of removing them. However, `margin` doesn't work with `display: table-cell`. As a result, depending on your customizations to Bootstrap, you may wish to remove or re-color the borders.
 
-Due to the specific HTML and CSS used to justify buttons (namely display: table-cell), the borders between them are doubled. In regular button groups, margin-left: -1px is used to stack the borders instead of removing them. However, margin doesn't work with display: table-cell. As a result, depending on your customizations to Bootstrap, you may wish to remove or re-color the borders.
+> **IE8 and borders**
+>> Internet Explorer 8 doesn't render borders on buttons in a justified button group, whether it's on `<a>` or `<button>` elements. To get around that, wrap each button in another `.btn-group`.
+>> See [#12476](https://github.com/twbs/bootstrap/issues/12476) for more information.
 
-IE8 and borders
+##### With `<a>` elements
 
-Internet Explorer 8 doesn't render borders on buttons in a justified button group, whether it's on <a> or <button> elements. To get around that, wrap each button in another .btn-group.
+Just wrap a series of `.btns` in `.btn-group.btn-group-justified`.
 
-See #12476 for more information.
+![IMG](IMG)
 
-##### With <a> elements
+    ```html
+    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+    ...
+    </div>
+    ```
 
-Just wrap a series of .btns in .btn-group.btn-group-justified.
-
-
-
-<div class="btn-group btn-group-justified" role="group" aria-label="...">
-  ...
-</div>
-
-Links acting as buttons
-
-If the <a> elements are used to act as buttons – triggering in-page functionality, rather than navigating to another document or section within the current page – they should also be given an appropriate role="button".
+> **Links acting as buttons**
+>> If the `<a>` elements are used to act as buttons – triggering in-page functionality, rather than navigating to another document or section within the current page – they should also be given an appropriate `role="button`".
 
 ##### With <button> elements
 
-To use justified button groups with <button> elements, you must wrap each button in a button group. Most browsers don't properly apply our CSS for justification to <button> elements, but since we support button dropdowns, we can work around that.
+To use justified button groups with `<button>` elements, **you must wrap each button in a button** group. Most browsers don't properly apply our CSS for justification to `<button>` elements, but since we support button dropdowns, we can work around that.
 
+![IMG](IMG)
 
-<div class="btn-group btn-group-justified" role="group" aria-label="...">
-  <div class="btn-group" role="group">
-    <button type="button" class="btn btn-default">Left</button>
-  </div>
-  <div class="btn-group" role="group">
-    <button type="button" class="btn btn-default">Middle</button>
-  </div>
-  <div class="btn-group" role="group">
-    <button type="button" class="btn btn-default">Right</button>
-  </div>
-</div>
+    ```html
+    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default">Left</button>
+    </div>
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default">Middle</button>
+    </div>
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default">Right</button>
+    </div>
+    </div>
+    ```
 
 ### Button dropdowns
 
-**Use any button to trigger a dropdown menu by placing it within a .btn-group and providing the proper menu markup.**
+**Use any button to trigger a dropdown menu by placing it within a `.btn-group` and providing the proper menu markup.**
 
-Plugin dependency
-
-Button dropdowns require the dropdown plugin to be included in your version of Bootstrap.
+> **Plugin dependency**
+>> Button dropdowns require the [dropdown plugin](https://getbootstrap.com/docs/3.3/javascript/#dropdowns) to be included in your version of Bootstrap.
 
 #### Single button dropdowns
 
 Turn a button into a dropdown toggle with some basic markup changes.
 
+![IMG](IMG)
 
-<!-- Single button -->
-<div class="btn-group">
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Action <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-</div>
+    ```html
+    <!-- Single button -->
+    <div class="btn-group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Action <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+    </ul>
+    </div>
+    ```
 
 #### Split button dropdowns
 
 Similarly, create split button dropdowns with the same markup changes, only with a separate button.
 
+![IMG](IMG)
 
-<!-- Split button -->
-<div class="btn-group">
-  <button type="button" class="btn btn-danger">Action</button>
-  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="caret"></span>
-    <span class="sr-only">Toggle Dropdown</span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-</div>
+    ```html
+    <!-- Split button -->
+    <div class="btn-group">
+    <button type="button" class="btn btn-danger">Action</button>
+    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+    </ul>
+    </div>
+    ```
 
 #### Sizing
 
 Button dropdowns work with buttons of all sizes.
 
+![IMG](IMG)
 
-<!-- Large button group -->
-<div class="btn-group">
-  <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Large button <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu">
-    ...
-  </ul>
-</div>
+    ```html
+    <!-- Large button group -->
+    <div class="btn-group">
+    <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Large button <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        ...
+    </ul>
+    </div>
 
-<!-- Small button group -->
-<div class="btn-group">
-  <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Small button <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu">
-    ...
-  </ul>
-</div>
+    <!-- Small button group -->
+    <div class="btn-group">
+    <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Small button <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        ...
+    </ul>
+    </div>
 
-<!-- Extra small button group -->
-<div class="btn-group">
-  <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Extra small button <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu">
-    ...
-  </ul>
-</div>
+    <!-- Extra small button group -->
+    <div class="btn-group">
+    <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Extra small button <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        ...
+    </ul>
+    </div>
+    ```
 
 #### Dropup variation
 
-Trigger dropdown menus above elements by adding .dropup to the parent.
+Trigger dropdown menus above elements by adding `.dropup` to the parent.
 
+![IMG](IMG)
 
-<div class="btn-group dropup">
-  <button type="button" class="btn btn-default">Dropup</button>
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="caret"></span>
-    <span class="sr-only">Toggle Dropdown</span>
-  </button>
-  <ul class="dropdown-menu">
-    <!-- Dropdown menu links -->
-  </ul>
-</div>
+    ```html
+    <div class="btn-group dropup">
+    <button type="button" class="btn btn-default">Dropup</button>
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu">
+        <!-- Dropdown menu links -->
+    </ul>
+    </div>
+    ```
 
 ### Input groups
 
-**Extend form controls by adding text or buttons before, after, or on both sides of any text-based <input>. Use .input-group with an .input-group-addon or .input-group-btn to prepend or append elements to a single .form-control.
-Textual <input>s only**
+**Extend form controls by adding text or buttons before, after, or on both sides of any text-based `<input>`. Use `.input-group` with an `.input-group-addon` or `.input-group-btn` to prepend or append elements to a single `.form-control`.**
 
-Avoid using <select> elements here as they cannot be fully styled in WebKit browsers.
+> **Textual <input>s only**
+>> Avoid using `<select>` elements here as they cannot be fully styled in WebKit browsers.
+>> Avoid using `<textarea>` elements here as their `rows` attribute will not be respected in some cases.
 
-Avoid using <textarea> elements here as their rows attribute will not be respected in some cases.
-Tooltips & popovers in input groups require special setting
+> **Tooltips & popovers in input groups require special setting**
+>> When using tooltips or popovers on elements within an `.input-group`, you'll have to specify the option `container: 'body'` to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the tooltip or popover is triggered).
 
-When using tooltips or popovers on elements within an .input-group, you'll have to specify the option container: 'body' to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the tooltip or popover is triggered).
-Don't mix with other components
+> **Don't mix with other components**
+>> Do not mix form groups or grid column classes directly with input groups. Instead, nest the input group inside of the form group or grid-related element.
 
-Do not mix form groups or grid column classes directly with input groups. Instead, nest the input group inside of the form group or grid-related element.
-Always add labels
-
+> **Always add labels**
 Screen readers will have trouble with your forms if you don't include a label for every input. For these input groups, ensure that any additional label or functionality is conveyed to assistive technologies.
-
-The exact technique to be used (visible <label> elements, <label> elements hidden using the .sr-only class, or use of the aria-label, aria-labelledby, aria-describedby, title or placeholder attribute) and what additional information will need to be conveyed will vary depending on the exact type of interface widget you're implementing. The examples in this section provide a few suggested, case-specific approaches.
+> The exact technique to be used (visible `<label>` elements, `<label>` elements hidden using the `.sr-only` class, or use of the `aria-label`, `aria-labelledby`, `aria-describedby`, `title` or `placeholder` attribute) and what additional information will need to be conveyed will vary depending on the exact type of interface widget you're implementing. The examples in this section provide a few suggested, case-specific approaches.
 
 #### Basic example
 
 Place one add-on or button on either side of an input. You may also place one on both sides of an input.
 
-We do not support multiple add-ons (.input-group-addon or .input-group-btn) on a single side.
+**We do not support multiple add-ons (`.input-group-addon` or `.input-group-btn`) on a single side.**
 
-We do not support multiple form-controls in a single input group.
-@
+**We do not support multiple form-controls in a single input group.**
 
-@example.com
+![IMG](IMG)
 
-$ .00
-
-Your vanity URL
-https://example.com/users/
-
-
-<div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">@</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-</div>
-
-<div class="input-group">
-  <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
-  <span class="input-group-addon" id="basic-addon2">@example.com</span>
-</div>
-
-<div class="input-group">
-  <span class="input-group-addon">$</span>
-  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-  <span class="input-group-addon">.00</span>
-</div>
-
-<label for="basic-url">Your vanity URL</label>
-<div class="input-group">
-  <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
-  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-</div>
+    ```html
+    <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group">
+    <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+    <span class="input-group-addon" id="basic-addon2">@example.com</span>
+    </div>
+    <div class="input-group">
+    <span class="input-group-addon">$</span>
+    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+    <span class="input-group-addon">.00</span>
+    </div>
+    <label for="basic-url">Your vanity URL</label>
+    <div class="input-group">
+    <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+    </div>
+    ```
 
 #### Sizing
 
-Add the relative form sizing classes to the .input-group itself and contents within will automatically resize—no need for repeating the form control size classes on each element.
-@
+Add the relative form sizing classes to the `.input-group` itself and contents within will automatically resize—no need for repeating the form control size classes on each element.
 
-@
+![IMG](IMG)
 
-@
-
-
-<div class="input-group input-group-lg">
-  <span class="input-group-addon" id="sizing-addon1">@</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
-</div>
-
-<div class="input-group">
-  <span class="input-group-addon" id="sizing-addon2">@</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
-</div>
-
-<div class="input-group input-group-sm">
-  <span class="input-group-addon" id="sizing-addon3">@</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
-</div>
+    ```html
+    <div class="input-group input-group-lg">
+    <span class="input-group-addon" id="sizing-addon1">@</span>
+    <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+    </div>
+    <div class="input-group">
+    <span class="input-group-addon" id="sizing-addon2">@</span>
+    <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+    </div>
+    <div class="input-group input-group-sm">
+    <span class="input-group-addon" id="sizing-addon3">@</span>
+    <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
+    </div>
+    ```
 
 ### Checkboxes and radio addons
 
 Place any checkbox or radio option within an input group's addon instead of text.
 
+![IMG](IMG)
 
-<div class="row">
-  <div class="col-lg-6">
-    <div class="input-group">
-      <span class="input-group-addon">
-        <input type="checkbox" aria-label="...">
-      </span>
-      <input type="text" class="form-control" aria-label="...">
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-  <div class="col-lg-6">
-    <div class="input-group">
-      <span class="input-group-addon">
-        <input type="radio" aria-label="...">
-      </span>
-      <input type="text" class="form-control" aria-label="...">
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
+    ```html
+    <div class="row">
+    <div class="col-lg-6">
+        <div class="input-group">
+        <span class="input-group-addon">
+            <input type="checkbox" aria-label="...">
+        </span>
+        <input type="text" class="form-control" aria-label="...">
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+        <div class="input-group">
+        <span class="input-group-addon">
+            <input type="radio" aria-label="...">
+        </span>
+        <input type="text" class="form-control" aria-label="...">
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+    ```
 
 #### Button addons
 
-Buttons in input groups are a bit different and require one extra level of nesting. Instead of .input-group-addon, you'll need to use .input-group-btn to wrap the buttons. This is required due to default browser styles that cannot be overridden.
+Buttons in input groups are a bit different and require one extra level of nesting. Instead of `.input-group-addon`, you'll need to use `.input-group-btn` to wrap the buttons. This is required due to default browser styles that cannot be overridden.
 
+![IMG](IMG)
 
-<div class="row">
-  <div class="col-lg-6">
-    <div class="input-group">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Go!</button>
-      </span>
-      <input type="text" class="form-control" placeholder="Search for...">
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-  <div class="col-lg-6">
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="Search for...">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Go!</button>
-      </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
+    ```html
+    <div class="row">
+    <div class="col-lg-6">
+        <div class="input-group">
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Go!</button>
+        </span>
+        <input type="text" class="form-control" placeholder="Search for...">
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+        <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for...">
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Go!</button>
+        </span>
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+    ```
 
 #### Buttons with dropdowns
 
+![IMG](IMG)
 
-<div class="row">
-  <div class="col-lg-6">
-    <div class="input-group">
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
-        <ul class="dropdown-menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
-      </div><!-- /btn-group -->
-      <input type="text" class="form-control" aria-label="...">
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-  <div class="col-lg-6">
-    <div class="input-group">
-      <input type="text" class="form-control" aria-label="...">
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
-        <ul class="dropdown-menu dropdown-menu-right">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
-      </div><!-- /btn-group -->
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
+    ```html
+    <div class="row">
+    <div class="col-lg-6">
+        <div class="input-group">
+        <div class="input-group-btn">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            </ul>
+        </div><!-- /btn-group -->
+        <input type="text" class="form-control" aria-label="...">
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+        <div class="input-group">
+        <input type="text" class="form-control" aria-label="...">
+        <div class="input-group-btn">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+            <ul class="dropdown-menu dropdown-menu-right">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            </ul>
+        </div><!-- /btn-group -->
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+    ```
 
 #### Segmented buttons
 
+![IMG](IMG)
 
-<div class="input-group">
-  <div class="input-group-btn">
-    <!-- Button and dropdown menu -->
-  </div>
-  <input type="text" class="form-control" aria-label="...">
-</div>
-
-<div class="input-group">
-  <input type="text" class="form-control" aria-label="...">
-  <div class="input-group-btn">
-    <!-- Button and dropdown menu -->
-  </div>
-</div>
+    ```html
+    <div class="input-group">
+    <div class="input-group-btn">
+        <!-- Button and dropdown menu -->
+    </div>
+    <input type="text" class="form-control" aria-label="...">
+    </div>
+    <div class="input-group">
+    <input type="text" class="form-control" aria-label="...">
+    <div class="input-group-btn">
+        <!-- Button and dropdown menu -->
+    </div>
+    </div>
+    ```
 
 #### Multiple buttons
 
 While you can only have one add-on per side, you can have multiple buttons inside a single .input-group-btn.
 
+![IMG](IMG)
 
-<div class="input-group">
-  <div class="input-group-btn">
-    <!-- Buttons -->
-  </div>
-  <input type="text" class="form-control" aria-label="...">
-</div>
-
-<div class="input-group">
-  <input type="text" class="form-control" aria-label="...">
-  <div class="input-group-btn">
-    <!-- Buttons -->
-  </div>
-</div>
+    ```html
+    <div class="input-group">
+    <div class="input-group-btn">
+        <!-- Buttons -->
+    </div>
+    <input type="text" class="form-control" aria-label="...">
+    </div>
+    <div class="input-group">
+    <input type="text" class="form-control" aria-label="...">
+    <div class="input-group-btn">
+        <!-- Buttons -->
+    </div>
+    </div>
+    ```
 
 ### Navs
 
-**Navs available in Bootstrap have shared markup, starting with the base .nav class, as well as shared states. Swap modifier classes to switch between each style.**
+**Navs available in Bootstrap have shared markup, starting with the base  `.nav` class, as well as shared states. Swap modifier classes to switch between each style.**
 
-Using navs for tab panels requires JavaScript tabs plugin
+> **Using navs for tab panels requires JavaScript tabs plugin**
+>> For tabs with tabbable areas, you must use the tabs JavaScript plugin. The markup will also require additional role and ARIA attributes – see the plugin's example markup for further details.
 
-For tabs with tabbable areas, you must use the tabs JavaScript plugin. The markup will also require additional role and ARIA attributes – see the plugin's example markup for further details.
-Make navs used as navigation accessible
-
-If you are using navs to provide a navigation bar, be sure to add a role="navigation" to the most logical parent container of the <ul>, or wrap a <nav> element around the whole navigation. Do not add the role to the <ul> itself, as this would prevent it from being announced as an actual list by assistive technologies.
+> **Make navs used as navigation accessible**
+>> If you are using navs to provide a navigation bar, be sure to add a role="navigation" to the most logical parent container of the <ul>, or wrap a <nav> element around the whole navigation. Do not add the role to the <ul> itself, as this would prevent it from being announced as an actual list by assistive technologies.
 
 #### Tabs
 
 Note the .nav-tabs class requires the .nav base class.
 
-    Home
-    Profile
-    Messages
+![IMG](IMG)
 
-
-
-<ul class="nav nav-tabs">
-  <li role="presentation" class="active"><a href="#">Home</a></li>
-  <li role="presentation"><a href="#">Profile</a></li>
-  <li role="presentation"><a href="#">Messages</a></li>
-</ul>
+    ```html
+    <ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="#">Profile</a></li>
+    <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+    ```
 
 #### Pills
 
-Take that same HTML, but use .nav-pills instead:
+Take that same HTML, but use `.nav-pills` instead:
 
-    Home
-    Profile
-    Messages
+![IMG](IMG)
 
+    ```html
+    <ul class="nav nav-pills">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="#">Profile</a></li>
+    <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+    ```
 
+Pills are also vertically stackable. Just add `.nav-stacked`.
 
-<ul class="nav nav-pills">
-  <li role="presentation" class="active"><a href="#">Home</a></li>
-  <li role="presentation"><a href="#">Profile</a></li>
-  <li role="presentation"><a href="#">Messages</a></li>
-</ul>
+![IMG](IMG)
 
-Pills are also vertically stackable. Just add .nav-stacked.
-
-    Home
-    Profile
-    Messages
-
-
-
-<ul class="nav nav-pills nav-stacked">
-  ...
-</ul>
+    ```html
+    <ul class="nav nav-pills nav-stacked">
+    ...
+    </ul>
+    ```
 
 #### Justified
 
-Easily make tabs or pills equal widths of their parent at screens wider than 768px with .nav-justified. On smaller screens, the nav links are stacked.
+Easily make tabs or pills equal widths of their parent at screens wider than 768px with `.nav-justified`. On smaller screens, the nav links are stacked.
 
-Justified navbar nav links are currently not supported.
-Safari and responsive justified navs
+**Justified navbar nav links are currently not supported.**
 
-As of v9.1.2, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing. This bug is also shown in the justified nav example.
+> **Safari and responsive justified navs**
+>> As of v9.1.2, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing. This bug is also shown in the [justified nav example](https://getbootstrap.com/docs/3.3/examples/justified-nav/).
 
-    Home
-    Profile
-    Messages
+![IMG](IMG)
 
-
-    Home
-    Profile
-    Messages
-
-
-
-<ul class="nav nav-tabs nav-justified">
-  ...
-</ul>
-<ul class="nav nav-pills nav-justified">
-  ...
-</ul>
+    ```html
+    <ul class="nav nav-tabs nav-justified">
+    ...
+    </ul>
+    <ul class="nav nav-pills nav-justified">
+    ...
+    </ul>
+    ```
 
 #### Disabled links
 
-For any nav component (tabs or pills), add .disabled for gray links and no hover effects.
-Link functionality not impacted
+For any nav component (tabs or pills), add .disabled for **gray links and no hover effects**.
 
-This class will only change the <a>'s appearance, not its functionality. Use custom JavaScript to disable links here.
+> **Link functionality not impacted**
+> This class will only change the <a>'s appearance, not its functionality. Use custom JavaScript to disable links here.
 
-    Clickable link
-    Clickable link
-    Disabled link
+![IMG](IMG)
 
-
-
-<ul class="nav nav-pills">
-  ...
-  <li role="presentation" class="disabled"><a href="#">Disabled link</a></li>
-  ...
-</ul>
+    ```html
+    <ul class="nav nav-pills">
+    ...
+    <li role="presentation" class="disabled"><a href="#">Disabled link</a></li>
+    ...
+    </ul>
+    ```
 
 #### Using dropdowns
 
-Add dropdown menus with a little extra HTML and the dropdowns JavaScript plugin.
+Add dropdown menus with a little extra HTML and the [dropdowns JavaScript plugin](https://getbootstrap.com/docs/3.3/javascript/#dropdowns).
 
 ##### Tabs with dropdowns
 
-    Home
-    Help
-    Dropdown
+![IMG](IMG)
 
-
-
-<ul class="nav nav-tabs">
-  ...
-  <li role="presentation" class="dropdown">
-    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-      Dropdown <span class="caret"></span>
-    </a>
-    <ul class="dropdown-menu">
-      ...
+    ```html
+    <ul class="nav nav-tabs">
+    ...
+    <li role="presentation" class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        Dropdown <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+        ...
+        </ul>
+    </li>
+    ...
     </ul>
-  </li>
-  ...
-</ul>
+    ```
 
 ##### Pills with dropdowns
 
-    Home
-    Help
-    Dropdown
+![IMG](IMG)
 
-
-
-<ul class="nav nav-pills">
-  ...
-  <li role="presentation" class="dropdown">
-    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-      Dropdown <span class="caret"></span>
-    </a>
-    <ul class="dropdown-menu">
-      ...
+    ```html
+    <ul class="nav nav-pills">
+    ...
+    <li role="presentation" class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        Dropdown <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+        ...
+        </ul>
+    </li>
+    ...
     </ul>
-  </li>
-  ...
-</ul>
+    ```
 
 ### Navbar
 
@@ -1017,392 +1275,329 @@ Add dropdown menus with a little extra HTML and the dropdowns JavaScript plugin.
 
 Navbars are responsive meta components that serve as navigation headers for your application or site. They begin collapsed (and are toggleable) in mobile views and become horizontal as the available viewport width increases.
 
-Justified navbar nav links are currently not supported.
-Overflowing content
+**Justified navbar nav links are currently not supported.**
 
-Since Bootstrap doesn't know how much space the content in your navbar needs, you might run into issues with content wrapping into a second row. To resolve this, you can:
+> **Overflowing content**
+>> Since Bootstrap doesn't know how much space the content in your navbar needs, you might run into issues with content wrapping into a second row. To resolve this, you can:
+>> * Reduce the amount or width of navbar items.
+>> * Hide certain navbar items at certain screen sizes using [responsive utility classes](https://getbootstrap.com/docs/3.3/css/#responsive-utilities).
+>> * Change the point at which your navbar switches between collapsed and horizontal mode. Customize the `@grid-float-breakpoint` variable or add your own media query.
 
-    Reduce the amount or width of navbar items.
-    Hide certain navbar items at certain screen sizes using responsive utility classes.
-    Change the point at which your navbar switches between collapsed and horizontal mode. Customize the @grid-float-breakpoint variable or add your own media query.
+> **Requires JavaScript plugin**
+>> If JavaScript is disabled and the viewport is narrow enough that the navbar collapses, it will be impossible to expand the navbar and view the content within the `.navbar-collapse`.
+The responsive navbar requires the [collapse plugin](https://getbootstrap.com/docs/3.3/javascript/#collapse) to be included in your version of Bootstrap.
 
-Requires JavaScript plugin
+> **Changing the collapsed mobile navbar breakpoint**
+>> The navbar collapses into its vertical mobile view when the viewport is narrower than `@grid-float-breakpoint`, and expands into its horizontal non-mobile view when the viewport is at least `@grid-float-breakpoint` in width. Adjust this variable in the Less source to control when the navbar collapses/expands. The default value is `768px` (the smallest "small" or "tablet" screen).
 
-If JavaScript is disabled and the viewport is narrow enough that the navbar collapses, it will be impossible to expand the navbar and view the content within the .navbar-collapse.
-
-The responsive navbar requires the collapse plugin to be included in your version of Bootstrap.
-Changing the collapsed mobile navbar breakpoint
-
-The navbar collapses into its vertical mobile view when the viewport is narrower than @grid-float-breakpoint, and expands into its horizontal non-mobile view when the viewport is at least @grid-float-breakpoint in width. Adjust this variable in the Less source to control when the navbar collapses/expands. The default value is 768px (the smallest "small" or "tablet" screen).
-Make navbars accessible
-
-Be sure to use a <nav> element or, if using a more generic element such as a <div>, add a role="navigation" to every navbar to explicitly identify it as a landmark region for users of assistive technologies.
+> **Make navbars accessible**
+>> Be sure to use a `<nav>` element or, if using a more generic element such as a `<div>`, add a `role="navigation"` to every navbar to explicitly identify it as a landmark region for users of assistive technologies.
 Brand
 
-    Link (current)
-    Link
-    Dropdown
+![IMG](IMG)
 
-    Link
-    Dropdown
-
-
-
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+    ```html
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Brand</a>
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+            </ul>
+            </li>
+        </ul>
+        <form class="navbar-form navbar-left">
+            <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+            </li>
+        </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    </nav>
+    ```
 
 #### Brand image
 
-Replace the navbar brand with your own image by swapping the text for an <img>. Since the .navbar-brand has its own padding and height, you may need to override some CSS depending on your image.
+Replace the navbar brand with your own image by swapping the text for an `<img>`. Since the `.navbar-brand` has its own padding and height, you may need to override some CSS depending on your image.
 Brand
 
+![IMG](IMG)
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-        <img alt="Brand" src="...">
-      </a>
+    ```html
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+            <img alt="Brand" src="...">
+        </a>
+        </div>
     </div>
-  </div>
-</nav>
+    </nav>
+    ```
 
 #### Forms
 
-Place form content within .navbar-form for proper vertical alignment and collapsed behavior in narrow viewports. Use the alignment options to decide where it resides within the navbar content.
+Place form content within `.navbar-form` for proper vertical alignment and collapsed behavior in narrow viewports. Use the alignment options to decide where it resides within the navbar content.
 
-As a heads up, .navbar-form shares much of its code with .form-inline via mixin. Some form controls, like input groups, may require fixed widths to be show up properly within a navbar.
-Brand
+As a heads up, `.navbar-form` shares much of its code with `.form-inline` via mixin. **Some form controls, like input groups, may require fixed widths to be show up properly within a navbar**.
 
+![IMG](IMG)
 
-<form class="navbar-form navbar-left" role="search">
-  <div class="form-group">
-    <input type="text" class="form-control" placeholder="Search">
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
+    ```html
+    <form class="navbar-form navbar-left" role="search">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    ```
 
-Mobile device caveats
+> **Mobile device caveats**
+>> There are some caveats regarding using form controls within fixed elements on mobile devices. [See our browser support docs](https://getbootstrap.com/docs/3.3/getting-started/#support-fixed-position-keyboards) for details.
 
-There are some caveats regarding using form controls within fixed elements on mobile devices. See our browser support docs for details.
-Always add labels
-
-Screen readers will have trouble with your forms if you don't include a label for every input. For these inline forms, you can hide the labels using the .sr-only class. There are further alternative methods of providing a label for assistive technologies, such as the aria-label, aria-labelledby or title attribute. If none of these is present, screen readers may resort to using the placeholder attribute, if present, but note that use of placeholder as a replacement for other labelling methods is not advised.
+> **Always add labels**
+>> Screen readers will have trouble with your forms if you don't include a label for every input. For these inline forms, you can hide the labels using the `.sr-only` class. There are further alternative methods of providing a label for assistive technologies, such as the `aria-label`, `aria-labelledby` or `title` attribute. If none of these is present, screen readers may resort to using the `placeholder` attribute, if present, but note that use of `placeholder` as a replacement for other labelling methods is not advised.
 
 #### Buttons
 
-Add the .navbar-btn class to <button> elements not residing in a <form> to vertically center them in the navbar.
-Brand
+Add the `.navbar-btn` class to `<button>` elements not residing in a `<form>` to vertically center them in the navbar.
 
+![IMG](IMG)
 
-<button type="button" class="btn btn-default navbar-btn">Sign in</button>
+    ```html
+    <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+    ```
 
-Context-specific usage
-
-Like the standard button classes, .navbar-btn can be used on <a> and <input> elements. However, neither .navbar-btn nor the standard button classes should be used on <a> elements within .navbar-nav.
+> **Context-specific usage**
+>> Like the standard [button classes](https://getbootstrap.com/docs/3.3/css/#buttons), `.navbar-btn` can be used on `<a>` and `<input>` elements. However, neither `.navbar-btn` nor the standard button classes should be used on `<a>` elements within `.navbar-nav`.
 
 #### Text
 
-Wrap strings of text in an element with .navbar-text, usually on a <p> tag for proper leading and color.
-Brand
+Wrap strings of text in an element with `.navbar-text`, usually on a `<p>` tag for proper leading and color.
 
-Signed in as Mark Otto
+![IMG](IMG)
 
-
-<p class="navbar-text">Signed in as Mark Otto</p>
+    ```html
+    <p class="navbar-text">Signed in as Mark Otto</p>
+    ```
 
 #### Non-nav links
 
-For folks using standard links that are not within the regular navbar navigation component, use the .navbar-link class to add the proper colors for the default and inverse navbar options.
-Brand
+For folks using standard links that are not within the regular navbar navigation component, use the `.navbar-link` class to add the proper colors for the default and inverse navbar options.
 
-Signed in as Mark Otto
+![IMG](IMG)
 
-
-<p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
+    ```html
+    <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
+    ```
 
 #### Component alignment
 
-Align nav links, forms, buttons, or text, using the .navbar-left or .navbar-right utility classes. Both classes will add a CSS float in the specified direction. For example, to align nav links, put them in a separate <ul> with the respective utility class applied.
+Align nav links, forms, buttons, or text, using the `.navbar-left` or `.navbar-right` utility classes. Both classes will add a CSS float in the specified direction. For example, to align nav links, put them in a separate `<ul>` with the respective utility class applied.
 
-These classes are mixin-ed versions of .pull-left and .pull-right, but they're scoped to media queries for easier handling of navbar components across device sizes.
-Right aligning multiple components
+These classes are mixin-ed versions of `.pull-left` and `.pull-right`, but they're scoped to media queries for easier handling of navbar components across device sizes.
 
-Navbars currently have a limitation with multiple .navbar-right classes. To properly space content, we use negative margin on the last .navbar-right element. When there are multiple elements using that class, these margins don't work as intended.
-
-We'll revisit this when we can rewrite that component in v4.
+> **Right aligning multiple components**
+>> Navbars currently have a limitation with multiple `.navbar-right` classes. To properly space content, we use negative margin on the last `.navbar-right` element. When there are multiple elements using that class, these margins don't work as intended.
+>> We'll revisit this when we can rewrite that component in v4.
 
 #### Fixed to top
 
-Add .navbar-fixed-top and include a .container or .container-fluid to center and pad navbar content.
-Brand
+Add `.navbar-fixed-top` and include a `.container` or `.container-fluid` to center and pad navbar content.
 
-    Home
-    Link
-    Link
+![IMG](IMG)
 
+    ```html
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        ...
+    </div>
+    </nav>
+    ```
 
-
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    ...
-  </div>
-</nav>
-
-Body padding required
-
-The fixed navbar will overlay your other content, unless you add padding to the top of the <body>. Try out your own values or use our snippet below. Tip: By default, the navbar is 50px high.
-
-
-body { padding-top: 70px; }
-
-Make sure to include this after the core Bootstrap CSS.
+> **Body padding required**
+>> The fixed navbar will overlay your other content, unless you add `padding` to the top of the `<body>`. Try out your own values or use our snippet below. Tip: By default, the navbar is 50px high.
+>> `body { padding-top: 70px; }`
+>> Make sure to include this after the core Bootstrap CSS.
 
 #### Fixed to bottom
 
-Add .navbar-fixed-bottom and include a .container or .container-fluid to center and pad navbar content.
-Brand
+Add `.navbar-fixed-bottom` and include a `.container` or `.container-fluid` to center and pad navbar content.
 
-    Home
-    Link
-    Link
+![IMG](IMG)
 
+    ```htmlclass="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+        ...
+    </div>
+    </nav>
+    ```
 
-
-<nav class="navbar navbar-default navbar-fixed-bottom">
-  <div class="container">
-    ...
-  </div>
-</nav>
-
-Body padding required
-
-The fixed navbar will overlay your other content, unless you add padding to the bottom of the <body>. Try out your own values or use our snippet below. Tip: By default, the navbar is 50px high.
-
-
-body { padding-bottom: 70px; }
-
-Make sure to include this after the core Bootstrap CSS.
+> **Body padding required**
+>> The fixed navbar will overlay your other content, unless you add `padding` to the bottom of the `<body>`. Try out your own values or use our snippet below. Tip: By default, the navbar is 50px high.
+>> `body { padding-bottom: 70px; }`
+>> Make sure to include this **after** the core Bootstrap CSS.
 
 #### Static top
 
-Create a full-width navbar that scrolls away with the page by adding .navbar-static-top and include a .container or .container-fluid to center and pad navbar content.
+Create a full-width navbar that scrolls away with the page by adding `.navbar-static-top` and include a `.container` or `.container-fluid` to center and pad navbar content.
+Unlike the `.navbar-fixed-*` classes, you do not need to change any padding on the body.
 
-Unlike the .navbar-fixed-* classes, you do not need to change any padding on the body.
-Brand
+![IMG](IMG)
 
-    Home
-    Link
-    Link
-
-
-
-<nav class="navbar navbar-default navbar-static-top">
-  <div class="container">
-    ...
-  </div>
-</nav>
+    ```html
+    <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        ...
+    </div>
+    </nav>
+    ```
 
 #### Inverted navbar
 
-Modify the look of the navbar by adding .navbar-inverse.
-Brand
+Modify the look of the navbar by adding `.navbar-inverse`.
 
-    Home
-    Link
-    Link
+![IMG](IMG)
 
-
-
-<nav class="navbar navbar-inverse">
-  ...
-</nav>
+    ```html
+    <nav class="navbar navbar-inverse">
+    ...
+    </nav>
+    ```
 
 ### Breadcrumbs
 
 **Indicate the current page's location within a navigational hierarchy.**
 
-Separators are automatically added in CSS through :before and content.
+Separators are automatically added in CSS through `:before` and `content`.
 
-    Home 
+![IMG](IMG)
 
-    Home Library 
-
-    Home Library Data 
-
-
-
-<ol class="breadcrumb">
-  <li><a href="#">Home</a></li>
-  <li><a href="#">Library</a></li>
-  <li class="active">Data</li>
-</ol>
+    ```html
+    <ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Library</a></li>
+    <li class="active">Data</li>
+    </ol>
+    ```
 
 ### Pagination
 
-**Provide pagination links for your site or app with the multi-page pagination component, or the simpler pager alternative.**
+**Provide pagination links for your site or app with the multi-page pagination component, or the simpler [pager alternative](https://getbootstrap.com/docs/3.3/components/#pagination-pager).**
 
 #### Default pagination
 
 Simple pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.
 
-    «
-    1
-    2
-    3
-    4
-    5
-    »
+![IMG](IMG)
 
+    ```html
+    <nav aria-label="Page navigation">
+    <ul class="pagination">
+        <li>
+        <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+        </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+        <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+        </a>
+        </li>
+    </ul>
+    </nav>
+    ```
 
-
-<nav aria-label="Page navigation">
-  <ul class="pagination">
-    <li>
-      <a href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li>
-      <a href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>
-
-Labelling the pagination component
-
-The pagination component should be wrapped in a <nav> element to identify it as a navigation section to screen readers and other assistive technologies. In addition, as a page is likely to have more than one such navigation section already (such as the primary navigation in the header, or a sidebar navigation), it is advisable to provide a descriptive aria-label for the <nav> which reflects its purpose. For example, if the pagination component is used to navigate between a set of search results, an appropriate label could be aria-label="Search results pages".
+> **Labelling the pagination component**
+>> The pagination component should be wrapped in a `<nav>` element to identify it as a navigation section to screen readers and other assistive technologies. In addition, as a page is likely to have more than one such navigation section already (such as the primary navigation in the header, or a sidebar navigation), it is advisable to provide a descriptive `aria-label` for the `<nav>` which reflects its purpose. For example, if the pagination component is used to navigate between a set of search results, an appropriate label could be `aria-label="Search results pages"`.
 
 ##### Disabled and active states
 
-Links are customizable for different circumstances. Use .disabled for unclickable links and .active to indicate the current page.
+Links are customizable for different circumstances. Use `.disabled` for unclickable links and `.active` to indicate the current page.
 
-    «
-    1 (current)
-    2
-    3
-    4
-    5
-    »
+![IMG](IMG)
 
+    ```html
+    <nav aria-label="...">
+    <ul class="pagination">
+        <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+        ...
+    </ul>
+    </nav>
+    ```
 
+We recommend that you swap out active or disabled anchors for `<span>`, or omit the anchor in the case of the previous/next arrows, to remove click functionality while retaining intended styles.
 
-<nav aria-label="...">
-  <ul class="pagination">
-    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-    ...
-  </ul>
-</nav>
+![IMG](IMG)
 
-We recommend that you swap out active or disabled anchors for <span>, or omit the anchor in the case of the previous/next arrows, to remove click functionality while retaining intended styles.
-
-
-<nav aria-label="...">
-  <ul class="pagination">
-    <li class="disabled">
-      <span>
-        <span aria-hidden="true">&laquo;</span>
-      </span>
-    </li>
-    <li class="active">
-      <span>1 <span class="sr-only">(current)</span></span>
-    </li>
-    ...
-  </ul>
-</nav>
+    ```html
+    <nav aria-label="...">
+    <ul class="pagination">
+        <li class="disabled">
+        <span>
+            <span aria-hidden="true">&laquo;</span>
+        </span>
+        </li>
+        <li class="active">
+        <span>1 <span class="sr-only">(current)</span></span>
+        </li>
+        ...
+    </ul>
+    </nav>
+    ```
 
 ##### Sizing
 
-Fancy larger or smaller pagination? Add .pagination-lg or .pagination-sm for additional sizes.
+Fancy larger or smaller pagination? Add `.pagination-lg` or `.pagination-sm` for additional sizes.
 
-    «
-    1
-    2
-    3
-    4
-    5
-    »
+  ![IMG](IMG)
 
-    «
-    1
-    2
-    3
-    4
-    5
-    »
-
-    «
-    1
-    2
-    3
-    4
-    5
-    »
-
-
-
-<nav aria-label="..."><ul class="pagination pagination-lg">...</ul></nav>
-<nav aria-label="..."><ul class="pagination">...</ul></nav>
-<nav aria-label="..."><ul class="pagination pagination-sm">...</ul></nav>
+    ```html
+    <nav aria-label="..."><ul class="pagination pagination-lg">...</ul></nav>
+    <nav aria-label="..."><ul class="pagination">...</ul></nav>
+    <nav aria-label="..."><ul class="pagination pagination-sm">...</ul></nav>
+    ```
 
 #### Pager
 
@@ -1412,206 +1607,190 @@ Quick previous and next links for simple pagination implementations with light m
 
 By default, the pager centers links.
 
-    Previous Next 
+![IMG](IMG)
 
-
-
-<nav aria-label="...">
-  <ul class="pager">
-    <li><a href="#">Previous</a></li>
-    <li><a href="#">Next</a></li>
-  </ul>
-</nav>
+    ```html
+    <nav aria-label="...">
+    <ul class="pager">
+        <li><a href="#">Previous</a></li>
+        <li><a href="#">Next</a></li>
+    </ul>
+    </nav>
+    ```
 
 ##### Aligned links
 
 Alternatively, you can align each link to the sides:
 
-    ← Older
-    Newer →
+![IMG](IMG)
 
-
-
-<nav aria-label="...">
-  <ul class="pager">
-    <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
-    <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
-  </ul>
-</nav>
+    ```html
+    <nav aria-label="...">
+    <ul class="pager">
+        <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+        <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+    </ul>
+    </nav>
+    ```
 
 ##### Optional disabled state
 
-Pager links also use the general .disabled utility class from the pagination.
+Pager links also use the general `.disabled` utility class from the pagination.
 
-    ← Older
-    Newer →
+![IMG](IMG)
 
-
-
-<nav aria-label="...">
-  <ul class="pager">
-    <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
-    <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
-  </ul>
-</nav>
+    ```html
+    <nav aria-label="...">
+    <ul class="pager">
+        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+        <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+    </ul>
+    </nav>
+    ```
 
 ### Labels
 
 #### Example
 
-Example heading New
-Example heading New
-Example heading New
-Example heading New
-Example heading New
-Example heading New
+![IMG](IMG)
 
-
-<h3>Example heading <span class="label label-default">New</span></h3>
+    ```html
+    <h3>Example heading <span class="label label-default">New</span></h3>
+    ```
 
 #### Available variations
 
 Add any of the below mentioned modifier classes to change the appearance of a label.
 Default Primary Success Info Warning Danger
 
+    ```html
+    <span class="label label-default">Default</span>
+    <span class="label label-primary">Primary</span>
+    <span class="label label-success">Success</span>
+    <span class="label label-info">Info</span>
+    <span class="label label-warning">Warning</span>
+    <span class="label label-danger">Danger</span>
+    ```
 
-<span class="label label-default">Default</span>
-<span class="label label-primary">Primary</span>
-<span class="label label-success">Success</span>
-<span class="label label-info">Info</span>
-<span class="label label-warning">Warning</span>
-<span class="label label-danger">Danger</span>
-
-Have tons of labels?
-
-Rendering problems can arise when you have dozens of inline labels within a narrow container, each containing its own inline-block element (like an icon). The way around this is setting display: inline-block;. For context and an example, see #13219.
+> **Have tons of labels?**
+>> Rendering problems can arise when you have dozens of inline labels within a narrow container, each containing its own `inline-block` element (like an icon). The way around this is setting `display: inline-block;`. For context and an example, [see #13219](https://github.com/twbs/bootstrap/issues/13219).
 
 ### Badges
 
-**Easily highlight new or unread items by adding a <span class="badge"> to links, Bootstrap navs, and more.**
+**Easily highlight new or unread items by adding a `<span class="badge">` to links, Bootstrap navs, and more.**
 
-Inbox 42
+![IMG](IMG)
 
-
-
-<a href="#">Inbox <span class="badge">42</span></a>
-
-<button class="btn btn-primary" type="button">
-  Messages <span class="badge">4</span>
-</button>
+    ```html
+    <a href="#">Inbox <span class="badge">42</span></a>
+    <button class="btn btn-primary" type="button">
+    Messages <span class="badge">4</span>
+    </button>
+    ```
 
 #### Self collapsing
 
 When there are no new or unread items, badges will simply collapse (via CSS's :empty selector) provided no content exists within.
-Cross-browser compatibility
 
-Badges won't self collapse in Internet Explorer 8 because it lacks support for the :empty selector.
-Adapts to active nav states
+> **Cross-browser compatibility**
+>> Badges won't self collapse in Internet Explorer 8 because it lacks support for the :empty selector.
+
+#### Adapts to active nav states
 
 Built-in styles are included for placing badges in active states in pill navigations.
 
-    Home 42
-    Profile
-    Messages 3
+![IMG](IMG)
 
-
-
-<ul class="nav nav-pills" role="tablist">
-  <li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a></li>
-  <li role="presentation"><a href="#">Profile</a></li>
-  <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
-</ul>
+    ```html
+    <ul class="nav nav-pills" role="tablist">
+    <li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a></li>
+    <li role="presentation"><a href="#">Profile</a></li>
+    <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
+    </ul>
+    ```
 
 ### Jumbotron
 
 A lightweight, flexible component that can optionally extend the entire viewport to showcase key content on your site.
 Hello, world!
 
-This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+![IMG](IMG)
 
+    ```html
+    <div class="jumbotron">
+    <h1>Hello, world!</h1>
+    <p>...</p>
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    </div>
+    ```
 
+To make the jumbotron full width, and without rounded corners, place it outside all `.containers` and instead add a `.container` within.
 
-<div class="jumbotron">
-  <h1>Hello, world!</h1>
-  <p>...</p>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-</div>
+![IMG](IMG)
 
-To make the jumbotron full width, and without rounded corners, place it outside all .containers and instead add a .container within.
-
-
-<div class="jumbotron">
-  <div class="container">
-    ...
-  </div>
-</div>
+    ```html
+    <div class="jumbotron">
+    <div class="container">
+        ...
+    </div>
+    </div>
+    ```
 
 ### Page header
 
-A simple shell for an h1 to appropriately space out and segment sections of content on a page. It can utilize the h1's default small element, as well as most other components (with additional styles).
-Example page header Subtext for header
+A simple shell for an `h1` to appropriately space out and segment sections of content on a page. It can utilize the `h1`'s default `small` element, as well as most other components (with additional styles).
 
+![IMG](IMG)
 
-<div class="page-header">
-  <h1>Example page header <small>Subtext for header</small></h1>
-</div>
+    ```html
+    <div class="page-header">
+    <h1>Example page header <small>Subtext for header</small></h1>
+    </div>
+    ```
 
 ### Thumbnails
 
-**Extend Bootstrap's grid system with the thumbnail component to easily display grids of images, videos, text, and more.**
+**Extend Bootstrap's [grid system](https://getbootstrap.com/docs/3.3/css/#grid) with the thumbnail component to easily display grids of images, videos, text, and more.**
 
-If you're looking for Pinterest-like presentation of thumbnails of varying heights and/or widths, you'll need to use a third-party plugin such as Masonry, Isotope, or Salvattore.
+If you're looking for Pinterest-like presentation of thumbnails of varying heights and/or widths, you'll need to use a third-party plugin such as  [Masonry](http://masonry.desandro.com/), [Isotope](http://isotope.metafizzy.co/), or [Salvattore](http://salvattore.com/).
 
 #### Default example
 
 By default, Bootstrap's thumbnails are designed to showcase linked images with minimal required markup.
-100%x180
-100%x180
-100%x180
-100%x180
 
+![IMG](IMG)
 
-<div class="row">
-  <div class="col-xs-6 col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="..." alt="...">
-    </a>
-  </div>
-  ...
-</div>
+    ```html
+    <div class="row">
+    <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+        <img src="..." alt="...">
+        </a>
+    </div>
+    ...
+    </div>
+    ```
 
 #### Custom content
 
 With a bit of extra markup, it's possible to add any kind of HTML content like headings, paragraphs, or buttons into thumbnails.
-100%x200
-Thumbnail label
 
-Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+![IMG](IMG)
 
-100%x200
-Thumbnail label
-
-Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-
-100%x200
-Thumbnail label
-
-Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-
-
-
-<div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="..." alt="...">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
+    ```html
+    <div class="row">
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+        <img src="..." alt="...">
+        <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>...</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        </div>
+        </div>
     </div>
-  </div>
-</div>
+    </div>
+    ```
 
 ### Alerts
 
@@ -1619,83 +1798,88 @@ Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non m
 
 #### Examples
 
-Wrap any text and an optional dismiss button in .alert and one of the four contextual classes (e.g., .alert-success) for basic alert messages.
-No default class
+Wrap any text and an optional dismiss button in `.alert` and one of the four contextual classes (e.g., `.alert-success`) for basic alert messages.
 
-Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger.
+> **No default class**
+>> Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger.
 Well done! You successfully read this important alert message.
 Heads up! This alert needs your attention, but it's not super important.
 Warning! Better check yourself, you're not looking too good.
 Oh snap! Change a few things up and try submitting again.
 
 
-<div class="alert alert-success" role="alert">...</div>
-<div class="alert alert-info" role="alert">...</div>
-<div class="alert alert-warning" role="alert">...</div>
-<div class="alert alert-danger" role="alert">...</div>
+![IMG](IMG)
+
+    ```html
+    <div class="alert alert-success" role="alert">...</div>
+    <div class="alert alert-info" role="alert">...</div>
+    <div class="alert alert-warning" role="alert">...</div>
+    <div class="alert alert-danger" role="alert">...</div>
+    ```
 
 #### Dismissible alerts
 
-Build on any alert by adding an optional .alert-dismissible and close button.
-Requires JavaScript alert plugin
+Build on any alert by adding an optional `.alert-dismissible` and close button.
 
-For fully functioning, dismissible alerts, you must use the alerts JavaScript plugin.
-Warning! Better check yourself, you're not looking too good.
+> **Requires JavaScript alert plugin**
+>> For fully functioning, dismissible alerts, you must use the [alerts JavaScript plugin](https://getbootstrap.com/docs/3.3/javascript/#alerts).
 
+![IMG](IMG)
 
-<div class="alert alert-warning alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Warning!</strong> Better check yourself, you're not looking too good.
-</div>
+    ```html
+    <div class="alert alert-warning alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </div>
+    ```
 
-Ensure proper behavior across all devices
-
-Be sure to use the <button> element with the data-dismiss="alert" data attribute.
+> **Ensure proper behavior across all devices**
+>> Be sure to use the `<button>` element with the `data-dismiss="alert"` data attribute.
 
 #### Links in alerts
 
-Use the .alert-link utility class to quickly provide matching colored links within any alert.
-Well done! You successfully read this important alert message.
-Heads up! This alert needs your attention, but it's not super important.
-Warning! Better check yourself, you're not looking too good.
-Oh snap! Change a few things up and try submitting again.
+Use the `.alert-link` utility class to quickly provide matching colored links within any alert.
 
+![IMG](IMG)
 
-<div class="alert alert-success" role="alert">
-  <a href="#" class="alert-link">...</a>
-</div>
-<div class="alert alert-info" role="alert">
-  <a href="#" class="alert-link">...</a>
-</div>
-<div class="alert alert-warning" role="alert">
-  <a href="#" class="alert-link">...</a>
-</div>
-<div class="alert alert-danger" role="alert">
-  <a href="#" class="alert-link">...</a>
-</div>
+    ```html
+    <div class="alert alert-success" role="alert">
+    <a href="#" class="alert-link">...</a>
+    </div>
+    <div class="alert alert-info" role="alert">
+    <a href="#" class="alert-link">...</a>
+    </div>
+    <div class="alert alert-warning" role="alert">
+    <a href="#" class="alert-link">...</a>
+    </div>
+    <div class="alert alert-danger" role="alert">
+    <a href="#" class="alert-link">...</a>
+    </div>
+    ```
 
 ### Progress bars
 
 **Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.**
 
-Cross-browser compatibility
+> **Cross-browser compatibility**
+>> Progress bars use CSS3 transitions and animations to achieve some of their effects. These features are not supported in Internet Explorer 9 and below or older versions of Firefox. Opera 12 does not support animations.
 
-Progress bars use CSS3 transitions and animations to achieve some of their effects. These features are not supported in Internet Explorer 9 and below or older versions of Firefox. Opera 12 does not support animations.
-Content Security Policy (CSP) compatibility
-
-If your website has a Content Security Policy (CSP) which doesn't allow style-src 'unsafe-inline', then you won't be able to use inline style attributes to set progress bar widths as shown in our examples below. Alternative methods for setting the widths that are compatible with strict CSPs include using a little custom JavaScript (that sets element.style.width) or using custom CSS classes.
+> **Content Security Policy (CSP) compatibility**
+>> If your website has a [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/Security/CSP) which doesn't allow `style-src 'unsafe-inline'`, then you won't be able to use inline `style` attributes to set progress bar widths as shown in our examples below. Alternative methods for setting the widths that are compatible with strict CSPs include using a little custom JavaScript (that sets `element.style.width`) or using custom CSS classes.
 
 #### Basic example
 
 Default progress bar.
-60% Complete
 
+![IMG](IMG)
 
-<div class="progress">
-  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-    <span class="sr-only">60% Complete</span>
-  </div>
-</div>
+    ```html
+    <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+        <span class="sr-only">60% Complete</span>
+    </div>
+    </div>
+    ```
 
 #### With label
 
