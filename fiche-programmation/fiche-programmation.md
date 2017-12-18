@@ -46,7 +46,19 @@ const pi = 3.14 REAL
 * Opérateurs sur les chaines & © concaténation
 Alt+0169
 
+### Priorité des opérateurs
+1. () Parenthèses
+2. ^ élévation à la puissance
+3. * / multiplications et divisions
+4. + - additions et soustractions
 
+Table de vérité
+
+| A | B | A AND B | A OR B |
+| T | T | T | T |
+| T | F | F | T |
+| F| T | F | T |
+| F | F | F | F |
 
 ### Boucles
 
