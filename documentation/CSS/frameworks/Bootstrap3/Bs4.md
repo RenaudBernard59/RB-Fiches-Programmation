@@ -8,19 +8,19 @@
 
 #### 1-Individual or compiled
 
-Plugins can be included individually (using Bootstrap's individual *.js files), or all at once (using bootstrap.js or the minified bootstrap.min.js).
-Using the compiled JavaScript
+Plugins can be included individually (using Bootstrap's individual `*.js` files), or all at once (using `bootstrap.js` or the minified `bootstrap.min.js`).
 
-Both bootstrap.js and bootstrap.min.js contain all plugins in a single file. Include only one.
-Plugin dependencies
+>**Using the compiled JavaScript**
+>>Both `bootstrap.js` and `bootstrap.min.js` contain all plugins in a single file. Include only one.
 
-Some plugins and CSS components depend on other plugins. If you include plugins individually, make sure to check for these dependencies in the docs. Also note that all plugins depend on jQuery (this means jQuery must be included before the plugin files). Consult our bower.json to see which versions of jQuery are supported.
+>**Plugin dependencies**
+>>Some plugins and CSS components depend on other plugins. If you include plugins individually, make sure to check for these dependencies in the docs. Also note that all plugins depend on jQuery (this means jQuery must be included before the plugin files). [Consult our `bower.json`](https://github.com/twbs/bootstrap/blob/v3.3.7/bower.json) to see which versions of jQuery are supported.
 
 #### 2-Data attributes
 
 You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first-class API and should be your first consideration when using a plugin.
 
-That said, in some situations it may be desirable to turn this functionality off. Therefore, we also provide the ability to disable the data attribute API by unbinding all events on the document namespaced with data-api. This looks like this:
+That said, in some situations it may be desirable to turn this functionality off. Therefore, we also provide the ability to disable the data attribute API by unbinding all events on the document namespaced with `data-api`. This looks like this:
 
 
     ```JavaScript/JQuery
@@ -32,9 +32,8 @@ Alternatively, to target a specific plugin, just include the plugin's name as a 
     $(document).off('.alert.data-api')
     ```
 
-Only one plugin per element via data attributes
-
-Don't use data attributes from multiple plugins on the same element. For example, a button cannot both have a tooltip and toggle a modal. To accomplish this, use a wrapping element.
+>**Only one plugin per element via data attributes**
+>>Don't use data attributes from multiple plugins on the same element. For example, a button cannot both have a tooltip and toggle a modal. To accomplish this, use a wrapping element.
 
 #### 3-Programmatic API
 
@@ -52,10 +51,11 @@ All methods should accept an optional options object, a string which targets a p
     $('#myModal').modal('show')                // initializes and invokes show immediately
     ```
 
-Each plugin also exposes its raw constructor on a Constructor property: $.fn.popover.Constructor. If you'd like to get a particular plugin instance, retrieve it directly from an element: $('[rel="popover"]').data('popover').
-Default settings
+Each plugin also exposes its raw constructor on a `Constructor` property: `$.fn.popover.Constructor`. If you'd like to get a particular plugin instance, retrieve it directly from an element: `$('[rel="popover"]').data('popover')`.
 
-You can change the default settings for a plugin by modifying the plugin's Constructor.DEFAULTS object:
+##### a-Default settings
+
+You can change the default settings for a plugin by modifying the plugin's `constructor.DEFAULTS` object:
 
     ```JavaScript/JQuery
     $.fn.modal.Constructor.DEFAULTS.keyboard = false // changes default for the modal plugin's `keyboard` option to false
@@ -63,7 +63,7 @@ You can change the default settings for a plugin by modifying the plugin's Const
 
 #### 4-No conflict
 
-Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call .noConflict on the plugin you wish to revert the value of.
+Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call `.noConflict` on the plugin you wish to revert the value of.
 
     ```JavaScript/JQuery
     var bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
@@ -72,11 +72,11 @@ Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In 
 
 #### 5-Events
 
-Bootstrap provides custom events for most plugins' unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. show) is triggered at the start of an event, and its past participle form (ex. shown) is triggered on the completion of an action.
+Bootstrap provides custom events for most plugins' unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. `show`) is triggered at the start of an event, and its past participle form (ex. `shown`) is triggered on the completion of an action.
 
 As of 3.0.0, all Bootstrap events are namespaced.
 
-All infinitive events provide preventDefault functionality. This provides the ability to stop the execution of an action before it starts.
+All infinitive events provide `preventDefault` functionality. This provides the ability to stop the execution of an action before it starts.
 
     ```JavaScript/JQuery
     $('#myModal').on('show.bs.modal', function (e) {
@@ -86,7 +86,7 @@ All infinitive events provide preventDefault functionality. This provides the ab
 
 #### 6-Version numbers
 
-The version of each of Bootstrap's jQuery plugins can be accessed via the VERSION property of the plugin's constructor. For example, for the tooltip plugin:
+The version of each of Bootstrap's jQuery plugins can be accessed via the `VERSION` property of the plugin's constructor. For example, for the tooltip plugin:
 
     ```JavaScript/JQuery
     $.fn.tooltip.Constructor.VERSION // => "3.3.7"
@@ -94,24 +94,24 @@ The version of each of Bootstrap's jQuery plugins can be accessed via the VERSIO
 
 #### 7-No special fallbacks when JavaScript is disabled
 
-Bootstrap's plugins don't fall back particularly gracefully when JavaScript is disabled. If you care about the user experience in this case, use <noscript> to explain the situation (and how to re-enable JavaScript) to your users, and/or add your own custom fallbacks.
-Third-party libraries
+Bootstrap's plugins don't fall back particularly gracefully when JavaScript is disabled. If you care about the user experience in this case, use `<noscript>` to explain the situation (and how to re-enable JavaScript) to your users, and/or add your own custom fallbacks.
 
-Bootstrap does not officially support third-party JavaScript libraries like Prototype or jQuery UI. Despite .noConflict and namespaced events, there may be compatibility problems that you need to fix on your own.
+>**Third-party libraries**
+>>**Bootstrap does not officially support third-party JavaScript libraries** like Prototype or jQuery UI. Despite `.noConflict` and namespaced events, there may be compatibility problems that you need to fix on your own.
 
-### B-Transitions transition.js
+### B-Transitions (transition.js)
 
 #### 1-About transitions
 
-For simple transition effects, include transition.js once alongside the other JS files. If you're using the compiled (or minified) bootstrap.js, there is no need to include this—it's already there.
+For simple transition effects, include `transition.js` once alongside the other JS files. If you're using the compiled (or minified) `bootstrap.js`, there is no need to include this—it's already there.
 
 #### 2-What's inside
 
-Transition.js is a basic helper for transitionEnd events as well as a CSS transition emulator. It's used by the other plugins to check for CSS transition support and to catch hanging transitions.
+Transition.js is a basic helper for `transitionEnd` events as well as a CSS transition emulator. It's used by the other plugins to check for CSS transition support and to catch hanging transitions.
 
 #### 3-Disabling transitions
 
-Transitions can be globally disabled using the following JavaScript snippet, which must come after transition.js (or bootstrap.js or bootstrap.min.js, as the case may be) has loaded:
+Transitions can be globally disabled using the following JavaScript snippet, which must come after `transition.js` (or `bootstrap.js` or `bootstrap.min.js`, as the case may be) has loaded:
 
     ```JavaScript/JQuery
     $.support.transition = false
@@ -120,17 +120,17 @@ Transitions can be globally disabled using the following JavaScript snippet, whi
 ### C-Modals (modal.js)
 
 Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.
-Multiple open modals not supported
 
-Be sure not to open a modal while another is still visible. Showing more than one modal at a time requires custom code.
-Modal markup placement
+>**Multiple open modals not supported**
+>>Be sure not to open a modal while another is still visible. Showing more than one modal at a time requires custom code.
 
-Always try to place a modal's HTML code in a top-level position in your document to avoid other components affecting the modal's appearance and/or functionality.
-Mobile device caveats
+>**Modal markup placement**
+>>Always try to place a modal's HTML code in a top-level position in your document to avoid other components affecting the modal's appearance and/or functionality.
 
-There are some caveats regarding using modals on mobile devices. See our browser support docs for details.
+>**Mobile device caveats**
+>>There are some caveats regarding using modals on mobile devices. See our browser support docs for details.
 
-Due to how HTML5 defines its semantics, the autofocus HTML attribute has no effect in Bootstrap modals. To achieve the same effect, use some custom JavaScript:
+**Due to how HTML5 defines its semantics, the `autofocus` HTML attribute has no effect in Bootstrap modals**. To achieve the same effect, use some custom JavaScript:
 
     ```JavaScript/JQuery
     $('#myModal').on('shown.bs.modal', function () {
@@ -146,6 +146,8 @@ A rendered modal with header, body, and set of actions in the footer.
 Modal title
 
 One fine body…
+
+IMG
 
     ```HTML
     <div class="modal fade" tabindex="-1" role="dialog">
@@ -170,6 +172,8 @@ One fine body…
 ##### b-Live demo
 
 Toggle a modal via JavaScript by clicking the button below. It will slide down and fade in from the top of the page.
+
+IMG
 
     ```HTML
     <!-- Button trigger modal -->
@@ -196,18 +200,18 @@ Toggle a modal via JavaScript by clicking the button below. It will slide down a
     </div>
     ```
 
-Make modals accessible
+**Mak modals accessible**
+Be sure to add `role="dialog"` and `aria-labelledby="..."`, referencing the modal title, to `.modal`, and `role="document"` to the `.modal-dialog` itself.
+Additionally, you may give a description of your modal dialog with `aria-describedby` on `.modal`.
 
-Be sure to add role="dialog" and aria-labelledby="...", referencing the modal title, to .modal, and role="document" to the .modal-dialog itself.
-
-Additionally, you may give a description of your modal dialog with aria-describedby on .modal.
-Embedding YouTube videos
-
+**Embedding YouTube videos**
 Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. See this helpful Stack Overflow post for more information.
 
 #### 2-Optional sizes
 
-Modals have two optional sizes, available via modifier classes to be placed on a .modal-dialog.
+Modals have two optional sizes, available via modifier classes to be placed on a `.modal-dialog`.
+
+IMG
 
     ```HTML
     <!-- Large modal -->
@@ -242,7 +246,9 @@ For modals that simply appear rather than fade in to view, remove the .fade clas
 
 #### 4-Using the grid system
 
-To take advantage of the Bootstrap grid system within a modal, just nest .rows within the .modal-body and then use the normal grid system classes.
+To take advantage of the Bootstrap grid system within a modal, just nest `.rows` within the `.modal-body` and then use the normal grid system classes.
+
+IMG
 
     ```HTML
     <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
@@ -289,8 +295,10 @@ To take advantage of the Bootstrap grid system within a modal, just nest .rows w
 
 #### 5-Varying modal content based on trigger button
 
-Have a bunch of buttons that all trigger the same modal, just with slightly different contents? Use event.relatedTarget and HTML data-* attributes (possibly via jQuery) to vary the contents of the modal depending on which button was clicked. See the Modal Events docs for details on relatedTarget,
+Have a bunch of buttons that all trigger the same modal, just with slightly different contents? Use `event.relatedTarget` and [HTML `data-*` attributes](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes) (possibly [via jQuery](http://api.jquery.com/data/)) to vary the contents of the modal depending on which button was clicked. See the Modal Events docs for details on `relatedTarget`,
 ...more buttons...
+
+IMG
 
     ```HTML
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
@@ -340,11 +348,11 @@ Have a bunch of buttons that all trigger the same modal, just with slightly diff
 
 #### 6-Usage
 
-The modal plugin toggles your hidden content on demand, via data attributes or JavaScript. It also adds .modal-open to the <body> to override default scrolling behavior and generates a .modal-backdrop to provide a click area for dismissing shown modals when clicking outside the modal.
+The modal plugin toggles your hidden content on demand, via data attributes or JavaScript. It also adds `.modal-open` to the `<body>` to override default scrolling behavior and generates a `.modal-backdrop` to provide a click area for dismissing shown modals when clicking outside the modal.
 
 ##### a-Via data attributes
 
-Activate a modal without writing JavaScript. Set data-toggle="modal" on a controller element, like a button, along with a data-target="#foo" or href="#foo" to target a specific modal to toggle.
+Activate a modal without writing JavaScript. Set `data-toggle="modal"` on a controller element, like a button, along with a `data-target="#foo"` or `href="#foo"` to target a specific modal to toggle.
 
     ```HTML
     <button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
@@ -352,7 +360,7 @@ Activate a modal without writing JavaScript. Set data-toggle="modal" on a contro
 
 ##### b-Via JavaScript
 
-Call a modal with id myModal with a single line of JavaScript:
+Call a modal with id `myModal` with a single line of JavaScript:
 
     ```JavaScript/JQuery
     $('#myModal').modal(options)
@@ -360,24 +368,18 @@ Call a modal with id myModal with a single line of JavaScript:
 
 ##### c-Options
 
-Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-, as in data-backdrop="".
-Name    type    default     description
-backdrop    boolean or the string 'static'  true    Includes a modal-backdrop element. Alternatively, specify static for a backdrop which doesn't close the modal on click.
-keyboard    boolean     true    Closes the modal when escape key is pressed
-show    boolean     true    Shows the modal when initialized.
-remote  path    false   
+Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-backdrop=""`.
 
-This option is deprecated since v3.3.0 and has been removed in v4. We recommend instead using client-side templating or a data binding framework, or calling jQuery.load yourself.
-
-If a remote URL is provided, content will be loaded one time via jQuery's load method and injected into the .modal-content div. If you're using the data-api, you may alternatively use the href attribute to specify the remote source. An example of this is shown below:
-
-    ```HTML
-    <a data-toggle="modal" href="remote.html" data-target="#modal">Click me</a>
-    ```
+| Name | type | default | description |
+|---|---|---|---|
+| backdrop | boolean or the string `'static'` | true | Includes a modal-backdrop element. Alternatively, specify static for a backdrop which doesn't close the modal on click. |
+| keyboard | boolean | true | Closes the modal when escape key is pressed |
+| show | boolean | true | Shows the modal when initialized. |
+| remote | path | false | This option is deprecated since v3.3.0 and has been removed in v4. We recommend instead using client-side templating or a data binding framework, or calling [jQuery.load](http://api.jquery.com/load/) yourself. If a remote URL is provided, **content will be loaded one time** via jQuery's `load` method and injected into the `.modal-content` div. If you're using the data-api, you may alternatively use the `href` attribute to specify the remote source. An example of this is shown below: `<a data-toggle="modal" href="remote.html" data-target="#modal">Click me</a>` |
 
 ##### d-Methods
 
-###### i-.modal(options)
+###### i-`.modal(options)`
 
 Activates your content as a modal. Accepts an optional options `object`.
 
@@ -387,31 +389,31 @@ Activates your content as a modal. Accepts an optional options `object`.
     })
     ```
 
-###### ii-.modal('toggle')
+###### ii-`.modal('toggle')`
 
-Manually toggles a modal. Returns to the caller before the modal has actually been shown or hidden (i.e. before the shown.bs.modal or hidden.bs.modal event occurs).
+Manually toggles a modal. **Returns to the caller before the modal has actually been shown or hidden** (i.e. before the `shown.bs.modal` or `hidden.bs.modal` event occurs).
 
     ```JavaScript/JQuery
     $('#myModal').modal('toggle')
     ```
 
-###### iii-.modal('show')
+###### iii-`.modal('show')`
 
-Manually opens a modal. Returns to the caller before the modal has actually been shown (i.e. before the shown.bs.modal event occurs).
+Manually opens a modal. **Returns to the caller before the modal has actually been shown** (i.e. before the `shown.bs.modal` event occurs).
 
     ```JavaScript/JQuery
     $('#myModal').modal('show')
     ```
 
-###### iv-.modal('hide')
+###### iv-`.modal('hide')`
 
-Manually hides a modal. Returns to the caller before the modal has actually been hidden (i.e. before the hidden.bs.modal event occurs).
+Manually hides a modal. **Returns to the caller before the modal has actually been hidden** (i.e. before the `hidden.bs.modal` event occurs).
 
     ```JavaScript/JQuery
     $('#myModal').modal('hide')
     ```
 
-###### v-.modal('handleUpdate')
+###### v-`.modal('handleUpdate')`
 
 Readjusts the modal's positioning to counter a scrollbar in case one should appear, which would make the modal jump to the left.
 
@@ -426,12 +428,14 @@ Only needed when the height of the modal changes while it is open.
 Bootstrap's modal class exposes a few events for hooking into modal functionality.
 
 All modal events are fired at the modal itself (i.e. at the `<div class="modal">`).
-Event Type  Description
-show.bs.modal   This event fires immediately when the show instance method is called. If caused by a click, the clicked element is available as the relatedTarget property of the event.
-shown.bs.modal  This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete). If caused by a click, the clicked element is available as the relatedTarget property of the event.
-hide.bs.modal   This event is fired immediately when the hide instance method has been called.
-hidden.bs.modal     This event is fired when the modal has finished being hidden from the user (will wait for CSS transitions to complete).
-loaded.bs.modal     This event is fired when the modal has loaded content using the remote option.
+
+| Event Type | Description |
+| --- | --- |
+| show.bs.modal | This event fires immediately when the `show` instance method is called. If caused by a click, the clicked element is available as the `relatedTarget` property of the event. |
+| shown.bs.modal | This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete). If caused by a click, the clicked element is available as the relatedTarget property of the event.
+| hide.bs.modal | This event is fired immediately when the `hide` instance method has been called. |
+| hidden.bs.modal | This event is fired when the modal has finished being hidden from the user (will wait for CSS transitions to complete). |
+| loaded.bs.modal | This event is fired when the modal has loaded content using the `remote` option. |
 
     ```JavaScript/JQuery
     $('#myModal').on('hidden.bs.modal', function (e) {
@@ -448,31 +452,23 @@ Add dropdown menus to nearly anything with this simple plugin, including the nav
 
 ##### a-Within a navbar
 
-Project Name
-
-    Dropdown
-    Dropdown
-
-    Dropdown
+IMG
 
 ##### b-Within pills
 
-    Regular link
-    Dropdown
-    Dropdown
-    Dropdown
+IMG
 
 #### 2-Usage
 
-Via data attributes or JavaScript, the dropdown plugin toggles hidden content (dropdown menus) by toggling the .open class on the parent list item.
+Via data attributes or JavaScript, the dropdown plugin toggles hidden content (dropdown menus) by toggling the `.open` class on the parent list item.
 
-On mobile devices, opening a dropdown adds a .dropdown-backdrop as a tap area for closing dropdown menus when tapping outside the menu, a requirement for proper iOS support. This means that switching from an open dropdown menu to a different dropdown menu requires an extra tap on mobile.
+On mobile devices, opening a dropdown adds a `.dropdown-backdrop` as a tap area for closing dropdown menus when tapping outside the menu, a requirement for proper iOS support. **This means that switching from an open dropdown menu to a different dropdown menu requires an extra tap on mobile.**
 
-Note: The data-toggle="dropdown" attribute is relied on for closing dropdown menus at an application level, so it's a good idea to always use it.
+Note: The `data-toggle="dropdown"` attribute is relied on for closing dropdown menus at an application level, so it's a good idea to always use it.
 
 ##### a-Via data attributes
 
-Add data-toggle="dropdown" to a link or button to toggle a dropdown.
+Add `data-toggle="dropdown"` to a link or button to toggle a dropdown.
 
     ```HTML
     <div class="dropdown">
@@ -486,7 +482,7 @@ Add data-toggle="dropdown" to a link or button to toggle a dropdown.
     </div>
     ```
 
-To keep URLs intact with link buttons, use the data-target attribute instead of href="#".
+To keep URLs intact with link buttons, use the `data-target` attribute instead of `href="#"`.
 
     ```HTML
     <div class="dropdown">
@@ -494,7 +490,6 @@ To keep URLs intact with link buttons, use the data-target attribute instead of 
         Dropdown trigger
         <span class="caret"></span>
       </a>
-
       <ul class="dropdown-menu" aria-labelledby="dLabel">
         ...
       </ul>
@@ -509,13 +504,12 @@ Call the dropdowns via JavaScript:
     $('.dropdown-toggle').dropdown()
     ```
 
-data-toggle="dropdown" still required
-
-Regardless of whether you call your dropdown via JavaScript or instead use the data-api, data-toggle="dropdown" is always required to be present on the dropdown's trigger element.
+>**`data-toggle="dropdown"` still required**
+>>Regardless of whether you call your dropdown via JavaScript or instead use the data-api, `data-toggle="dropdown"` is always required to be present on the dropdown's trigger element.
 
 ##### c-Options
 
-None
+*None*
 
 ##### d-Methods
 
@@ -527,14 +521,16 @@ Toggles the dropdown menu of a given navbar or tabbed navigation.
 
 ##### e-Events
 
-All dropdown events are fired at the .dropdown-menu's parent element.
+All dropdown events are fired at the `.dropdown-menu`'s parent element.
 
-All dropdown events have a relatedTarget property, whose value is the toggling anchor element.
-Event Type  Description
-show.bs.dropdown    This event fires immediately when the show instance method is called.
-shown.bs.dropdown   This event is fired when the dropdown has been made visible to the user (will wait for CSS transitions, to complete).
-hide.bs.dropdown    This event is fired immediately when the hide instance method has been called.
-hidden.bs.dropdown  This event is fired when the dropdown has finished being hidden from the user (will wait for CSS transitions, to complete).
+All dropdown events have a `relatedTarget` property, whose value is the toggling anchor element.
+
+| Event | Type | Description |
+|---|---|---|
+| show.bs.dropdown | This event fires immediately when the show instance method is called. |
+| shown.bs.dropdown | This event is fired when the dropdown has been made visible to the user (will wait for CSS transitions, to complete). |
+| hide.bs.dropdown | This event is fired immediately when the hide instance method has been called. |
+| hidden.bs.dropdown | This event is fired when the dropdown has finished being hidden from the user (will wait for CSS transitions, to complete). |
 
     ```JavaScript/JQuery
     $('#myDropdown').on('show.bs.dropdown', function () {
@@ -549,51 +545,49 @@ hidden.bs.dropdown  This event is fired when the dropdown has finished being hid
 The ScrollSpy plugin is for automatically updating nav targets based on scroll position. Scroll the area below the navbar and watch the active class change. The dropdown sub items will be highlighted as well.
 Project Name
 
+IMG
+
     @fat
+
+    Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
     @mdo
-    Dropdown
 
-@fat
+    Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.
+    one
 
-Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
-@mdo
+    Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.
+    two
 
-Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.
-one
+    In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.
+    three
 
-Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.
-two
+    Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
 
-In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.
-three
-
-Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
-
-Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
-Usage
+    Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
+    Usage
 
 >**Requires Bootstrap nav**
->>Scrollspy currently requires the use of a Bootstrap nav component for proper highlighting of active links.
+>>Scrollspy currently requires the use of a [Bootstrap nav component](https://getbootstrap.com/docs/3.3/components/#nav) for proper highlighting of active links.
 
 >**Resolvable ID targets required**
->>Navbar links must have resolvable id targets. For example, a <a href="#home">home</a> must correspond to something in the DOM like <div id="home"></div>.
+>>Navbar links must have resolvable id targets. For example, a `<a href="#home">home</a>` must correspond to something in the DOM like `<div id="home"></div>`.
 
->**Non-:visible target elements ignored**
->>Target elements that are not :visible according to jQuery will be ignored and their corresponding nav items will never be highlighted.
-Requires relative positioning
+>**Non-`:visible` target elements ignored**
+>>Target elements that are not [`:visible` according to jQuery](http://api.jquery.com/visible-selector/) will be ignored and their corresponding nav items will never be highlighted.
 
-No matter the implementation method, scrollspy requires the use of position: relative; on the element you're spying on. In most cases this is the <body>. When scrollspying on elements other than the <body>, be sure to have a height set and overflow-y: scroll; applied.
+#### 2-Requires relative positioning
 
-#### 2-Via data attributes
+No matter the implementation method, scrollspy requires the use of `position: relative;` on the element you're spying on. In most cases this is the `<body>`. When scrollspying on elements other than the `<body>`, be sure to have a `height` set and `overflow-y: scroll;` applied.
 
-To easily add scrollspy behavior to your topbar navigation, add data-spy="scroll" to the element you want to spy on (most typically this would be the <body>). Then add the data-target attribute with the ID or class of the parent element of any Bootstrap .nav component.
+#### 3-Via data attributes
+
+To easily add scrollspy behavior to your topbar navigation, add `data-spy="scroll"` to the element you want to spy on (most typically this would be the `<body>`). Then add the `data-target` attribute with the ID or class of the parent element of any Bootstrap `.nav` component.
 
     ```CSS
     body {
       position: relative;
     }
     ```
-
 
     ```HTML
     <body data-spy="scroll" data-target="#navbar-example">
@@ -607,14 +601,15 @@ To easily add scrollspy behavior to your topbar navigation, add data-spy="scroll
     </body>
     ```
 
-#### 3-Via JavaScript
+#### 4-Via JavaScript
 
-After adding position: relative; in your CSS, call the scrollspy via JavaScript:
+After adding `position: relative;` in your CSS, call the scrollspy via JavaScript:
 
+    ```JavaScript/JQuery
+    $('body').scrollspy({ target: '#navbar-example' })
+    ```
 
-$('body').scrollspy({ target: '#navbar-example' })
-
-#### 4-Methods
+#### 5-Methods
 
     ```JavaScript/JQuery
     .scrollspy('refresh')
@@ -628,13 +623,14 @@ When using scrollspy in conjunction with adding or removing of elements from the
     })
     ```
 
-#### 5-Options
+#### 6-Options
 
-Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-, as in data-offset="".
+Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-, as in `data-offset=""`.
+
 Name    type    default     description
 offset  number  10  Pixels to offset from top when calculating position of scroll.
 
-#### 6-Events
+#### 7-Events
 
 Event Type  Description
 activate.bs.scrollspy   This event fires whenever a new item becomes activated by the scrollspy.
@@ -649,16 +645,12 @@ activate.bs.scrollspy   This event fires whenever a new item becomes activated b
 
 #### 1-Example tabs
 
-Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus. Nested tabs are not supported.
+Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus. **Nested tabs are not supported**.
 
-    Home
-    Profile
-    Dropdown
+IMG
 
-Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
-Extends tabbed navigation
-
-This plugin extends the tabbed navigation component to add tabbable areas.
+>**Extends tabbed navigation**
+>>This plugin extends the  [tabbed navigation component](https://getbootstrap.com/docs/3.3/components/#nav-tabs) to add tabbable areas.
 
 #### 2-Usage
 
@@ -682,7 +674,7 @@ You can activate individual tabs in several ways:
 
 ##### a-Markup
 
-You can activate a tab or pill navigation without writing any JavaScript by simply specifying data-toggle="tab" or data-toggle="pill" on an element. Adding the nav and nav-tabs classes to the tab ul will apply the Bootstrap tab styling, while adding the nav and nav-pills classes will apply pill styling.
+You can activate a tab or pill navigation without writing any JavaScript by simply specifying `data-toggle="tab"` or `data-toggle="pill"` on an element. Adding the `nav` and `nav-tabs` classes to the tab `ul` will apply the Bootstrap [tab styling](https://getbootstrap.com/docs/3.3/components/#nav-tabs), while adding the `nav` and `nav-pills` classes will apply [pill styling](https://getbootstrap.com/docs/3.3/components/#nav-pills).
 
     ```HTML
     <div>
@@ -705,7 +697,7 @@ You can activate a tab or pill navigation without writing any JavaScript by simp
 
 ##### b-Fade effect
 
-To make tabs fade in, add .fade to each .tab-pane. The first tab pane must also have .in to make the initial content visible.
+To make tabs fade in, add `.fade` to each `.tab-pane`. The first tab pane must also have `.in` to make the initial content visible.
 
     ```HTML
       <div class="tab-content">
@@ -717,14 +709,15 @@ To make tabs fade in, add .fade to each .tab-pane. The first tab pane must also 
     ```
 
 ##### c-Methods
-    ```JavaScript/JQuery
-    $().tab
-    ```
 
-Activates a tab element and content container. Tab should have either a data-target or an href targeting a container node in the DOM. In the above examples, the tabs are the <a>s with data-toggle="tab" attributes.
-.tab('show')
+###### i-`$().tab`
 
-Selects the given tab and shows its associated content. Any other tab that was previously selected becomes unselected and its associated content is hidden. Returns to the caller before the tab pane has actually been shown (i.e. before the shown.bs.tab event occurs).
+
+Activates a tab element and content container. Tab should have either a `data-target` or an `href` targeting a container node in the DOM. In the above examples, the tabs are the `<a>`s with `data-toggle="tab"` attributes.
+
+###### ii-`.tab('show')`
+
+Selects the given tab and shows its associated content. Any other tab that was previously selected becomes unselected and its associated content is hidden. **Returns to the caller before the tab pane has actually been shown** (i.e. before the `shown.bs.tab` event occurs).
 
     ```JavaScript/JQuery
     $('#someTab').tab('show')
@@ -734,17 +727,19 @@ Selects the given tab and shows its associated content. Any other tab that was p
 
 When showing a new tab, the events fire in the following order:
 
-  1. hide.bs.tab (on the current active tab)
-  2. show.bs.tab (on the to-be-shown tab)
-  3. hidden.bs.tab (on the previous active tab, the same one as for the hide.bs.tab event)
-  4. shown.bs.tab (on the newly-active just-shown tab, the same one as for the show.bs.tab event)
+  1. `hide.bs.tab` (on the current active tab)
+  2. `show.bs.tab` (on the to-be-shown tab)
+  3. `hidden.bs.tab` (on the previous active tab, the same one as for the `hide.bs.tab` event)
+  4. `shown.bs.tab` (on the newly-active just-shown tab, the same one as for the `show.bs.tab` event)
 
-If no tab was already active, then the hide.bs.tab and hidden.bs.tab events will not be fired.
-Event Type  Description
-show.bs.tab     This event fires on tab show, but before the new tab has been shown. Use event.target and event.relatedTarget to target the active tab and the previous active tab (if available) respectively.
-shown.bs.tab    This event fires on tab show after a tab has been shown. Use event.target and event.relatedTarget to target the active tab and the previous active tab (if available) respectively.
-hide.bs.tab     This event fires when a new tab is to be shown (and thus the previous active tab is to be hidden). Use event.target and event.relatedTarget to target the current active tab and the new soon-to-be-active tab, respectively.
-hidden.bs.tab   This event fires after a new tab is shown (and thus the previous active tab is hidden). Use event.target and event.relatedTarget to target the previous active tab and the new active tab, respectively.
+If no tab was already active, then the `hide.bs.tab` and `hidden.bs.tab` events will not be fired.
+
+| EventType | Description |
+|---|---|
+| show.bs.tab | This event fires on tab show, but before the new tab has been shown. Use `event.target` and `event.relatedTarget` to target the active tab and the previous active tab (if available) respectively. |
+| shown.bs.tab | This event fires on tab show after a tab has been shown. Use `event.target` and `event.relatedTarget` to target the active tab and the previous active tab (if available) respectively. |
+| hide.bs.tab | This event fires when a new tab is to be shown (and thus the previous active tab is to be hidden). Use `event.target` and `event.relatedTarget` to target the current active tab and the new soon-to-be-active tab, respectively. |
+| hidden.bs.tab | This event fires after a new tab is shown (and thus the previous active tab is hidden). Use `event.target` and `event.relatedTarget` to target the previous active tab and the new active tab, respectively. |
 
     ```JavaScript/JQuery
     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
@@ -763,17 +758,16 @@ Tooltips with zero-length titles are never displayed.
 
 Hover over the links below to see tooltips:
 
-Tight pants next level keffiyeh you probably haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel have a terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan whatever keytar, scenester farm-to-table banksy Austin twitter handle freegan cred raw denim single-origin coffee viral.
+IMG
 
 ##### a-Static tooltip
 
 Four options are available: top, right, bottom, and left aligned.
-Tooltip on the left
-Tooltip on the top
-Tooltip on the bottom
-Tooltip on the right
+
+IMG
 
 ##### b-Four directions
+IMG
 
     ```HTML
     <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
@@ -782,12 +776,10 @@ Tooltip on the right
     <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
     ```
 
-Opt-in functionality
+**Opt-in functionality**
 
-For performance reasons, the Tooltip and Popover data-apis are opt-in, meaning you must initialize them yourself.
-
-One way to initialize all tooltips on a page would be to select them by their data-toggle attribute:
-
+>>For performance reasons, the Tooltip and Popover data-apis are opt-in, meaning **you must initialize them yourself**.
+>>One way to initialize all tooltips on a page would be to select them by their `data-toggle` attribute:
     ```JavaScript/JQuery
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
@@ -806,7 +798,7 @@ Trigger the tooltip via JavaScript:
 
 ##### a-Markup
 
-The required markup for a tooltip is only a data attribute and title on the HTML element you wish to have a tooltip. The generated markup of a tooltip is rather simple, though it does require a position (by default, set to top by the plugin).
+The required markup for a tooltip is only a `data` attribute and `title` on the HTML element you wish to have a tooltip. The generated markup of a tooltip is rather simple, though it does require a position (by default, set to top by the plugin).
 
     ```JHTML
     <!-- HTML to write -->
@@ -820,68 +812,40 @@ The required markup for a tooltip is only a data attribute and title on the HTML
     </div>
     ```
 
-Multiple-line links
+> **Multiple-line links**
+> >Sometimes you want to add a tooltip to a hyperlink that wraps multiple lines. The default behavior of the tooltip plugin is to center it horizontally and vertically. Add `white-space: nowrap;` to your anchors to avoid this.
 
-Sometimes you want to add a tooltip to a hyperlink that wraps multiple lines. The default behavior of the tooltip plugin is to center it horizontally and vertically. Add white-space: nowrap; to your anchors to avoid this.
-Tooltips in button groups, input groups, and tables require special setting
+>**Tooltips in button groups, input groups, and tables require special setting**
+>>When using tooltips on elements within a `.btn-group` or an `.input-group`, or on table-related elements (`<td>`, `<th>`, `<tr>`, `<thead>`, `<tbody>`, `<tfoot>`), you'll have to specify the option `container: 'body'` (documented below) to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the tooltip is triggered).
 
-When using tooltips on elements within a .btn-group or an .input-group, or on table-related elements (<td>, <th>, <tr>, <thead>, <tbody>, <tfoot>), you'll have to specify the option container: 'body' (documented below) to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the tooltip is triggered).
-Don't try to show tooltips on hidden elements
+>**Don't try to show tooltips on hidden elements**
+>>Invoking `$(...).tooltip('show')` when the target element is `display: none;` will cause the tooltip to be incorrectly positioned.
 
-Invoking $(...).tooltip('show') when the target element is display: none; will cause the tooltip to be incorrectly positioned.
-Accessible tooltips for keyboard and assistive technology users
+>**Accessible tooltips for keyboard and assistive technology users**
+>>For users navigating with a keyboard, and in particular users of assistive technologies, you should only add tooltips to keyboard-focusable elements such as links, form controls, or any arbitrary element with a **tabindex="0"** attribute.
 
-For users navigating with a keyboard, and in particular users of assistive technologies, you should only add tooltips to keyboard-focusable elements such as links, form controls, or any arbitrary element with a tabindex="0" attribute.
-Tooltips on disabled elements require wrapper elements
-
-To add a tooltip to a disabled or .disabled element, put the element inside of a <div> and apply the tooltip to that <div> instead.
+**Tooltips on disabled elements require wrapper elements**
+To add a tooltip to a `disabled` or `.disabled` element, put the element inside of a `<div>` and apply the tooltip to that `<div>` instead.
 
 ##### b-Options
 
-Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-, as in data-animation="".
-Name    Type    Default     Description
-animation   boolean     true    Apply a CSS fade transition to the tooltip
-container   string | false  false   
+Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-animation=""`.
 
-Appends the tooltip to a specific element. Example: container: 'body'. This option is particularly useful in that it allows you to position the tooltip in the flow of the document near the triggering element - which will prevent the tooltip from floating away from the triggering element during a window resize.
-delay   number | object     0   
+| Name | Type | Default | Description |
+|---|---|---|---|
+| animation | boolean | true | Apply a CSS fade transition to the tooltip |
+| container | string, false | false | Appends the tooltip to a specific element. Example: `container: 'body'`. This option is particularly useful in that it allows you to position the tooltip in the flow of the document near the triggering element - which will prevent the tooltip from floating away from the triggering element during a window resize.
+| delay | number, object | 0 | Delay showing and hiding the tooltip (ms) - does not apply to manual trigger type. If a number is supplied, delay is applied to both hide/show. Object structure is: `delay: { "show": 500, "hide": 100 }` |
+| html | boolean | false | Insert HTML into the tooltip. If false, jQuery's `text` method will be used to insert content into the DOM. Use text if you're worried about XSS attacks. |
+| placement | string, function | 'top' | How to position the tooltip - top, bottom, left, right, auto. When "auto" is specified, it will dynamically reorient the tooltip. For example, if placement is "auto left", the tooltip will display to the left when possible, otherwise it will display right. When a function is used to determine the placement, it is called with the tooltip DOM node as its first argument and the triggering element DOM node as its second. The `this` context is set to the tooltip instance. |
+| selector | string | false | If a selector is provided, tooltip objects will be delegated to the specified targets. In practice, this is used to enable dynamic HTML content to have tooltips added. See [this](https://github.com/twbs/bootstrap/issues/4215) and [an informative example](http://jsbin.com/zopod/1/edit). |
+| template | string  `'<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'` | Base HTML to use when creating the tooltip. The tooltip's `title` will be injected into the `.tooltip-inner`. `.tooltip-arrow` will become the tooltip's arrow. The outermost wrapper element should have the `.tooltip class.` |
+| title | string, function | '' | Default title value if `title` attribute isn't present. If a function is given, it will be called with its `this`reference set to the element that the tooltip is attached to.
+| trigger | string | 'hover focus | How tooltip is triggered - click | hover | focus | `manual`. You may pass multiple triggers; separate them with a space. manual cannot be combined with any other trigger. |
+| viewport | string, object, function | { selector: 'body', padding: 0 }   | Keeps the tooltip within the bounds of this element. Example: `viewport: '#viewport'` or `{ "selector": "#viewport", "padding": 0 }`. If a function is given, it is called with the triggering element DOM node as its only argument. The this context is set to the tooltip instance. |
 
-Delay showing and hiding the tooltip (ms) - does not apply to manual trigger type
-
-If a number is supplied, delay is applied to both hide/show
-
-Object structure is: delay: { "show": 500, "hide": 100 }
-html    boolean     false   Insert HTML into the tooltip. If false, jQuery's text method will be used to insert content into the DOM. Use text if you're worried about XSS attacks.
-placement   string | function   'top'   
-
-How to position the tooltip - top | bottom | left | right | auto.
-When "auto" is specified, it will dynamically reorient the tooltip. For example, if placement is "auto left", the tooltip will display to the left when possible, otherwise it will display right.
-
-When a function is used to determine the placement, it is called with the tooltip DOM node as its first argument and the triggering element DOM node as its second. The this context is set to the tooltip instance.
-selector    string  false   If a selector is provided, tooltip objects will be delegated to the specified targets. In practice, this is used to enable dynamic HTML content to have tooltips added. See this and an informative example.
-template    string  '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'  
-
-Base HTML to use when creating the tooltip.
-
-The tooltip's title will be injected into the .tooltip-inner.
-
-.tooltip-arrow will become the tooltip's arrow.
-
-The outermost wrapper element should have the .tooltip class.
-title   string | function   ''  
-
-Default title value if title attribute isn't present.
-
-If a function is given, it will be called with its this reference set to the element that the tooltip is attached to.
-trigger     string  'hover focus'   How tooltip is triggered - click | hover | focus | manual. You may pass multiple triggers; separate them with a space. manual cannot be combined with any other trigger.
-viewport    string | object | function  { selector: 'body', padding: 0 }    
-
-Keeps the tooltip within the bounds of this element. Example: viewport: '#viewport' or { "selector": "#viewport", "padding": 0 }
-
-If a function is given, it is called with the triggering element DOM node as its only argument. The this context is set to the tooltip instance.
-Data attributes for individual tooltips
-
-Options for individual tooltips can alternatively be specified through the use of data attributes, as explained above.
+> **Data attributes for individual tooltips**
+>> Options for individual tooltips can alternatively be specified through the use of data attributes, as explained above.
 
 ##### c-Methods
 
@@ -891,7 +855,7 @@ Attaches a tooltip handler to an element collection.
 
 ###### ii-.tooltip('show')
 
-Reveals an element's tooltip. Returns to the caller before the tooltip has actually been shown (i.e. before the shown.bs.tooltip event occurs). This is considered a "manual" triggering of the tooltip. Tooltips with zero-length titles are never displayed.
+Reveals an element's tooltip. **Returns to the caller before the tooltip has actually been shown** (i.e. before the `shown.bs.tooltip` event occurs). This is considered a "manual" triggering of the tooltip. Tooltips with zero-length titles are never displayed.
 
     ```JavaScript/JQuery
     $('#element').tooltip('show')
@@ -899,7 +863,7 @@ Reveals an element's tooltip. Returns to the caller before the tooltip has actua
 
 ###### iii-.tooltip('hide')
 
-Hides an element's tooltip. Returns to the caller before the tooltip has actually been hidden (i.e. before the hidden.bs.tooltip event occurs). This is considered a "manual" triggering of the tooltip.
+Hides an element's tooltip. **Returns to the caller before the tooltip has actually been hidden** (i.e. before the `hidden.bs.tooltip` event occurs). This is considered a "manual" triggering of the tooltip.
 
     ```JavaScript/JQuery
     $('#element').tooltip('hide')
@@ -907,7 +871,7 @@ Hides an element's tooltip. Returns to the caller before the tooltip has actuall
 
 ###### iv-.tooltip('toggle')
 
-Toggles an element's tooltip. Returns to the caller before the tooltip has actually been shown or hidden (i.e. before the shown.bs.tooltip or hidden.bs.tooltip event occurs). This is considered a "manual" triggering of the tooltip.
+Toggles an element's tooltip. **Returns to the caller before the tooltip has actually been shown or hidden** (i.e. before the `shown.bs.tooltip` or `hidden.bs.tooltip` event occurs). This is considered a "manual" triggering of the tooltip.
 
     ```JavaScript/JQuery
     $('#element').tooltip('toggle')
@@ -923,12 +887,13 @@ Hides and destroys an element's tooltip. Tooltips that use delegation (which are
 
 ##### d-Events
 
-Event Type  Description
-show.bs.tooltip     This event fires immediately when the show instance method is called.
-shown.bs.tooltip    This event is fired when the tooltip has been made visible to the user (will wait for CSS transitions to complete).
-hide.bs.tooltip     This event is fired immediately when the hide instance method has been called.
-hidden.bs.tooltip   This event is fired when the tooltip has finished being hidden from the user (will wait for CSS transitions to complete).
-inserted.bs.tooltip     This event is fired after the show.bs.tooltip event when the tooltip template has been added to the DOM.
+| Event Type | Description |
+|---|---|
+| show.bs.tooltip | This event fires immediately when the show instance method is called. |
+| shown.bs.tooltip | This event is fired when the tooltip has been made visible to the user (will wait for CSS transitions to complete). |
+| hide.bs.tooltip | This event is fired immediately when the hide instance method has been called. |
+| hidden.bs.tooltip | This event is fired when the tooltip has finished being hidden from the user (will wait for CSS transitions to complete). |
+| inserted.bs.tooltip | This event is fired after the show.bs.tooltip event when the tooltip template has been added to the DOM. |
 
     ```JavaScript/JQuery
     $('#myTooltip').on('hidden.bs.tooltip', function () {
@@ -939,93 +904,78 @@ inserted.bs.tooltip     This event is fired after the show.bs.tooltip event when
 ### F-Popovers (popover.js)
 
 Add small overlays of content, like those on the iPad, to any element for housing secondary information.
-
 Popovers whose both title and content are zero-length are never displayed.
-Plugin dependency
 
-Popovers require the tooltip plugin to be included in your version of Bootstrap.
-Opt-in functionality
+>**Plugin dependency**
+>>Popovers require the [tooltip plugin](https://getbootstrap.com/docs/3.3/javascript/#tooltips) to be included in your version of Bootstrap.
 
-For performance reasons, the Tooltip and Popover data-apis are opt-in, meaning you must initialize them yourself.
-
-One way to initialize all popovers on a page would be to select them by their data-toggle attribute:
-
+>**Opt-in functionality**
+>>For performance reasons, the Tooltip and Popover data-apis are opt-in, meaning **you must initialize them yourself**.
+>>One way to initialize all popovers on a page would be to select them by their data-toggle attribute:
     ```JavaScript/JQuery
     $(function () {
       $('[data-toggle="popover"]').popover()
     })
     ```
 
-Popovers in button groups, input groups, and tables require special setting
+>**Popovers in button groups, input groups, and tables require special setting**
+>>When using popovers on elements within a .btn-group or an .input-group, or on table-related elements (`<td>`, `<th>`, `<tr>`, `<thead>`, `<tbody>`, `<tfoot>`), you'll have to specify the option `container: 'body'` (documented below) to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the popover is triggered).
 
-When using popovers on elements within a .btn-group or an .input-group, or on table-related elements (<td>, <th>, <tr>, <thead>, <tbody>, <tfoot>), you'll have to specify the option container: 'body' (documented below) to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the popover is triggered).
-Don't try to show popovers on hidden elements
+>**Don't try to show popovers on hidden elements**
+>>Invoking `$(...).popover('show')` when the target element is `display: none;` will cause the popover to be incorrectly positioned.
 
-Invoking $(...).popover('show') when the target element is display: none; will cause the popover to be incorrectly positioned.
-Popovers on disabled elements require wrapper elements
+>**Popovers on disabled elements require wrapper elements**
+>>To add a popover to a `disabled` or `.disabled` element, put the element inside of a `<div>` and apply the popover to that `<div>` instead.
 
-To add a popover to a disabled or .disabled element, put the element inside of a <div> and apply the popover to that <div> instead.
-Multiple-line links
+>**Multiple-line links**
+>>Sometimes you want to add a popover to a hyperlink that wraps multiple lines. The default behavior of the popover plugin is to center it horizontally and vertically. Add `white-space: nowrap;` to your anchors to avoid this.
 
-Sometimes you want to add a popover to a hyperlink that wraps multiple lines. The default behavior of the popover plugin is to center it horizontally and vertically. Add white-space: nowrap; to your anchors to avoid this.
+#### 1-Examples
 
-#### Examples
+##### a-Static popover
 
-##### Static popover
+IMG
 
-Four options are available: top, right, bottom, and left aligned.
-Popover top
+##### b-Live demo
 
-Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-Popover right
-
-Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-Popover bottom
-
-Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-Popover left
-
-Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-
-##### Live demo
+IMG
 
     ```HTML
     <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
     ```
 
-###### Four directions
+###### i-Four directions
+
+IMG
 
     ```HTML
     <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
       Popover on left
     </button>
-
     <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
       Popover on top
     </button>
-
     <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
     sagittis lacus vel augue laoreet rutrum faucibus.">
       Popover on bottom
     </button>
-
     <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
       Popover on right
     </button>
     ```
 
-###### Dismiss on next click
+###### ii-Dismiss on next click
 
-Use the focus trigger to dismiss popovers on the next click that the user makes.
-Specific markup required for dismiss-on-next-click
+Use the `focus` trigger to dismiss popovers on the next click that the user makes.
 
-For proper cross-browser and cross-platform behavior, you must use the <a> tag, not the <button> tag, and you also must include the role="button" and tabindex attributes.
+>**Specific markup required for dismiss-on-next-click**
+>>For proper cross-browser and cross-platform behavior, you must use the `<a>` tag, not the `<button>` tag, and you also must include the `role="button"` and `tabindex` attributes.
 
     ```HTML
     <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
     ```
 
-#### Usage
+#### 2-Usage
 
 Enable popovers via JavaScript:
 
@@ -1033,94 +983,60 @@ Enable popovers via JavaScript:
     $('#example').popover(options)
     ```
 
-##### Options
+##### a-Options
 
-Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-, as in data-animation="".
-Name    Type    Default     Description
-animation   boolean     true    Apply a CSS fade transition to the popover
-container   string | false  false   
+Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-animation=""`.
 
-Appends the popover to a specific element. Example: container: 'body'. This option is particularly useful in that it allows you to position the popover in the flow of the document near the triggering element - which will prevent the popover from floating away from the triggering element during a window resize.
-content     string | function   ''  
+| Name | Type | Default | Description |
+|---|---|---|---|
+| animation | boolean | true | Apply a CSS fade transition to the popover |
+| container | string, false | false | Appends the popover to a specific element. Example: `container: 'body'`. This option is particularly useful in that it allows you to position the popover in the flow of the document near the triggering element - which will prevent the popover from floating away from the triggering element during a window resize. |
+| content | string, function | '' | Default content value if `data-content`attribute isn't present. If a function is given, it will be called with its this reference set to the element that the popover is attached to. |
+| delay | number, object | 0 | Delay showing and hiding the popover (ms) - does not apply to manual trigger type. If a number is supplied, delay is applied to both hide/show. Object structure is: `delay: { "show": 500, "hide": 100 }` |
+| html | boolean | false | Insert HTML into the popover. If false, jQuery's text method will be used to insert content into the DOM. Use `text` if you're worried about XSS attacks. |
+| placement | string, function | 'right' | How to position the popover - top, bottom, left, right, auto. When "auto" is specified, it will dynamically reorient the popover. For example, if placement is "auto left", the popover will display to the left when possible, otherwise it will display right. When a function is used to determine the placement, it is called with the popover DOM node as its first argument and the triggering element DOM node as its second. The this context is set to the popover instance. selector    string  false   If a selector is provided, popover objects will be delegated to the specified targets. In practice, this is used to enable dynamic HTML content to have popovers added. See `this` and an informative example. |
+| template | string | `'<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'` | Base HTML to use when creating the popover. The popover's `title` will be injected into the `.popover-title`.
+The popover's `content` will be injected into the `.popover-content`. `.arrow` will become the popover's arrow. The outermost wrapper element should have the `.popover` class. |
+| title | string, function | '' | Default title value if `title` attribute isn't present. If a function is given, it will be called with its `this` reference set to the element that the popover is attached to. |
+| trigger | string | 'click' | How popover is triggered - click | hover | focus | manual. You may pass multiple triggers; separate them with a space. `manual` cannot be combined with any other trigger. |
+| viewport | string, object, function | { selector: 'body', padding: 0 } | Keeps the popover within the bounds of this element. Example: `viewport: '#viewport' or { "selector": "#viewport", "padding": 0 }`. If a function is given, it is called with the triggering element DOM node as its only argument. The this context is set to the popover instance. |
 
-Default content value if data-content attribute isn't present.
+>**Data attributes for individual popovers**
+>>Options for individual popovers can alternatively be specified through the use of data attributes, as explained above.
 
-If a function is given, it will be called with its this reference set to the element that the popover is attached to.
-delay   number | object     0   
+##### b-Methods
 
-Delay showing and hiding the popover (ms) - does not apply to manual trigger type
-
-If a number is supplied, delay is applied to both hide/show
-
-Object structure is: delay: { "show": 500, "hide": 100 }
-html    boolean     false   Insert HTML into the popover. If false, jQuery's text method will be used to insert content into the DOM. Use text if you're worried about XSS attacks.
-placement   string | function   'right'     
-
-How to position the popover - top | bottom | left | right | auto.
-When "auto" is specified, it will dynamically reorient the popover. For example, if placement is "auto left", the popover will display to the left when possible, otherwise it will display right.
-
-When a function is used to determine the placement, it is called with the popover DOM node as its first argument and the triggering element DOM node as its second. The this context is set to the popover instance.
-selector    string  false   If a selector is provided, popover objects will be delegated to the specified targets. In practice, this is used to enable dynamic HTML content to have popovers added. See this and an informative example.
-
-template    string  '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'     
-
-Base HTML to use when creating the popover.
-
-The popover's title will be injected into the .popover-title.
-
-The popover's content will be injected into the .popover-content.
-
-.arrow will become the popover's arrow.
-
-The outermost wrapper element should have the .popover class.
-title   string | function   ''  
-
-Default title value if title attribute isn't present.
-
-If a function is given, it will be called with its this reference set to the element that the popover is attached to.
-trigger     string  'click'     How popover is triggered - click | hover | focus | manual. You may pass multiple triggers; separate them with a space. manual cannot be combined with any other trigger.
-viewport    string | object | function  { selector: 'body', padding: 0 }    
-
-Keeps the popover within the bounds of this element. Example: viewport: '#viewport' or { "selector": "#viewport", "padding": 0 }
-
-If a function is given, it is called with the triggering element DOM node as its only argument. The this context is set to the popover instance.
-Data attributes for individual popovers
-
-Options for individual popovers can alternatively be specified through the use of data attributes, as explained above.
-
-##### Methods
-    ```JavaScript/JQuery
-    $().popover(options)
-    ```
+######  i-$().popover(options)
 
 Initializes popovers for an element collection.
-###### .popover('show')
 
-Reveals an element's popover. Returns to the caller before the popover has actually been shown (i.e. before the shown.bs.popover event occurs). This is considered a "manual" triggering of the popover. Popovers whose both title and content are zero-length are never displayed.
+###### ii-.popover('show')
+
+Reveals an element's popover. **Returns to the caller before the popover has actually been shown** (i.e. before the `shown.bs.popover` event occurs). This is considered a "manual" triggering of the popover. Popovers whose both title and content are zero-length are never displayed.
 
     ```JavaScript/JQuery
     $('#element').popover('show')
     ```
 
-###### .popover('hide')
+###### iii-.popover('hide')
 
-Hides an element's popover. Returns to the caller before the popover has actually been hidden (i.e. before the hidden.bs.popover event occurs). This is considered a "manual" triggering of the popover.
+Hides an element's popover. **Returns to the caller before the popover has actually been hidden** (i.e. before the `hidden.bs.popover` event occurs). This is considered a "manual" triggering of the popover.
 
     ```JavaScript/JQuery
     $('#element').popover('hide')
     ```
 
-###### .popover('toggle')
+###### iv-.popover('toggle')
 
-Toggles an element's popover. Returns to the caller before the popover has actually been shown or hidden (i.e. before the shown.bs.popover or hidden.bs.popover event occurs). This is considered a "manual" triggering of the popover.
+Toggles an element's popover. **Returns to the caller before the popover has actually been shown or hidden** (i.e. before the `shown.bs.popover` or `hidden.bs.popover`9 event occurs). This is considered a "manual" triggering of the popover.
 
     ```JavaScript/JQuery
     $('#element').popover('toggle')
     ```
 
-###### .popover('destroy')
+###### v-.popover('destroy')
 
-Hides and destroys an element's popover. Popovers that use delegation (which are created using the selector option) cannot be individually destroyed on descendant trigger elements.
+Hides and destroys an element's popover. Popovers that use delegation (which are created using [the `selector` option](https://getbootstrap.com/docs/3.3/javascript/#popovers-options)) cannot be individually destroyed on descendant trigger elements.
 
     ```JavaScript/JQuery
     $('#element').popover('destroy')
@@ -1128,12 +1044,13 @@ Hides and destroys an element's popover. Popovers that use delegation (which are
 
 ##### Events
 
-Event Type  Description
-show.bs.popover     This event fires immediately when the show instance method is called.
-shown.bs.popover    This event is fired when the popover has been made visible to the user (will wait for CSS transitions to complete).
-hide.bs.popover     This event is fired immediately when the hide instance method has been called.
-hidden.bs.popover   This event is fired when the popover has finished being hidden from the user (will wait for CSS transitions to complete).
-inserted.bs.popover     This event is fired after the show.bs.popover event when the popover template has been added to the DOM.
+| Event Type | Description |
+|---|---|
+| show.bs.popover | This event fires immediately when the show instance method is called. |
+| shown.bs.popover | This event is fired when the popover has been made visible to the user (will wait for CSS transitions to complete). |
+| hide.bs.popover | This event is fired immediately when the hide instance method has been called. |
+| hidden.bs.popover | This event is fired when the popover has finished being hidden from the user (will wait for CSS transitions to complete). |
+| inserted.bs.popover | This event is fired after the `show.bs.popover` event when the popover template has been added to the DOM. |
 
     ```JavaScript/JQuery
     $('#myPopover').on('hidden.bs.popover', function () {
@@ -1143,7 +1060,7 @@ inserted.bs.popover     This event is fired after the show.bs.popover event when
 
 ### G-Alert messages (alert.js)
 
-#### Example alerts
+#### 1-Example alerts
 
 Add dismiss functionality to all alert messages with this plugin.
 
