@@ -68,10 +68,39 @@ SINON
     Suite d'instruction
 FINI
 
+SI condition ALORS
+    Suite d'instruction
+SINON SI condition ALORS
+    Suite d'instruction
+SINON SI condition ALORS
+    Suite d'instruction
+SINON
+    Suite d'instruction
+FINI
+
+CAS OU ma Variable VAUT
+    1 : faireCa
+    2 : faireCa
+    3 : faireCa
+    4 : faireCa
+    Autre : faireCa
+
+var caractere
+DEBUT
+    SI caractere >= 'A' && caractere <='Z'
+        CAS OU caractere vaut 'A', 'E', 'I', 'O', 'U', 'Y'
+            ECRIRE("C'est une voyelle")
+        FINCAS
+    SINON
+        ECRIRE("ce n'est pas une majusccule")
+    FINSI
+FIN
 
 ### Boucles
 
-
+TANTQUE condition
+    instruction
+FIN TANTQUE
 
 
 
