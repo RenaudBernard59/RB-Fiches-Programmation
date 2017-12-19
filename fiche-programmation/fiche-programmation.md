@@ -102,6 +102,24 @@ TANTQUE condition
     instruction
 FIN TANTQUE
 
+REPETER
+    instruction
+JUSQU'A condition
+
+POUR compteur ALLANT DE début A fin FAIRE
+    instruction
+FIN POUR
+
+### Fonctions
+FONCTION maFonction(parametres)
+DEBUT
+    instructions
+    Retourner(resultat)
+FIN
+
+
+
+
 
 
 ===============================================================================
