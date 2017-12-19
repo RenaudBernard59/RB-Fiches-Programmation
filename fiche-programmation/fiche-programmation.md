@@ -60,6 +60,15 @@ Table de vérité
 | F| T | F | T |
 | F | F | F | F |
 
+### Instructions conditionnelles
+
+SI condition ALORS
+    Suite d'instruction
+SINON
+    Suite d'instruction
+FINI
+
+
 ### Boucles
 
 
