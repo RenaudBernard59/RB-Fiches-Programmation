@@ -1,25 +1,29 @@
-## Bootstrap
+# Bootstrap
+
+## I-Presentation
+
+[LINK](https://getbootstrap.com/docs/3.3/)
 
 **Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.**
 
 *Currently v3.3.7*
 
-### Designed for everyone, everywhere
+### A-Designed for everyone, everywhere
 
 Bootstrap makes front-end web development faster and easier. It's made for folks of all skill levels, devices of all shapes, and projects of all sizes.
 Sass and Less support
 
-#### Preprocessors
+#### 1-Preprocessors
 
 Bootstrap ships with vanilla CSS, but its source code utilizes the two most popular CSS preprocessors, Less and Sass. Quickly get started with precompiled CSS or build on the source.
 Responsive across devices
 
-#### One framework, every device.
+#### 2-One framework, every device.
 
 Bootstrap easily and efficiently scales your websites and applications with a single code base, from phones to tablets to desktops with CSS media queries.
 Components
 
-#### Full of features
+#### 3-Full of features
 
 With Bootstrap, you get extensive and beautiful documentation for common HTML elements, dozens of custom HTML and CSS components, and awesome jQuery plugins.
 
@@ -27,13 +31,13 @@ With Bootstrap, you get extensive and beautiful documentation for common HTML el
 
 [Github](https://github.com/twbs/bootstrap)
 
-### Official Bootstrap Themes
+### B-Official Bootstrap Themes
 
 Take Bootstrap to the next level with official premium themes. Each theme is its own toolkit featuring all of Bootstrap, brand new components and plugins, full docs, build tools, and more.
 
 [Browse themes](https://themes.getbootstrap.com/)
 
-### Built with Bootstrap
+### C-Built with Bootstrap
 
 Millions of amazing sites across the web are being built with Bootstrap. Get started on your own with our growing [collection of examples](https://getbootstrap.com/docs/getting-started/#examples) or by exploring some of our favorites.
 
@@ -48,33 +52,35 @@ We showcase dozens of inspiring projects built with Bootstrap on the Bootstrap E
 
 -------------------------------------------------------------------------------
 
-## Getting started
+## II-Getting started
+
+[LINK](https://getbootstrap.com/docs/3.3/getting-started/)
 
 **An overview of Bootstrap, how to download and use, basic templates and examples, and more.**
 
-### Download
+### A-Download
 
 Bootstrap (currently v3.3.7) has a few easy ways to quickly get started, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.
 
-##### Bootstrap
+##### a-Bootstrap
 
 Compiled and minified CSS, JavaScript, and fonts. No docs or original source files are included.
 
 [Download](https://github.com/twbs/bootstrap/releases/download/v3.3.7/bootstrap-3.3.7-dist.zip)
 
-##### Source code
+##### b-Source code
 
 Source Less, JavaScript, and font files, along with our docs. Requires a Less compiler and some setup.
 
 [Download](https://github.com/twbs/bootstrap/archive/v3.3.7.zip)
 
-##### Sass
+##### c-Sass
 
 Bootstrap ported from Less to Sass for easy inclusion in Rails, Compass, or Sass-only projects.
 
 [Download](https://github.com/twbs/bootstrap-sass/archive/v3.3.7.tar.gz)
 
-#### Bootstrap CDN
+#### 1-Bootstrap CDN
 
 The folks over at [MaxCDN](https://www.maxcdn.com/) graciously provide CDN support for Bootstrap's CSS and JavaScript. Just use these [Bootstrap CDN](https://www.bootstrapcdn.com/) links.
 
@@ -90,7 +96,7 @@ The folks over at [MaxCDN](https://www.maxcdn.com/) graciously provide CDN suppo
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     ```
 
-#### Install with Bower
+#### 2-Install with Bower
 
 You can also install and manage Bootstrap's Less, CSS, JavaScript, and fonts using [Bower](http://bower.io/):
 
@@ -98,7 +104,7 @@ You can also install and manage Bootstrap's Less, CSS, JavaScript, and fonts usi
     $ bower install bootstrap
     ```
 
-#### Install with npm
+#### 3-Install with npm
 
 You can also install Bootstrap using [npm](https://www.npmjs.com/):
 
@@ -113,7 +119,7 @@ Bootstrap's `package.json` contains some additional metadata under the following
 * `less` - path to Bootstrap's main [Less](http://lesscss.org/) source file
 * `style` - path to Bootstrap's non-minified CSS that's been precompiled using the default settings (no customization)
 
-#### Install with Composer
+#### 4-Install with Composer
 
 You can also install and manage Bootstrap's Less, CSS, JavaScript, and fonts using [Composer](https://getcomposer.org/):
 
@@ -121,11 +127,11 @@ You can also install and manage Bootstrap's Less, CSS, JavaScript, and fonts usi
     $ composer require twbs/bootstrap
     ```
 
-#### Autoprefixer required for Less/Sass
+#### 5-Autoprefixer required for Less/Sass
 
 Bootstrap uses [Autoprefixer](https://github.com/postcss/autoprefixer) to deal with [CSS vendor prefixes](http://webdesign.about.com/od/css/a/css-vendor-prefixes.htm). If you're compiling Bootstrap from its Less/Sass source and not using our Gruntfile, you'll need to integrate Autoprefixer into your build process yourself. If you're using precompiled Bootstrap or using our Gruntfile, you don't need to worry about this because Autoprefixer is already integrated into our Gruntfile.
 
-### What's included
+### B-What's included
 
 **Bootstrap is downloadable in two forms, within which you'll find the following directories and files, logically grouping common resources and providing both compiled and minified variations.**
 
@@ -133,7 +139,7 @@ Bootstrap uses [Autoprefixer](https://github.com/postcss/autoprefixer) to deal w
 >
 >> Please note that *all JavaScript plugins require jQuery* to be included, as shown in the [starter template](https://getbootstrap.com/docs/3.3/getting-started/#template). Consult our **bower.json** to see which versions of jQuery are supported.
 
-#### Precompiled Bootstrap
+#### 1-Precompiled Bootstrap
 
 Once downloaded, unzip the compressed folder to see the structure of (the compiled) Bootstrap. You'll see something like this:
 
@@ -159,7 +165,7 @@ Once downloaded, unzip the compressed folder to see the structure of (the compil
 
 This is the most basic form of Bootstrap: precompiled files for quick drop-in usage in nearly any web project. We provide compiled CSS and JS `(bootstrap.*)`, as well as compiled and minified CSS and JS `(bootstrap.min.*)`. CSS [source maps](https://developer.chrome.com/devtools/docs/css-preprocessors) `(bootstrap.*.map)` are available for use with certain browsers' developer tools. Fonts from Glyphicons are included, as is the optional Bootstrap theme.
 
-#### Bootstrap source code
+#### 2-Bootstrap source code
 
 The Bootstrap source code download includes the precompiled CSS, JavaScript, and font assets, along with source Less, JavaScript, and documentation. More specifically, it includes the following and more:
 
@@ -176,11 +182,11 @@ The Bootstrap source code download includes the precompiled CSS, JavaScript, and
 
 The `less/`, `js/`, and `fonts/` are the source code for our CSS, JS, and icon fonts (respectively). The dist/ folder includes everything listed in the precompiled download section above. The docs/ folder includes the source code for our documentation, and `examples/` of Bootstrap usage. Beyond that, any other included file provides support for packages, license information, and development.
 
-### Compiling CSS and JavaScript
+### C-Compiling CSS and JavaScript
 
 **Bootstrap uses [Grunt](http://gruntjs.com/) for its build system, with convenient methods for working with the framework. It's how we compile our code, run tests, and more.**
 
-#### Installing Grunt
+#### 1-Installing Grunt
 
 To install Grunt, you must first download and [install node.js](https://nodejs.org/download/) (which includes npm). npm stands for [node packaged modules](https://www.npmjs.com/) and is a way to manage development dependencies through node.js.
 Then, from the command line:
@@ -190,7 +196,7 @@ Then, from the command line:
 
 When completed, you'll be able to run the various Grunt commands provided from the command line.
 
-#### Available Grunt commands
+#### 2-Available Grunt commands
 
 * `grunt dist` (Just compile CSS and JavaScript)
     * Regenerates the `/dist/` directory with compiled and minified CSS and JavaScript files. As a Bootstrap user, this is normally the command you want.
@@ -203,11 +209,11 @@ When completed, you'll be able to run the various Grunt commands provided from t
 * `grunt` (Build absolutely everything and run tests)
     * Compiles and minifies CSS and JavaScript, builds the documentation website, runs the HTML5 validator against the docs, regenerates the Customizer assets, and more. Requires [Jekyll](http://jekyllrb.com/docs/installation/). Usually only necessary if you're hacking on Bootstrap itself.
 
-#### Troubleshooting
+#### 3-Troubleshooting
 
 Should you encounter problems with installing dependencies or running Grunt commands, first delete the `/node_modules/` directory generated by npm. Then, rerun npm install.
 
-### Basic template
+### D-Basic template
 
 **Start with this basic HTML template, or modify [these examples](https://getbootstrap.com/docs/3.3/getting-started/#examples). We hope you'll customize our templates and examples, adapting them to suit your needs.**
 
@@ -241,13 +247,13 @@ Should you encounter problems with installing dependencies or running Grunt comm
     </html>
     ```
 
-### Examples
+### E-Examples
 
 **Build on the basic template above with Bootstrap's many components. We encourage you to customize and adapt Bootstrap to suit your individual project's needs.**
 
 Get the source code for every example below by [downloading the Bootstrap repository](https://github.com/twbs/bootstrap/archive/v3.3.7.zip). Examples can be found in the `docs/examples/ directory`.
 
-#### Using the framework
+#### 1-Using the framework
 
 ![Starter template example]()
 
@@ -280,7 +286,7 @@ Build around the jumbotron with a navbar and some basic grid columns.
 
 Build a more custom page by narrowing the default container and jumbotron.
 
-#### Navbars in action
+#### 2-Navbars in action
 
 ![Navbar example]()
 
@@ -300,7 +306,7 @@ Super basic template with a static top navbar along with some additional content
 
 Super basic template with a fixed top navbar along with some additional content.
 
-#### Custom components
+#### 3-Custom components
 
 ![A one-page template example]()
 
@@ -350,7 +356,7 @@ Attach a footer to the bottom of the viewport when the content is shorter than i
 
 Attach a footer to the bottom of the viewport with a fixed navbar at the top.
 
-#### Experiments
+#### 4-Experiments
 
 ![Non-responsive example]()
 
@@ -364,13 +370,13 @@ Easily disable the responsiveness of Bootstrap per our docs.
 
 Build a toggleable off-canvas navigation menu for use with Bootstrap.
 
-### Tools
+### F-Tools
 
-#### Bootlint
+#### 1-Bootlint
 
 **[Bootlint](https://github.com/twbs/bootlint)** is the official Bootstrap HTML [linter](http://en.wikipedia.org/wiki/Lint_(software)) tool. It automatically checks for several common HTML mistakes in webpages that are using Bootstrap in a fairly "vanilla" way. Vanilla Bootstrap's components/widgets require their parts of the DOM to conform to certain structures. Bootlint checks that instances of Bootstrap components have correctly-structured HTML. Consider adding Bootlint to your Bootstrap web development toolchain so that none of the common mistakes slow down your project's development.
 
-### Community
+### G-Community
 
 **Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.**
 
@@ -382,11 +388,11 @@ Build a toggleable off-canvas navigation menu for use with Bootstrap.
 
 You can also follow [@getbootstrap on Twitter](https://twitter.com/getbootstrap) for the latest gossip and awesome music videos.
 
-### Disabling responsiveness
+### H-Disabling responsiveness
 
 **Bootstrap automatically adapts your pages for various screen sizes. Here's how to disable this feature so your page works like [this non-responsive example](https://getbootstrap.com/docs/3.3/examples/non-responsive/).**
 
-##### Steps to disable page responsiveness
+#### 1-Steps to disable page responsiveness
 
 1. Omit the viewport `<meta>` mentioned in [the CSS docs](https://getbootstrap.com/docs/3.3/css/#overview-mobile)
 2. Override the `width` on the `.container` for each grid tier with a single `width, for example width: 970px !important;` Be sure that this comes after the default Bootstrap CSS. You can optionally avoid the `!important` with media queries or some selector-fu.
@@ -395,7 +401,7 @@ You can also follow [@getbootstrap on Twitter](https://twitter.com/getbootstrap)
 
 You'll still need Respond.js for IE8 (since our media queries are still there and need to be processed). This disables the "mobile site" aspects of Bootstrap.
 
-#### Bootstrap template with responsiveness disabled
+#### 2-Bootstrap template with responsiveness disabled
 
 We've applied these steps to an example. Read its source code to see the specific changes implemented.
 
@@ -405,17 +411,17 @@ We've applied these steps to an example. Read its source code to see the specifi
 >
 >>Looking to migrate from an older version of Bootstrap to v3.x? Check [out our migration guide](https://getbootstrap.com/docs/3.3/migration).
 
-### Browser and device support
+### I-Browser and device support
 
 **Bootstrap is built to work best in the latest desktop and mobile browsers, meaning older browsers might display differently styled, though fully functional, renderings of certain components.**
 
-#### Supported browsers
+#### 1-Supported browsers
 
 Specifically, we support the **latest versions** of the following browsers and platforms.
 
 Alternative browsers which use the latest version of WebKit, Blink, or Gecko, whether directly or via the platform's web view API, are not explicitly supported. However, Bootstrap should (in most cases) display and function correctly in these browsers as well. More specific support information is provided below.
 
-##### Mobile devices
+##### a-Mobile devices
 
 Generally speaking, Bootstrap supports the latest versions of each major platform's default browsers. Note that proxy browsers (such as Opera Mini, Opera Mobile's Turbo mode, UC Browser Mini, Amazon Silk) are not supported.
 
@@ -424,7 +430,7 @@ Generally speaking, Bootstrap supports the latest versions of each major platfor
 | Android | Supported | Supported | N/A |
 | iOS | Supported | Supported | Supported |
 
-##### Desktop browsers
+##### b-Desktop browsers
 
 Similarly, the latest versions of most desktop browsers are supported.
 
@@ -441,7 +447,7 @@ Unofficially, Bootstrap should look and behave well enough in Chromium and Chrom
 
 For a list of some of the browser bugs that Bootstrap has to grapple with, see our [Wall of browser bugs](https://getbootstrap.com/docs/3.3/browser-bugs/).
 
-#### Internet Explorer 8 and 9
+#### 2-Internet Explorer 8 and 9
 
 Internet Explorer 8 and 9 are also supported, however, please be aware that some CSS3 properties and HTML5 elements are not fully supported by these browsers. In addition, **Internet Explorer 8 requires the use of [Respond.js](https://github.com/scottjehl/Respond) to enable media query support**.
 
@@ -455,31 +461,31 @@ Internet Explorer 8 and 9 are also supported, however, please be aware that some
 
 Visit [Can I use...](http://caniuse.com/) for details on browser support of CSS3 and HTML5 features.
 
-#### Internet Explorer 8 and Respond.js
+#### 3-Internet Explorer 8 and Respond.js
 
 Beware of the following caveats when using Respond.js in your development and production environments for Internet Explorer 8.
 
-##### Respond.js and cross-domain CSS
+##### a-Respond.js and cross-domain CSS
 
 Using Respond.js with CSS hosted on a different (sub)domain (for example, on a CDN) requires some additional setup. [See the Respond.js docs](https://github.com/scottjehl/Respond/blob/master/README.md#cdnx-domain-setup) for details.
 
-##### Respond.js and `file://`
+##### b-Respond.js and `file://`
 
 Due to browser security rules, Respond.js doesn't work with pages viewed via the `file://` protocol (like when opening a local HTML file). To test responsive features in IE8, view your pages over HTTP(S). [See the Respond.js docs](https://github.com/scottjehl/Respond/blob/master/README.md#support--caveats) for details.
 
-##### Respond.js and `@import`
+##### c-Respond.js and `@import`
 
 Respond.js doesn't work with CSS that's referenced via `@import`. In particular, some Drupal configurations are known to use @import. [See the Respond.js docs](https://github.com/scottjehl/Respond/blob/master/README.md#support--caveats) for details.
 
-#### Internet Explorer 8 and box-sizing
+#### 4-Internet Explorer 8 and box-sizing
 
 IE8 does not fully support `box-sizing: border-box;` when combined with `min-width`, `max-width`, `min-height`, or `max-height`. For that reason, as of v3.0.1, we no longer use `max-width` on `.containers`.
 
-#### Internet Explorer 8 and @font-face
+#### 5-Internet Explorer 8 and @font-face
 
 IE8 has some issues with `@font-face` when combined with `:before.` Bootstrap uses that combination with its Glyphicons. If a page is cached, and loaded without the mouse over the window (i.e. hit the refresh button or load something in an iframe) then the page gets rendered before the font loads. Hovering over the page (body) will show some of the icons and hovering over the remaining icons will show those as well. [See issue #13863](https://github.com/twbs/bootstrap/issues/13863) for details.
 
-#### IE Compatibility modes
+#### 6-IE Compatibility modes
 
 Bootstrap is not supported in the old Internet Explorer compatibility modes. To be sure you're using the latest rendering mode for IE, consider including the appropriate `<meta>` tag in your pages:
 
@@ -493,7 +499,7 @@ This tag is included in all of Bootstrap's documentation and examples to ensure 
 
 See [this StackOverflow question](https://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge) for more information.
 
-#### Internet Explorer 10 in Windows 8 and Windows Phone 8
+#### 7-Internet Explorer 10 in Windows 8 and Windows Phone 8
 
 Internet Explorer 10 doesn't differentiate **device width** from **viewport width**, and thus doesn't properly apply the media queries in Bootstrap's CSS. Normally you'd just add a quick snippet of CSS to fix this:
 
@@ -527,40 +533,40 @@ For more information and usage guidelines, read [Windows Phone 8 and Device-Widt
 
 As a heads up, we include this in all of Bootstrap's documentation and examples as a demonstration.
 
-#### Safari percent rounding
+#### 8-Safari percent rounding
 
 The rendering engine of versions of Safari prior to v7.1 for OS X and Safari for iOS v8.0 had some trouble with the number of decimal places used in our `.col-*-1` grid classes. So if you had 12 individual grid columns, you'd notice that they came up short compared to other rows of columns. Besides upgrading Safari/iOS, you have some options for workarounds:
 
 * Add `.pull-right` to your last grid column to get the hard-right alignment
 * Tweak your percentages manually to get the perfect rounding for Safari (more difficult than the first option)
 
-#### Modals, navbars, and virtual keyboards
+#### 9-Modals, navbars, and virtual keyboards
 
-##### Overflow and scrolling
+##### a-Overflow and scrolling
 
 Support for `overflow: hidden` on the `<body>` element is quite limited in iOS and Android. To that end, when you scroll past the top or bottom of a modal in either of those devices' browsers, the `<body>` content will begin to scroll. See [Crome bug #175502](https://bugs.chromium.org/p/chromium/issues/detail?id=175502) (fixed in Chrome v40) and [WebKit bug #153852](https://bugs.webkit.org/show_bug.cgi?id=153852).
 
-##### iOS text fields and scrolling
+##### b-iOS text fields and scrolling
 
 As of iOS 9.3, while a modal is open, if the initial touch of a scroll gesture is within the boundary of a textual `<input>` or a `<textarea>`, the `<body>` content underneath the modal will be scrolled instead of the modal itself. See [WebKit bug #153856](https://bugs.webkit.org/show_bug.cgi?id=153856).
 
-#### Virtual keyboards
+##### c-Virtual keyboards
 
 Also, note that if you're using a fixed navbar or using inputs within a modal, iOS has a rendering bug that doesn't update the position of fixed elements when the virtual keyboard is triggered. A few workarounds for this include transforming your elements to `position: absolute` or invoking a timer on focus to try to correct the positioning manually. This is not handled by Bootstrap, so it is up to you to decide which solution is best for your application.
 
-##### Navbar Dropdowns
+##### d-Navbar Dropdowns
 
 The `.dropdown-backdrop` element isn't used on iOS in the nav because of the complexity of z-indexing. Thus, to close dropdowns in navbars, you must directly click the dropdown element (or [any other element which will fire a click event in iOS](https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile)).
 
-#### Browser zooming
+#### 10-Browser zooming
 
 Page zooming inevitably presents rendering artifacts in some components, both in Bootstrap and the rest of the web. Depending on the issue, we may be able to fix it (search first and then open an issue if need be). However, we tend to ignore these as they often have no direct solution other than hacky workarounds.
 
-#### Sticky `:hover`/`:focus` on mobile
+#### 11-Sticky `:hover`/`:focus` on mobile
 
 Even though real hovering isn't possible on most touchscreens, most mobile browsers emulate hovering support and make `:hover` "sticky". In other words, `:hover` styles start applying after tapping an element and only stop applying after the user taps some other element. This can cause Bootstrap's `:hover` states to become undesirably "stuck" on such browsers. Some mobile browsers also make `:focus` similarly sticky. There is currently no simple workaround for these issues other than removing such styles entirely.
 
-#### Printing
+#### 12-Printing
 
 Even in some modern browsers, printing can be quirky.
 
@@ -580,11 +586,11 @@ Also, as of Safari v8.0, fixed-width `.containers` can cause Safari to use an un
     }
     ```
 
-#### Android stock browser
+#### 13-Android stock browser
 
 Out of the box, Android 4.1 (and even some newer releases apparently) ship with the Browser app as the default web browser of choice (as opposed to Chrome). Unfortunately, the Browser app has lots of bugs and inconsistencies with CSS in general.
 
-##### Select menus
+##### a-Select menus
 
 On `<select>` elements, the Android stock browser will not display the side controls if there is a `border-radius` and/or `border` applied. (See `[this StackOverflow question](https://stackoverflow.com/questions/14744437/html-select-box-not-showing-drop-down-arrow-on-android-version-4-0-when-set-with) for details.) Use the snippet of code below to remove the offending CSS and render the `<select>` as an unstyled element on the Android stock browser. The user agent sniffing avoids interference with Chrome, Safari, and Mozilla browsers.
 
@@ -603,7 +609,7 @@ On `<select>` elements, the Android stock browser will not display the side cont
 
 Want to see an example? [Check out this JS Bin demo](http://jsbin.com/kuvoz/1).
 
-#### Validators
+#### 14-Validators
 
 In order to provide the best possible experience to old and buggy browsers, Bootstrap uses [CSS browser hacks](http://browserhacks.com/) in several places to target special CSS to certain browser versions in order to work around bugs in the browsers themselves. These hacks understandably cause CSS validators to complain that they are invalid. In a couple places, we also use bleeding-edge CSS features that aren't yet fully standardized, but these are used purely for progressive enhancement.
 
@@ -611,11 +617,11 @@ These validation warnings don't matter in practice since the non-hacky portion o
 
 Our HTML docs likewise have some trivial and inconsequential HTML validation warnings due to our inclusion of a workaround for [a certain Firefox bug](https://bugzilla.mozilla.org/show_bug.cgi?id=654072).
 
-### Third party support
+### H-Third party support
 
 **While we don't officially support any third party plugins or add-ons, we do offer some useful advice to help avoid potential issues in your projects.**
 
-#### Box-sizing
+#### 1-Box-sizing
 
 Some third party software, including Google Maps and Google Custom Search Engine, conflict with Bootstrap due to `* { box-sizing: border-box; }`, a rule which makes it so `padding` does not affect the final computed width of an element. Learn more about [box model and sizing at CSS Tricks](https://css-tricks.com/box-sizing/).
 
@@ -661,11 +667,11 @@ Depending on the context, you may override as-needed (Option 1) or reset the box
     }
     ```
 
-### Accessibility
+### I-Accessibility
 
 **Bootstrap follows common web standards and—with minimal extra effort—can be used to create sites that are accessible to those using AT.**
 
-#### Skip navigation
+#### 1-Skip navigation
 
 If your navigation contains many links and comes before the main content in the DOM, add a `Skip to main content` link before the navigation (for a simple explanation, see this [A11Y Project article on skip navigation links](http://a11yproject.com/posts/skip-nav-links)). Using the `.sr-only` class will visually hide the skip link, and the `.sr-only-focusable` class will ensure that the link becomes visible once focused (for sighted keyboard users).
 
@@ -685,17 +691,17 @@ If your navigation contains many links and comes before the main content in the 
     </body>
     ```
 
-#### Nested headings
+#### 2-Nested headings
 
 When nesting headings (`<h1>` - `<h6>`), your primary document header should be an `<h1>`. Subsequent headings should make logical use of `<h2>` - `<h6>` such that screen readers can construct a table of contents for your pages.
 
 Learn more at [HTML CodeSniffer](http://squizlabs.github.io/HTML_CodeSniffer/Standards/Section508/) and [Penn State's AccessAbility](http://accessibility.psu.edu/headings).
 
-#### Color contrast
+#### 3-Color contrast
 
 Currently, some of the default color combinations available in Bootstrap (such as the various styled button classes, some of the code highlighting colors used for [basic code blocks](https://getbootstrap.com/docs/3.3/css/#code-block), the `.bg-primary` [contextual background](https://getbootstrap.com/docs/3.3/css/#helper-classes-backgrounds) helper class, and the default link color when used on a white background) have a low contrast ratio (below the [recommended ratio of 4.5:1](http://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast)). This can cause problems to users with low vision or who are color blind. These default colors may need to be modified to increase their contrast and legibility.
 
-#### Additional resources
+#### 4-Additional resources
 
 * ["HTML Codesniffer" bookmarklet for identifying accessibility issues](https://github.com/squizlabs/HTML_CodeSniffer)
 * [Chrome's Accessibility Developer Tools extension](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en)
@@ -703,22 +709,22 @@ Currently, some of the default color combinations available in Bootstrap (such a
 * [The A11Y Project](http://a11yproject.com/)
 * [MDN accessibility documentation](https://developer.mozilla.org/en-US/docs/Accessibility)
 
-### License FAQs
+### J-License FAQs
 
 **Bootstrap is released under the MIT license and is right 2016 Twitter. Boiled down to smaller chunks, it can be described with the following conditions.**
 
-#### It requires you to:
+#### 1-It requires you to:
 
 * Keep the license and right notice included in Bootstrap's CSS and JavaScript files when you use them in your works
 
-#### It permits you to:
+#### 2-It permits you to:
 
 * Freely download and use Bootstrap, in whole or in part, for personal, private, company internal, or commercial purposes
 * Use Bootstrap in packages or distributions that you create
 * Modify the source code
 * Grant a sublicense to modify and distribute Bootstrap to third parties not included in the license
 
-#### It forbids you to:
+#### 3-It forbids you to:
 
 * Hold the authors and license owners liable for damages as Bootstrap is provided without warranty
 * Hold the creators or right holders of Bootstrap liable
@@ -726,14 +732,14 @@ Currently, some of the default color combinations available in Bootstrap (such a
 * Use any marks owned by Twitter in any way that might state or imply that Twitter endorses your distribution
 * Use any marks owned by Twitter in any way that might state or imply that you created the Twitter software in question
 
-#### It does not require you to:
+#### 4-It does not require you to:
 
 * Include the source of Bootstrap itself, or of any modifications you may have made to it, in any redistribution you may assemble that includes it
 * Submit changes that you make to Bootstrap back to the Bootstrap project (though such feedback is encouraged)
 
 The full Bootstrap license is located [in the project repository](https://github.com/twbs/bootstrap/blob/master/LICENSE) for more information.
 
-### Translations
+### K-Translations
 
 **Community members have translated Bootstrap's documentation into various languages. None are officially supported and they may not always be up to date.**
 

@@ -1,12 +1,14 @@
-## CSS
+## III-CSS
+
+[LINK](https://getbootstrap.com/docs/3.3/css/)
 
 **Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system.**
 
-### Overview
+### A-Overview
 
 Get the lowdown on the key pieces of Bootstrap's infrastructure, including our approach to better, faster, stronger web development.
 
-#### HTML5 doctype
+#### 1-HTML5 doctype
 
 Bootstrap makes use of certain HTML elements and CSS properties that require the use of the HTML5 doctype. Include it at the beginning of all your projects.
 
@@ -17,7 +19,7 @@ Bootstrap makes use of certain HTML elements and CSS properties that require the
     </html>
     ```
 
-#### Mobile first
+#### 2-Mobile first
 
 With Bootstrap 2, we added optional mobile friendly styles for key aspects of the framework. With Bootstrap 3, we've rewritten the project to be mobile friendly from the start. Instead of adding on optional mobile styles, they're baked right into the core. In fact, **Bootstrap is mobile first. Mobile first** styles can be found throughout the entire library instead of in separate files.
 
@@ -33,7 +35,7 @@ You can disable zooming capabilities on mobile devices by adding user-scalable=n
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     ```
 
-#### Typography and links
+#### 3-Typography and links
 
 Bootstrap sets basic global display, typography, and link styles. Specifically, we:
 
@@ -43,11 +45,11 @@ Bootstrap sets basic global display, typography, and link styles. Specifically, 
 
 These styles can be found within `scaffolding.less`.
 
-#### Normalize.css
+#### 4-Normalize.css
 
 For improved cross-browser rendering, we use [Normalize.css](http://necolas.github.io/normalize.css/), a project by [Nicolas Gallagher](https://twitter.com/necolas) and [Jonathan Neal](https://twitter.com/jon_neal).
 
-#### Containers
+#### 5-Containers
 
 Bootstrap requires a containing element to wrap site contents and house our grid system. You may choose one of two containers to use in your projects. Note that, due to padding and more, neither container is nestable.
 
@@ -69,11 +71,11 @@ Use `.container-fluid` for a full width container, spanning the entire width of 
     </div>
     ```
 
-### Grid system
+### B-Grid system
 
 **Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes [predefined classes](https://getbootstrap.com/docs/3.3/css/#grid-example-basic) for easy layout options, as well as powerful [mixins for generating more semantic layouts](https://getbootstrap.com/docs/3.3/css/#grid-less).**
 
-#### Introduction
+#### 1-Introduction
 
 Grid systems are used for creating page layouts through a series of rows and columns that house your content. Here's how the Bootstrap grid system works:
 
@@ -89,7 +91,7 @@ Grid systems are used for creating page layouts through a series of rows and col
 
 Look to the examples for applying these principles to your code.
 
-#### Media queries
+#### 2-Media queries
 
 We use the following media queries in our Less files to create the key breakpoints in our grid system.
 
@@ -113,7 +115,7 @@ We occasionally expand on these media queries to include a max-width to limit CS
     @media (min-width: @screen-lg-min) { ... }
     ```
 
-#### Grid options
+#### 3-Grid options
 
 See how aspects of the Bootstrap grid system work across multiple devices with a handy table.
 
@@ -129,7 +131,7 @@ See how aspects of the Bootstrap grid system work across multiple devices with a
 | Offsets | Yes |
 | Column ordering | Yes |
 
-#### Example: Stacked-to-horizontal
+#### 4-Example: Stacked-to-horizontal
 
 Using a single set of .col-md-* grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any `.row`.
 
@@ -169,7 +171,7 @@ Using a single set of .col-md-* grid classes, you can create a basic grid system
     </div>
     ```
 
-#### Example: Fluid container
+#### 5-Example: Fluid container
 
 Turn any fixed-width grid layout into a full-width layout by changing your outermost `.container` to `.container-fluid`.
 
@@ -181,7 +183,7 @@ Turn any fixed-width grid layout into a full-width layout by changing your outer
     </div>
     ```
 
-#### Example: Mobile and desktop
+#### 6-Example: Mobile and desktop
 
 Don't want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding `.col-xs-* .col-md-*` to your columns. See the example below for a better idea of how it all works.
 
@@ -208,7 +210,7 @@ Don't want your columns to simply stack in smaller devices? Use the extra small 
     </div>
     ```
 
-#### Example: Mobile, tablet, desktop
+#### 7-Example: Mobile, tablet, desktop
 
 Build on the previous example by creating even more dynamic and powerful layouts with tablet `.col-sm-*` classes.
 
@@ -229,7 +231,7 @@ Build on the previous example by creating even more dynamic and powerful layouts
     </div>
     ```
 
-#### Example: Column wrapping
+#### 8-Example: Column wrapping
 
 If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.
 | .col-xs-9 |
@@ -244,7 +246,7 @@ If more than 12 columns are placed within a single row, each group of extra colu
     </div>
     ```
 
-#### Responsive column resets
+#### 9-Responsive column resets
 
 With the four tiers of grids available you're bound to run into issues where, at certain breakpoints, your columns don't clear quite right as one is taller than the other. To fix that, use a combination of a `.clearfix` and our [responsive utility classes](https://getbootstrap.com/docs/3.3/css/#responsive-utilities).
 
@@ -275,7 +277,7 @@ In addition to column clearing at responsive breakpoints, you may need to **rese
     </div>
     ```
 
-#### Offsetting columns
+#### 10-Offsetting columns
 
 Move columns to the right using `.col-md-offset-*` classes. These classes increase the left margin of a column by * columns. For example, `.col-md-offset-4` moves `.col-md-4` over four columns.
 
@@ -310,7 +312,7 @@ You can also override offsets from lower grid tiers with `.col-*-offset-0` class
     </div>
     ```
 
-#### Nesting column
+#### 11-Nesting column
 
 To nest your content with the default grid, add a new `.row` and set of `.col-sm-*` columns within an existing `.col-sm-*` column. Nested rows should include a set of columns that add up to 12 or fewer (it is not required that you use all 12 available columns).
 
@@ -333,7 +335,7 @@ To nest your content with the default grid, add a new `.row` and set of `.col-sm
     </div>
     ```
 
-#### Column ordering
+#### 12-Column ordering
 
 Easily change the order of our built-in grid columns with `.col-md-push-*` and `.col-md-pull-*` modifier classes.
 
@@ -346,11 +348,11 @@ Easily change the order of our built-in grid columns with `.col-md-push-*` and `
     </div>
     ```
 
-#### Less mixins and variables
+#### 13-Less mixins and variables
 
 In addition to prebuilt grid classes for fast layouts, Bootstrap includes Less variables and mixins for quickly generating your own simple, semantic layouts.
 
-##### Variables
+##### a-Variables
 
 Variables determine the number of columns, the gutter width, and the media query point at which to begin floating columns. We use these to generate the predefined grid classes documented above, as well as for the custom mixins listed below.
 
@@ -360,7 +362,7 @@ Variables determine the number of columns, the gutter width, and the media query
     @grid-float-breakpoint:     768px;
     ```
 
-##### Mixins
+##### b-Mixins
 
 Mixins are used in conjunction with the grid variables to generate semantic CSS for individual grid columns.
 
@@ -485,7 +487,7 @@ Mixins are used in conjunction with the grid variables to generate semantic CSS 
     }
     ```
 
-##### Example usage
+##### c-Example usage
 
 You can modify the variables to your own custom values, or just use the mixins with their default values. Here's an example of using the default settings to create a two-column layout with a gap between.
 
@@ -509,8 +511,8 @@ You can modify the variables to your own custom values, or just use the mixins w
     </div>
     ```
 
-### Typography
-#### Headings
+### C-Typography
+#### 1-Headings
 
 All HTML headings, `<h1>` through `<h6>`, are available. `.h1` through `.h6` classes are also available, for when you want to match the font styling of a heading but still want your text to be displayed inline.
 
@@ -556,7 +558,7 @@ Create lighter, secondary text in any heading with a generic `<small>` tag or th
     <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
     ```
 
-#### Body 
+#### 2-Body copy
 
 Bootstrap's global default `font-size` is 14px, with a `line-height` of 1.428. This is applied to the `<body>` and all paragraphs. In addition, `<p>` (paragraphs) receive a bottom margin of half their computed line-height (10px by default).
 
@@ -572,7 +574,7 @@ Bootstrap's global default `font-size` is 14px, with a `line-height` of 1.428. T
     <p>...</p>
     ```
 
-##### Lead body 
+##### a-Lead body copy
 
 Make a paragraph stand out by adding `.lead`.
 
@@ -583,13 +585,13 @@ Make a paragraph stand out by adding `.lead`.
     <p class="lead">...</p>
     ```
 
-##### Built with Less
+##### b-Built with Less
 
 The typographic scale is based on two Less variables in **variables.less**: `@font-size-base` and `@line-height`-base. The first is the base font-size used throughout and the second is the base line-height. We use those variables and some simple math to create the margins, paddings, and line-heights of all our type and more. Customize them and Bootstrap adapts.
 
-#### Inline text elements
+#### 3-Inline text elements
 
-##### Marked text
+##### a-Marked text
 
 For highlighting a run of text due to its relevance in another context, use the `<mark>` tag.
 
@@ -600,7 +602,7 @@ For highlighting a run of text due to its relevance in another context, use the 
     You can use the mark tag to <mark>highlight</mark> text.
     
 
-##### Deleted text
+##### b-Deleted text
 
 For indicating blocks of text that have been deleted use the <del> tag.
 
@@ -611,7 +613,7 @@ For indicating blocks of text that have been deleted use the <del> tag.
     <del>This line of text is meant to be treated as deleted text.</del>
     ```
 
-##### Strikethrough text
+##### c-Strikethrough text
 
 For indicating blocks of text that are no longer relevant use the <s> tag.
 
@@ -622,7 +624,7 @@ For indicating blocks of text that are no longer relevant use the <s> tag.
     <s>This line of text is meant to be treated as no longer accurate.</s>
     ```
 
-##### Inserted text
+##### d-Inserted text
 
 For indicating additions to the document use the <ins> tag.
 
@@ -633,7 +635,7 @@ For indicating additions to the document use the <ins> tag.
     <ins>This line of text is meant to be treated as an addition to the document.</ins>
     ```
 
-##### Underlined text
+##### e-Underlined text
 
 To underline text use the <u> tag.
 
@@ -646,7 +648,7 @@ To underline text use the <u> tag.
 
 Make use of HTML's default emphasis tags with lightweight styles.
 
-##### Small text
+##### f-Small text
 
 For de-emphasizing inline or blocks of text, use the `<small>` tag to set text at 85% the size of the parent. Heading elements receive their own `font-size` for nested `<small>` elements.
 
@@ -659,7 +661,7 @@ You may alternatively use an inline element with `.small` in place of any `<smal
     <small>This line of text is meant to be treated as fine print.</small>
     ```
 
-##### Bold
+##### g-Bold
 
 For emphasizing a snippet of text with a heavier font-weight.
 
@@ -670,7 +672,7 @@ For emphasizing a snippet of text with a heavier font-weight.
     <strong>rendered as bold text</strong>
     ```
 
-##### Italics
+##### h-Italics
 
 For emphasizing a snippet of text with italics.
 
@@ -685,7 +687,7 @@ For emphasizing a snippet of text with italics.
 >
 >> Feel free to use <b> and <i> in HTML5. <b> is meant to highlight words or phrases without conveying additional importance while <i> is mostly for voice, technical terms, etc.
 
-#### Alignment classes
+#### 4-Alignment classes
 
 Easily realign text to components with text alignment classes.
 
@@ -700,7 +702,7 @@ Example
     <p class="text-nowrap">No wrap text.</p>
     ```
 
-#### Transformation classes
+#### 5-Transformation classes
 
 Transform text in components with text capitalization classes.
 
@@ -715,11 +717,11 @@ Transform text in components with text capitalization classes.
     <p class="text-capitalize">Capitalized text.</p>
     ```
 
-#### Abbreviations
+#### 6-Abbreviations
 
 Stylized implementation of HTML's `<abbr>` element for abbreviations and acronyms to show the expanded version on hover. Abbreviations with a `title` attribute have a light dotted bottom border and a help cursor on hover, providing additional context on hover and to users of assistive technologies.
 
-##### Basic abbreviation
+##### a-Basic abbreviation
 
     Example
     An abbreviation of the word attribute is attr.
@@ -739,7 +741,7 @@ Add `.initialism` to an abbreviation for a slightly smaller font-size.
     <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
     ```
 
-#### Addresses
+#### 7-Addresses
 
 Present contact information for the nearest ancestor or the entire body of work. Preserve formatting by ending all lines with `<br>`.
 
@@ -764,11 +766,11 @@ Present contact information for the nearest ancestor or the entire body of work.
     </address>
     ```
 
-#### Blockquotes
+#### 8-Blockquotes
 
 For quoting blocks of content from another source within your document.
 
-##### Default blockquote
+##### a-Default blockquote
 
 Wrap `<blockquote>` around any HTML as the quote. For straight quotes, we recommend a `<p>`.
 
@@ -782,11 +784,11 @@ Wrap `<blockquote>` around any HTML as the quote. For straight quotes, we recomm
     </blockquote>
     ```
 
-##### Blockquote options
+##### b-Blockquote options
 
 Style and content changes for simple variations on a standard `<blockquote>`.
 
-###### Naming a source
+###### i-Naming a source
 
 Add a `<footer>` for identifying the source. Wrap the name of the source work in `<cite>`.
 
@@ -801,7 +803,7 @@ Add a `<footer>` for identifying the source. Wrap the name of the source work in
     </blockquote>
     ```
 
-###### Alternate displays
+###### ii-Alternate displays
 
 Add `.blockquote-reverse` for a blockquote with right-aligned content.
 
@@ -815,9 +817,9 @@ Add `.blockquote-reverse` for a blockquote with right-aligned content.
     </blockquote>
     ```
 
-#### Lists
+#### 9-Lists
 
-##### Unordered
+##### a-Unordered
 
 A list of items in which the order does not explicitly matter.
 
@@ -841,7 +843,7 @@ Example
   </ul>
   ```
 
-##### Ordered
+##### b-Ordered
 
 A list of items in which the order does explicitly matter.
 
@@ -861,7 +863,7 @@ Example
     </ol>
     ```
 
-##### Unstyled
+##### c-Unstyled
 
 Remove the default `list-style` and left margin on list items (immediate children only). **This only applies to immediate children list items**, meaning you will need to add the class for any nested lists as well.
 
@@ -885,7 +887,7 @@ Eget porttitor lorem
     </ul>
     ```
 
-##### Inline
+##### d-Inline
 
 Place all list items on a single line with `display: inline-block;` and some light padding.
 
@@ -897,7 +899,7 @@ Place all list items on a single line with `display: inline-block;` and some lig
     </ul>
     ```
 
-##### Description
+##### e-Description
 
 A list of terms with their associated descriptions.
 
@@ -917,7 +919,7 @@ Etiam porta sem malesuada magna mollis euismod.
     </dl>
     ```
 
-###### Horizontal description
+###### i-Horizontal description
 
 Make terms and descriptions in `<dl>` line up side-by-side. Starts off stacked like default `<dl>`s, but when the navbar expands, so do these.
 
@@ -943,9 +945,9 @@ Example
 >
 >>Horizontal description lists will truncate terms that are too long to fit in the left column with text-overflow. In narrower viewports, they will change to the default stacked layout.
 
-### Code
+### D-Code
 
-#### Inline
+#### 1-Inline
 
 Wrap inline snippets of code with `<code>`.
 
@@ -956,7 +958,7 @@ For example, `<section>` should be wrapped as inline.
     For example, <code>&lt;section&gt;</code> should be wrapped as inline.
     ```
 
-#### User input
+#### 2-User input
 
 Use the `<kbd>` to indicate input that is typically entered via keyboard.
 To switch directories, type cd followed by the name of the directory.
@@ -970,7 +972,7 @@ Example
     To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
      ```
 
-#### Basic block
+#### 3-Basic block
 
 Use `<pre>` for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.
 
@@ -983,7 +985,7 @@ Use `<pre>` for multiple lines of code. Be sure to escape any angle brackets in 
 
 You may optionally add the `.pre-scrollable` class, which will set a max-height of 350px and provide a y-axis scrollbar.
 
-#### Variables
+#### 4-Variables
 
 For indicating variables use the `<var>` tag.
 
@@ -994,7 +996,7 @@ For indicating variables use the `<var>` tag.
     <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
     ```
 
-#### Sample output
+#### 5-Sample output
 
 For indicating blocks sample output from a program use the `<samp>` tag.
 
@@ -1005,9 +1007,9 @@ For indicating blocks sample output from a program use the `<samp>` tag.
     <samp>This text is meant to be treated as sample output from a computer program.</samp>
     ```
 
-### Tables
+### E-Tables
 
-#### Basic example
+#### 1-Basic example
 
 For basic styling—light padding and only horizontal dividers—add the base class `.table` to any `<table>`. It may seem super redundant, but given the widespread use of tables for other plugins like calendars and date pickers, we've opted to isolate our custom table styles.
 
@@ -1022,7 +1024,7 @@ Optional table caption.
     </table>
     ```
 
-####  Striped rows
+####  2-Striped rows
 
 Use `.table-striped` to add zebra-striping to any table row within the <tbody>.
 
@@ -1037,7 +1039,7 @@ Use `.table-striped` to add zebra-striping to any table row within the <tbody>.
     </table>
     ```
 
-#### Bordered table
+#### 3-Bordered table
 
 Add `.table-bordered` for borders on all sides of the table and cells.
 
@@ -1049,7 +1051,7 @@ Add `.table-bordered` for borders on all sides of the table and cells.
     </table>
     ```
 
-#### Hover rows
+#### 4-Hover rows
 
 Add `.table-hover` to enable a hover state on table rows within a `<tbody>`.
 
@@ -1061,7 +1063,7 @@ Add `.table-hover` to enable a hover state on table rows within a `<tbody>`.
     </table>
     ```
 
-#### Condensed table
+#### 5-Condensed table
 
 Add .table-condensed to make tables more compact by cutting cell padding in half.
 
@@ -1073,7 +1075,7 @@ Add .table-condensed to make tables more compact by cutting cell padding in half
     </table>
     ```
 
-#### Contextual classes
+#### 6-Contextual classes
 
 Use contextual classes to color table rows or individual cells.
 | Class | Description |
@@ -1107,7 +1109,7 @@ Use contextual classes to color table rows or individual cells.
 > **Conveying meaning to assistive technologies**
 >> Using color to add meaning to a table row or individual cell only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the visible text in the relevant table row/cell), or is included through alternative means, such as additional text hidden with the .sr-only class.
 
-#### Responsive tables
+#### 7-Responsive tables
 
 Create responsive tables by wrapping any `.table` in `.table-responsive` to make them scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables.
 
@@ -1134,9 +1136,9 @@ Create responsive tables by wrapping any `.table` in `.table-responsive` to make
     </div>
     ```
 
-### Forms
+### F-Forms
 
-#### Basic example
+#### 1-Basic example
 
 Individual form controls automatically receive some global styling. All textual `<input>`, `<textarea>`, and `<select>` elements with `.form-control` are set to `width: 100%;` by default. Wrap labels and controls in `.form-group` for optimum spacing.
 
@@ -1169,7 +1171,7 @@ Individual form controls automatically receive some global styling. All textual 
 > **Don't mix form groups with input groups**
 >> Do not mix form groups directly with [input groups](https://getbootstrap.com/components/#input-groups). Instead, nest the input group inside of the form group.
 
-#### Inline form
+#### 2-Inline form
 
 Add `.form-inline` to your form (which doesn't have to be a <form>) for left-aligned and inline-block controls. **This only applies to forms within viewports that are at least 768px wide**.
 
@@ -1232,7 +1234,7 @@ Add `.form-inline` to your form (which doesn't have to be a <form>) for left-ali
     </form>
     ```
 
-#### Horizontal form
+#### 3-Horizontal form
 
 Use Bootstrap's predefined grid classes to align labels and groups of form controls in a horizontal layout by adding `.form-horizontal` to the form (which doesn't have to be a <`form>`). Doing so changes `.form-groups` to behave as grid rows, so no need for `.row`.
 
@@ -1269,11 +1271,11 @@ Use Bootstrap's predefined grid classes to align labels and groups of form contr
     </form>
     ```
 
-#### Supported controls
+#### 4-Supported controls
 
 Examples of standard form controls supported in an example form layout.
 
-##### Inputs
+##### a-Inputs
 
 Most common form control, text-based input fields. Includes support for all HTML5 types: `text`, `password`, `datetime`, `datetime-local`, `date`, `month`, `time`, `week`, `number`, `email`, `url`, `search`, `tel`, and `color`.
 
@@ -1289,7 +1291,7 @@ Most common form control, text-based input fields. Includes support for all HTML
 > **Input groups**
 >> To add integrated text or buttons before and/or after any text-based `<input>`, [check out the input group component](https://getbootstrap.com/docs/3.3/components/#input-groups).
 
-##### Textarea
+##### b-Textarea
 
 Form control which supports multiple lines of text. Change `rows` attribute as necessary.
 
@@ -1299,13 +1301,13 @@ Form control which supports multiple lines of text. Change `rows` attribute as n
     <textarea class="form-control" rows="3"></textarea>
     ```
 
-##### Checkboxes and radios
+##### c-Checkboxes and radios
 
 Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.
 
 Disabled checkboxes and radios are supported, but to provide a "not-allowed" cursor on hover of the parent `<label>`, you'll need to add the `.disabled` class to the parent `.radio`, `.radio-inline`, `.checkbox`, or `.checkbox-inline`.
 
-###### Default (stacked)
+###### i-Default (stacked)
 
 ![IMG](IMG)
 
@@ -1342,7 +1344,7 @@ Disabled checkboxes and radios are supported, but to provide a "not-allowed" cur
     </div>
     ```
 
-###### Inline checkboxes and radios
+###### ii-Inline checkboxes and radios
 
 Use the `.checkbox-inline` or `.radio-inline` classes on a series of checkboxes or radios for controls that appear on the same line.
 
@@ -1369,7 +1371,7 @@ Use the `.checkbox-inline` or `.radio-inline` classes on a series of checkboxes 
     </label>
     ```
 
-##### Checkboxes and radios without label text
+##### iii-Checkboxes and radios without label text
 
 Should you have no text within the `<label>`, the input is positioned as you'd expect. Currently only works on non-inline checkboxes and radios. Remember to still provide some form of label for assistive technologies (for instance, using `aria-label`).
 
@@ -1388,7 +1390,7 @@ Should you have no text within the `<label>`, the input is positioned as you'd e
     </div>
     ```
 
-##### Selects
+##### d-Selects
 
 Note that many native select menus—namely in Safari and Chrome—have rounded corners that cannot be modified via `border-radius` properties.
 
@@ -1418,7 +1420,7 @@ For `<select>` controls with the `multiple` attribute, multiple options are show
     </select>
     ```
 
-#### Static control
+#### 5-Static control
 
 When you need to place plain text next to a form label within a form, use the `.form-control-static` class on a `<p>`.
 
@@ -1457,7 +1459,7 @@ When you need to place plain text next to a form label within a form, use the `.
     </form>
     ```
 
-#### Focus state
+#### 6-Focus state
 
 We remove the default `outline` styles on some form controls and apply a `box-shadow` in its place for `:focus`.
 
@@ -1466,7 +1468,7 @@ We remove the default `outline` styles on some form controls and apply a `box-sh
 >**Demo `:focus` state**
 >>The above example input uses custom styles in our documentation to demonstrate the :focus state on a `.form-control`.
 
-#### Disabled state
+#### 7-Disabled state
 
 Add the `disabled` boolean attribute on an input to prevent user interactions. Disabled inputs appear lighter and add a `not-allowed` cursor.
 
@@ -1476,7 +1478,7 @@ Add the `disabled` boolean attribute on an input to prevent user interactions. D
     <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
     ```
 
-##### Disabled fieldsets
+##### a-Disabled fieldsets
 
 Add the disabled attribute to a <fieldset> to disable all the controls within the <fieldset> at once.
 
@@ -1511,7 +1513,7 @@ Add the disabled attribute to a <fieldset> to disable all the controls within th
     </form>
     ```
 
-#### Readonly state
+#### 8-Readonly state
 
 Add the `readonly` boolean attribute on an input to prevent modification of the input's value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.
 
@@ -1537,7 +1539,7 @@ Block level help text for form controls.
     <span id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
     ```
 
-#### Validation states
+#### 9-Validation states
 
 Bootstrap includes validation styles for error, warning, and success states on form controls. To use, add .has-warning, `.has-error`, or `.has-success` to the parent element. Any `.control-label`, .`form-control`, and `.help-block` within that element will receive the validation styles.
 
@@ -1587,7 +1589,7 @@ Bootstrap includes validation styles for error, warning, and success states on f
     </div>
     ```
 
-##### With optional icons
+##### a-With optional icons
 
 You can also add optional feedback icons with the addition of `.has-feedback` and the right icon.
 
@@ -1632,7 +1634,7 @@ You can also add optional feedback icons with the addition of `.has-feedback` an
     </div>
     ```
 
-###### Optional icons in horizontal and inline forms
+###### i-Optional icons in horizontal and inline forms
 
 ![IMG](IMG)
 
@@ -1684,7 +1686,7 @@ You can also add optional feedback icons with the addition of `.has-feedback` an
     </form>
     ```
 
-###### Optional icons with hidden `.sr-only` labels
+###### ii-Optional icons with hidden `.sr-only` labels
 
 If you use the `.sr-only` class to hide a form control's `<label>` (rather than using other labelling options, such as the `aria-label` attribute), Bootstrap will automatically adjust the position of the icon once it's been added.
 
@@ -1708,11 +1710,11 @@ If you use the `.sr-only` class to hide a form control's `<label>` (rather than 
     </div>
     ```
 
-#### Control sizing
+#### 10-Control sizing
 
 Set heights using classes like `.input-lg`, and set widths using grid column classes like `.col-lg-*`.
 
-##### Height sizing
+##### a-Height sizing
 
 Create taller or shorter form controls that match button sizes.
 
@@ -1727,7 +1729,7 @@ Create taller or shorter form controls that match button sizes.
     <select class="form-control input-sm">...</select>
     ```
 
-##### Horizontal form group sizes
+##### b-Horizontal form group sizes
 
 Quickly size labels and form controls within `.form-horizontal` by adding `.form-group-lg` or `.form-group-sm`.
 
@@ -1750,7 +1752,7 @@ Quickly size labels and form controls within `.form-horizontal` by adding `.form
     </form>
     ```
 
-##### Column sizing
+##### c-Column sizing
 
 Wrap inputs in grid columns, or any custom parent element, to easily enforce desired widths.
 
@@ -1770,9 +1772,9 @@ Wrap inputs in grid columns, or any custom parent element, to easily enforce des
     </div>
     ```
 
-### Buttons
+### G-Buttons
 
-#### Button tags
+#### 1-Button tags
 
 Use the button classes on an `<a>`, `<button>`, or `<input>` element.
 
@@ -1795,7 +1797,7 @@ Use the button classes on an `<a>`, `<button>`, or `<input>` element.
 >> As a best practice, **we highly recommend using the `<button>` element whenever possible** to ensure matching cross-browser rendering.
 >> Among other things, there's a bug in Firefox <30 that prevents us from setting the `line-height` of `<input>`-based buttons, causing them to not exactly match the height of other buttons on Firefox.
 
-#### Options
+#### 2-Options
 
 Use any of the available button classes to quickly create a styled button.
 
@@ -1821,7 +1823,7 @@ Use any of the available button classes to quickly create a styled button.
 > **Conveying meaning to assistive technologies**
 >> Using color to add meaning to a button only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the visible text of the button), or is included through alternative means, such as additional text hidden with the `.sr-only` class.
 
-#### Sizes
+#### 3-Sizes
 
 Fancy larger or smaller buttons? Add `.btn-lg`, `.btn-sm`, or `.btn-xs` for additional sizes.
 
@@ -1855,11 +1857,11 @@ Create block level buttons—those that span the full width of a parent— by ad
     <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
     ```
 
-#### Active state
+#### 4-Active state
 
 Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. For `<button>` elements, this is done via `:active`. For `<a>` elements, it's done with `.active`. However, you may use `.active` on `<button>`s (and include the `aria-pressed="true"` attribute) should you need to replicate the active state programmatically.
 
-##### Button element
+##### a-Button element
 
 No need to add `:active` as it's a pseudo-class, but if you need to force the same appearance, go ahead and add `.active`.
 
@@ -1870,7 +1872,7 @@ No need to add `:active` as it's a pseudo-class, but if you need to force the sa
     <button type="button" class="btn btn-default btn-lg active">Button</button>
     ```
 
-##### Anchor element
+##### b-Anchor element
 
 Add the `.active` class to `<a>` buttons.
 
@@ -1881,11 +1883,11 @@ Add the `.active` class to `<a>` buttons.
     <a href="#" class="btn btn-default btn-lg active" role="button">Link</a>
     ```
 
-#### Disabled state
+#### 5-Disabled state
 
 Make buttons look unclickable by fading them back with `opacity`.
 
-##### Button element
+##### a-Button element
 
 Add the `disabled` attribute to `<button>` buttons.
 
@@ -1899,7 +1901,7 @@ Add the `disabled` attribute to `<button>` buttons.
 > **Cross-browser compatibility**
 >> If you add the `disabled` attribute to a `<button>`, Internet Explorer 9 and below will render text gray with a nasty text-shadow that we cannot fix.
 
-#### Anchor element
+##### b-Anchor element
 
 Add the .disabled class to `<a>` buttons.
 
@@ -1915,9 +1917,9 @@ We use .disabled as a utility class here, similar to the common `.active` class,
 > **Link functionality caveat**
 >> This class uses `pointer-events: none` to try to disable the link functionality of `<a>`s, but that CSS property is not yet standardized and isn't fully supported in Opera 18 and below, or in Internet Explorer 11. In addition, even in browsers that do support `pointer-events: none`, keyboard navigation remains unaffected, meaning that sighted keyboard users and users of assistive technologies will still be able to activate these links. So to be safe, use custom JavaScript to disable such links.
 
-### Images
+### H-Images
 
-#### Responsive images
+#### 1-Responsive images
 
 Images in Bootstrap 3 can be made responsive-friendly via the addition of the `.img-responsive` class. This applies `max-width: 100%;`, `height: auto;` and `display: block;` to the image so that it scales nicely to the parent element.
 
@@ -1930,7 +1932,7 @@ To center images which use the `.img-responsive` class, use `.center-block` inst
     <img src="..." class="img-responsive" alt="Responsive image">
     ```
 
-#### Image shapes
+#### 2-Image shapes
 
 Add classes to an `<img>` element to easily style images in any project.
 
@@ -1945,9 +1947,9 @@ Add classes to an `<img>` element to easily style images in any project.
     <img src="..." alt="..." class="img-thumbnail">
     ```
 
-### Helper classes
+### I-Helper classes
 
-#### Contextual colors
+#### 1-Contextual colors
 
 Convey meaning through color with a handful of emphasis utility classes. These may also be applied to links and will darken on hover just like our default link styles.
 
@@ -1968,7 +1970,7 @@ Convey meaning through color with a handful of emphasis utility classes. These m
 > **Conveying meaning to assistive technologies**
 > Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the contextual colors are only used to reinforce meaning that is already present in the text/markup), or is included through alternative means, such as additional text hidden with the `.sr-only` class.
 
-#### Contextual backgrounds
+#### 2-Contextual backgrounds
 
 Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes.
 
@@ -1988,7 +1990,7 @@ Similar to the contextual text color classes, easily set the background of an el
 > **Conveying meaning to assistive technologies**
 >> As with [contextual colors](https://getbootstrap.com/docs/3.3/css/#helper-classes-colors), ensure that any meaning conveyed through color is also conveyed in a format that is not purely presentational.
 
-#### Close icon
+#### 3-Close icon
 
 Use the generic close icon for dismissing content like modals and alerts.
 
@@ -1999,7 +2001,7 @@ Use the generic close icon for dismissing content like modals and alerts.
     <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     ```
 
-#### Carets
+#### 4-Carets
 
 Use carets to indicate dropdown functionality and direction. Note that the default caret will reverse automatically in [dropup menus](https://getbootstrap.com/docs/3.3/components/#btn-dropdowns-dropup).
 
@@ -2009,7 +2011,7 @@ Use carets to indicate dropdown functionality and direction. Note that the defau
     <span class="caret"></span>
     ```
 
-#### Quick floats
+#### 5-Quick floats
 
 Float an element to the left or right with a class. `!important` is included to avoid specificity issues. Classes can also be used as mixins.
 
@@ -2038,7 +2040,7 @@ Float an element to the left or right with a class. `!important` is included to 
 > **Not for use in navbars**
 >> To align components in navbars with utility classes, use `.navbar-left` or `.navbar-right` instead. [See the navbar docs for details](https://getbootstrap.com/docs/3.3/components/#navbar-component-alignment).
 
-#### Center content blocks
+#### 6-Center content blocks
 
 Set an element to `display: block` and center via `margin`. Available as a mixin and class.
 
@@ -2059,7 +2061,7 @@ Set an element to `display: block` and center via `margin`. Available as a mixin
     }
     ```
 
-#### Clearfix
+#### 7-Clearfix
 
 Easily clear `floats` by adding `.clearfix` **to the parent element**. Utilizes [the micro clearfix](http://nicolasgallagher.com/micro-clearfix-hack/) as popularized by Nicolas Gallagher. Can also be used as a mixin.
 
@@ -2086,7 +2088,7 @@ Easily clear `floats` by adding `.clearfix` **to the parent element**. Utilizes 
     }
     ```
 
-#### Showing and hiding content
+#### 8-Showing and hiding content
 
 Force an element to be shown or hidden (**including for screen readers**) with the use of `.show` and `.hidden` classes. These classes use `!important` to avoid specificity conflicts, just like the quick floats. They are only available for block level toggling. They can also be used as mixins.
 
@@ -2119,7 +2121,7 @@ Furthermore, `.invisible` can be used to toggle only the visibility of an elemen
     }
     ```
 
-#### Screen reader and keyboard navigation content
+#### 9-Screen reader and keyboard navigation content
 
 Hide an element to all devices **except screen readers** with `.sr-only.` Combine `.sr-only` with `.sr-only-focusable` to show the element again when it's focused (e.g. by a keyboard-only user). Necessary for following [accessibility best practices](https://getbootstrap.com/docs/3.3/getting-started/#accessibility). Can also be used as mixins.
 
@@ -2135,7 +2137,7 @@ Hide an element to all devices **except screen readers** with `.sr-only.` Combin
     }
     ```
 
-#### Image replacement
+#### 10-Image replacement
 
 Utilize the `.text-hide` class or mixin to help replace an element's text content with a background image.
 
@@ -2150,13 +2152,13 @@ Utilize the `.text-hide` class or mixin to help replace an element's text conten
     }
     ```
 
-### Responsive utilities
+### J-Responsive utilities
 
 **For faster mobile-friendly development, use these utility classes for showing and hiding content by device via media query. Also included are utility classes for toggling content when printed.**
 
 Try to use these on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device's presentation.
 
-#### Available classes
+#### 1-Available classes
 
 Use a single or combination of the available classes for toggling content across viewport breakpoints.
 
@@ -2183,7 +2185,7 @@ So, for extra small (xs) screens for example, the available `.visible-*-*` class
 
 The classes `.visible-xs`, `.visible-sm`, `.visible-md`, and `.visible-lg` also exist, but are **deprecated as of v3.2.0**. They are approximately equivalent to `.visible-*-block`, except with additional special cases for toggling `<table>`-related elements.
 
-#### Print classes
+#### 2-Print classes
 
 Similar to the regular responsive classes, use these for toggling content for print.
 | Classes | Browser | Print |
@@ -2193,39 +2195,39 @@ Similar to the regular responsive classes, use these for toggling content for pr
 
 The class `.visible-print` also exists but is **deprecated** as of v3.2.0. It is approximately equivalent to `.visible-print-block`, except with additional special cases for `<table>`-related elements.
 
-#### Test cases
+#### 3-Test cases
 
 Resize your browser or load on different devices to test the responsive utility classes.
 
-##### Visible on...
+##### a-Visible on...
 
 Green checkmarks indicate the element **is visible** in your current viewport.
 
 ![IMG](IMG)
 
-#### Hidden on...
+#### b-Hidden on...
 
 Here, green checkmarks also indicate the element **is hidden** in your current viewport.
 
 ![IMG](IMG)
 
-### Using Less
+### K-Using Less
 
 **Bootstrap's CSS is built on Less, a preprocessor with additional functionality like variables, mixins, and functions for compiling CSS. Those looking to use the source Less files instead of our compiled CSS files can make use of the numerous variables and mixins we use throughout the framework.**
 
 Grid variables and mixins are covered [within the Grid system section](https://getbootstrap.com/docs/3.3/css/#grid-less).
 
-#### Compiling Bootstrap
+#### 1-Compiling Bootstrap
 
 Bootstrap can be used in at least two ways: with the compiled CSS or with the source Less files. To compile the Less files, [consult the Getting Started section](https://getbootstrap.com/docs/3.3/getting-started/#grunt) for how to setup your development environment to run the necessary commands.
 
 Third party compilation tools may work with Bootstrap, but they are not supported by our core team.
 
-#### Variables
+#### 2-Variables
 
 Variables are used throughout the entire project as a way to centralize and share commonly used values like colors, spacing, or font stacks. For a complete breakdown, please see [the Customizer](https://getbootstrap.com/docs/3.3/customize/#less-variables-section).
 
-##### Colors
+##### a-Colors
 
 Easily make use of two color schemes: grayscale and semantic. Grayscale colors provide quick access to commonly used shades of black while semantic include various colors assigned to meaningful contextual values.
 
@@ -2263,7 +2265,7 @@ Use any of these color variables as they are or reassign them to more meaningful
     }
     ```
 
-##### Scaffolding
+##### b-Scaffolding
 
 A handful of variables for quickly customizing key elements of your site's skeleton.
 
@@ -2273,7 +2275,7 @@ A handful of variables for quickly customizing key elements of your site's skele
     @text-color: @black-50;
     ```
 
-##### Links
+##### c-Links
 
 Easily style your links with the right color with only one value.
 
@@ -2294,7 +2296,7 @@ Easily style your links with the right color with only one value.
 
 Note that the `@link-hover-color` uses a function, another awesome tool from Less, to automagically create the right hover color. You can use `darken`, `lighten`, `saturate`, and `desaturate`.
 
-##### Typography
+##### d-Typography
 
 Easily set your typeface, text size, leading, and more with a few quick variables. Bootstrap makes use of these as well to provide easy typographic mixins.
 
@@ -2320,7 +2322,7 @@ Easily set your typeface, text size, leading, and more with a few quick variable
     @headings-color:          inherit;
     ```
 
-##### Icons
+##### e-Icons
 
 Two quick variables for customizing the location and filename of your icons.
 
@@ -2329,7 +2331,7 @@ Two quick variables for customizing the location and filename of your icons.
     @icon-font-name:          "glyphicons-halflings-regular";
     ```
 
-##### Components
+##### f-Components
 
 Components throughout Bootstrap make use of some default variables for setting common values. Here are the most commonly used.
 
@@ -2353,11 +2355,11 @@ Components throughout Bootstrap make use of some default variables for setting c
     @caret-width-large:              5px;
     ```
 
-#### Vendor mixins
+#### 3-Vendor mixins
 
 Vendor mixins are mixins to help support multiple browsers by including all relevant vendor prefixes in your compiled CSS.
 
-##### Box-sizing
+##### a-Box-sizing
 
 Reset your components' box model with a single mixin. For context, see this [helpful article from Mozilla](https://developer.mozilla.org/en-US/docs/CSS/box-sizing).
 
@@ -2371,7 +2373,7 @@ The mixin is **deprecated** as of v3.2.0, with the introduction of Autoprefixer.
     }
     ```
 
-##### Rounded corners
+##### b-Rounded corners
 
 Today all modern browsers support the non-prefixed `border-radius` property. As such, there is no `.border-radius()` mixin, but Bootstrap does include shortcuts for quickly rounding two corners on a particular side of an object.
 
@@ -2394,7 +2396,7 @@ Today all modern browsers support the non-prefixed `border-radius` property. As 
     }
     ```
 
-##### Box (Drop) shadows
+##### c-Box (Drop) shadows
 
 If your target audience is using the latest and greatest browsers and devices, be sure to just use the `box-shadow` property on its own. If you need support for older Android (pre-v4) and iOS devices (pre-iOS 5), use the **deprecated** mixin to pick up the required `-webkit` prefix.
 
@@ -2409,7 +2411,7 @@ Be sure to use `rgba()` colors in your box shadows so they blend as seamlessly a
     }
     ```
 
-##### Transitions
+##### d-Transitions
 
 Multiple mixins for flexibility. Set all transition information with one, or specify a separate delay and duration as needed.
 
@@ -2444,7 +2446,7 @@ The mixins are **deprecated** as of v3.2.0, with the introduction of Autoprefixe
     }
     ```
 
-##### Transformations
+##### e-Transformations
 
 Rotate, scale, translate (move), or skew any object.
 
@@ -2503,7 +2505,7 @@ The mixins are **deprecated** as of v3.2.0, with the introduction of Autoprefixe
     }
     ```
 
-##### Animations
+##### f-Animations
 
 A single mixin for using all of CSS3's animation properties in one declaration and other mixins for individual properties.
 
@@ -2540,7 +2542,7 @@ The mixins are **deprecated** as of v3.2.0, with the introduction of Autoprefixe
     }
     ```
 
-##### Opacity
+##### g-Opacity
 
 Set the opacity for all browsers and provide a `filter` fallback for IE8.
 
@@ -2553,7 +2555,7 @@ Set the opacity for all browsers and provide a `filter` fallback for IE8.
     }
     ```
 
-##### Placeholder text
+##### h-Placeholder text
 
 Provide context for form controls within each field.
 
@@ -2565,7 +2567,7 @@ Provide context for form controls within each field.
     }
     ```
 
-##### Columns
+##### i-Columns
 
 Generate columns via CSS within a single element.
 
@@ -2583,7 +2585,7 @@ Generate columns via CSS within a single element.
     }
     ```
 
-##### Gradients
+##### j-Gradients
 
 Easily turn any two colors into a background gradient. Get more advanced and set a direction, use three colors, or use a radial gradient. With a single mixin you get all the prefixed syntaxes you'll need.
 
@@ -2614,11 +2616,11 @@ Up the ante and use three colors instead. Set the first color, the second color,
 
 **Heads up!** Should you ever need to remove a gradient, be sure to remove any IE-specific `filter` you may have added. You can do that by using the `.reset-filter()` mixin alongside `background-image: none;`.
 
-#### Utility mixins
+#### 4-Utility mixins
 
 Utility mixins are mixins that combine otherwise unrelated CSS properties to achieve a specific goal or task.
 
-##### Clearfix
+##### a-Clearfix
 
 Forget adding `class="clearfix"` to any element and instead add the `.clearfix()` mixin where appropriate. Uses the [micro clearfix](http://nicolasgallagher.com/micro-clearfix-hack/) from [Nicolas Gallagher](https://twitter.com/necolas).
 
@@ -2640,7 +2642,7 @@ Forget adding `class="clearfix"` to any element and instead add the `.clearfix()
     }
     ```
 
-##### Horizontal centering
+##### b-Horizontal centering
 
 Quickly center any element within its parent. Requires `width` or `max-width` to be set.
 
@@ -2658,7 +2660,7 @@ Quickly center any element within its parent. Requires `width` or `max-width` to
     }
     ```
 
-##### Sizing helpers
+##### d-Sizing helpers
 
 Specify the dimensions of an object more easily.
 
@@ -2676,7 +2678,7 @@ Specify the dimensions of an object more easily.
     .avatar { .square(48px); }
     ```
 
-##### Resizable textareas
+##### e-Resizable textareas
 
 Easily configure the resize options for any textarea, or any other element. Defaults to normal browser behavior (`both`).
 
@@ -2689,7 +2691,7 @@ Easily configure the resize options for any textarea, or any other element. Defa
     }
     ```
 
-##### Truncating text
+##### f-Truncating text
 
 **Easily truncate text with an ellipsis with a single mixin. Requires element to be `block` or `inline-block` level.**
 
@@ -2708,7 +2710,7 @@ Easily configure the resize options for any textarea, or any other element. Defa
     }
     ```
 
-##### Retina images
+##### g-Retina images
 
 Specify two image paths and the @1x image dimensions, and Bootstrap will provide an @2x media query. **If you have many images to serve, consider writing your retina image CSS manually in a single media query.**
 
@@ -2732,11 +2734,11 @@ Specify two image paths and the @1x image dimensions, and Bootstrap will provide
     }
     ```
 
-### Using Sass
+### L-Using Sass
 
 **While Bootstrap is built on Less, it also has an [official Sass port](https://github.com/twbs/bootstrap-sass). We maintain it in a separate GitHub repository and handle updates with a conversion script.**
 
-#### What's included
+#### 1-What's included
 
 Since the Sass port has a separate repo and serves a slightly different audience, the contents of the project differ greatly from the main Bootstrap project. This ensures the Sass port is as compatible with as many Sass-based systems as possible.
 
@@ -2751,7 +2753,7 @@ Since the Sass port has a separate repo and serves a slightly different audience
 
 Visit the Sass port's GitHub repository to see these files in action.
 
-#### Installation
+#### 2-Installation
 
 For information on how to install and use Bootstrap for Sass, consult the [GitHub repository readme](https://github.com/twbs/bootstrap-sass). It's the most up to date source and includes information for use with Rails, Compass, and standard Sass projects.
 
