@@ -1046,9 +1046,9 @@ Hides and destroys an element's popover. Popovers that use delegation (which are
 
 | Event Type | Description |
 |---|---|
-| show.bs.popover | This event fires immediately when the show instance method is called. |
+| show.bs.popover | This event fires immediately when the `show` instance method is called. |
 | shown.bs.popover | This event is fired when the popover has been made visible to the user (will wait for CSS transitions to complete). |
-| hide.bs.popover | This event is fired immediately when the hide instance method has been called. |
+| hide.bs.popover | This event is fired immediately when the `hide` instance method has been called. |
 | hidden.bs.popover | This event is fired when the popover has finished being hidden from the user (will wait for CSS transitions to complete). |
 | inserted.bs.popover | This event is fired after the `show.bs.popover` event when the popover template has been added to the DOM. |
 
@@ -1064,15 +1064,14 @@ Hides and destroys an element's popover. Popovers that use delegation (which are
 
 Add dismiss functionality to all alert messages with this plugin.
 
-When using a .close button, it must be the first child of the .alert-dismissible and no text content may come before it in the markup.
-Holy guacamole! Best check yo self, you're not looking too good.
-Oh snap! You got an error!
+When using a `.close` button, it must be the first child of the `.alert-dismissible` and no text content may come before it in the markup.
 
-Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.
+IMG
 
-#### Usage
+#### 2-Usage
 
-Just add data-dismiss="alert" to your close button to automatically give an alert close functionality. Closing an alert removes it from the DOM.
+Just add `data-dismiss="alert"` to your close button to automatically give an alert close functionality. Closing an alert removes it from the DOM.
+
 
     ```HTML
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -1080,24 +1079,26 @@ Just add data-dismiss="alert" to your close button to automatically give an aler
     </button>
     ```
 
-To have your alerts use animation when closing, make sure they have the .fade and .in classes already applied to them.
+To have your alerts use animation when closing, make sure they have the `.fade` and `.in` classes already applied to them.
 
-##### Methods
+##### a-Methods
 
-###### $().alert()
+###### i-`$().alert()`
 
-Makes an alert listen for click events on descendant elements which have the data-dismiss="alert" attribute. (Not necessary when using the data-api's auto-initialization.)
+Makes an alert listen for click events on descendant elements which have the `data-dismiss="alert"` attribute. (Not necessary when using the data-api's auto-initialization.)
 
-###### $().alert('close')
+###### ii-`$().alert('close')`
 
-Closes an alert by removing it from the DOM. If the .fade and .in classes are present on the element, the alert will fade out before it is removed.
+Closes an alert by removing it from the DOM. If the `.fade` and `.in` classes are present on the element, the alert will fade out before it is removed.
 
-##### Events
+##### b-Events
 
 Bootstrap's alert plugin exposes a few events for hooking into alert functionality.
-Event Type  Description
-close.bs.alert  This event fires immediately when the close instance method is called.
-closed.bs.alert     This event is fired when the alert has been closed (will wait for CSS transitions to complete).
+
+| Event Type | Description |
+|---|---|
+| close.bs.alert | This event fires immediately when the `close` instance method is called. |
+| closed.bs.alert | This event is fired when the alert has been closed (will wait for CSS transitions to complete). |
 
     ```JavaScript/JQuery
     $('#myAlert').on('closed.bs.alert', function () {
@@ -1109,18 +1110,19 @@ closed.bs.alert     This event is fired when the alert has been closed (will wai
 
 **Do more with buttons. Control button states or create groups of buttons for more components like toolbars.**
 
-Cross-browser compatibility
+>**1-Cross-browser compatibility**
+>>[Firefox persists form control states (disabledness and checkedness) across page loads](https://github.com/twbs/bootstrap/issues/793). A workaround for this is to use `autocomplete="off"`. See [Mozilla bug #654072](https://bugzilla.mozilla.org/show_bug.cgi?id=654072).
 
-Firefox persists form control states (disabledness and checkedness) across page loads. A workaround for this is to use autocomplete="off". See Mozilla bug #654072.
+####2-Stateful
 
-####Stateful
+Add `data-loading-text="Loading..."` to use a loading state on a button.
 
-Add data-loading-text="Loading..." to use a loading state on a button.
+**This feature is deprecated since v3.3.5 and has been removed in v4.**
 
-This feature is deprecated since v3.3.5 and has been removed in v4.
-Use whichever state you like!
+>**Use whichever state you like!**
+>>For the sake of this demonstration, we are using `data-loading-text` and `$().button('loading')`, but that's not the only state you can use. [See more on this below in the `$().button(string)` documentation](https://getbootstrap.com/docs/3.3/javascript/#buttons-methods).
 
-For the sake of this demonstration, we are using data-loading-text and $().button('loading'), but that's not the only state you can use. See more on this below in the $().button(string) documentation.
+IMG
 
     ```HTML
     <button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
@@ -1135,12 +1137,14 @@ For the sake of this demonstration, we are using data-loading-text and $().butto
     </script>
     ```
 
-#### Single toggle
+#### 3-Single toggle
 
-Add data-toggle="button" to activate toggling on a single button.
-Pre-toggled buttons need .active and aria-pressed="true"
+Add `data-toggle="button"` to activate toggling on a single button.
 
-For pre-toggled buttons, you must add the .active class and the aria-pressed="true" attribute to the button yourself.
+>Pre-toggled buttons need `.active` and `aria-pressed="true"`
+>>For pre-toggled buttons, you must add the `.active` class and the `aria-pressed="true"` attribute to the button yourself.
+
+IMG
 
     ```HTML
     <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
@@ -1148,15 +1152,17 @@ For pre-toggled buttons, you must add the .active class and the aria-pressed="tr
     </button>
     ```
 
-#### Checkbox / Radio
+#### 4-Checkbox / Radio
 
-Add data-toggle="buttons" to a .btn-group containing checkbox or radio inputs to enable toggling in their respective styles.
-Preselected options need .active
+Add `data-toggle="buttons"` to a `.btn-group` containing checkbox or radio inputs to enable toggling in their respective styles.
 
-For preselected options, you must add the .active class to the input's label yourself.
-Visual checked state only updated on click
+>**Preselected options need `.active`**
+>>For preselected options, you must add the .active class to the input's label yourself.
 
-If the checked state of a checkbox button is updated without firing a click event on the button (e.g. via <input type="reset"> or via setting the checked property of the input), you will need to toggle the .active class on the input's label yourself.
+>**Visual checked state only updated on click**
+>>If the checked state of a checkbox button is updated without firing a `click` event on the button (e.g. via `<input type="reset">` or via setting the `checked` property of the input), you will need to toggle the `.active` class on the input's `label` yourself.
+
+IMG
 
     ```HTML
     <div class="btn-group" data-toggle="buttons">
@@ -1172,7 +1178,6 @@ If the checked state of a checkbox button is updated without firing a click even
     </div>
     ```
 
-
     ```HTML
     <div class="btn-group" data-toggle="buttons">
       <label class="btn btn-primary active">
@@ -1187,17 +1192,17 @@ If the checked state of a checkbox button is updated without firing a click even
     </div>
     ```
 
-#### Methods
+#### 5-Methods
 
-##### $().button('toggle')
+##### a-`$().button('toggle')`
 
 Toggles push state. Gives the button the appearance that it has been activated.
 
-###### $().button('reset')
+###### b-`$().button('reset')`
 
 Resets button state - swaps text to original text. This method is asynchronous and returns before the resetting has actually completed.
 
-###### $().button(string)
+###### c-`$().button(string)`
 
 Swaps text to any data defined text state.
 
@@ -1215,20 +1220,21 @@ Swaps text to any data defined text state.
 ### I-Collapse (collapse.js)
 
 Flexible plugin that utilizes a handful of classes for easy toggle behavior.
-Plugin dependency
 
-Collapse requires the transitions plugin to be included in your version of Bootstrap.
+>**Plugin dependency**
+>>Collapse requires the [transitions plugin](https://getbootstrap.com/docs/3.3/javascript/#transitions) to be included in your version of Bootstrap.
 
-#### Example
+#### 1-Example
 
 Click the buttons below to show and hide another element via class changes:
 
-    .collapse hides content
-    .collapsing is applied during transitions
-    .collapse.in shows content
+* `.collapse` hides content
+* `.collapsing` is applied during transitions
+* `.collapse.in` shows content
 
-You can use a link with the href attribute, or a button with the data-target attribute. In both cases, the data-toggle="collapse" is required.
+You can use a link with the `href` attribute, or a button with the `data-target` attribute. In both cases, the `data-toggle="collapse"` is required.
 
+IMG
 
     ```HTML
     <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
@@ -1244,13 +1250,9 @@ You can use a link with the href attribute, or a button with the data-target att
     </div>
     ```
 
-#### Accordion example
+#### 2-Accordion example
 
 Extend the default collapse behavior to create an accordion with the panel component.
-Collapsible Group Item #1
-Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-Collapsible Group Item #2
-Collapsible Group Item #3
 
     ```HTML
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -1299,15 +1301,15 @@ Collapsible Group Item #3
     </div>
     ```
 
-It's also possible to swap out .panel-bodys with .list-groups.
-Collapsible list group
-Make expand/collapse controls accessible
+It's also possible to swap out `.panel-bodys` with `.list-groups`.
 
-Be sure to add aria-expanded to the control element. This attribute explicitly defines the current state of the collapsible element to screen readers and similar assistive technologies. If the collapsible element is closed by default, it should have a value of aria-expanded="false". If you've set the collapsible element to be open by default using the in class, set aria-expanded="true" on the control instead. The plugin will automatically toggle this attribute based on whether or not the collapsible element has been opened or closed.
+    Collapsible list group
 
-Additionally, if your control element is targeting a single collapsible element – i.e. the data-target attribute is pointing to an id selector – you may add an additional aria-controls attribute to the control element, containing the id of the collapsible element. Modern screen readers and similar assistive technologies make use of this attribute to provide users with additional shortcuts to navigate directly to the collapsible element itself.
+>**Make expand/collapse controls accessible**
+>>Be sure to add `aria-expanded` to the control element. This attribute explicitly defines the current state of the collapsible element to screen readers and similar assistive technologies. If the collapsible element is closed by default, it should have a value of `aria-expanded="false"`. If you've set the collapsible element to be open by default using the `in` class, set `aria-expanded="true"` on the control instead. The plugin will automatically toggle this attribute based on whether or not the collapsible element has been opened or closed.
+>>Additionally, if your control element is targeting a single collapsible element – i.e. the `data-target` attribute is pointing to an `id` selector – you may add an additional `aria-controls` attribute to the control element, containing the `id` of the collapsible element. Modern screen readers and similar assistive technologies make use of this attribute to provide users with additional shortcuts to navigate directly to the collapsible element itself.
 
-#### Usage
+#### 3-Usage
 
 The collapse plugin utilizes a few classes to handle the heavy lifting:
 
@@ -1317,13 +1319,13 @@ The collapse plugin utilizes a few classes to handle the heavy lifting:
 
 These classes can be found in component-animations.less.
 
-##### Via data attributes
+##### a-Via data attributes
 
 Just add data-toggle="collapse" and a data-target to the element to automatically assign control of a collapsible element. The data-target attribute accepts a CSS selector to apply the collapse to. Be sure to add the class collapse to the collapsible element. If you'd like it to default open, add the additional class in.
 
 To add accordion-like group management to a collapsible control, add the data attribute data-parent="#selector". Refer to the demo to see this in action.
 
-##### Via JavaScript
+##### b-Via JavaScript
 
 Enable manually with:
 
@@ -1331,18 +1333,20 @@ Enable manually with:
     $('.collapse').collapse()
     ```
 
-##### Options
+##### c-Options
 
-Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-, as in data-parent="".
-Name    type    default     description
-parent  selector    false   If a selector is provided, then all collapsible elements under the-specified parent will be closed when this collapsible item is shown. (similar to traditional accordion behavior - this is dependent on the panel class)
-toggle  boolean     true    Toggles the collapsible element on invocation
+Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-, as in `data-parent=""`.
 
-##### Methods
+| Name | type | default | description |
+|---|---|---|---|
+| parent | selector | false | If a selector is provided, then all collapsible elements under the-specified parent will be closed when this collapsible item is shown. (similar to traditional accordion behavior - this is dependent on the `panel` class) |
+| toggle | boolean | true | Toggles the collapsible element on invocation |
 
-###### .collapse(options)
+##### d-Methods
 
-Activates your content as a collapsible element. Accepts an optional options object.
+###### i-`.collapse(options)`
+
+Activates your content as a collapsible element. Accepts an optional options `object`.
 
     ```JavaScript/JQuery
     $('#myCollapsible').collapse({
@@ -1350,24 +1354,28 @@ Activates your content as a collapsible element. Accepts an optional options obj
     })
     ```
 
-###### .collapse('toggle')
+###### ii-`.collapse('toggle')`
 
-Toggles a collapsible element to shown or hidden. Returns to the caller before the collapsible element has actually been shown or hidden (i.e. before the shown.bs.collapse or hidden.bs.collapse event occurs).
-###### .collapse('show')
+Toggles a collapsible element to shown or hidden. **Returns to the caller before the collapsible element has actually been shown or hidden** (i.e. before the `shown.bs.collapse` or `hidden.bs.collapse` event occurs).
 
-Shows a collapsible element. Returns to the caller before the collapsible element has actually been shown (i.e. before the shown.bs.collapse event occurs).
-###### .collapse('hide')
+###### ii-`.collapse('show')`
 
-Hides a collapsible element. Returns to the caller before the collapsible element has actually been hidden (i.e. before the hidden.bs.collapse event occurs).
+Shows a collapsible element. **Returns to the caller before the collapsible element has actually been shown** (i.e. before the `shown.bs.collapse` event occurs).
 
-##### Events
+###### iv-`.collapse('hide')`
+
+Hides a collapsible element. **Returns to the caller before the collapsible element has actually been hidden** (i.e. before the `hidden.bs.collapse` event occurs).
+
+##### e-Events
 
 Bootstrap's collapse class exposes a few events for hooking into collapse functionality.
-Event Type  Description
-show.bs.collapse    This event fires immediately when the show instance method is called.
-shown.bs.collapse   This event is fired when a collapse element has been made visible to the user (will wait for CSS transitions to complete).
-hide.bs.collapse    This event is fired immediately when the hide method has been called.
-hidden.bs.collapse  This event is fired when a collapse element has been hidden from the user (will wait for CSS transitions to complete).
+
+| Event Type | Description |
+|---|---|
+| show.bs.collapse | This event fires immediately when the `show` instance method is called. |
+| shown.bs.collapse | This event is fired when a collapse element has been made visible to the user (will wait for CSS transitions to complete). |
+| hide.bs.collapse | This event is fired immediately when the `hide` method has been called. |
+| hidden.bs.collapse | This event is fired when a collapse element has been hidden from the user (will wait for CSS transitions to complete). |
 
     ```JavaScript/JQuery
     $('#myCollapsible').on('hidden.bs.collapse', function () {
@@ -1377,13 +1385,11 @@ hidden.bs.collapse  This event is fired when a collapse element has been hidden 
 
 ### J-Carousel (carousel.js)
 
-A slideshow component for cycling through elements, like a carousel. Nested carousels are not supported.
+A slideshow component for cycling through elements, like a carousel. **Nested carousels are not supported**.
 
 #### 1-Examples
 
-First slide [900x500]
-Previous
-Next
+IMG
 
     ```HTML
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -1421,29 +1427,23 @@ Next
     </div>
     ```
 
-Accessibility issue
+>**Accessibility issue**
+>>The carousel component is generally not compliant with accessibility standards. If you need to be compliant, please consider other options for presenting your content.
 
-The carousel component is generally not compliant with accessibility standards. If you need to be compliant, please consider other options for presenting your content.
-Transition animations not supported in Internet Explorer 8 & 9
+>**Transition animations not supported in Internet Explorer 8 & 9**
+>>Bootstrap exclusively uses CSS3 for its animations, but Internet Explorer 8 & 9 don't support the necessary CSS properties. Thus, there are no slide transition animations when using these browsers. We have intentionally decided not to include jQuery-based fallbacks for the transitions.
 
-Bootstrap exclusively uses CSS3 for its animations, but Internet Explorer 8 & 9 don't support the necessary CSS properties. Thus, there are no slide transition animations when using these browsers. We have intentionally decided not to include jQuery-based fallbacks for the transitions.
-Initial active element required
+>**Initial active element required**
+>>The `.active` class needs to be added to one of the slides. Otherwise, the carousel will not be visible.
 
-The .active class needs to be added to one of the slides. Otherwise, the carousel will not be visible.
-Glyphicon icons not necessary
-
-The .glyphicon .glyphicon-chevron-left and .glyphicon .glyphicon-chevron-right classes are not necessarily needed for the controls. Bootstrap provides .icon-prev and .icon-next as plain unicode alternatives.
+>**Glyphicon icons not necessary**
+>>The `.glyphicon .glyphicon-chevron-left` and `.glyphicon .glyphicon-chevron-right` classes are not necessarily needed for the controls. Bootstrap provides `.icon-prev` and `.icon-next` as plain unicode alternatives.
 
 #### 2-Optional captions
 
-Add captions to your slides easily with the .carousel-caption element within any .item. Place just about any optional HTML within there and it will be automatically aligned and formatted.
+Add captions to your slides easily with the `.carousel-caption` element within any `.item`. Place just about any optional HTML within there and it will be automatically aligned and formatted.
 
-900x500
-First slide label
-
-Nulla vitae elit libero, a pharetra augue mollis interdum.
-Previous
-Next
+IMG
 
     ```HTML
     <div class="item">
@@ -1459,13 +1459,12 @@ Next
 
 ##### a-Multiple carousels
 
-Carousels require the use of an id on the outermost container (the .carousel) for carousel controls to function properly. When adding multiple carousels, or when changing a carousel's id, be sure to update the relevant controls.
+Carousels require the use of an `id` on the outermost container (the `.carousel`) for carousel controls to function properly. When adding multiple carousels, or when changing a carousel's `id`, be sure to update the relevant controls.
 
 ##### b-Via data attributes
 
-Use data attributes to easily control the position of the carousel. data-slide accepts the keywords prev or next, which alters the slide position relative to its current position. Alternatively, use data-slide-to to pass a raw slide index to the carousel data-slide-to="2", which shifts the slide position to a particular index beginning with 0.
-
-The data-ride="carousel" attribute is used to mark a carousel as animating starting at page load. It cannot be used in combination with (redundant and unnecessary) explicit JavaScript initialization of the same carousel.
+Use data attributes to easily control the position of the carousel. `data-slide` accepts the keywords `prev` or `next`, which alters the slide position relative to its current position. Alternatively, use `data-slide-to` to pass a raw slide index to the carousel `data-slide-to="2"`, which shifts the slide position to a particular index beginning with `0`.
+The `data-ride="carousel"` attribute is used to mark a carousel as animating starting at page load. **It cannot be used in combination with (redundant and unnecessary) explicit JavaScript initialization of the same carousel**.
 
 ##### c-Via JavaScript
 
@@ -1477,18 +1476,20 @@ Call carousel manually with:
 
 ##### d-Options
 
-Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-, as in data-interval="".
-Name    type    default     description
-interval    number  5000    The amount of time to delay between automatically cycling an item. If false, carousel will not automatically cycle.
-pause   string | null   "hover"     If set to "hover", pauses the cycling of the carousel on mouseenter and resumes the cycling of the carousel on mouseleave. If set to null, hovering over the carousel won't pause it.
-wrap    boolean     true    Whether the carousel should cycle continuously or have hard stops.
-keyboard    boolean     true    Whether the carousel should react to keyboard events.
+Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-interval=""`.
+
+| Name | type | default | description |
+|---|---|---|---|
+| interval | number | 5000 | The amount of time to delay between automatically cycling an item. If false, carousel will not automatically cycle. |
+|pause | string, null | "hover" | If set to `"hover"`, pauses the cycling of the carousel on `mouseenter` and resumes the cycling of the carousel on `mouseleave`. If set to `null`, hovering over the carousel won't pause it. |
+| wrap | boolean | true | Whether the carousel should cycle continuously or have hard stops. |
+|keyboard | boolean | true | Whether the carousel should react to keyboard events. |
 
 ##### e-Methods
 
-###### i-.carousel(options)
+###### i-`.carousel(options)`
 
-Initializes the carousel with an optional options object and starts cycling through items.
+Initializes the carousel with an optional options `object` and starts cycling through items.
 
     ```JavaScript/JQuery
     $('.carousel').carousel({
@@ -1496,23 +1497,23 @@ Initializes the carousel with an optional options object and starts cycling thro
     })
     ```
 
-###### ii-.carousel('cycle')
+###### ii-`.carousel('cycle')`
 
 Cycles through the carousel items from left to right.
 
-###### iii-.carousel('pause')
+###### iii-`.carousel('pause')`
 
 Stops the carousel from cycling through items.
 
-###### iv-.carousel(number)
+###### iv-`.carousel(number)`
 
 Cycles the carousel to a particular frame (0 based, similar to an array).
 
-###### v-..carousel('prev')
+###### v-`.carousel('prev')`
 
 Cycles to the previous item.
 
-###### vi-.carousel('next')
+###### vi-`.carousel('next')`
 
 Cycles to the next item.
 
@@ -1522,51 +1523,54 @@ Bootstrap's carousel class exposes two events for hooking into carousel function
 
 Both events have the following additional properties:
 
-    direction: The direction in which the carousel is sliding (either "left" or "right").
-    relatedTarget: The DOM element that is being slid into place as the active item.
+* `direction`: The direction in which the carousel is sliding (either `"left"` or `"right"`).
+* `relatedTarget`: The DOM element that is being slid into place as the active item.
 
-All carousel events are fired at the carousel itself (i.e. at the <div class="carousel">).
-Event Type  Description
-slide.bs.carousel   This event fires immediately when the slide instance method is invoked.
-slid.bs.carousel    This event is fired when the carousel has completed its slide transition.
+All carousel events are fired at the carousel itself (i.e. at the `<div class="carousel">`).
+
+| Event Type | Description |
+|---|---|
+| slide.bs.carousel | This event fires immediately when the `slide` instance method is invoked. |
+| slid.bs.carousel | This event is fired when the carousel has completed its slide transition. |
 
     ```JavaScript/JQuery
-  $('#myCarousel').on('slide.bs.carousel', function () {
-    // do something…
-  })
+    $('#myCarousel').on('slide.bs.carousel', function () {
+      // do something…
+    })
     ```
-
 
 ### K-Affix (affix.js)
 
 #### 1-Example
 
-The affix plugin toggles position: fixed; on and off, emulating the effect found with position: sticky;. The subnavigation on the right is a live demo of the affix plugin.
+The affix plugin toggles `position: fixed`; on and off, emulating the effect found with `position: sticky;`. The subnavigation on the right is a live demo of the affix plugin.
 
 #### 2-Usage
 
-Use the affix plugin via data attributes or manually with your own JavaScript. In both situations, you must provide CSS for the positioning and width of your affixed content.
+Use the affix plugin via data attributes or manually with your own JavaScript. **In both situations, you must provide CSS for the positioning and width of your affixed content**.
 
-Note: Do not use the affix plugin on an element contained in a relatively positioned element, such as a pulled or pushed column, due to a Safari rendering bug.
+Note: Do not use the affix plugin on an element contained in a relatively positioned element, such as a pulled or pushed column, due to a [Safari rendering bug](https://github.com/twbs/bootstrap/issues/12126).
 
 ##### a-Positioning via CSS
 
-The affix plugin toggles between three classes, each representing a particular state: .affix, .affix-top, and .affix-bottom. You must provide the styles, with the exception of position: fixed; on .affix, for these classes yourself (independent of this plugin) to handle the actual positions.
+The affix plugin toggles between three classes, each representing a particular state: `.affix`, `.affix-top`, and `.affix-bottom`. You must provide the styles, with the exception of `position: fixed;` on `.affix`, for these classes yourself (independent of this plugin) to handle the actual positions.
 
 Here's how the affix plugin works:
 
-    To start, the plugin adds .affix-top to indicate the element is in its top-most position. At this point no CSS positioning is required.
-    Scrolling past the element you want affixed should trigger the actual affixing. This is where .affix replaces .affix-top and sets position: fixed; (provided by Bootstrap's CSS).
-    If a bottom offset is defined, scrolling past it should replace .affix with .affix-bottom. Since offsets are optional, setting one requires you to set the appropriate CSS. In this case, add position: absolute; when necessary. The plugin uses the data attribute or JavaScript option to determine where to position the element from there.
+1. To start, the plugin adds `.affix-top` to indicate the element is in its top-most position. At this point no CSS positioning is required.
+2. Scrolling past the element you want affixed should trigger the actual affixing. This is where `.affix` replaces `.affix-top` and sets `position: fixed;` (provided by Bootstrap's CSS).
+3. If a bottom offset is defined, scrolling past it should replace `.affix` with `.affix-bottom`. Since offsets are optional, setting one requires you to set the appropriate CSS. In this case, add `position: absolute;` when necessary. The plugin uses the data attribute or JavaScript option to determine where to position the element from there.
 
 Follow the above steps to set your CSS for either of the usage options below.
 
 ##### b-Via data attributes
 
-To easily add affix behavior to any element, just add data-spy="affix" to the element you want to spy on. Use offsets to define when to toggle the pinning of an element.
+To easily add affix behavior to any element, just add `data-spy="affix"` to the element you want to spy on. Use offsets to define when to toggle the pinning of an element.
 
     ```HTML
-      ```
+    <div data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+      ...
+    </div>
     ```
 
 ##### c-Via JavaScript
@@ -1574,27 +1578,28 @@ To easily add affix behavior to any element, just add data-spy="affix" to the el
 Call the affix plugin via JavaScript:
 
     ```JavaScript/JQuery
-  $('#myAffix').affix({
-    offset: {
-      top: 100,
-      bottom: function () {
-        return (this.bottom = $('.footer').outerHeight(true))
+    $('#myAffix').affix({
+      offset: {
+        top: 100,
+        bottom: function () {
+          return (this.bottom = $('.footer').outerHeight(true))
+        }
       }
-    }
-  })
+    })
     ```
 
 ##### d-Options
 
-Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-, as in data-offset-top="200".
+Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-offset-top="200"`.
 
-Name    type    default     description
-offset  number | function | object  10  Pixels to offset from screen when calculating position of scroll. If a single number is provided, the offset will be applied in both top and bottom directions. To provide a unique, bottom and top offset just provide an object offset: { top: 10 } or offset: { top: 10, bottom: 5 }. Use a function when you need to dynamically calculate an offset.
-target  selector | node | jQuery element    the window object   Specifies the target element of the affix.
+| Name | type | default | description |
+|---|---|---|---|
+| offset | number, function, object | 10 | Pixels to offset from screen when calculating position of scroll. If a single number is provided, the offset will be applied in both top and bottom directions. To provide a unique, bottom and top offset just provide an object `offset: { top: 10 }` or `offset: { top: 10, bottom: 5 }`. Use a function when you need to dynamically calculate an offset. |
+| target | selector, node, jQuery element | the `window` object | Specifies the target element of the affix. |
 
 ######e-Methods
 
-###### i-.affix(options)
+###### i-`.affix(options)`
 
 Activates your content as affixed content. Accepts an optional options object.
 
@@ -1606,7 +1611,7 @@ Activates your content as affixed content. Accepts an optional options object.
 
 ###### ii-.affix('checkPosition')
 
-Recalculates the state of the affix based on the dimensions, position, and scroll position of the relevant elements. The .affix, .affix-top, and .affix-bottom classes are added to or removed from the affixed content according to the new state. This method needs to be called whenever the dimensions of the affixed content or the target element are changed, to ensure correct positioning of the affixed content.
+Recalculates the state of the affix based on the dimensions, position, and scroll position of the relevant elements. The `.affix`, `.affix-top`, and `.affix-bottom` classes are added to or removed from the affixed content according to the new state. This method needs to be called whenever the dimensions of the affixed content or the target element are changed, to ensure correct positioning of the affixed content.
 
     ```JavaScript/JQuery
     $('#myAffix').affix('checkPosition')
@@ -1615,11 +1620,13 @@ Recalculates the state of the affix based on the dimensions, position, and scrol
 ##### f-Events
 
 Bootstrap's affix plugin exposes a few events for hooking into affix functionality.
-Event Type  Description
-affix.bs.affix  This event fires immediately before the element has been affixed.
-affixed.bs.affix    This event is fired after the element has been affixed.
-affix-top.bs.affix  This event fires immediately before the element has been affixed-top.
-affixed-top.bs.affix    This event is fired after the element has been affixed-top.
-affix-bottom.bs.affix   This event fires immediately before the element has been affixed-bottom.
-affixed-bottom.bs.affix     This event is fired after the element has been affixed-bottom.
+
+| Event Type | Description |
+|---|---|
+| affix.bs.affix | This event fires immediately before the element has been affixed. |
+| affixed.bs.affix | This event is fired after the element has been affixed. |
+| affix-top.bs.affix | This event fires immediately before the element has been affixed-top. |
+| affixed-top.bs.affix | This event is fired after the element has been affixed-top. |
+| affix-bottom.bs.affix | This event fires immediately before the element has been affixed-bottom. |
+| affixed-bottom.bs.affix | This event is fired after the element has been affixed-bottom. |
 
