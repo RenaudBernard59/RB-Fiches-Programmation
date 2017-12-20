@@ -39,6 +39,14 @@ const pi = 3.14 REAL
 * Vrais | TRUE
 * Faux | FALSE
 
+##### Variables Tableau
+VAR identificateur :
+
+
+
+
+
+
 ### Expressions
 * Opérateurs arithmétique + - * / %
 * Opérateurs logiques NON ! OU || et &&
