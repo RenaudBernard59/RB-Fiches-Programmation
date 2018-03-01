@@ -1,0 +1,2720 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAYcAA0AAAAACjQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABwAAAAca8vGTk9TLzIAAAFMAAAARAAAAFZG1VHVY21hcAAAAZAAAAA+AAABQgAP9AdjdnQgAAAB0AAAAAQAAAAEACICiGdhc3AAAAHUAAAACAAAAAj//wADZ2x5ZgAAAdwAAADRAAABEKyikaNoZWFkAAACsAAAAC0AAAA2AtXoA2hoZWEAAALgAAAAHAAAACQHngNFaG10eAAAAvwAAAAQAAAAEAwAACJsb2NhAAADDAAAAAoAAAAKALIAVG1heHAAAAMYAAAAHwAAACABEAB2bmFtZQAAAzgAAALBAAAFu3I9x/Nwb3N0AAAF/AAAAB0AAAAvaoFvbwAAAAEAAAAAzBdyYwAAAADP2IQvAAAAAM/bz7t4nGNgZGFgnMDAysDB1Ml0hoGBoR9CM75mMGLkYGBgYmBlZsAKAtJcUxgcPsR8iGF2+O/AEMPsznAYKMwIkgMA5REMOXicY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChED+h5j//yEk/3KoSgZGNgYYk4GRCUgwMaACRoZhDwCs7QgGAAAAIgKIAAAAAf//AAJ4nHWMMQrCQBBF/0zWrCCIKUQsTDCL2EXMohYGSSmorScInsRGL2DOYJe0Ntp7BK+gJ1BxF1stZvjz/v8DRghQzEc4kIgKwiAppcA9LtzKLSkdNhKFY3HF4lK69ExKslx7Xa+vPRVS43G98vG1DnkDMIBUgFN0MDXflU8tbaZOUkXUH0+U27RoRpOIyCKjbMCVejwypzJJG4jIwb43rfl6wbwanocrJm9XFYfskuVC5K/TPyczNU7b84CXcbxks1Un6H6tLH9vf2LRnn8Ax7A5WQAAAHicY2BkYGAA4teL1+yI57f5ysDNwgAC529f0kOmWRiYVgEpDgYmEA8AUzEKsQAAAHicY2BkYGB2+O/AEMPCAAJAkpEBFbAAADgKAe0EAAAiAAAAAAQAAAAEAAAAAAAAKgAqACoAiAAAeJxjYGRgYGBhsGFgYgABEMkFhAwM/xn0QAIAD6YBhwB4nI1Ty07cMBS9QwKlQapQW3VXySvEqDCZGbGaHULiIQ1FKgjWMxknMfLEke2A+IJu+wntrt/QbVf9gG75jK577Lg8K1qQPCfnnnt8fX1NRC/pmjrk/zprC+8D7tBy9DHgBXoWfQ44Av8t4Bj4Z8CLtBL9CniJluPXASf0Lm4CXqFX8Q84dOLnMB17N4c7tBo1AS/Qi+hTwBH4rwHHwN8DXqQ30XXAS7QaLwSc0Gn8NuAVWou/gFmnjLrEaEh9GmDdDGgL3B4JsrRPDU2hTOiMSuJUIdKQQayiAth69r6akSSFqIJuA19TrzCIaY8sIoxyrNIrL//pw7A2iMygkX5vDj+G+kuoLdX4GlGK/8Lnlz6/h9MpmoO9rafrz7ILXEHHaAx95s9lsI7AHNMBWEZHULnfAXwG9/ZqdzLI08iuwRloXE8kfhXYAvE23+23DU3t626rbs8/8adv+9DWknsHp3E17oCf+Z48rvEQNZ78paYM38qfk3v/u3l3u3GXN2Dmvmvpf1Srwk3pB/VSsp512bA/GG5i2WJ7wu430yQ5K3nFGiOqgtmSB5pJVSizwaacmUZzZhXLlZTq8qGGFY2YcSkqbth6aW1tRmlaCFs2016m5qn36SbJrqosG4uMV4aP2PHBmB3tjtmgN2izkGQyLWprekbIntJFing32a5rKWCN/SdSoga45EJykyQ7asZvHQ8PTm6cslIpwyeyjbVltNikc2HTR7YKh9LBl9DADC0U/jLcBZDKrMhUBfQBvXRzLtFtjU9eNHKin0x5InTqb8lNpfKv1s1xHzTXRqgKzek/mb7nB8RZTCDhGEX3kK/8Q75AmUM/eLkfA+0Hi908Kx4eNsMgudg5GLdRD7a84npi+YxNr5i5KIbW5izXas7cHXIMAau1OueZhfj+cOcP3P8MNIWLyYOBuxL6DRylJ4cAAAB4nGNgYoAALjDJyIAOWMCiTIxMLDmZedkABtIBygAAAA==) format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+pre {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body input {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+  opacity: 0;
+}
+
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #333;
+}
+
+.markdown-body .pl-ent {
+  color: #63a35c;
+}
+
+.markdown-body .pl-k {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #183691;
+}
+
+.markdown-body .pl-v {
+  color: #ed6a43;
+}
+
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+.markdown-body .pl-ml {
+  color: #693a17;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mq {
+  color: #008080;
+}
+
+.markdown-body .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mo {
+  color: #1d3e81;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .plan-price-unit {
+  color: #767676;
+  font-weight: normal;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.35em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body .plan-choice {
+  padding: 15px;
+  padding-left: 40px;
+  display: block;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  font-weight: normal;
+  background-color: #fafafa;
+}
+
+.markdown-body .plan-choice.open {
+  background-color: #fff;
+}
+
+.markdown-body .plan-choice.open .plan-choice-seat-breakdown {
+  display: block;
+}
+
+.markdown-body .plan-choice-free {
+  border-radius: 3px 3px 0 0;
+}
+
+.markdown-body .plan-choice-paid {
+  border-radius: 0 0 3px 3px;
+  border-top: 0;
+  margin-bottom: 20px;
+}
+
+.markdown-body .plan-choice-radio {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+
+.markdown-body .plan-choice-exp {
+  color: #999;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.markdown-body .plan-choice-seat-breakdown {
+  margin-top: 10px;
+  display: none;
+}
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+</style><title>Bs4</title></head><body><article class="markdown-body"><h2>
+<a id="user-content-v-javascript" class="anchor" href="#v-javascript" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>V-JavaScript</h2>
+<p><a href="https://getbootstrap.com/docs/3.3/javascript/" rel="nofollow">LINK</a></p>
+<p><strong>Bring Bootstrap's components to life with over a dozen custom jQuery plugins. Easily include them all, or one by one.</strong></p>
+<h3>
+<a id="user-content-a-overview" class="anchor" href="#a-overview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>A-Overview</h3>
+<h4>
+<a id="user-content-1-individual-or-compiled" class="anchor" href="#1-individual-or-compiled" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1-Individual or compiled</h4>
+<p>Plugins can be included individually (using Bootstrap's individual <code>*.js</code> files), or all at once (using <code>bootstrap.js</code> or the minified <code>bootstrap.min.js</code>).</p>
+<blockquote>
+<p><strong>Using the compiled JavaScript</strong></p>
+<blockquote>
+<p>Both <code>bootstrap.js</code> and <code>bootstrap.min.js</code> contain all plugins in a single file. Include only one.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>Plugin dependencies</strong></p>
+<blockquote>
+<p>Some plugins and CSS components depend on other plugins. If you include plugins individually, make sure to check for these dependencies in the docs. Also note that all plugins depend on jQuery (this means jQuery must be included before the plugin files). <a href="https://github.com/twbs/bootstrap/blob/v3.3.7/bower.json">Consult our <code>bower.json</code></a> to see which versions of jQuery are supported.</p>
+</blockquote>
+</blockquote>
+<h4>
+<a id="user-content-2-data-attributes" class="anchor" href="#2-data-attributes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2-Data attributes</h4>
+<p>You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first-class API and should be your first consideration when using a plugin.</p>
+<p>That said, in some situations it may be desirable to turn this functionality off. Therefore, we also provide the ability to disable the data attribute API by unbinding all events on the document namespaced with <code>data-api</code>. This looks like this:</p>
+<pre><code>```JavaScript/JQuery
+$(document).off('.data-api')
+```
+</code></pre>
+<p>Alternatively, to target a specific plugin, just include the plugin's name as a namespace along with the data-api namespace like this:</p>
+<pre><code>```JavaScript/JQuery
+$(document).off('.alert.data-api')
+```
+</code></pre>
+<blockquote>
+<p><strong>Only one plugin per element via data attributes</strong></p>
+<blockquote>
+<p>Don't use data attributes from multiple plugins on the same element. For example, a button cannot both have a tooltip and toggle a modal. To accomplish this, use a wrapping element.</p>
+</blockquote>
+</blockquote>
+<h4>
+<a id="user-content-3-programmatic-api" class="anchor" href="#3-programmatic-api" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3-Programmatic API</h4>
+<p>We also believe you should be able to use all Bootstrap plugins purely through the JavaScript API. All public APIs are single, chainable methods, and return the collection acted upon.</p>
+<pre><code>```JavaScript/JQuery
+$('.btn.danger').button('toggle').addClass('fat')
+```
+</code></pre>
+<p>All methods should accept an optional options object, a string which targets a particular method, or nothing (which initiates a plugin with default behavior):</p>
+<pre><code>```JavaScript/JQuery
+$('#myModal').modal()                      // initialized with defaults
+$('#myModal').modal({ keyboard: false })   // initialized with no keyboard
+$('#myModal').modal('show')                // initializes and invokes show immediately
+```
+</code></pre>
+<p>Each plugin also exposes its raw constructor on a <code>Constructor</code> property: <code>$.fn.popover.Constructor</code>. If you'd like to get a particular plugin instance, retrieve it directly from an element: <code>$('[rel="popover"]').data('popover')</code>.</p>
+<h5>
+<a id="user-content-a-default-settings" class="anchor" href="#a-default-settings" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>a-Default settings</h5>
+<p>You can change the default settings for a plugin by modifying the plugin's <code>constructor.DEFAULTS</code> object:</p>
+<pre><code>```JavaScript/JQuery
+$.fn.modal.Constructor.DEFAULTS.keyboard = false // changes default for the modal plugin's `keyboard` option to false
+```
+</code></pre>
+<h4>
+<a id="user-content-4-no-conflict" class="anchor" href="#4-no-conflict" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4-No conflict</h4>
+<p>Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call <code>.noConflict</code> on the plugin you wish to revert the value of.</p>
+<pre><code>```JavaScript/JQuery
+var bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
+$.fn.bootstrapBtn = bootstrapButton            // give $().bootstrapBtn the Bootstrap functionality
+```
+</code></pre>
+<h4>
+<a id="user-content-5-events" class="anchor" href="#5-events" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5-Events</h4>
+<p>Bootstrap provides custom events for most plugins' unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. <code>show</code>) is triggered at the start of an event, and its past participle form (ex. <code>shown</code>) is triggered on the completion of an action.</p>
+<p>As of 3.0.0, all Bootstrap events are namespaced.</p>
+<p>All infinitive events provide <code>preventDefault</code> functionality. This provides the ability to stop the execution of an action before it starts.</p>
+<pre><code>```JavaScript/JQuery
+$('#myModal').on('show.bs.modal', function (e) {
+  if (!data) return e.preventDefault() // stops modal from being shown
+})
+```
+</code></pre>
+<h4>
+<a id="user-content-6-version-numbers" class="anchor" href="#6-version-numbers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>6-Version numbers</h4>
+<p>The version of each of Bootstrap's jQuery plugins can be accessed via the <code>VERSION</code> property of the plugin's constructor. For example, for the tooltip plugin:</p>
+<pre><code>```JavaScript/JQuery
+$.fn.tooltip.Constructor.VERSION // =&gt; "3.3.7"
+```
+</code></pre>
+<h4>
+<a id="user-content-7-no-special-fallbacks-when-javascript-is-disabled" class="anchor" href="#7-no-special-fallbacks-when-javascript-is-disabled" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>7-No special fallbacks when JavaScript is disabled</h4>
+<p>Bootstrap's plugins don't fall back particularly gracefully when JavaScript is disabled. If you care about the user experience in this case, use <code>&lt;noscript&gt;</code> to explain the situation (and how to re-enable JavaScript) to your users, and/or add your own custom fallbacks.</p>
+<blockquote>
+<p><strong>Third-party libraries</strong></p>
+<blockquote>
+<p><strong>Bootstrap does not officially support third-party JavaScript libraries</strong> like Prototype or jQuery UI. Despite <code>.noConflict</code> and namespaced events, there may be compatibility problems that you need to fix on your own.</p>
+</blockquote>
+</blockquote>
+<h3>
+<a id="user-content-b-transitions-transitionjs" class="anchor" href="#b-transitions-transitionjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>B-Transitions (transition.js)</h3>
+<h4>
+<a id="user-content-1-about-transitions" class="anchor" href="#1-about-transitions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1-About transitions</h4>
+<p>For simple transition effects, include <code>transition.js</code> once alongside the other JS files. If you're using the compiled (or minified) <code>bootstrap.js</code>, there is no need to include this—it's already there.</p>
+<h4>
+<a id="user-content-2-whats-inside" class="anchor" href="#2-whats-inside" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2-What's inside</h4>
+<p>Transition.js is a basic helper for <code>transitionEnd</code> events as well as a CSS transition emulator. It's used by the other plugins to check for CSS transition support and to catch hanging transitions.</p>
+<h4>
+<a id="user-content-3-disabling-transitions" class="anchor" href="#3-disabling-transitions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3-Disabling transitions</h4>
+<p>Transitions can be globally disabled using the following JavaScript snippet, which must come after <code>transition.js</code> (or <code>bootstrap.js</code> or <code>bootstrap.min.js</code>, as the case may be) has loaded:</p>
+<pre><code>```JavaScript/JQuery
+$.support.transition = false
+```
+</code></pre>
+<h3>
+<a id="user-content-c-modals-modaljs" class="anchor" href="#c-modals-modaljs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>C-Modals (modal.js)</h3>
+<p>Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.</p>
+<blockquote>
+<p><strong>Multiple open modals not supported</strong></p>
+<blockquote>
+<p>Be sure not to open a modal while another is still visible. Showing more than one modal at a time requires custom code.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>Modal markup placement</strong></p>
+<blockquote>
+<p>Always try to place a modal's HTML code in a top-level position in your document to avoid other components affecting the modal's appearance and/or functionality.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>Mobile device caveats</strong></p>
+<blockquote>
+<p>There are some caveats regarding using modals on mobile devices. See our browser support docs for details.</p>
+</blockquote>
+</blockquote>
+<p><strong>Due to how HTML5 defines its semantics, the <code>autofocus</code> HTML attribute has no effect in Bootstrap modals</strong>. To achieve the same effect, use some custom JavaScript:</p>
+<pre><code>```JavaScript/JQuery
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+```
+</code></pre>
+<h4>
+<a id="user-content-1-examples" class="anchor" href="#1-examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1-Examples</h4>
+<h5>
+<a id="user-content-a-static-example" class="anchor" href="#a-static-example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>a-Static example</h5>
+<p>A rendered modal with header, body, and set of actions in the footer.
+Modal title</p>
+<p>One fine body…</p>
+<p>IMG</p>
+<pre><code>```HTML
+&lt;div class="modal fade" tabindex="-1" role="dialog"&gt;
+  &lt;div class="modal-dialog" role="document"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;&lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+        &lt;h4 class="modal-title"&gt;Modal title&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        &lt;p&gt;One fine body&amp;hellip;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-default" data-dismiss="modal"&gt;Close&lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- /.modal-content --&gt;
+  &lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;&lt;!-- /.modal --&gt;
+```
+</code></pre>
+<h5>
+<a id="user-content-b-live-demo" class="anchor" href="#b-live-demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>b-Live demo</h5>
+<p>Toggle a modal via JavaScript by clicking the button below. It will slide down and fade in from the top of the page.</p>
+<p>IMG</p>
+<pre><code>```HTML
+&lt;!-- Button trigger modal --&gt;
+&lt;button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"&gt;
+  Launch demo modal
+&lt;/button&gt;
+&lt;!-- Modal --&gt;
+&lt;div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"&gt;
+  &lt;div class="modal-dialog" role="document"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;&lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+        &lt;h4 class="modal-title" id="myModalLabel"&gt;Modal title&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        ...
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-default" data-dismiss="modal"&gt;Close&lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<p><strong>Mak modals accessible</strong>
+Be sure to add <code>role="dialog"</code> and <code>aria-labelledby="..."</code>, referencing the modal title, to <code>.modal</code>, and <code>role="document"</code> to the <code>.modal-dialog</code> itself.
+Additionally, you may give a description of your modal dialog with <code>aria-describedby</code> on <code>.modal</code>.</p>
+<p><strong>Embedding YouTube videos</strong>
+Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. See this helpful Stack Overflow post for more information.</p>
+<h4>
+<a id="user-content-2-optional-sizes" class="anchor" href="#2-optional-sizes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2-Optional sizes</h4>
+<p>Modals have two optional sizes, available via modifier classes to be placed on a <code>.modal-dialog</code>.</p>
+<p>IMG</p>
+<pre><code>```HTML
+&lt;!-- Large modal --&gt;
+&lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"&gt;Large modal&lt;/button&gt;
+&lt;div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"&gt;
+  &lt;div class="modal-dialog modal-lg" role="document"&gt;
+    &lt;div class="modal-content"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Small modal --&gt;
+&lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm"&gt;Small modal&lt;/button&gt;
+&lt;div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"&gt;
+  &lt;div class="modal-dialog modal-sm" role="document"&gt;
+    &lt;div class="modal-content"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<h4>
+<a id="user-content-3-remove-animation" class="anchor" href="#3-remove-animation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3-Remove animation</h4>
+<p>For modals that simply appear rather than fade in to view, remove the .fade class from your modal markup.</p>
+<pre><code>```HTML
+&lt;div class="modal" tabindex="-1" role="dialog" aria-labelledby="..."&gt;
+  ...
+&lt;/div&gt;
+```
+</code></pre>
+<h4>
+<a id="user-content-4-using-the-grid-system" class="anchor" href="#4-using-the-grid-system" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4-Using the grid system</h4>
+<p>To take advantage of the Bootstrap grid system within a modal, just nest <code>.rows</code> within the <code>.modal-body</code> and then use the normal grid system classes.</p>
+<p>IMG</p>
+<pre><code>```HTML
+&lt;div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel"&gt;
+  &lt;div class="modal-dialog" role="document"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;&lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+        &lt;h4 class="modal-title" id="gridSystemModalLabel"&gt;Modal title&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+          &lt;div class="col-md-4 col-md-offset-4"&gt;.col-md-4 .col-md-offset-4&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-md-3 col-md-offset-3"&gt;.col-md-3 .col-md-offset-3&lt;/div&gt;
+          &lt;div class="col-md-2 col-md-offset-4"&gt;.col-md-2 .col-md-offset-4&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-md-6 col-md-offset-3"&gt;.col-md-6 .col-md-offset-3&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-sm-9"&gt;
+            Level 1: .col-sm-9
+            &lt;div class="row"&gt;
+              &lt;div class="col-xs-8 col-sm-6"&gt;
+                Level 2: .col-xs-8 .col-sm-6
+              &lt;/div&gt;
+              &lt;div class="col-xs-4 col-sm-6"&gt;
+                Level 2: .col-xs-4 .col-sm-6
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-default" data-dismiss="modal"&gt;Close&lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- /.modal-content --&gt;
+  &lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;&lt;!-- /.modal --&gt;
+```
+</code></pre>
+<h4>
+<a id="user-content-5-varying-modal-content-based-on-trigger-button" class="anchor" href="#5-varying-modal-content-based-on-trigger-button" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5-Varying modal content based on trigger button</h4>
+<p>Have a bunch of buttons that all trigger the same modal, just with slightly different contents? Use <code>event.relatedTarget</code> and <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes" rel="nofollow">HTML <code>data-*</code> attributes</a> (possibly <a href="http://api.jquery.com/data/" rel="nofollow">via jQuery</a>) to vary the contents of the modal depending on which button was clicked. See the Modal Events docs for details on <code>relatedTarget</code>,
+...more buttons...</p>
+<p>IMG</p>
+<pre><code>```HTML
+&lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"&gt;Open modal for @mdo&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat"&gt;Open modal for @fat&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap"&gt;Open modal for @getbootstrap&lt;/button&gt;
+...more buttons...
+&lt;div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"&gt;
+  &lt;div class="modal-dialog" role="document"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;&lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+        &lt;h4 class="modal-title" id="exampleModalLabel"&gt;New message&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        &lt;form&gt;
+          &lt;div class="form-group"&gt;
+            &lt;label for="recipient-name" class="control-label"&gt;Recipient:&lt;/label&gt;
+            &lt;input type="text" class="form-control" id="recipient-name"&gt;
+          &lt;/div&gt;
+          &lt;div class="form-group"&gt;
+            &lt;label for="message-text" class="control-label"&gt;Message:&lt;/label&gt;
+            &lt;textarea class="form-control" id="message-text"&gt;&lt;/textarea&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-default" data-dismiss="modal"&gt;Close&lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;Send message&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+```
+
+```JavaScript/JQuery
+$('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+```
+</code></pre>
+<h4>
+<a id="user-content-6-usage" class="anchor" href="#6-usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>6-Usage</h4>
+<p>The modal plugin toggles your hidden content on demand, via data attributes or JavaScript. It also adds <code>.modal-open</code> to the <code>&lt;body&gt;</code> to override default scrolling behavior and generates a <code>.modal-backdrop</code> to provide a click area for dismissing shown modals when clicking outside the modal.</p>
+<h5>
+<a id="user-content-a-via-data-attributes" class="anchor" href="#a-via-data-attributes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>a-Via data attributes</h5>
+<p>Activate a modal without writing JavaScript. Set <code>data-toggle="modal"</code> on a controller element, like a button, along with a <code>data-target="#foo"</code> or <code>href="#foo"</code> to target a specific modal to toggle.</p>
+<pre><code>```HTML
+&lt;button type="button" data-toggle="modal" data-target="#myModal"&gt;Launch modal&lt;/button&gt;
+```
+</code></pre>
+<h5>
+<a id="user-content-b-via-javascript" class="anchor" href="#b-via-javascript" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>b-Via JavaScript</h5>
+<p>Call a modal with id <code>myModal</code> with a single line of JavaScript:</p>
+<pre><code>```JavaScript/JQuery
+$('#myModal').modal(options)
+```
+</code></pre>
+<h5>
+<a id="user-content-c-options" class="anchor" href="#c-options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>c-Options</h5>
+<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-backdrop=""</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>type</th>
+<th>default</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>backdrop</td>
+<td>boolean or the string <code>'static'</code>
+</td>
+<td>true</td>
+<td>Includes a modal-backdrop element. Alternatively, specify static for a backdrop which doesn't close the modal on click.</td>
+</tr>
+<tr>
+<td>keyboard</td>
+<td>boolean</td>
+<td>true</td>
+<td>Closes the modal when escape key is pressed</td>
+</tr>
+<tr>
+<td>show</td>
+<td>boolean</td>
+<td>true</td>
+<td>Shows the modal when initialized.</td>
+</tr>
+<tr>
+<td>remote</td>
+<td>path</td>
+<td>false</td>
+<td>This option is deprecated since v3.3.0 and has been removed in v4. We recommend instead using client-side templating or a data binding framework, or calling <a href="http://api.jquery.com/load/" rel="nofollow">jQuery.load</a> yourself. If a remote URL is provided, <strong>content will be loaded one time</strong> via jQuery's <code>load</code> method and injected into the <code>.modal-content</code> div. If you're using the data-api, you may alternatively use the <code>href</code> attribute to specify the remote source. An example of this is shown below: <code>&lt;a data-toggle="modal" href="remote.html" data-target="#modal"&gt;Click me&lt;/a&gt;</code>
+</td>
+</tr>
+</tbody>
+</table>
+<h5>
+<a id="user-content-d-methods" class="anchor" href="#d-methods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>d-Methods</h5>
+<h6>
+<a id="user-content-i-modaloptions" class="anchor" href="#i-modaloptions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>i-<code>.modal(options)</code>
+</h6>
+<p>Activates your content as a modal. Accepts an optional options <code>object</code>.</p>
+<pre><code>```JavaScript/JQuery
+$('#myModal').modal({
+  keyboard: false
+})
+```
+</code></pre>
+<h6>
+<a id="user-content-ii-modaltoggle" class="anchor" href="#ii-modaltoggle" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ii-<code>.modal('toggle')</code>
+</h6>
+<p>Manually toggles a modal. <strong>Returns to the caller before the modal has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.modal</code> or <code>hidden.bs.modal</code> event occurs).</p>
+<pre><code>```JavaScript/JQuery
+$('#myModal').modal('toggle')
+```
+</code></pre>
+<h6>
+<a id="user-content-iii-modalshow" class="anchor" href="#iii-modalshow" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>iii-<code>.modal('show')</code>
+</h6>
+<p>Manually opens a modal. <strong>Returns to the caller before the modal has actually been shown</strong> (i.e. before the <code>shown.bs.modal</code> event occurs).</p>
+<pre><code>```JavaScript/JQuery
+$('#myModal').modal('show')
+```
+</code></pre>
+<h6>
+<a id="user-content-iv-modalhide" class="anchor" href="#iv-modalhide" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>iv-<code>.modal('hide')</code>
+</h6>
+<p>Manually hides a modal. <strong>Returns to the caller before the modal has actually been hidden</strong> (i.e. before the <code>hidden.bs.modal</code> event occurs).</p>
+<pre><code>```JavaScript/JQuery
+$('#myModal').modal('hide')
+```
+</code></pre>
+<h6>
+<a id="user-content-v-modalhandleupdate" class="anchor" href="#v-modalhandleupdate" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>v-<code>.modal('handleUpdate')</code>
+</h6>
+<p>Readjusts the modal's positioning to counter a scrollbar in case one should appear, which would make the modal jump to the left.</p>
+<p>Only needed when the height of the modal changes while it is open.</p>
+<pre><code>```JavaScript/JQuery
+$('#myModal').modal('handleUpdate')
+```
+</code></pre>
+<h5>
+<a id="user-content-e-events" class="anchor" href="#e-events" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>e-Events</h5>
+<p>Bootstrap's modal class exposes a few events for hooking into modal functionality.</p>
+<p>All modal events are fired at the modal itself (i.e. at the <code>&lt;div class="modal"&gt;</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Event Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>show.bs.modal</td>
+<td>This event fires immediately when the <code>show</code> instance method is called. If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event.</td>
+</tr>
+<tr>
+<td>shown.bs.modal</td>
+<td>This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete). If caused by a click, the clicked element is available as the relatedTarget property of the event.</td>
+</tr>
+<tr>
+<td>hide.bs.modal</td>
+<td>This event is fired immediately when the <code>hide</code> instance method has been called.</td>
+</tr>
+<tr>
+<td>hidden.bs.modal</td>
+<td>This event is fired when the modal has finished being hidden from the user (will wait for CSS transitions to complete).</td>
+</tr>
+<tr>
+<td>loaded.bs.modal</td>
+<td>This event is fired when the modal has loaded content using the <code>remote</code> option.</td>
+</tr>
+</tbody>
+</table>
+<pre><code>```JavaScript/JQuery
+$('#myModal').on('hidden.bs.modal', function (e) {
+  // do something...
+})
+```
+</code></pre>
+<h3>
+<a id="user-content-d-dropdowns-dropdownjs" class="anchor" href="#d-dropdowns-dropdownjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>D-Dropdowns (dropdown.js)</h3>
+<h4>
+<a id="user-content-1-examples-1" class="anchor" href="#1-examples-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1-Examples</h4>
+<p>Add dropdown menus to nearly anything with this simple plugin, including the navbar, tabs, and pills.</p>
+<h5>
+<a id="user-content-a-within-a-navbar" class="anchor" href="#a-within-a-navbar" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>a-Within a navbar</h5>
+<p>IMG</p>
+<h5>
+<a id="user-content-b-within-pills" class="anchor" href="#b-within-pills" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>b-Within pills</h5>
+<p>IMG</p>
+<h4>
+<a id="user-content-2-usage" class="anchor" href="#2-usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2-Usage</h4>
+<p>Via data attributes or JavaScript, the dropdown plugin toggles hidden content (dropdown menus) by toggling the <code>.open</code> class on the parent list item.</p>
+<p>On mobile devices, opening a dropdown adds a <code>.dropdown-backdrop</code> as a tap area for closing dropdown menus when tapping outside the menu, a requirement for proper iOS support. <strong>This means that switching from an open dropdown menu to a different dropdown menu requires an extra tap on mobile.</strong></p>
+<p>Note: The <code>data-toggle="dropdown"</code> attribute is relied on for closing dropdown menus at an application level, so it's a good idea to always use it.</p>
+<h5>
+<a id="user-content-a-via-data-attributes-1" class="anchor" href="#a-via-data-attributes-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>a-Via data attributes</h5>
+<p>Add <code>data-toggle="dropdown"</code> to a link or button to toggle a dropdown.</p>
+<pre><code>```HTML
+&lt;div class="dropdown"&gt;
+  &lt;button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+    Dropdown trigger
+    &lt;span class="caret"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class="dropdown-menu" aria-labelledby="dLabel"&gt;
+    ...
+  &lt;/ul&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<p>To keep URLs intact with link buttons, use the <code>data-target</code> attribute instead of <code>href="#"</code>.</p>
+<pre><code>```HTML
+&lt;div class="dropdown"&gt;
+  &lt;a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"&gt;
+    Dropdown trigger
+    &lt;span class="caret"&gt;&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;ul class="dropdown-menu" aria-labelledby="dLabel"&gt;
+    ...
+  &lt;/ul&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<h5>
+<a id="user-content-b-via-javascript-1" class="anchor" href="#b-via-javascript-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>b-Via JavaScript</h5>
+<p>Call the dropdowns via JavaScript:</p>
+<pre><code>```JavaScript/JQuery
+$('.dropdown-toggle').dropdown()
+```
+</code></pre>
+<blockquote>
+<p><strong><code>data-toggle="dropdown"</code> still required</strong></p>
+<blockquote>
+<p>Regardless of whether you call your dropdown via JavaScript or instead use the data-api, <code>data-toggle="dropdown"</code> is always required to be present on the dropdown's trigger element.</p>
+</blockquote>
+</blockquote>
+<h5>
+<a id="user-content-c-options-1" class="anchor" href="#c-options-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>c-Options</h5>
+<p><em>None</em></p>
+<h5>
+<a id="user-content-d-methods-1" class="anchor" href="#d-methods-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>d-Methods</h5>
+<pre><code>```JavaScript/JQuery
+$().dropdown('toggle')
+```
+</code></pre>
+<p>Toggles the dropdown menu of a given navbar or tabbed navigation.</p>
+<h5>
+<a id="user-content-e-events-1" class="anchor" href="#e-events-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>e-Events</h5>
+<p>All dropdown events are fired at the <code>.dropdown-menu</code>'s parent element.</p>
+<p>All dropdown events have a <code>relatedTarget</code> property, whose value is the toggling anchor element.</p>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>show.bs.dropdown</td>
+<td>This event fires immediately when the show instance method is called.</td>
+<td></td>
+</tr>
+<tr>
+<td>shown.bs.dropdown</td>
+<td>This event is fired when the dropdown has been made visible to the user (will wait for CSS transitions, to complete).</td>
+<td></td>
+</tr>
+<tr>
+<td>hide.bs.dropdown</td>
+<td>This event is fired immediately when the hide instance method has been called.</td>
+<td></td>
+</tr>
+<tr>
+<td>hidden.bs.dropdown</td>
+<td>This event is fired when the dropdown has finished being hidden from the user (will wait for CSS transitions, to complete).</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<pre><code>```JavaScript/JQuery
+$('#myDropdown').on('show.bs.dropdown', function () {
+  // do something…
+})
+```
+</code></pre>
+<h3>
+<a id="user-content-e-scrollspy-scrollspyjs" class="anchor" href="#e-scrollspy-scrollspyjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>E-ScrollSpy (scrollspy.js)</h3>
+<h4>
+<a id="user-content-1-example-in-navbar" class="anchor" href="#1-example-in-navbar" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1-Example in navbar</h4>
+<p>The ScrollSpy plugin is for automatically updating nav targets based on scroll position. Scroll the area below the navbar and watch the active class change. The dropdown sub items will be highlighted as well.
+Project Name</p>
+<p>IMG</p>
+<pre><code>@fat
+
+Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+@mdo
+
+Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.
+one
+
+Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.
+two
+
+In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.
+three
+
+Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+
+Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
+Usage
+</code></pre>
+<blockquote>
+<p><strong>Requires Bootstrap nav</strong></p>
+<blockquote>
+<p>Scrollspy currently requires the use of a <a href="https://getbootstrap.com/docs/3.3/components/#nav" rel="nofollow">Bootstrap nav component</a> for proper highlighting of active links.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>Resolvable ID targets required</strong></p>
+<blockquote>
+<p>Navbar links must have resolvable id targets. For example, a <code>&lt;a href="#home"&gt;home&lt;/a&gt;</code> must correspond to something in the DOM like <code>&lt;div id="home"&gt;&lt;/div&gt;</code>.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>Non-<code>:visible</code> target elements ignored</strong></p>
+<blockquote>
+<p>Target elements that are not <a href="http://api.jquery.com/visible-selector/" rel="nofollow"><code>:visible</code> according to jQuery</a> will be ignored and their corresponding nav items will never be highlighted.</p>
+</blockquote>
+</blockquote>
+<h4>
+<a id="user-content-2-requires-relative-positioning" class="anchor" href="#2-requires-relative-positioning" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2-Requires relative positioning</h4>
+<p>No matter the implementation method, scrollspy requires the use of <code>position: relative;</code> on the element you're spying on. In most cases this is the <code>&lt;body&gt;</code>. When scrollspying on elements other than the <code>&lt;body&gt;</code>, be sure to have a <code>height</code> set and <code>overflow-y: scroll;</code> applied.</p>
+<h4>
+<a id="user-content-3-via-data-attributes" class="anchor" href="#3-via-data-attributes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3-Via data attributes</h4>
+<p>To easily add scrollspy behavior to your topbar navigation, add <code>data-spy="scroll"</code> to the element you want to spy on (most typically this would be the <code>&lt;body&gt;</code>). Then add the <code>data-target</code> attribute with the ID or class of the parent element of any Bootstrap <code>.nav</code> component.</p>
+<pre><code>```CSS
+body {
+  position: relative;
+}
+```
+
+```HTML
+&lt;body data-spy="scroll" data-target="#navbar-example"&gt;
+  ...
+  &lt;div id="navbar-example"&gt;
+    &lt;ul class="nav nav-tabs" role="tablist"&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  ...
+&lt;/body&gt;
+```
+</code></pre>
+<h4>
+<a id="user-content-4-via-javascript" class="anchor" href="#4-via-javascript" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4-Via JavaScript</h4>
+<p>After adding <code>position: relative;</code> in your CSS, call the scrollspy via JavaScript:</p>
+<pre><code>```JavaScript/JQuery
+$('body').scrollspy({ target: '#navbar-example' })
+```
+</code></pre>
+<h4>
+<a id="user-content-5-methods" class="anchor" href="#5-methods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5-Methods</h4>
+<pre><code>```JavaScript/JQuery
+.scrollspy('refresh')
+```
+</code></pre>
+<p>When using scrollspy in conjunction with adding or removing of elements from the DOM, you'll need to call the refresh method like so:</p>
+<pre><code>```JavaScript/JQuery
+$('[data-spy="scroll"]').each(function () {
+  var $spy = $(this).scrollspy('refresh')
+})
+```
+</code></pre>
+<h4>
+<a id="user-content-6-options" class="anchor" href="#6-options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>6-Options</h4>
+<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-, as in <code>data-offset=""</code>.</p>
+<p>Name    type    default     description
+offset  number  10  Pixels to offset from top when calculating position of scroll.</p>
+<h4>
+<a id="user-content-7-events" class="anchor" href="#7-events" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>7-Events</h4>
+<p>Event Type  Description
+activate.bs.scrollspy   This event fires whenever a new item becomes activated by the scrollspy.</p>
+<pre><code>```JavaScript/JQuery
+$('#myScrollspy').on('activate.bs.scrollspy', function () {
+  // do something…
+})
+```
+</code></pre>
+<h3>
+<a id="user-content-f-togglable-tabs-tabjs" class="anchor" href="#f-togglable-tabs-tabjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>F-Togglable tabs (tab.js)</h3>
+<h4>
+<a id="user-content-1-example-tabs" class="anchor" href="#1-example-tabs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1-Example tabs</h4>
+<p>Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus. <strong>Nested tabs are not supported</strong>.</p>
+<p>IMG</p>
+<blockquote>
+<p><strong>Extends tabbed navigation</strong></p>
+<blockquote>
+<p>This plugin extends the  <a href="https://getbootstrap.com/docs/3.3/components/#nav-tabs" rel="nofollow">tabbed navigation component</a> to add tabbable areas.</p>
+</blockquote>
+</blockquote>
+<h4>
+<a id="user-content-2-usage-1" class="anchor" href="#2-usage-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2-Usage</h4>
+<p>Enable tabbable tabs via JavaScript (each tab needs to be activated individually):</p>
+<pre><code>```JavaScript/JQuery
+$('#myTabs a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+```
+</code></pre>
+<p>You can activate individual tabs in several ways:</p>
+<pre><code>```JavaScript/JQuery
+$('#myTabs a[href="#profile"]').tab('show') // Select tab by name
+$('#myTabs a:first').tab('show') // Select first tab
+$('#myTabs a:last').tab('show') // Select last tab
+$('#myTabs li:eq(2) a').tab('show') // Select third tab (0-indexed)
+```
+</code></pre>
+<h5>
+<a id="user-content-a-markup" class="anchor" href="#a-markup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>a-Markup</h5>
+<p>You can activate a tab or pill navigation without writing any JavaScript by simply specifying <code>data-toggle="tab"</code> or <code>data-toggle="pill"</code> on an element. Adding the <code>nav</code> and <code>nav-tabs</code> classes to the tab <code>ul</code> will apply the Bootstrap <a href="https://getbootstrap.com/docs/3.3/components/#nav-tabs" rel="nofollow">tab styling</a>, while adding the <code>nav</code> and <code>nav-pills</code> classes will apply <a href="https://getbootstrap.com/docs/3.3/components/#nav-pills" rel="nofollow">pill styling</a>.</p>
+<pre><code>```HTML
+&lt;div&gt;
+  &lt;!-- Nav tabs --&gt;
+  &lt;ul class="nav nav-tabs" role="tablist"&gt;
+    &lt;li role="presentation" class="active"&gt;&lt;a href="#home" aria-controls="home" role="tab" data-toggle="tab"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li role="presentation"&gt;&lt;a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"&gt;Profile&lt;/a&gt;&lt;/li&gt;
+    &lt;li role="presentation"&gt;&lt;a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"&gt;Messages&lt;/a&gt;&lt;/li&gt;
+    &lt;li role="presentation"&gt;&lt;a href="#settings" aria-controls="settings" role="tab" data-toggle="tab"&gt;Settings&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;!-- Tab panes --&gt;
+  &lt;div class="tab-content"&gt;
+    &lt;div role="tabpanel" class="tab-pane active" id="home"&gt;...&lt;/div&gt;
+    &lt;div role="tabpanel" class="tab-pane" id="profile"&gt;...&lt;/div&gt;
+    &lt;div role="tabpanel" class="tab-pane" id="messages"&gt;...&lt;/div&gt;
+    &lt;div role="tabpanel" class="tab-pane" id="settings"&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<h5>
+<a id="user-content-b-fade-effect" class="anchor" href="#b-fade-effect" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>b-Fade effect</h5>
+<p>To make tabs fade in, add <code>.fade</code> to each <code>.tab-pane</code>. The first tab pane must also have <code>.in</code> to make the initial content visible.</p>
+<pre><code>```HTML
+  &lt;div class="tab-content"&gt;
+    &lt;div role="tabpanel" class="tab-pane fade in active" id="home"&gt;...&lt;/div&gt;
+    &lt;div role="tabpanel" class="tab-pane fade" id="profile"&gt;...&lt;/div&gt;
+    &lt;div role="tabpanel" class="tab-pane fade" id="messages"&gt;...&lt;/div&gt;
+    &lt;div role="tabpanel" class="tab-pane fade" id="settings"&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+```
+</code></pre>
+<h5>
+<a id="user-content-c-methods" class="anchor" href="#c-methods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>c-Methods</h5>
+<h6>
+<a id="user-content-i-tab" class="anchor" href="#i-tab" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>i-<code>$().tab</code>
+</h6>
+<p>Activates a tab element and content container. Tab should have either a <code>data-target</code> or an <code>href</code> targeting a container node in the DOM. In the above examples, the tabs are the <code>&lt;a&gt;</code>s with <code>data-toggle="tab"</code> attributes.</p>
+<h6>
+<a id="user-content-ii-tabshow" class="anchor" href="#ii-tabshow" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ii-<code>.tab('show')</code>
+</h6>
+<p>Selects the given tab and shows its associated content. Any other tab that was previously selected becomes unselected and its associated content is hidden. <strong>Returns to the caller before the tab pane has actually been shown</strong> (i.e. before the <code>shown.bs.tab</code> event occurs).</p>
+<pre><code>```JavaScript/JQuery
+$('#someTab').tab('show')
+```
+</code></pre>
+<h5>
+<a id="user-content-d-events" class="anchor" href="#d-events" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>d-Events</h5>
+<p>When showing a new tab, the events fire in the following order:</p>
+<ol>
+<li>
+<code>hide.bs.tab</code> (on the current active tab)</li>
+<li>
+<code>show.bs.tab</code> (on the to-be-shown tab)</li>
+<li>
+<code>hidden.bs.tab</code> (on the previous active tab, the same one as for the <code>hide.bs.tab</code> event)</li>
+<li>
+<code>shown.bs.tab</code> (on the newly-active just-shown tab, the same one as for the <code>show.bs.tab</code> event)</li>
+</ol>
+<p>If no tab was already active, then the <code>hide.bs.tab</code> and <code>hidden.bs.tab</code> events will not be fired.</p>
+<table>
+<thead>
+<tr>
+<th>EventType</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>show.bs.tab</td>
+<td>This event fires on tab show, but before the new tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous active tab (if available) respectively.</td>
+</tr>
+<tr>
+<td>shown.bs.tab</td>
+<td>This event fires on tab show after a tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous active tab (if available) respectively.</td>
+</tr>
+<tr>
+<td>hide.bs.tab</td>
+<td>This event fires when a new tab is to be shown (and thus the previous active tab is to be hidden). Use <code>event.target</code> and <code>event.relatedTarget</code> to target the current active tab and the new soon-to-be-active tab, respectively.</td>
+</tr>
+<tr>
+<td>hidden.bs.tab</td>
+<td>This event fires after a new tab is shown (and thus the previous active tab is hidden). Use <code>event.target</code> and <code>event.relatedTarget</code> to target the previous active tab and the new active tab, respectively.</td>
+</tr>
+</tbody>
+</table>
+<pre><code>```JavaScript/JQuery
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  e.target // newly activated tab
+  e.relatedTarget // previous active tab
+})
+```
+</code></pre>
+<h3>
+<a id="user-content-g-tooltips-tooltipjs" class="anchor" href="#g-tooltips-tooltipjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>G-Tooltips (tooltip.js)</h3>
+<p>Inspired by the excellent jQuery.tipsy plugin written by Jason Frame; Tooltips are an updated version, which don't rely on images, use CSS3 for animations, and data-attributes for local title storage.</p>
+<p>Tooltips with zero-length titles are never displayed.</p>
+<h4>
+<a id="user-content-1-examples-2" class="anchor" href="#1-examples-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1-Examples</h4>
+<p>Hover over the links below to see tooltips:</p>
+<p>IMG</p>
+<h5>
+<a id="user-content-a-static-tooltip" class="anchor" href="#a-static-tooltip" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>a-Static tooltip</h5>
+<p>Four options are available: top, right, bottom, and left aligned.</p>
+<p>IMG</p>
+<h5>
+<a id="user-content-b-four-directions" class="anchor" href="#b-four-directions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>b-Four directions</h5>
+<p>IMG</p>
+<pre><code>```HTML
+&lt;button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left"&gt;Tooltip on left&lt;/button&gt;
+&lt;button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top"&gt;Tooltip on top&lt;/button&gt;
+&lt;button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"&gt;Tooltip on bottom&lt;/button&gt;
+&lt;button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right"&gt;Tooltip on right&lt;/button&gt;
+```
+</code></pre>
+<p><strong>Opt-in functionality</strong></p>
+<blockquote>
+<blockquote>
+<p>For performance reasons, the Tooltip and Popover data-apis are opt-in, meaning <strong>you must initialize them yourself</strong>.
+One way to initialize all tooltips on a page would be to select them by their <code>data-toggle</code> attribute:
+<code>JavaScript/JQuery $(function () { $('[data-toggle="tooltip"]').tooltip() })</code></p>
+</blockquote>
+</blockquote>
+<h4>
+<a id="user-content-2-usage-2" class="anchor" href="#2-usage-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2-Usage</h4>
+<p>The tooltip plugin generates content and markup on demand, and by default places tooltips after their trigger element.</p>
+<p>Trigger the tooltip via JavaScript:</p>
+<pre><code>```JavaScript/JQuery
+$('#example').tooltip(options)
+```
+</code></pre>
+<h5>
+<a id="user-content-a-markup-1" class="anchor" href="#a-markup-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>a-Markup</h5>
+<p>The required markup for a tooltip is only a <code>data</code> attribute and <code>title</code> on the HTML element you wish to have a tooltip. The generated markup of a tooltip is rather simple, though it does require a position (by default, set to top by the plugin).</p>
+<pre><code>```JHTML
+&lt;!-- HTML to write --&gt;
+&lt;a href="#" data-toggle="tooltip" title="Some tooltip text!"&gt;Hover over me&lt;/a&gt;
+&lt;!-- Generated markup by the plugin --&gt;
+&lt;div class="tooltip top" role="tooltip"&gt;
+  &lt;div class="tooltip-arrow"&gt;&lt;/div&gt;
+  &lt;div class="tooltip-inner"&gt;
+    Some tooltip text!
+  &lt;/div&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<blockquote>
+<p><strong>Multiple-line links</strong></p>
+<blockquote>
+<p>Sometimes you want to add a tooltip to a hyperlink that wraps multiple lines. The default behavior of the tooltip plugin is to center it horizontally and vertically. Add <code>white-space: nowrap;</code> to your anchors to avoid this.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>Tooltips in button groups, input groups, and tables require special setting</strong></p>
+<blockquote>
+<p>When using tooltips on elements within a <code>.btn-group</code> or an <code>.input-group</code>, or on table-related elements (<code>&lt;td&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code>), you'll have to specify the option <code>container: 'body'</code> (documented below) to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the tooltip is triggered).</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>Don't try to show tooltips on hidden elements</strong></p>
+<blockquote>
+<p>Invoking <code>$(...).tooltip('show')</code> when the target element is <code>display: none;</code> will cause the tooltip to be incorrectly positioned.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>Accessible tooltips for keyboard and assistive technology users</strong></p>
+<blockquote>
+<p>For users navigating with a keyboard, and in particular users of assistive technologies, you should only add tooltips to keyboard-focusable elements such as links, form controls, or any arbitrary element with a <strong>tabindex="0"</strong> attribute.</p>
+</blockquote>
+</blockquote>
+<p><strong>Tooltips on disabled elements require wrapper elements</strong>
+To add a tooltip to a <code>disabled</code> or <code>.disabled</code> element, put the element inside of a <code>&lt;div&gt;</code> and apply the tooltip to that <code>&lt;div&gt;</code> instead.</p>
+<h5>
+<a id="user-content-b-options" class="anchor" href="#b-options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>b-Options</h5>
+<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-animation=""</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>animation</td>
+<td>boolean</td>
+<td>true</td>
+<td>Apply a CSS fade transition to the tooltip</td>
+</tr>
+<tr>
+<td>container</td>
+<td>string, false</td>
+<td>false</td>
+<td>Appends the tooltip to a specific element. Example: <code>container: 'body'</code>. This option is particularly useful in that it allows you to position the tooltip in the flow of the document near the triggering element - which will prevent the tooltip from floating away from the triggering element during a window resize.</td>
+</tr>
+<tr>
+<td>delay</td>
+<td>number, object</td>
+<td>0</td>
+<td>Delay showing and hiding the tooltip (ms) - does not apply to manual trigger type. If a number is supplied, delay is applied to both hide/show. Object structure is: <code>delay: { "show": 500, "hide": 100 }</code>
+</td>
+</tr>
+<tr>
+<td>html</td>
+<td>boolean</td>
+<td>false</td>
+<td>Insert HTML into the tooltip. If false, jQuery's <code>text</code> method will be used to insert content into the DOM. Use text if you're worried about XSS attacks.</td>
+</tr>
+<tr>
+<td>placement</td>
+<td>string, function</td>
+<td>'top'</td>
+<td>How to position the tooltip - top, bottom, left, right, auto. When "auto" is specified, it will dynamically reorient the tooltip. For example, if placement is "auto left", the tooltip will display to the left when possible, otherwise it will display right. When a function is used to determine the placement, it is called with the tooltip DOM node as its first argument and the triggering element DOM node as its second. The <code>this</code> context is set to the tooltip instance.</td>
+</tr>
+<tr>
+<td>selector</td>
+<td>string</td>
+<td>false</td>
+<td>If a selector is provided, tooltip objects will be delegated to the specified targets. In practice, this is used to enable dynamic HTML content to have tooltips added. See <a href="https://github.com/twbs/bootstrap/issues/4215">this</a> and <a href="http://jsbin.com/zopod/1/edit" rel="nofollow">an informative example</a>.</td>
+</tr>
+<tr>
+<td>template</td>
+<td>string  <code>'&lt;div class="tooltip" role="tooltip"&gt;&lt;div class="tooltip-arrow"&gt;&lt;/div&gt;&lt;div class="tooltip-inner"&gt;&lt;/div&gt;&lt;/div&gt;'</code>
+</td>
+<td>Base HTML to use when creating the tooltip. The tooltip's <code>title</code> will be injected into the <code>.tooltip-inner</code>. <code>.tooltip-arrow</code> will become the tooltip's arrow. The outermost wrapper element should have the <code>.tooltip class.</code>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>title</td>
+<td>string, function</td>
+<td>''</td>
+<td>Default title value if <code>title</code> attribute isn't present. If a function is given, it will be called with its <code>this</code>reference set to the element that the tooltip is attached to.</td>
+</tr>
+<tr>
+<td>trigger</td>
+<td>string</td>
+<td>'hover focus</td>
+<td>How tooltip is triggered - click</td>
+</tr>
+<tr>
+<td>viewport</td>
+<td>string, object, function</td>
+<td>{ selector: 'body', padding: 0 }</td>
+<td>Keeps the tooltip within the bounds of this element. Example: <code>viewport: '#viewport'</code> or <code>{ "selector": "#viewport", "padding": 0 }</code>. If a function is given, it is called with the triggering element DOM node as its only argument. The this context is set to the tooltip instance.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Data attributes for individual tooltips</strong></p>
+<blockquote>
+<p>Options for individual tooltips can alternatively be specified through the use of data attributes, as explained above.</p>
+</blockquote>
+</blockquote>
+<h5>
+<a id="user-content-c-methods-1" class="anchor" href="#c-methods-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>c-Methods</h5>
+<h6>
+<a id="user-content-i-tooltipoptions" class="anchor" href="#i-tooltipoptions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>i-$().tooltip(options)</h6>
+<p>Attaches a tooltip handler to an element collection.</p>
+<h6>
+<a id="user-content-ii-tooltipshow" class="anchor" href="#ii-tooltipshow" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ii-.tooltip('show')</h6>
+<p>Reveals an element's tooltip. <strong>Returns to the caller before the tooltip has actually been shown</strong> (i.e. before the <code>shown.bs.tooltip</code> event occurs). This is considered a "manual" triggering of the tooltip. Tooltips with zero-length titles are never displayed.</p>
+<pre><code>```JavaScript/JQuery
+$('#element').tooltip('show')
+```
+</code></pre>
+<h6>
+<a id="user-content-iii-tooltiphide" class="anchor" href="#iii-tooltiphide" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>iii-.tooltip('hide')</h6>
+<p>Hides an element's tooltip. <strong>Returns to the caller before the tooltip has actually been hidden</strong> (i.e. before the <code>hidden.bs.tooltip</code> event occurs). This is considered a "manual" triggering of the tooltip.</p>
+<pre><code>```JavaScript/JQuery
+$('#element').tooltip('hide')
+```
+</code></pre>
+<h6>
+<a id="user-content-iv-tooltiptoggle" class="anchor" href="#iv-tooltiptoggle" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>iv-.tooltip('toggle')</h6>
+<p>Toggles an element's tooltip. <strong>Returns to the caller before the tooltip has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.tooltip</code> or <code>hidden.bs.tooltip</code> event occurs). This is considered a "manual" triggering of the tooltip.</p>
+<pre><code>```JavaScript/JQuery
+$('#element').tooltip('toggle')
+```
+</code></pre>
+<h6>
+<a id="user-content-v-tooltipdestroy" class="anchor" href="#v-tooltipdestroy" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>v-.tooltip('destroy')</h6>
+<p>Hides and destroys an element's tooltip. Tooltips that use delegation (which are created using the selector option) cannot be individually destroyed on descendant trigger elements.</p>
+<pre><code>```JavaScript/JQuery
+$('#element').tooltip('destroy')
+```
+</code></pre>
+<h5>
+<a id="user-content-d-events-1" class="anchor" href="#d-events-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>d-Events</h5>
+<table>
+<thead>
+<tr>
+<th>Event Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>show.bs.tooltip</td>
+<td>This event fires immediately when the show instance method is called.</td>
+</tr>
+<tr>
+<td>shown.bs.tooltip</td>
+<td>This event is fired when the tooltip has been made visible to the user (will wait for CSS transitions to complete).</td>
+</tr>
+<tr>
+<td>hide.bs.tooltip</td>
+<td>This event is fired immediately when the hide instance method has been called.</td>
+</tr>
+<tr>
+<td>hidden.bs.tooltip</td>
+<td>This event is fired when the tooltip has finished being hidden from the user (will wait for CSS transitions to complete).</td>
+</tr>
+<tr>
+<td>inserted.bs.tooltip</td>
+<td>This event is fired after the show.bs.tooltip event when the tooltip template has been added to the DOM.</td>
+</tr>
+</tbody>
+</table>
+<pre><code>```JavaScript/JQuery
+$('#myTooltip').on('hidden.bs.tooltip', function () {
+  // do something…
+})
+```
+</code></pre>
+<h3>
+<a id="user-content-f-popovers-popoverjs" class="anchor" href="#f-popovers-popoverjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>F-Popovers (popover.js)</h3>
+<p>Add small overlays of content, like those on the iPad, to any element for housing secondary information.
+Popovers whose both title and content are zero-length are never displayed.</p>
+<blockquote>
+<p><strong>Plugin dependency</strong></p>
+<blockquote>
+<p>Popovers require the <a href="https://getbootstrap.com/docs/3.3/javascript/#tooltips" rel="nofollow">tooltip plugin</a> to be included in your version of Bootstrap.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>Opt-in functionality</strong></p>
+<blockquote>
+<p>For performance reasons, the Tooltip and Popover data-apis are opt-in, meaning <strong>you must initialize them yourself</strong>.
+One way to initialize all popovers on a page would be to select them by their data-toggle attribute:
+<code>JavaScript/JQuery $(function () { $('[data-toggle="popover"]').popover() })</code></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>Popovers in button groups, input groups, and tables require special setting</strong></p>
+<blockquote>
+<p>When using popovers on elements within a .btn-group or an .input-group, or on table-related elements (<code>&lt;td&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code>), you'll have to specify the option <code>container: 'body'</code> (documented below) to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the popover is triggered).</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>Don't try to show popovers on hidden elements</strong></p>
+<blockquote>
+<p>Invoking <code>$(...).popover('show')</code> when the target element is <code>display: none;</code> will cause the popover to be incorrectly positioned.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>Popovers on disabled elements require wrapper elements</strong></p>
+<blockquote>
+<p>To add a popover to a <code>disabled</code> or <code>.disabled</code> element, put the element inside of a <code>&lt;div&gt;</code> and apply the popover to that <code>&lt;div&gt;</code> instead.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>Multiple-line links</strong></p>
+<blockquote>
+<p>Sometimes you want to add a popover to a hyperlink that wraps multiple lines. The default behavior of the popover plugin is to center it horizontally and vertically. Add <code>white-space: nowrap;</code> to your anchors to avoid this.</p>
+</blockquote>
+</blockquote>
+<h4>
+<a id="user-content-1-examples-3" class="anchor" href="#1-examples-3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1-Examples</h4>
+<h5>
+<a id="user-content-a-static-popover" class="anchor" href="#a-static-popover" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>a-Static popover</h5>
+<p>IMG</p>
+<h5>
+<a id="user-content-b-live-demo-1" class="anchor" href="#b-live-demo-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>b-Live demo</h5>
+<p>IMG</p>
+<pre><code>```HTML
+&lt;button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"&gt;Click to toggle popover&lt;/button&gt;
+```
+</code></pre>
+<h6>
+<a id="user-content-i-four-directions" class="anchor" href="#i-four-directions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>i-Four directions</h6>
+<p>IMG</p>
+<pre><code>```HTML
+&lt;button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."&gt;
+  Popover on left
+&lt;/button&gt;
+&lt;button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."&gt;
+  Popover on top
+&lt;/button&gt;
+&lt;button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus."&gt;
+  Popover on bottom
+&lt;/button&gt;
+&lt;button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."&gt;
+  Popover on right
+&lt;/button&gt;
+```
+</code></pre>
+<h6>
+<a id="user-content-ii-dismiss-on-next-click" class="anchor" href="#ii-dismiss-on-next-click" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ii-Dismiss on next click</h6>
+<p>Use the <code>focus</code> trigger to dismiss popovers on the next click that the user makes.</p>
+<blockquote>
+<p><strong>Specific markup required for dismiss-on-next-click</strong></p>
+<blockquote>
+<p>For proper cross-browser and cross-platform behavior, you must use the <code>&lt;a&gt;</code> tag, not the <code>&lt;button&gt;</code> tag, and you also must include the <code>role="button"</code> and <code>tabindex</code> attributes.</p>
+</blockquote>
+</blockquote>
+<pre><code>```HTML
+&lt;a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"&gt;Dismissible popover&lt;/a&gt;
+```
+</code></pre>
+<h4>
+<a id="user-content-2-usage-3" class="anchor" href="#2-usage-3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2-Usage</h4>
+<p>Enable popovers via JavaScript:</p>
+<pre><code>```JavaScript/JQuery
+$('#example').popover(options)
+```
+</code></pre>
+<h5>
+<a id="user-content-a-options" class="anchor" href="#a-options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>a-Options</h5>
+<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-animation=""</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>animation</td>
+<td>boolean</td>
+<td>true</td>
+<td>Apply a CSS fade transition to the popover</td>
+</tr>
+<tr>
+<td>container</td>
+<td>string, false</td>
+<td>false</td>
+<td>Appends the popover to a specific element. Example: <code>container: 'body'</code>. This option is particularly useful in that it allows you to position the popover in the flow of the document near the triggering element - which will prevent the popover from floating away from the triggering element during a window resize.</td>
+</tr>
+<tr>
+<td>content</td>
+<td>string, function</td>
+<td>''</td>
+<td>Default content value if <code>data-content</code>attribute isn't present. If a function is given, it will be called with its this reference set to the element that the popover is attached to.</td>
+</tr>
+<tr>
+<td>delay</td>
+<td>number, object</td>
+<td>0</td>
+<td>Delay showing and hiding the popover (ms) - does not apply to manual trigger type. If a number is supplied, delay is applied to both hide/show. Object structure is: <code>delay: { "show": 500, "hide": 100 }</code>
+</td>
+</tr>
+<tr>
+<td>html</td>
+<td>boolean</td>
+<td>false</td>
+<td>Insert HTML into the popover. If false, jQuery's text method will be used to insert content into the DOM. Use <code>text</code> if you're worried about XSS attacks.</td>
+</tr>
+<tr>
+<td>placement</td>
+<td>string, function</td>
+<td>'right'</td>
+<td>How to position the popover - top, bottom, left, right, auto. When "auto" is specified, it will dynamically reorient the popover. For example, if placement is "auto left", the popover will display to the left when possible, otherwise it will display right. When a function is used to determine the placement, it is called with the popover DOM node as its first argument and the triggering element DOM node as its second. The this context is set to the popover instance. selector    string  false   If a selector is provided, popover objects will be delegated to the specified targets. In practice, this is used to enable dynamic HTML content to have popovers added. See <code>this</code> and an informative example.</td>
+</tr>
+<tr>
+<td>template</td>
+<td>string</td>
+<td><code>'&lt;div class="popover" role="tooltip"&gt;&lt;div class="arrow"&gt;&lt;/div&gt;&lt;h3 class="popover-title"&gt;&lt;/h3&gt;&lt;div class="popover-content"&gt;&lt;/div&gt;&lt;/div&gt;'</code></td>
+<td>Base HTML to use when creating the popover. The popover's <code>title</code> will be injected into the <code>.popover-title</code>.</td>
+</tr>
+<tr>
+<td>The popover's <code>content</code> will be injected into the <code>.popover-content</code>. <code>.arrow</code> will become the popover's arrow. The outermost wrapper element should have the <code>.popover</code> class.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>title</td>
+<td>string, function</td>
+<td>''</td>
+<td>Default title value if <code>title</code> attribute isn't present. If a function is given, it will be called with its <code>this</code> reference set to the element that the popover is attached to.</td>
+</tr>
+<tr>
+<td>trigger</td>
+<td>string</td>
+<td>'click'</td>
+<td>How popover is triggered - click</td>
+</tr>
+<tr>
+<td>viewport</td>
+<td>string, object, function</td>
+<td>{ selector: 'body', padding: 0 }</td>
+<td>Keeps the popover within the bounds of this element. Example: <code>viewport: '#viewport' or { "selector": "#viewport", "padding": 0 }</code>. If a function is given, it is called with the triggering element DOM node as its only argument. The this context is set to the popover instance.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Data attributes for individual popovers</strong></p>
+<blockquote>
+<p>Options for individual popovers can alternatively be specified through the use of data attributes, as explained above.</p>
+</blockquote>
+</blockquote>
+<h5>
+<a id="user-content-b-methods" class="anchor" href="#b-methods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>b-Methods</h5>
+<h6>
+<a id="user-content-i-popoveroptions" class="anchor" href="#i-popoveroptions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>i-$().popover(options)</h6>
+<p>Initializes popovers for an element collection.</p>
+<h6>
+<a id="user-content-ii-popovershow" class="anchor" href="#ii-popovershow" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ii-.popover('show')</h6>
+<p>Reveals an element's popover. <strong>Returns to the caller before the popover has actually been shown</strong> (i.e. before the <code>shown.bs.popover</code> event occurs). This is considered a "manual" triggering of the popover. Popovers whose both title and content are zero-length are never displayed.</p>
+<pre><code>```JavaScript/JQuery
+$('#element').popover('show')
+```
+</code></pre>
+<h6>
+<a id="user-content-iii-popoverhide" class="anchor" href="#iii-popoverhide" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>iii-.popover('hide')</h6>
+<p>Hides an element's popover. <strong>Returns to the caller before the popover has actually been hidden</strong> (i.e. before the <code>hidden.bs.popover</code> event occurs). This is considered a "manual" triggering of the popover.</p>
+<pre><code>```JavaScript/JQuery
+$('#element').popover('hide')
+```
+</code></pre>
+<h6>
+<a id="user-content-iv-popovertoggle" class="anchor" href="#iv-popovertoggle" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>iv-.popover('toggle')</h6>
+<p>Toggles an element's popover. <strong>Returns to the caller before the popover has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.popover</code> or <code>hidden.bs.popover</code>9 event occurs). This is considered a "manual" triggering of the popover.</p>
+<pre><code>```JavaScript/JQuery
+$('#element').popover('toggle')
+```
+</code></pre>
+<h6>
+<a id="user-content-v-popoverdestroy" class="anchor" href="#v-popoverdestroy" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>v-.popover('destroy')</h6>
+<p>Hides and destroys an element's popover. Popovers that use delegation (which are created using <a href="https://getbootstrap.com/docs/3.3/javascript/#popovers-options" rel="nofollow">the <code>selector</code> option</a>) cannot be individually destroyed on descendant trigger elements.</p>
+<pre><code>```JavaScript/JQuery
+$('#element').popover('destroy')
+```
+</code></pre>
+<h5>
+<a id="user-content-events" class="anchor" href="#events" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Events</h5>
+<table>
+<thead>
+<tr>
+<th>Event Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>show.bs.popover</td>
+<td>This event fires immediately when the <code>show</code> instance method is called.</td>
+</tr>
+<tr>
+<td>shown.bs.popover</td>
+<td>This event is fired when the popover has been made visible to the user (will wait for CSS transitions to complete).</td>
+</tr>
+<tr>
+<td>hide.bs.popover</td>
+<td>This event is fired immediately when the <code>hide</code> instance method has been called.</td>
+</tr>
+<tr>
+<td>hidden.bs.popover</td>
+<td>This event is fired when the popover has finished being hidden from the user (will wait for CSS transitions to complete).</td>
+</tr>
+<tr>
+<td>inserted.bs.popover</td>
+<td>This event is fired after the <code>show.bs.popover</code> event when the popover template has been added to the DOM.</td>
+</tr>
+</tbody>
+</table>
+<pre><code>```JavaScript/JQuery
+$('#myPopover').on('hidden.bs.popover', function () {
+  // do something…
+})
+```
+</code></pre>
+<h3>
+<a id="user-content-g-alert-messages-alertjs" class="anchor" href="#g-alert-messages-alertjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>G-Alert messages (alert.js)</h3>
+<h4>
+<a id="user-content-1-example-alerts" class="anchor" href="#1-example-alerts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1-Example alerts</h4>
+<p>Add dismiss functionality to all alert messages with this plugin.</p>
+<p>When using a <code>.close</code> button, it must be the first child of the <code>.alert-dismissible</code> and no text content may come before it in the markup.</p>
+<p>IMG</p>
+<h4>
+<a id="user-content-2-usage-4" class="anchor" href="#2-usage-4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2-Usage</h4>
+<p>Just add <code>data-dismiss="alert"</code> to your close button to automatically give an alert close functionality. Closing an alert removes it from the DOM.</p>
+<pre><code>```HTML
+&lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;
+  &lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;
+&lt;/button&gt;
+```
+</code></pre>
+<p>To have your alerts use animation when closing, make sure they have the <code>.fade</code> and <code>.in</code> classes already applied to them.</p>
+<h5>
+<a id="user-content-a-methods" class="anchor" href="#a-methods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>a-Methods</h5>
+<h6>
+<a id="user-content-i-alert" class="anchor" href="#i-alert" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>i-<code>$().alert()</code>
+</h6>
+<p>Makes an alert listen for click events on descendant elements which have the <code>data-dismiss="alert"</code> attribute. (Not necessary when using the data-api's auto-initialization.)</p>
+<h6>
+<a id="user-content-ii-alertclose" class="anchor" href="#ii-alertclose" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ii-<code>$().alert('close')</code>
+</h6>
+<p>Closes an alert by removing it from the DOM. If the <code>.fade</code> and <code>.in</code> classes are present on the element, the alert will fade out before it is removed.</p>
+<h5>
+<a id="user-content-b-events" class="anchor" href="#b-events" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>b-Events</h5>
+<p>Bootstrap's alert plugin exposes a few events for hooking into alert functionality.</p>
+<table>
+<thead>
+<tr>
+<th>Event Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>close.bs.alert</td>
+<td>This event fires immediately when the <code>close</code> instance method is called.</td>
+</tr>
+<tr>
+<td>closed.bs.alert</td>
+<td>This event is fired when the alert has been closed (will wait for CSS transitions to complete).</td>
+</tr>
+</tbody>
+</table>
+<pre><code>```JavaScript/JQuery
+$('#myAlert').on('closed.bs.alert', function () {
+  // do something…
+})
+```
+</code></pre>
+<h3>
+<a id="user-content-h-buttons-buttonjs" class="anchor" href="#h-buttons-buttonjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>H-Buttons (button.js)</h3>
+<p><strong>Do more with buttons. Control button states or create groups of buttons for more components like toolbars.</strong></p>
+<blockquote>
+<p><strong>1-Cross-browser compatibility</strong></p>
+<blockquote>
+<p><a href="https://github.com/twbs/bootstrap/issues/793">Firefox persists form control states (disabledness and checkedness) across page loads</a>. A workaround for this is to use <code>autocomplete="off"</code>. See <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=654072" rel="nofollow">Mozilla bug #654072</a>.</p>
+</blockquote>
+</blockquote>
+<p>####2-Stateful</p>
+<p>Add <code>data-loading-text="Loading..."</code> to use a loading state on a button.</p>
+<p><strong>This feature is deprecated since v3.3.5 and has been removed in v4.</strong></p>
+<blockquote>
+<p><strong>Use whichever state you like!</strong></p>
+<blockquote>
+<p>For the sake of this demonstration, we are using <code>data-loading-text</code> and <code>$().button('loading')</code>, but that's not the only state you can use. <a href="https://getbootstrap.com/docs/3.3/javascript/#buttons-methods" rel="nofollow">See more on this below in the <code>$().button(string)</code> documentation</a>.</p>
+</blockquote>
+</blockquote>
+<p>IMG</p>
+<pre><code>```HTML
+&lt;button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off"&gt;
+  Loading state
+&lt;/button&gt;
+&lt;script&gt;
+  $('#myButton').on('click', function () {
+    var $btn = $(this).button('loading')
+    // business logic...
+    $btn.button('reset')
+  })
+&lt;/script&gt;
+```
+</code></pre>
+<h4>
+<a id="user-content-3-single-toggle" class="anchor" href="#3-single-toggle" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3-Single toggle</h4>
+<p>Add <code>data-toggle="button"</code> to activate toggling on a single button.</p>
+<blockquote>
+<p>Pre-toggled buttons need <code>.active</code> and <code>aria-pressed="true"</code></p>
+<blockquote>
+<p>For pre-toggled buttons, you must add the <code>.active</code> class and the <code>aria-pressed="true"</code> attribute to the button yourself.</p>
+</blockquote>
+</blockquote>
+<p>IMG</p>
+<pre><code>```HTML
+&lt;button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"&gt;
+  Single toggle
+&lt;/button&gt;
+```
+</code></pre>
+<h4>
+<a id="user-content-4-checkbox--radio" class="anchor" href="#4-checkbox--radio" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4-Checkbox / Radio</h4>
+<p>Add <code>data-toggle="buttons"</code> to a <code>.btn-group</code> containing checkbox or radio inputs to enable toggling in their respective styles.</p>
+<blockquote>
+<p><strong>Preselected options need <code>.active</code></strong></p>
+<blockquote>
+<p>For preselected options, you must add the .active class to the input's label yourself.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>Visual checked state only updated on click</strong></p>
+<blockquote>
+<p>If the checked state of a checkbox button is updated without firing a <code>click</code> event on the button (e.g. via <code>&lt;input type="reset"&gt;</code> or via setting the <code>checked</code> property of the input), you will need to toggle the <code>.active</code> class on the input's <code>label</code> yourself.</p>
+</blockquote>
+</blockquote>
+<p>IMG</p>
+<pre><code>```HTML
+&lt;div class="btn-group" data-toggle="buttons"&gt;
+  &lt;label class="btn btn-primary active"&gt;
+    &lt;input type="checkbox" autocomplete="off" checked&gt; Checkbox 1 (pre-checked)
+  &lt;/label&gt;
+  &lt;label class="btn btn-primary"&gt;
+    &lt;input type="checkbox" autocomplete="off"&gt; Checkbox 2
+  &lt;/label&gt;
+  &lt;label class="btn btn-primary"&gt;
+    &lt;input type="checkbox" autocomplete="off"&gt; Checkbox 3
+  &lt;/label&gt;
+&lt;/div&gt;
+```
+
+```HTML
+&lt;div class="btn-group" data-toggle="buttons"&gt;
+  &lt;label class="btn btn-primary active"&gt;
+    &lt;input type="radio" name="options" id="option1" autocomplete="off" checked&gt; Radio 1 (preselected)
+  &lt;/label&gt;
+  &lt;label class="btn btn-primary"&gt;
+    &lt;input type="radio" name="options" id="option2" autocomplete="off"&gt; Radio 2
+  &lt;/label&gt;
+  &lt;label class="btn btn-primary"&gt;
+    &lt;input type="radio" name="options" id="option3" autocomplete="off"&gt; Radio 3
+  &lt;/label&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<h4>
+<a id="user-content-5-methods-1" class="anchor" href="#5-methods-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5-Methods</h4>
+<h5>
+<a id="user-content-a-buttontoggle" class="anchor" href="#a-buttontoggle" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>a-<code>$().button('toggle')</code>
+</h5>
+<p>Toggles push state. Gives the button the appearance that it has been activated.</p>
+<h6>
+<a id="user-content-b-buttonreset" class="anchor" href="#b-buttonreset" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>b-<code>$().button('reset')</code>
+</h6>
+<p>Resets button state - swaps text to original text. This method is asynchronous and returns before the resetting has actually completed.</p>
+<h6>
+<a id="user-content-c-buttonstring" class="anchor" href="#c-buttonstring" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>c-<code>$().button(string)</code>
+</h6>
+<p>Swaps text to any data defined text state.</p>
+<pre><code>```HTML
+&lt;button type="button" id="myStateButton" data-complete-text="finished!" class="btn btn-primary" autocomplete="off"&gt;
+  ...
+&lt;/button&gt;
+&lt;script&gt;
+  $('#myStateButton').on('click', function () {
+    $(this).button('complete') // button text will be "finished!"
+  })
+&lt;/script&gt;
+```
+</code></pre>
+<h3>
+<a id="user-content-i-collapse-collapsejs" class="anchor" href="#i-collapse-collapsejs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>I-Collapse (collapse.js)</h3>
+<p>Flexible plugin that utilizes a handful of classes for easy toggle behavior.</p>
+<blockquote>
+<p><strong>Plugin dependency</strong></p>
+<blockquote>
+<p>Collapse requires the <a href="https://getbootstrap.com/docs/3.3/javascript/#transitions" rel="nofollow">transitions plugin</a> to be included in your version of Bootstrap.</p>
+</blockquote>
+</blockquote>
+<h4>
+<a id="user-content-1-example" class="anchor" href="#1-example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1-Example</h4>
+<p>Click the buttons below to show and hide another element via class changes:</p>
+<ul>
+<li>
+<code>.collapse</code> hides content</li>
+<li>
+<code>.collapsing</code> is applied during transitions</li>
+<li>
+<code>.collapse.in</code> shows content</li>
+</ul>
+<p>You can use a link with the <code>href</code> attribute, or a button with the <code>data-target</code> attribute. In both cases, the <code>data-toggle="collapse"</code> is required.</p>
+<p>IMG</p>
+<pre><code>```HTML
+&lt;a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"&gt;
+  Link with href
+&lt;/a&gt;
+&lt;button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"&gt;
+  Button with data-target
+&lt;/button&gt;
+&lt;div class="collapse" id="collapseExample"&gt;
+  &lt;div class="well"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<h4>
+<a id="user-content-2-accordion-example" class="anchor" href="#2-accordion-example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2-Accordion example</h4>
+<p>Extend the default collapse behavior to create an accordion with the panel component.</p>
+<pre><code>```HTML
+&lt;div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"&gt;
+  &lt;div class="panel panel-default"&gt;
+    &lt;div class="panel-heading" role="tab" id="headingOne"&gt;
+      &lt;h4 class="panel-title"&gt;
+        &lt;a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"&gt;
+          Collapsible Group Item #1
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne"&gt;
+      &lt;div class="panel-body"&gt;
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="panel panel-default"&gt;
+    &lt;div class="panel-heading" role="tab" id="headingTwo"&gt;
+      &lt;h4 class="panel-title"&gt;
+        &lt;a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"&gt;
+          Collapsible Group Item #2
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo"&gt;
+      &lt;div class="panel-body"&gt;
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="panel panel-default"&gt;
+    &lt;div class="panel-heading" role="tab" id="headingThree"&gt;
+      &lt;h4 class="panel-title"&gt;
+        &lt;a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"&gt;
+          Collapsible Group Item #3
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree"&gt;
+      &lt;div class="panel-body"&gt;
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<p>It's also possible to swap out <code>.panel-bodys</code> with <code>.list-groups</code>.</p>
+<pre><code>Collapsible list group
+</code></pre>
+<blockquote>
+<p><strong>Make expand/collapse controls accessible</strong></p>
+<blockquote>
+<p>Be sure to add <code>aria-expanded</code> to the control element. This attribute explicitly defines the current state of the collapsible element to screen readers and similar assistive technologies. If the collapsible element is closed by default, it should have a value of <code>aria-expanded="false"</code>. If you've set the collapsible element to be open by default using the <code>in</code> class, set <code>aria-expanded="true"</code> on the control instead. The plugin will automatically toggle this attribute based on whether or not the collapsible element has been opened or closed.
+Additionally, if your control element is targeting a single collapsible element – i.e. the <code>data-target</code> attribute is pointing to an <code>id</code> selector – you may add an additional <code>aria-controls</code> attribute to the control element, containing the <code>id</code> of the collapsible element. Modern screen readers and similar assistive technologies make use of this attribute to provide users with additional shortcuts to navigate directly to the collapsible element itself.</p>
+</blockquote>
+</blockquote>
+<h4>
+<a id="user-content-3-usage" class="anchor" href="#3-usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3-Usage</h4>
+<p>The collapse plugin utilizes a few classes to handle the heavy lifting:</p>
+<pre><code>.collapse hides the content
+.collapse.in shows the content
+.collapsing is added when the transition starts, and removed when it finishes
+</code></pre>
+<p>These classes can be found in component-animations.less.</p>
+<h5>
+<a id="user-content-a-via-data-attributes-2" class="anchor" href="#a-via-data-attributes-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>a-Via data attributes</h5>
+<p>Just add data-toggle="collapse" and a data-target to the element to automatically assign control of a collapsible element. The data-target attribute accepts a CSS selector to apply the collapse to. Be sure to add the class collapse to the collapsible element. If you'd like it to default open, add the additional class in.</p>
+<p>To add accordion-like group management to a collapsible control, add the data attribute data-parent="#selector". Refer to the demo to see this in action.</p>
+<h5>
+<a id="user-content-b-via-javascript-2" class="anchor" href="#b-via-javascript-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>b-Via JavaScript</h5>
+<p>Enable manually with:</p>
+<pre><code>```JavaScript/JQuery
+$('.collapse').collapse()
+```
+</code></pre>
+<h5>
+<a id="user-content-c-options-2" class="anchor" href="#c-options-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>c-Options</h5>
+<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-, as in <code>data-parent=""</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>type</th>
+<th>default</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>parent</td>
+<td>selector</td>
+<td>false</td>
+<td>If a selector is provided, then all collapsible elements under the-specified parent will be closed when this collapsible item is shown. (similar to traditional accordion behavior - this is dependent on the <code>panel</code> class)</td>
+</tr>
+<tr>
+<td>toggle</td>
+<td>boolean</td>
+<td>true</td>
+<td>Toggles the collapsible element on invocation</td>
+</tr>
+</tbody>
+</table>
+<h5>
+<a id="user-content-d-methods-2" class="anchor" href="#d-methods-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>d-Methods</h5>
+<h6>
+<a id="user-content-i-collapseoptions" class="anchor" href="#i-collapseoptions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>i-<code>.collapse(options)</code>
+</h6>
+<p>Activates your content as a collapsible element. Accepts an optional options <code>object</code>.</p>
+<pre><code>```JavaScript/JQuery
+$('#myCollapsible').collapse({
+  toggle: false
+})
+```
+</code></pre>
+<h6>
+<a id="user-content-ii-collapsetoggle" class="anchor" href="#ii-collapsetoggle" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ii-<code>.collapse('toggle')</code>
+</h6>
+<p>Toggles a collapsible element to shown or hidden. <strong>Returns to the caller before the collapsible element has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.collapse</code> or <code>hidden.bs.collapse</code> event occurs).</p>
+<h6>
+<a id="user-content-ii-collapseshow" class="anchor" href="#ii-collapseshow" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ii-<code>.collapse('show')</code>
+</h6>
+<p>Shows a collapsible element. <strong>Returns to the caller before the collapsible element has actually been shown</strong> (i.e. before the <code>shown.bs.collapse</code> event occurs).</p>
+<h6>
+<a id="user-content-iv-collapsehide" class="anchor" href="#iv-collapsehide" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>iv-<code>.collapse('hide')</code>
+</h6>
+<p>Hides a collapsible element. <strong>Returns to the caller before the collapsible element has actually been hidden</strong> (i.e. before the <code>hidden.bs.collapse</code> event occurs).</p>
+<h5>
+<a id="user-content-e-events-2" class="anchor" href="#e-events-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>e-Events</h5>
+<p>Bootstrap's collapse class exposes a few events for hooking into collapse functionality.</p>
+<table>
+<thead>
+<tr>
+<th>Event Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>show.bs.collapse</td>
+<td>This event fires immediately when the <code>show</code> instance method is called.</td>
+</tr>
+<tr>
+<td>shown.bs.collapse</td>
+<td>This event is fired when a collapse element has been made visible to the user (will wait for CSS transitions to complete).</td>
+</tr>
+<tr>
+<td>hide.bs.collapse</td>
+<td>This event is fired immediately when the <code>hide</code> method has been called.</td>
+</tr>
+<tr>
+<td>hidden.bs.collapse</td>
+<td>This event is fired when a collapse element has been hidden from the user (will wait for CSS transitions to complete).</td>
+</tr>
+</tbody>
+</table>
+<pre><code>```JavaScript/JQuery
+$('#myCollapsible').on('hidden.bs.collapse', function () {
+  // do something…
+})
+```
+</code></pre>
+<h3>
+<a id="user-content-j-carousel-carouseljs" class="anchor" href="#j-carousel-carouseljs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>J-Carousel (carousel.js)</h3>
+<p>A slideshow component for cycling through elements, like a carousel. <strong>Nested carousels are not supported</strong>.</p>
+<h4>
+<a id="user-content-1-examples-4" class="anchor" href="#1-examples-4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1-Examples</h4>
+<p>IMG</p>
+<pre><code>```HTML
+&lt;div id="carousel-example-generic" class="carousel slide" data-ride="carousel"&gt;
+  &lt;!-- Indicators --&gt;
+  &lt;ol class="carousel-indicators"&gt;
+    &lt;li data-target="#carousel-example-generic" data-slide-to="0" class="active"&gt;&lt;/li&gt;
+    &lt;li data-target="#carousel-example-generic" data-slide-to="1"&gt;&lt;/li&gt;
+    &lt;li data-target="#carousel-example-generic" data-slide-to="2"&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+  &lt;!-- Wrapper for slides --&gt;
+  &lt;div class="carousel-inner" role="listbox"&gt;
+    &lt;div class="item active"&gt;
+      &lt;img src="..." alt="..."&gt;
+      &lt;div class="carousel-caption"&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="item"&gt;
+      &lt;img src="..." alt="..."&gt;
+      &lt;div class="carousel-caption"&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+    ...
+  &lt;/div&gt;
+  &lt;!-- Controls --&gt;
+  &lt;a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"&gt;
+    &lt;span class="glyphicon glyphicon-chevron-left" aria-hidden="true"&gt;&lt;/span&gt;
+    &lt;span class="sr-only"&gt;Previous&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"&gt;
+    &lt;span class="glyphicon glyphicon-chevron-right" aria-hidden="true"&gt;&lt;/span&gt;
+    &lt;span class="sr-only"&gt;Next&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<blockquote>
+<p><strong>Accessibility issue</strong></p>
+<blockquote>
+<p>The carousel component is generally not compliant with accessibility standards. If you need to be compliant, please consider other options for presenting your content.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>Transition animations not supported in Internet Explorer 8 &amp; 9</strong></p>
+<blockquote>
+<p>Bootstrap exclusively uses CSS3 for its animations, but Internet Explorer 8 &amp; 9 don't support the necessary CSS properties. Thus, there are no slide transition animations when using these browsers. We have intentionally decided not to include jQuery-based fallbacks for the transitions.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>Initial active element required</strong></p>
+<blockquote>
+<p>The <code>.active</code> class needs to be added to one of the slides. Otherwise, the carousel will not be visible.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>Glyphicon icons not necessary</strong></p>
+<blockquote>
+<p>The <code>.glyphicon .glyphicon-chevron-left</code> and <code>.glyphicon .glyphicon-chevron-right</code> classes are not necessarily needed for the controls. Bootstrap provides <code>.icon-prev</code> and <code>.icon-next</code> as plain unicode alternatives.</p>
+</blockquote>
+</blockquote>
+<h4>
+<a id="user-content-2-optional-captions" class="anchor" href="#2-optional-captions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2-Optional captions</h4>
+<p>Add captions to your slides easily with the <code>.carousel-caption</code> element within any <code>.item</code>. Place just about any optional HTML within there and it will be automatically aligned and formatted.</p>
+<p>IMG</p>
+<pre><code>```HTML
+&lt;div class="item"&gt;
+  &lt;img src="..." alt="..."&gt;
+  &lt;div class="carousel-caption"&gt;
+    &lt;h3&gt;...&lt;/h3&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<h4>
+<a id="user-content-3-usage-1" class="anchor" href="#3-usage-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3-Usage</h4>
+<h5>
+<a id="user-content-a-multiple-carousels" class="anchor" href="#a-multiple-carousels" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>a-Multiple carousels</h5>
+<p>Carousels require the use of an <code>id</code> on the outermost container (the <code>.carousel</code>) for carousel controls to function properly. When adding multiple carousels, or when changing a carousel's <code>id</code>, be sure to update the relevant controls.</p>
+<h5>
+<a id="user-content-b-via-data-attributes" class="anchor" href="#b-via-data-attributes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>b-Via data attributes</h5>
+<p>Use data attributes to easily control the position of the carousel. <code>data-slide</code> accepts the keywords <code>prev</code> or <code>next</code>, which alters the slide position relative to its current position. Alternatively, use <code>data-slide-to</code> to pass a raw slide index to the carousel <code>data-slide-to="2"</code>, which shifts the slide position to a particular index beginning with <code>0</code>.
+The <code>data-ride="carousel"</code> attribute is used to mark a carousel as animating starting at page load. <strong>It cannot be used in combination with (redundant and unnecessary) explicit JavaScript initialization of the same carousel</strong>.</p>
+<h5>
+<a id="user-content-c-via-javascript" class="anchor" href="#c-via-javascript" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>c-Via JavaScript</h5>
+<p>Call carousel manually with:</p>
+<pre><code>```JavaScript/JQuery
+$('.carousel').carousel()
+```
+</code></pre>
+<h5>
+<a id="user-content-d-options" class="anchor" href="#d-options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>d-Options</h5>
+<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-interval=""</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>type</th>
+<th>default</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>interval</td>
+<td>number</td>
+<td>5000</td>
+<td>The amount of time to delay between automatically cycling an item. If false, carousel will not automatically cycle.</td>
+</tr>
+<tr>
+<td>pause</td>
+<td>string, null</td>
+<td>"hover"</td>
+<td>If set to <code>"hover"</code>, pauses the cycling of the carousel on <code>mouseenter</code> and resumes the cycling of the carousel on <code>mouseleave</code>. If set to <code>null</code>, hovering over the carousel won't pause it.</td>
+</tr>
+<tr>
+<td>wrap</td>
+<td>boolean</td>
+<td>true</td>
+<td>Whether the carousel should cycle continuously or have hard stops.</td>
+</tr>
+<tr>
+<td>keyboard</td>
+<td>boolean</td>
+<td>true</td>
+<td>Whether the carousel should react to keyboard events.</td>
+</tr>
+</tbody>
+</table>
+<h5>
+<a id="user-content-e-methods" class="anchor" href="#e-methods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>e-Methods</h5>
+<h6>
+<a id="user-content-i-carouseloptions" class="anchor" href="#i-carouseloptions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>i-<code>.carousel(options)</code>
+</h6>
+<p>Initializes the carousel with an optional options <code>object</code> and starts cycling through items.</p>
+<pre><code>```JavaScript/JQuery
+$('.carousel').carousel({
+interval: 2000
+})
+```
+</code></pre>
+<h6>
+<a id="user-content-ii-carouselcycle" class="anchor" href="#ii-carouselcycle" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ii-<code>.carousel('cycle')</code>
+</h6>
+<p>Cycles through the carousel items from left to right.</p>
+<h6>
+<a id="user-content-iii-carouselpause" class="anchor" href="#iii-carouselpause" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>iii-<code>.carousel('pause')</code>
+</h6>
+<p>Stops the carousel from cycling through items.</p>
+<h6>
+<a id="user-content-iv-carouselnumber" class="anchor" href="#iv-carouselnumber" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>iv-<code>.carousel(number)</code>
+</h6>
+<p>Cycles the carousel to a particular frame (0 based, similar to an array).</p>
+<h6>
+<a id="user-content-v-carouselprev" class="anchor" href="#v-carouselprev" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>v-<code>.carousel('prev')</code>
+</h6>
+<p>Cycles to the previous item.</p>
+<h6>
+<a id="user-content-vi-carouselnext" class="anchor" href="#vi-carouselnext" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>vi-<code>.carousel('next')</code>
+</h6>
+<p>Cycles to the next item.</p>
+<h5>
+<a id="user-content-f-events" class="anchor" href="#f-events" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>f-Events</h5>
+<p>Bootstrap's carousel class exposes two events for hooking into carousel functionality.</p>
+<p>Both events have the following additional properties:</p>
+<ul>
+<li>
+<code>direction</code>: The direction in which the carousel is sliding (either <code>"left"</code> or <code>"right"</code>).</li>
+<li>
+<code>relatedTarget</code>: The DOM element that is being slid into place as the active item.</li>
+</ul>
+<p>All carousel events are fired at the carousel itself (i.e. at the <code>&lt;div class="carousel"&gt;</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Event Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>slide.bs.carousel</td>
+<td>This event fires immediately when the <code>slide</code> instance method is invoked.</td>
+</tr>
+<tr>
+<td>slid.bs.carousel</td>
+<td>This event is fired when the carousel has completed its slide transition.</td>
+</tr>
+</tbody>
+</table>
+<pre><code>```JavaScript/JQuery
+$('#myCarousel').on('slide.bs.carousel', function () {
+  // do something…
+})
+```
+</code></pre>
+<h3>
+<a id="user-content-k-affix-affixjs" class="anchor" href="#k-affix-affixjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>K-Affix (affix.js)</h3>
+<h4>
+<a id="user-content-1-example-1" class="anchor" href="#1-example-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1-Example</h4>
+<p>The affix plugin toggles <code>position: fixed</code>; on and off, emulating the effect found with <code>position: sticky;</code>. The subnavigation on the right is a live demo of the affix plugin.</p>
+<h4>
+<a id="user-content-2-usage-5" class="anchor" href="#2-usage-5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2-Usage</h4>
+<p>Use the affix plugin via data attributes or manually with your own JavaScript. <strong>In both situations, you must provide CSS for the positioning and width of your affixed content</strong>.</p>
+<p>Note: Do not use the affix plugin on an element contained in a relatively positioned element, such as a pulled or pushed column, due to a <a href="https://github.com/twbs/bootstrap/issues/12126">Safari rendering bug</a>.</p>
+<h5>
+<a id="user-content-a-positioning-via-css" class="anchor" href="#a-positioning-via-css" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>a-Positioning via CSS</h5>
+<p>The affix plugin toggles between three classes, each representing a particular state: <code>.affix</code>, <code>.affix-top</code>, and <code>.affix-bottom</code>. You must provide the styles, with the exception of <code>position: fixed;</code> on <code>.affix</code>, for these classes yourself (independent of this plugin) to handle the actual positions.</p>
+<p>Here's how the affix plugin works:</p>
+<ol>
+<li>To start, the plugin adds <code>.affix-top</code> to indicate the element is in its top-most position. At this point no CSS positioning is required.</li>
+<li>Scrolling past the element you want affixed should trigger the actual affixing. This is where <code>.affix</code> replaces <code>.affix-top</code> and sets <code>position: fixed;</code> (provided by Bootstrap's CSS).</li>
+<li>If a bottom offset is defined, scrolling past it should replace <code>.affix</code> with <code>.affix-bottom</code>. Since offsets are optional, setting one requires you to set the appropriate CSS. In this case, add <code>position: absolute;</code> when necessary. The plugin uses the data attribute or JavaScript option to determine where to position the element from there.</li>
+</ol>
+<p>Follow the above steps to set your CSS for either of the usage options below.</p>
+<h5>
+<a id="user-content-b-via-data-attributes-1" class="anchor" href="#b-via-data-attributes-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>b-Via data attributes</h5>
+<p>To easily add affix behavior to any element, just add <code>data-spy="affix"</code> to the element you want to spy on. Use offsets to define when to toggle the pinning of an element.</p>
+<pre><code>```HTML
+&lt;div data-spy="affix" data-offset-top="60" data-offset-bottom="200"&gt;
+  ...
+&lt;/div&gt;
+```
+</code></pre>
+<h5>
+<a id="user-content-c-via-javascript-1" class="anchor" href="#c-via-javascript-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>c-Via JavaScript</h5>
+<p>Call the affix plugin via JavaScript:</p>
+<pre><code>```JavaScript/JQuery
+$('#myAffix').affix({
+  offset: {
+    top: 100,
+    bottom: function () {
+      return (this.bottom = $('.footer').outerHeight(true))
+    }
+  }
+})
+```
+</code></pre>
+<h5>
+<a id="user-content-d-options-1" class="anchor" href="#d-options-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>d-Options</h5>
+<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-offset-top="200"</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>type</th>
+<th>default</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>offset</td>
+<td>number, function, object</td>
+<td>10</td>
+<td>Pixels to offset from screen when calculating position of scroll. If a single number is provided, the offset will be applied in both top and bottom directions. To provide a unique, bottom and top offset just provide an object <code>offset: { top: 10 }</code> or <code>offset: { top: 10, bottom: 5 }</code>. Use a function when you need to dynamically calculate an offset.</td>
+</tr>
+<tr>
+<td>target</td>
+<td>selector, node, jQuery element</td>
+<td>the <code>window</code> object</td>
+<td>Specifies the target element of the affix.</td>
+</tr>
+</tbody>
+</table>
+<p>######e-Methods</p>
+<h6>
+<a id="user-content-i-affixoptions" class="anchor" href="#i-affixoptions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>i-<code>.affix(options)</code>
+</h6>
+<p>Activates your content as affixed content. Accepts an optional options object.</p>
+<pre><code>```JavaScript/JQuery
+$('#myAffix').affix({
+  offset: 15
+})
+```
+</code></pre>
+<h6>
+<a id="user-content-ii-affixcheckposition" class="anchor" href="#ii-affixcheckposition" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ii-.affix('checkPosition')</h6>
+<p>Recalculates the state of the affix based on the dimensions, position, and scroll position of the relevant elements. The <code>.affix</code>, <code>.affix-top</code>, and <code>.affix-bottom</code> classes are added to or removed from the affixed content according to the new state. This method needs to be called whenever the dimensions of the affixed content or the target element are changed, to ensure correct positioning of the affixed content.</p>
+<pre><code>```JavaScript/JQuery
+$('#myAffix').affix('checkPosition')
+```
+</code></pre>
+<h5>
+<a id="user-content-f-events-1" class="anchor" href="#f-events-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>f-Events</h5>
+<p>Bootstrap's affix plugin exposes a few events for hooking into affix functionality.</p>
+<table>
+<thead>
+<tr>
+<th>Event Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>affix.bs.affix</td>
+<td>This event fires immediately before the element has been affixed.</td>
+</tr>
+<tr>
+<td>affixed.bs.affix</td>
+<td>This event is fired after the element has been affixed.</td>
+</tr>
+<tr>
+<td>affix-top.bs.affix</td>
+<td>This event fires immediately before the element has been affixed-top.</td>
+</tr>
+<tr>
+<td>affixed-top.bs.affix</td>
+<td>This event is fired after the element has been affixed-top.</td>
+</tr>
+<tr>
+<td>affix-bottom.bs.affix</td>
+<td>This event fires immediately before the element has been affixed-bottom.</td>
+</tr>
+<tr>
+<td>affixed-bottom.bs.affix</td>
+<td>This event is fired after the element has been affixed-bottom.</td>
+</tr>
+</tbody>
+</table>
+</article></body></html>

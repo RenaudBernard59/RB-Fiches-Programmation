@@ -1,0 +1,3662 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  max-width: 980px;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAzUABAAAAAAFNgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABbAAAABwAAAAcZMzaOEdERUYAAAGIAAAAHQAAACAAOQAET1MvMgAAAagAAAA+AAAAYHqhde9jbWFwAAAB6AAAAFIAAAFa4azkLWN2dCAAAAI8AAAAKAAAACgFgwioZnBnbQAAAmQAAAGxAAACZVO0L6dnYXNwAAAEGAAAAAgAAAAIAAAAEGdseWYAAAQgAAAFDgAACMz7eroHaGVhZAAACTAAAAAwAAAANgWEOEloaGVhAAAJYAAAAB0AAAAkDGEGa2htdHgAAAmAAAAAEwAAADBEgAAQbG9jYQAACZQAAAAaAAAAGgsICJBtYXhwAAAJsAAAACAAAAAgASgBD25hbWUAAAnQAAACZwAABOD4no+3cG9zdAAADDgAAABsAAAAmF+yXM9wcmVwAAAMpAAAAC4AAAAusPIrFAAAAAEAAAAAyYlvMQAAAADLVHQgAAAAAM/u9uZ4nGNgZGBg4ANiCQYQYGJgBEJuIGYB8xgABMMAPgAAAHicY2Bm42OcwMDKwMLSw2LMwMDQBqGZihmiwHycoKCyqJjB4YPDh4NsDP+BfNb3DIuAFCOSEgUGRgAKDgt4AAB4nGNgYGBmgGAZBkYGEAgB8hjBfBYGCyDNxcDBwMTA9MHhQ9SHrA8H//9nYACyQyFs/sP86/kX8HtB9UIBIxsDXICRCUgwMaACRoZhDwA3fxKSAAAAAAHyAHABJQB/AIEAdAFGAOsBIwC/ALgAxACGAGYAugBNACcA/wCIeJxdUbtOW0EQ3Q0PA4HE2CA52hSzmZDGe6EFCcTVjWJkO4XlCGk3cpGLcQEfQIFEDdqvGaChpEibBiEXSHxCPiESM2uIojQ7O7NzzpkzS8qRqnfpa89T5ySQwt0GzTb9Tki1swD3pOvrjYy0gwdabGb0ynX7/gsGm9GUO2oA5T1vKQ8ZTTuBWrSn/tH8Cob7/B/zOxi0NNP01DoJ6SEE5ptxS4PvGc26yw/6gtXhYjAwpJim4i4/plL+tzTnasuwtZHRvIMzEfnJNEBTa20Emv7UIdXzcRRLkMumsTaYmLL+JBPBhcl0VVO1zPjawV2ys+hggyrNgQfYw1Z5DB4ODyYU0rckyiwNEfZiq8QIEZMcCjnl3Mn+pED5SBLGvElKO+OGtQbGkdfAoDZPs/88m01tbx3C+FkcwXe/GUs6+MiG2hgRYjtiKYAJREJGVfmGGs+9LAbkUvvPQJSA5fGPf50ItO7YRDyXtXUOMVYIen7b3PLLirtWuc6LQndvqmqo0inN+17OvscDnh4Lw0FjwZvP+/5Kgfo8LK40aA4EQ3o3ev+iteqIq7wXPrIn07+xWgAAAAABAAH//wAPeJyFlctvG1UUh+/12DPN1B7P3JnYjj2Ox4/MuDHxJH5N3UdaEUQLqBIkfQQioJWQ6AMEQkIqsPGCPwA1otuWSmTBhjtps2ADWbJg3EpIXbGouqSbCraJw7kzNo2dRN1cnXN1ZvT7zuuiMEI7ncizyA0URofRBJpCdbQuIFShYY+GZRrxMDVtih5TwQPHtXDFFSIKoWIbuREBjLH27Ny4MsbVx+uOJThavebgVrNRLAiYx06rXsvhxLgWx9xpfHdrs/ekc2Pl2cpPCVEITQpwbj8VQhfXSq2m+Wxqaq2D73Kne5e3NjHqQNj3CRYlJlgUl/jRNP+2Gs2pNYRQiOnmUaQDqm30KqKiTTWPWjboxnTWpvgxjXo0KrtZXAHt7hwIz0YVcj88JnKlJKi3NPAwLyDwZudSmJSMMJFDYaOkaol6XtESx3Gt1VTytdZJ3DCLeaVhVnCBH1fycHTxFXwPX+l2e3d6H/TufGGmMTLTnbSJUdo00zuBswMO/nl3YLeL/wnu9/limCuD3vC54h5NBVz6Li414AI8Vx3iiosKcQXUbrvhFFiYb++HN4DaF4XzFW0fIN4XDWJ3a3XQoq9V8WiyRmdsatV9xUcHims1JloH0YUa090G3Tro3mC6c01f+YwCPquINr1PTaCP6rVTOOmf0GE2dBc7zWIhji3/5MchSuBHgDbU99RMWt3YUNMZMJmx92YP6NsHx/5/M1yvInpnkIOM3Z8fA3JQ2lW1RFC1KaBPDFXNAHYYvGy73aYZZZ3HifbeuiVZCpwA3oQBs0wGPYJbJfg60xrKEbKiNtTe1adwrpBRwlAuQ3q3VRaX0QmQ9a49BTSCuF1MLfQ6+tinOubRBZuWPNoMevGMT+V41KitO1is3D/tpMcq1JHZqDHGs8DoYGDkxJgKjHROeTCmhZvzPm9pod+ltKm4PN7Dyvvldlpsg8D+4AUJZ3F/JBstZz7cbFRxsaAGV6yX/dkcycWf8eS3QlQea+YLjdm3yrOnrhFpUyKVvFE4lpv4bO3Svx/6F/4xmiDu/RT5iI++lko18mY1oX+5UGKR6kmVjM/Zb76yfHtxy+h/SyQ0lLdpdKy/lWB6szatetQJ8nZ80A2Qt6ift6gJeavU3BO4gtxs/KCtNPVibCtYCWY3SIlSBPKXZALXiIR9oZeJ1AuMyxLpHIy/yO7vSiSE+kZvk0ihJ30HgHfzZtEMmvV58x6dtqns0XTAW7Vdm4HJ04OCp/crOO7rd9SGxQAE/mVA9xRN+kVSMRFF6S9JFGUtthkjBA5tFCWc2l4V43Ex9GmUP3SI37Jjmir9KqlaDJ4S4JB3vuM/jzyH1+8MuoZ+QGzfnvPoJb96cZlWjMcKLfgDwB7E634JTY+asjsPzS5CiVnEWY+KsrsIN5rn3mAPjqmQBxGjcGKB9f9ZxY3mYC2L85CJ2FXIxKKyHk+dg0FHbuEc7D5NzWUX32WxFcWNGRAbvwSx0RmIXVDuYySafluQBmzA/ssqJAMLnli+WIC90Gw4lm85wcp0qjArEDPJJV/sSx4P9ungTpgMw5gVC1XO4uULq0s3v1rqLi0vX/z65vlH50f8T/RHmSPTk5xxWBWOluMT6WiOy+tdvWxlV/XQb3o3c6Ssr+r6I708GsX9/nzp1tKFh0s3v7m4vAy/Hnb/KMOvc1wump6Il48K6mGDy02X9Yd65pa+nQIjk76lWxCkG8NBCP0HQS9IpAAAeJxjYGRgYGBhcCrq214Qz2/zlUGenQEEzr/77oug/zewFbB+AHI5GJhAogBwKQ0qeJxjYGRgYH3/P46BgZ0BBNgKGBgZUAEPAE/7At0AAAB4nGNngAB2IGYjhBsYBAAIYADVAAAAAAAAAAAAAFwAyAEeAaACCgKmAx4DggRmAAAAAQAAAAwAagAEAAAAAAACAAEAAgAWAAABAAChAAAAAHiclZI7bxQxFIWPd/JkUYQChEhIyAVKgdBMskm1QkKrRETpQiLRUczueB/K7HhlOxttg8LvoKPgP9DxFxANDR0tHRWi4NjrPIBEgh1p/dm+vufcawNYFWsQmP6e4jSyQB2fI9cwj++RE9wTjyPP4LYoI89iWbyLPIe6+Bh5Hs9rryMv4GbtW+RF3EhuRa7jbrIbeQkPkjdUETOLnL0Kip4FVvAhco1RXyMnSPEz8gzWxE7kWTwUp5HnsCLeR57HW/El8gJWa58iL+JO7UfkOh4l9yMv4UnyEtvQGGECgwF66MNBooF1bGCL1ELB/TYU+ZBRlvsKQ44Se6jQ4a7hef+fh72Crv25kp+8lNWGmeKoOI5jJLb1aGIGvb6TjfWNLdkqdFvJw4l1amjlXtXRZqRN7lSRylZZyhBqpVFWmTEXgWfUrpi/hZOQXdOd4rKuXOtEWT3k5IArPRzTUU5tHKjecZkTpnVbNOnt6jzN8240GD4xtikvZW56043rPMg/dS+dlOceXoR+WPbJ55Dsekq1lJpnypsMUsYOdCW30o103Ytu/lvh+5RWFLfBjm9/N8hJntPhvx92rnoE/kyHdGasGy754kw36vsVf/lFeBi+0COu+cfgQr42G3CRpeLoZ53gmfe3X6rcKt5oVxnptHR9JS8ehVUd5wvvahN2uqxOOpMXapibI5k7Zwbt4xBSaTfoKBufhAnO/uqNcfK8OTs0OQ6l7JIqFjDhYj5WcjevCnI/1DDiI8j4ndWb/5YzDZWh79yomWXeXj7Nnw70/2TIeFPTrlSh89k1ObOSRVZWZfgF0r/zJQB4nG2JUQuCQBCEd07TTg36fb2IyBaLd3vWaUh/vmSJnvpgmG8YcmS8X3Shf3R7QA4OBUocUKHGER5NNbOOEvwc1txnuWkTRb/aPjimJ5vXabI+3VfOiyS15UWvyezM2xiGOPyuMohOH8O8JiO4Af+FsAGNAEuwCFBYsQEBjlmxRgYrWCGwEFlLsBRSWCGwgFkdsAYrXFhZsBQrAAA=) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAYcAA0AAAAACjQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABwAAAAca8vGTk9TLzIAAAFMAAAARAAAAFZG1VHVY21hcAAAAZAAAAA+AAABQgAP9AdjdnQgAAAB0AAAAAQAAAAEACICiGdhc3AAAAHUAAAACAAAAAj//wADZ2x5ZgAAAdwAAADRAAABEKyikaNoZWFkAAACsAAAAC0AAAA2AtXoA2hoZWEAAALgAAAAHAAAACQHngNFaG10eAAAAvwAAAAQAAAAEAwAACJsb2NhAAADDAAAAAoAAAAKALIAVG1heHAAAAMYAAAAHwAAACABEAB2bmFtZQAAAzgAAALBAAAFu3I9x/Nwb3N0AAAF/AAAAB0AAAAvaoFvbwAAAAEAAAAAzBdyYwAAAADP2IQvAAAAAM/bz7t4nGNgZGFgnMDAysDB1Ml0hoGBoR9CM75mMGLkYGBgYmBlZsAKAtJcUxgcPsR8iGF2+O/AEMPsznAYKMwIkgMA5REMOXicY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChED+h5j//yEk/3KoSgZGNgYYk4GRCUgwMaACRoZhDwCs7QgGAAAAIgKIAAAAAf//AAJ4nHWMMQrCQBBF/0zWrCCIKUQsTDCL2EXMohYGSSmorScInsRGL2DOYJe0Ntp7BK+gJ1BxF1stZvjz/v8DRghQzEc4kIgKwiAppcA9LtzKLSkdNhKFY3HF4lK69ExKslx7Xa+vPRVS43G98vG1DnkDMIBUgFN0MDXflU8tbaZOUkXUH0+U27RoRpOIyCKjbMCVejwypzJJG4jIwb43rfl6wbwanocrJm9XFYfskuVC5K/TPyczNU7b84CXcbxks1Un6H6tLH9vf2LRnn8Ax7A5WQAAAHicY2BkYGAA4teL1+yI57f5ysDNwgAC529f0kOmWRiYVgEpDgYmEA8AUzEKsQAAAHicY2BkYGB2+O/AEMPCAAJAkpEBFbAAADgKAe0EAAAiAAAAAAQAAAAEAAAAAAAAKgAqACoAiAAAeJxjYGRgYGBhsGFgYgABEMkFhAwM/xn0QAIAD6YBhwB4nI1Ty07cMBS9QwKlQapQW3VXySvEqDCZGbGaHULiIQ1FKgjWMxknMfLEke2A+IJu+wntrt/QbVf9gG75jK577Lg8K1qQPCfnnnt8fX1NRC/pmjrk/zprC+8D7tBy9DHgBXoWfQ44Av8t4Bj4Z8CLtBL9CniJluPXASf0Lm4CXqFX8Q84dOLnMB17N4c7tBo1AS/Qi+hTwBH4rwHHwN8DXqQ30XXAS7QaLwSc0Gn8NuAVWou/gFmnjLrEaEh9GmDdDGgL3B4JsrRPDU2hTOiMSuJUIdKQQayiAth69r6akSSFqIJuA19TrzCIaY8sIoxyrNIrL//pw7A2iMygkX5vDj+G+kuoLdX4GlGK/8Lnlz6/h9MpmoO9rafrz7ILXEHHaAx95s9lsI7AHNMBWEZHULnfAXwG9/ZqdzLI08iuwRloXE8kfhXYAvE23+23DU3t626rbs8/8adv+9DWknsHp3E17oCf+Z48rvEQNZ78paYM38qfk3v/u3l3u3GXN2Dmvmvpf1Srwk3pB/VSsp512bA/GG5i2WJ7wu430yQ5K3nFGiOqgtmSB5pJVSizwaacmUZzZhXLlZTq8qGGFY2YcSkqbth6aW1tRmlaCFs2016m5qn36SbJrqosG4uMV4aP2PHBmB3tjtmgN2izkGQyLWprekbIntJFing32a5rKWCN/SdSoga45EJykyQ7asZvHQ8PTm6cslIpwyeyjbVltNikc2HTR7YKh9LBl9DADC0U/jLcBZDKrMhUBfQBvXRzLtFtjU9eNHKin0x5InTqb8lNpfKv1s1xHzTXRqgKzek/mb7nB8RZTCDhGEX3kK/8Q75AmUM/eLkfA+0Hi908Kx4eNsMgudg5GLdRD7a84npi+YxNr5i5KIbW5izXas7cHXIMAau1OueZhfj+cOcP3P8MNIWLyYOBuxL6DRylJ4cAAAB4nGNgYoAALjDJyIAOWMCiTIxMLDmZedkABtIBygAAAA==) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>Bs2</title></head><body><article class="markdown-body"><h2 id="iii-css"><a name="user-content-iii-css" href="#iii-css" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>III-CSS</h2>
+<p><a href="https://getbootstrap.com/docs/3.3/css/">LINK</a></p>
+<p><strong>Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system.</strong></p>
+<h3 id="a-overview"><a name="user-content-a-overview" href="#a-overview" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>A-Overview</h3>
+<p>Get the lowdown on the key pieces of Bootstrap&rsquo;s infrastructure, including our approach to better, faster, stronger web development.</p>
+<h4 id="1-html5-doctype"><a name="user-content-1-html5-doctype" href="#1-html5-doctype" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1-HTML5 doctype</h4>
+<p>Bootstrap makes use of certain HTML elements and CSS properties that require the use of the HTML5 doctype. Include it at the beginning of all your projects.</p>
+<pre><code>```html
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  ...
+&lt;/html&gt;
+```
+</code></pre>
+<h4 id="2-mobile-first"><a name="user-content-2-mobile-first" href="#2-mobile-first" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2-Mobile first</h4>
+<p>With Bootstrap 2, we added optional mobile friendly styles for key aspects of the framework. With Bootstrap 3, we&rsquo;ve rewritten the project to be mobile friendly from the start. Instead of adding on optional mobile styles, they&rsquo;re baked right into the core. In fact, <strong>Bootstrap is mobile first. Mobile first</strong> styles can be found throughout the entire library instead of in separate files.</p>
+<p>To ensure proper rendering and touch zooming, <strong>add the viewport meta tag</strong> to your <code>&lt;head&gt;</code>.</p>
+<pre><code>```html
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+```
+</code></pre>
+<p>You can disable zooming capabilities on mobile devices by adding user-scalable=no to the viewport meta tag. This disables zooming, meaning users are only able to scroll, and results in your site feeling a bit more like a native application. Overall, we don&rsquo;t recommend this on every site, so use caution!</p>
+<pre><code>```html
+&lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"&gt;
+```
+</code></pre>
+<h4 id="3-typography-and-links"><a name="user-content-3-typography-and-links" href="#3-typography-and-links" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3-Typography and links</h4>
+<p>Bootstrap sets basic global display, typography, and link styles. Specifically, we:</p>
+<ul>
+<li>Set <code>background-color: #fff;</code> on the body</li>
+<li>Use the <code>@font-family-base</code>, <code>@font-size-base</code>, and <code>@line-height-base</code> attributes as our typographic base</li>
+<li>Set the global link color via <code>@link-color</code> and apply link underlines only on <code>:hover</code></li>
+</ul>
+<p>These styles can be found within <code>scaffolding.less</code>.</p>
+<h4 id="4-normalizecss"><a name="user-content-4-normalizecss" href="#4-normalizecss" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4-Normalize.css</h4>
+<p>For improved cross-browser rendering, we use <a href="http://necolas.github.io/normalize.css/">Normalize.css</a>, a project by <a href="https://twitter.com/necolas">Nicolas Gallagher</a> and <a href="https://twitter.com/jon_neal">Jonathan Neal</a>.</p>
+<h4 id="5-containers"><a name="user-content-5-containers" href="#5-containers" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>5-Containers</h4>
+<p>Bootstrap requires a containing element to wrap site contents and house our grid system. You may choose one of two containers to use in your projects. Note that, due to padding and more, neither container is nestable.</p>
+<p>Use <code>.container</code> for a responsive fixed width container.</p>
+<pre><code>```html
+&lt;div class="container"&gt;
+  ...
+&lt;/div&gt;
+```
+</code></pre>
+<p>Use <code>.container-fluid</code> for a full width container, spanning the entire width of your viewport.</p>
+<pre><code>```html
+&lt;div class="container-fluid"&gt;
+  ...
+&lt;/div&gt;
+```
+</code></pre>
+<h3 id="b-grid-system"><a name="user-content-b-grid-system" href="#b-grid-system" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>B-Grid system</h3>
+<p><strong>Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes <a href="https://getbootstrap.com/docs/3.3/css/#grid-example-basic">predefined classes</a> for easy layout options, as well as powerful <a href="https://getbootstrap.com/docs/3.3/css/#grid-less">mixins for generating more semantic layouts</a>.</strong></p>
+<h4 id="1-introduction"><a name="user-content-1-introduction" href="#1-introduction" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1-Introduction</h4>
+<p>Grid systems are used for creating page layouts through a series of rows and columns that house your content. Here&rsquo;s how the Bootstrap grid system works:</p>
+<ul>
+<li>Rows must be placed within a <code>.container</code> (fixed-width) or <code>.container-fluid</code> (full-width) for proper alignment and padding.</li>
+<li>Use rows to create horizontal groups of columns.</li>
+<li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
+<li>Predefined grid classes like <code>.row</code> and <code>.col-xs-4</code> are available for quickly making grid layouts. Less mixins can also be used for more semantic layouts.</li>
+<li>Columns create gutters (gaps between column content) via <code>padding</code>. That padding is offset in rows for the first and last column via negative margin on <code>.rows</code>.</li>
+<li>The negative margin is why the examples below are outdented. It&rsquo;s so that content within grid columns is lined up with non-grid content.</li>
+<li>Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three <code>.col-xs-4</code>.</li>
+<li>If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.</li>
+<li>Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, e.g. applying any <code>.col-md-*</code> class to an element will not only affect its styling on medium devices but also on large devices if a <code>.col-lg-*</code> class is not present.</li>
+</ul>
+<p>Look to the examples for applying these principles to your code.</p>
+<h4 id="2-media-queries"><a name="user-content-2-media-queries" href="#2-media-queries" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2-Media queries</h4>
+<p>We use the following media queries in our Less files to create the key breakpoints in our grid system.</p>
+<pre><code>```css
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+```
+</code></pre>
+<p>We occasionally expand on these media queries to include a max-width to limit CSS to a narrower set of devices.</p>
+<pre><code>```css
+@media (max-width: @screen-xs-max) { ... }
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+@media (min-width: @screen-lg-min) { ... }
+```
+</code></pre>
+<h4 id="3-grid-options"><a name="user-content-3-grid-options" href="#3-grid-options" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3-Grid options</h4>
+<p>See how aspects of the Bootstrap grid system work across multiple devices with a handy table.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Extra small devices Phones (&lt;768px)</th>
+<th>Small devices Tablets (≥768px)</th>
+<th>Medium devices Desktops (≥992px)</th>
+<th>Large devices Desktops (≥1200px)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Grid behavior</td>
+<td>Horizontal at all times</td>
+<td>Collapsed to start, horizontal above breakpoints</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Container width</td>
+<td>None (auto)</td>
+<td>750px</td>
+<td>970px</td>
+<td>1170px</td>
+</tr>
+<tr>
+<td>Class prefix</td>
+<td>col-xs-</td>
+<td>.col-sm-</td>
+<td>col-md-</td>
+<td>.col-lg-</td>
+</tr>
+<tr>
+<td># of columns</td>
+<td>12</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Column width</td>
+<td>Auto</td>
+<td>~62px</td>
+<td>~81px</td>
+<td>~97px</td>
+</tr>
+<tr>
+<td>Gutter width</td>
+<td>30px (15px on each side of a column)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Nestable</td>
+<td>Yes</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Offsets</td>
+<td>Yes</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Column ordering</td>
+<td>Yes</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="4-example-stacked-to-horizontal"><a name="user-content-4-example-stacked-to-horizontal" href="#4-example-stacked-to-horizontal" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4-Example: Stacked-to-horizontal</h4>
+<p>Using a single set of .col-md-* grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any <code>.row</code>.</p>
+<table>
+<thead>
+<tr>
+<th>.col-md-1</th>
+<th>.col-md-1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.col-md-4</td>
+<td>.col-md-4</td>
+</tr>
+<tr>
+<td>.col-md-6</td>
+<td>.col-md-6</td>
+</tr>
+</tbody>
+</table>
+<pre><code>```html
+&lt;div class="row"&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-md-8"&gt;.col-md-8&lt;/div&gt;
+  &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+  &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+  &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-md-6"&gt;.col-md-6&lt;/div&gt;
+  &lt;div class="col-md-6"&gt;.col-md-6&lt;/div&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<h4 id="5-example-fluid-container"><a name="user-content-5-example-fluid-container" href="#5-example-fluid-container" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>5-Example: Fluid container</h4>
+<p>Turn any fixed-width grid layout into a full-width layout by changing your outermost <code>.container</code> to <code>.container-fluid</code>.</p>
+<pre><code>```html
+&lt;div class="container-fluid"&gt;
+  &lt;div class="row"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<h4 id="6-example-mobile-and-desktop"><a name="user-content-6-example-mobile-and-desktop" href="#6-example-mobile-and-desktop" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>6-Example: Mobile and desktop</h4>
+<p>Don&rsquo;t want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding <code>.col-xs-* .col-md-*</code> to your columns. See the example below for a better idea of how it all works.</p>
+<table>
+<thead>
+<tr>
+<th>.col-xs-12 .col-md-8</th>
+<th>.col-xs-6 .col-md-4</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.col-xs-6</td>
+<td>.col-xs-6</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<pre><code>```html
+&lt;!-- Stack the columns on mobile by making one full-width and the other half-width --&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-xs-12 col-md-8"&gt;.col-xs-12 .col-md-8&lt;/div&gt;
+  &lt;div class="col-xs-6 col-md-4"&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop --&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-xs-6 col-md-4"&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+  &lt;div class="col-xs-6 col-md-4"&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+  &lt;div class="col-xs-6 col-md-4"&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Columns are always 50% wide, on mobile and desktop --&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-xs-6"&gt;.col-xs-6&lt;/div&gt;
+  &lt;div class="col-xs-6"&gt;.col-xs-6&lt;/div&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<h4 id="7-example-mobile-tablet-desktop"><a name="user-content-7-example-mobile-tablet-desktop" href="#7-example-mobile-tablet-desktop" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>7-Example: Mobile, tablet, desktop</h4>
+<p>Build on the previous example by creating even more dynamic and powerful layouts with tablet <code>.col-sm-*</code> classes.</p>
+<table>
+<thead>
+<tr>
+<th>.col-xs-12 .col-sm-6 .col-md-8</th>
+<th>.col-xs-6 .col-md-4</th>
+<th></th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+<pre><code>```html
+&lt;div class="row"&gt;
+  &lt;div class="col-xs-12 col-sm-6 col-md-8"&gt;.col-xs-12 .col-sm-6 .col-md-8&lt;/div&gt;
+  &lt;div class="col-xs-6 col-md-4"&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-xs-6 col-sm-4"&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
+  &lt;div class="col-xs-6 col-sm-4"&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
+  &lt;!-- Optional: clear the XS cols if their content doesn't match in height --&gt;
+  &lt;div class="clearfix visible-xs-block"&gt;&lt;/div&gt;
+  &lt;div class="col-xs-6 col-sm-4"&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<h4 id="8-example-column-wrapping"><a name="user-content-8-example-column-wrapping" href="#8-example-column-wrapping" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>8-Example: Column wrapping</h4>
+<p>If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.<br />
+| .col-xs-9 |</p>
+<p>| .col-xs-4 Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit. | .col-xs-6 Subsequent columns continue along the new line. |</p>
+<pre><code>```html
+&lt;div class="row"&gt;
+  &lt;div class="col-xs-9"&gt;.col-xs-9&lt;/div&gt;
+  &lt;div class="col-xs-4"&gt;.col-xs-4&lt;br&gt;Since 9 + 4 = 13 &amp;gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.&lt;/div&gt;
+  &lt;div class="col-xs-6"&gt;.col-xs-6&lt;br&gt;Subsequent columns continue along the new line.&lt;/div&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<h4 id="9-responsive-column-resets"><a name="user-content-9-responsive-column-resets" href="#9-responsive-column-resets" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>9-Responsive column resets</h4>
+<p>With the four tiers of grids available you&rsquo;re bound to run into issues where, at certain breakpoints, your columns don&rsquo;t clear quite right as one is taller than the other. To fix that, use a combination of a <code>.clearfix</code> and our <a href="https://getbootstrap.com/docs/3.3/css/#responsive-utilities">responsive utility classes</a>.</p>
+<p>| .col-xs-6 .col-sm-3 Resize your viewport or check it out on your phone for an example. | .col-xs-6 .col-sm-3 | .col-xs-6 .col-sm-3 | .col-xs-6 .col-sm-3 |</p>
+<pre><code>```html
+&lt;div class="row"&gt;
+  &lt;div class="col-xs-6 col-sm-3"&gt;.col-xs-6 .col-sm-3&lt;/div&gt;
+  &lt;div class="col-xs-6 col-sm-3"&gt;.col-xs-6 .col-sm-3&lt;/div&gt;
+  &lt;!-- Add the extra clearfix for only the required viewport --&gt;
+  &lt;div class="clearfix visible-xs-block"&gt;&lt;/div&gt;
+  &lt;div class="col-xs-6 col-sm-3"&gt;.col-xs-6 .col-sm-3&lt;/div&gt;
+  &lt;div class="col-xs-6 col-sm-3"&gt;.col-xs-6 .col-sm-3&lt;/div&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<p>In addition to column clearing at responsive breakpoints, you may need to <strong>reset offsets, pushes, or pulls</strong>. See this in action in <a href="https://getbootstrap.com/docs/3.3/examples/grid/">the grid example</a>.</p>
+<pre><code>```html
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-5 col-md-6"&gt;.col-sm-5 .col-md-6&lt;/div&gt;
+  &lt;div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0"&gt;.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-6 col-md-5 col-lg-6"&gt;.col-sm-6 .col-md-5 .col-lg-6&lt;/div&gt;
+  &lt;div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0"&gt;.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0&lt;/div&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<h4 id="10-offsetting-columns"><a name="user-content-10-offsetting-columns" href="#10-offsetting-columns" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>10-Offsetting columns</h4>
+<p>Move columns to the right using <code>.col-md-offset-*</code> classes. These classes increase the left margin of a column by * columns. For example, <code>.col-md-offset-4</code> moves <code>.col-md-4</code> over four columns.</p>
+<table>
+<thead>
+<tr>
+<th>.col-md-4</th>
+<th></th>
+<th>.col-md-4 .col-md-offset-4</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>.col-md-6 .col-md-offset-3</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<pre><code>```html
+&lt;div class="row"&gt;
+  &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+  &lt;div class="col-md-4 col-md-offset-4"&gt;.col-md-4 .col-md-offset-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-md-3 col-md-offset-3"&gt;.col-md-3 .col-md-offset-3&lt;/div&gt;
+  &lt;div class="col-md-3 col-md-offset-3"&gt;.col-md-3 .col-md-offset-3&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-md-6 col-md-offset-3"&gt;.col-md-6 .col-md-offset-3&lt;/div&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<p>You can also override offsets from lower grid tiers with <code>.col-*-offset-0</code> classes.</p>
+<pre><code>```html
+&lt;div class="row"&gt;
+  &lt;div class="col-xs-6 col-sm-4"&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xs-6 col-sm-4"&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0"&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<h4 id="11-nesting-column"><a name="user-content-11-nesting-column" href="#11-nesting-column" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>11-Nesting column</h4>
+<p>To nest your content with the default grid, add a new <code>.row</code> and set of <code>.col-sm-*</code> columns within an existing <code>.col-sm-*</code> column. Nested rows should include a set of columns that add up to 12 or fewer (it is not required that you use all 12 available columns).</p>
+<table>
+<thead>
+<tr>
+<th>Level 1: .col-sm-9</th>
+<th></th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+<pre><code>```html
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-9"&gt;
+    Level 1: .col-sm-9
+    &lt;div class="row"&gt;
+      &lt;div class="col-xs-8 col-sm-6"&gt;
+        Level 2: .col-xs-8 .col-sm-6
+      &lt;/div&gt;
+      &lt;div class="col-xs-4 col-sm-6"&gt;
+        Level 2: .col-xs-4 .col-sm-6
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<h4 id="12-column-ordering"><a name="user-content-12-column-ordering" href="#12-column-ordering" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>12-Column ordering</h4>
+<p>Easily change the order of our built-in grid columns with <code>.col-md-push-*</code> and <code>.col-md-pull-*</code> modifier classes.</p>
+<p>| .col-md-9 .col-md-push-3 | .col-md-3 .col-md-pull-9 |</p>
+<pre><code>```html
+&lt;div class="row"&gt;
+  &lt;div class="col-md-9 col-md-push-3"&gt;.col-md-9 .col-md-push-3&lt;/div&gt;
+  &lt;div class="col-md-3 col-md-pull-9"&gt;.col-md-3 .col-md-pull-9&lt;/div&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<h4 id="13-less-mixins-and-variables"><a name="user-content-13-less-mixins-and-variables" href="#13-less-mixins-and-variables" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>13-Less mixins and variables</h4>
+<p>In addition to prebuilt grid classes for fast layouts, Bootstrap includes Less variables and mixins for quickly generating your own simple, semantic layouts.</p>
+<h5 id="a-variables"><a name="user-content-a-variables" href="#a-variables" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>a-Variables</h5>
+<p>Variables determine the number of columns, the gutter width, and the media query point at which to begin floating columns. We use these to generate the predefined grid classes documented above, as well as for the custom mixins listed below.</p>
+<pre><code>```css
+@grid-columns:              12;
+@grid-gutter-width:         30px;
+@grid-float-breakpoint:     768px;
+```
+</code></pre>
+<h5 id="b-mixins"><a name="user-content-b-mixins" href="#b-mixins" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>b-Mixins</h5>
+<p>Mixins are used in conjunction with the grid variables to generate semantic CSS for individual grid columns.</p>
+<pre><code>```css
+// Creates a wrapper for a series of columns
+.make-row(@gutter: @grid-gutter-width) {
+  // Then clear the floated columns
+  .clearfix();
+  @media (min-width: @screen-sm-min) {
+    margin-left:  (@gutter / -2);
+    margin-right: (@gutter / -2);
+  }
+  // Negative margin nested rows out to align the content of columns
+  .row {
+    margin-left:  (@gutter / -2);
+    margin-right: (@gutter / -2);
+  }
+}
+// Generate the extra small columns
+.make-xs-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Inner gutter via padding
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+  // Calculate width based on number of columns available
+  @media (min-width: @grid-float-breakpoint) {
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}
+// Generate the small columns
+.make-sm-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Inner gutter via padding
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+  // Calculate width based on number of columns available
+  @media (min-width: @screen-sm-min) {
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}
+// Generate the small column offsets
+.make-sm-column-offset(@columns) {
+  @media (min-width: @screen-sm-min) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+.make-sm-column-push(@columns) {
+  @media (min-width: @screen-sm-min) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+.make-sm-column-pull(@columns) {
+  @media (min-width: @screen-sm-min) {
+    right: percentage((@columns / @grid-columns));
+  }
+}
+// Generate the medium columns
+.make-md-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Inner gutter via padding
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+  // Calculate width based on number of columns available
+  @media (min-width: @screen-md-min) {
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}
+// Generate the medium column offsets
+.make-md-column-offset(@columns) {
+  @media (min-width: @screen-md-min) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+.make-md-column-push(@columns) {
+  @media (min-width: @screen-md-min) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+.make-md-column-pull(@columns) {
+  @media (min-width: @screen-md-min) {
+    right: percentage((@columns / @grid-columns));
+  }
+}
+// Generate the large columns
+.make-lg-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Inner gutter via padding
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+  // Calculate width based on number of columns available
+  @media (min-width: @screen-lg-min) {
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}
+// Generate the large column offsets
+.make-lg-column-offset(@columns) {
+  @media (min-width: @screen-lg-min) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+.make-lg-column-push(@columns) {
+  @media (min-width: @screen-lg-min) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+.make-lg-column-pull(@columns) {
+  @media (min-width: @screen-lg-min) {
+    right: percentage((@columns / @grid-columns));
+  }
+}
+```
+</code></pre>
+<h5 id="c-example-usage"><a name="user-content-c-example-usage" href="#c-example-usage" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>c-Example usage</h5>
+<p>You can modify the variables to your own custom values, or just use the mixins with their default values. Here&rsquo;s an example of using the default settings to create a two-column layout with a gap between.</p>
+<pre><code>```css
+.wrapper {
+  .make-row();
+}
+.content-main {
+  .make-lg-column(8);
+}
+.content-secondary {
+  .make-lg-column(3);
+  .make-lg-column-offset(1);
+}
+```
+
+```html
+&lt;div class="wrapper"&gt;
+  &lt;div class="content-main"&gt;...&lt;/div&gt;
+  &lt;div class="content-secondary"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<h3 id="c-typography"><a name="user-content-c-typography" href="#c-typography" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>C-Typography</h3>
+<h4 id="1-headings"><a name="user-content-1-headings" href="#1-headings" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1-Headings</h4>
+<p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available. <code>.h1</code> through <code>.h6</code> classes are also available, for when you want to match the font styling of a heading but still want your text to be displayed inline.</p>
+<pre><code>Example
+# h1. Bootstrap heading
+    *Semibold 36px*
+## h2. Bootstrap heading
+    *Semibold 30px*
+### h3. Bootstrap heading
+    *Semibold 24px*
+#### h4. Bootstrap heading
+    *Semibold 18px*
+##### h5. Bootstrap heading
+    *Semibold 14px*
+###### h6. Bootstrap heading
+    *Semibold 12px*
+</code></pre>
+<pre><code class="html">&lt;h1&gt;h1. Bootstrap heading&lt;/h1&gt;
+&lt;h2&gt;h2. Bootstrap heading&lt;/h2&gt;
+&lt;h3&gt;h3. Bootstrap heading&lt;/h3&gt;
+&lt;h4&gt;h4. Bootstrap heading&lt;/h4&gt;
+&lt;h5&gt;h5. Bootstrap heading&lt;/h5&gt;
+&lt;h6&gt;h6. Bootstrap heading&lt;/h6&gt;
+</code></pre>
+
+<p>Create lighter, secondary text in any heading with a generic <code>&lt;small&gt;</code> tag or the <code>.small</code> class.</p>
+<pre><code>Example
+# h1. Bootstrap heading Secondary text
+## h2. Bootstrap heading Secondary text
+### h3. Bootstrap heading Secondary text
+#### h4. Bootstrap heading Secondary text
+##### h5. Bootstrap heading Secondary text
+######h6. Bootstrap heading Secondary text
+
+```html
+&lt;h1&gt;h1. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h1&gt;
+&lt;h2&gt;h2. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h2&gt;
+&lt;h3&gt;h3. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h3&gt;
+&lt;h4&gt;h4. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h4&gt;
+&lt;h5&gt;h5. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h5&gt;
+&lt;h6&gt;h6. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h6&gt;
+```
+</code></pre>
+<h4 id="2-body-copy"><a name="user-content-2-body-copy" href="#2-body-copy" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2-Body copy</h4>
+<p>Bootstrap&rsquo;s global default <code>font-size</code> is 14px, with a <code>line-height</code> of 1.428. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their computed line-height (10px by default).</p>
+<pre><code>Example
+Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
+
+Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+
+
+Example
+&lt;p&gt;...&lt;/p&gt;
+```
+</code></pre>
+<h5 id="a-lead-body-copy"><a name="user-content-a-lead-body-copy" href="#a-lead-body-copy" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>a-Lead body copy</h5>
+<p>Make a paragraph stand out by adding <code>.lead</code>.</p>
+<pre><code>Example
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+
+```html
+&lt;p class="lead"&gt;...&lt;/p&gt;
+```
+</code></pre>
+<h5 id="b-built-with-less"><a name="user-content-b-built-with-less" href="#b-built-with-less" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>b-Built with Less</h5>
+<p>The typographic scale is based on two Less variables in <strong>variables.less</strong>: <code>@font-size-base</code> and <code>@line-height</code>-base. The first is the base font-size used throughout and the second is the base line-height. We use those variables and some simple math to create the margins, paddings, and line-heights of all our type and more. Customize them and Bootstrap adapts.</p>
+<h4 id="3-inline-text-elements"><a name="user-content-3-inline-text-elements" href="#3-inline-text-elements" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3-Inline text elements</h4>
+<h5 id="a-marked-text"><a name="user-content-a-marked-text" href="#a-marked-text" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>a-Marked text</h5>
+<p>For highlighting a run of text due to its relevance in another context, use the <code>&lt;mark&gt;</code> tag.</p>
+<pre><code>Example
+You can use the mark tag to highlight text.
+
+```html   
+You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.
+</code></pre>
+<h5 id="b-deleted-text"><a name="user-content-b-deleted-text" href="#b-deleted-text" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>b-Deleted text</h5>
+<p>For indicating blocks of text that have been deleted use the <del> tag.</p>
+<pre><code>Example
+This line of text is meant to be treated as deleted text.
+
+```html   
+&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;
+```
+</code></pre>
+<h5 id="c-strikethrough-text"><a name="user-content-c-strikethrough-text" href="#c-strikethrough-text" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>c-Strikethrough text</h5>
+<p>For indicating blocks of text that are no longer relevant use the <s> tag.</p>
+<pre><code>Example
+This line of text is meant to be treated as no longer accurate.
+
+```html  
+&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;
+```
+</code></pre>
+<h5 id="d-inserted-text"><a name="user-content-d-inserted-text" href="#d-inserted-text" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>d-Inserted text</h5>
+<p>For indicating additions to the document use the <ins> tag.</p>
+<pre><code>Example
+This line of text is meant to be treated as an addition to the document.
+
+```html
+&lt;ins&gt;This line of text is meant to be treated as an addition to the document.&lt;/ins&gt;
+```
+</code></pre>
+<h5 id="e-underlined-text"><a name="user-content-e-underlined-text" href="#e-underlined-text" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>e-Underlined text</h5>
+<p>To underline text use the <u> tag.</p>
+<pre><code>Example
+This line of text will render as underlined
+
+```html
+&lt;u&gt;This line of text will render as underlined&lt;/u&gt;
+```
+</code></pre>
+<p>Make use of HTML&rsquo;s default emphasis tags with lightweight styles.</p>
+<h5 id="f-small-text"><a name="user-content-f-small-text" href="#f-small-text" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>f-Small text</h5>
+<p>For de-emphasizing inline or blocks of text, use the <code>&lt;small&gt;</code> tag to set text at 85% the size of the parent. Heading elements receive their own <code>font-size</code> for nested <code>&lt;small&gt;</code> elements.</p>
+<p>You may alternatively use an inline element with <code>.small</code> in place of any <code>&lt;small&gt;</code>.</p>
+<pre><code>Example
+This line of text is meant to be treated as fine print.
+
+```html
+&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;
+```
+</code></pre>
+<h5 id="g-bold"><a name="user-content-g-bold" href="#g-bold" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>g-Bold</h5>
+<p>For emphasizing a snippet of text with a heavier font-weight.</p>
+<pre><code>Example
+The following snippet of text is rendered as bold text.
+
+```html
+&lt;strong&gt;rendered as bold text&lt;/strong&gt;
+```
+</code></pre>
+<h5 id="h-italics"><a name="user-content-h-italics" href="#h-italics" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>h-Italics</h5>
+<p>For emphasizing a snippet of text with italics.</p>
+<pre><code>Example
+The following snippet of text is rendered as italicized text.
+
+ ```html
+&lt;em&gt;rendered as italicized text&lt;/em&gt;
+```
+</code></pre>
+<blockquote>
+<p><strong>Alternate elements</strong></p>
+<blockquote>
+<p>Feel free to use <b> and <i> in HTML5. <b> is meant to highlight words or phrases without conveying additional importance while <i> is mostly for voice, technical terms, etc.</p>
+</blockquote>
+</blockquote>
+<h4 id="4-alignment-classes"><a name="user-content-4-alignment-classes" href="#4-alignment-classes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4-Alignment classes</h4>
+<p>Easily realign text to components with text alignment classes.</p>
+<p>Example<br />
+<img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;p class="text-left"&gt;Left aligned text.&lt;/p&gt;
+&lt;p class="text-center"&gt;Center aligned text.&lt;/p&gt;
+&lt;p class="text-right"&gt;Right aligned text.&lt;/p&gt;
+&lt;p class="text-justify"&gt;Justified text.&lt;/p&gt;
+&lt;p class="text-nowrap"&gt;No wrap text.&lt;/p&gt;
+```
+</code></pre>
+<h4 id="5-transformation-classes"><a name="user-content-5-transformation-classes" href="#5-transformation-classes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>5-Transformation classes</h4>
+<p>Transform text in components with text capitalization classes.</p>
+<pre><code>Example
+Lowercased text.
+UPPERCASE TEXT.
+Capitalized text.
+
+```html
+&lt;p class="text-lowercase"&gt;Lowercased text.&lt;/p&gt;
+&lt;p class="text-uppercase"&gt;Uppercased text.&lt;/p&gt;
+&lt;p class="text-capitalize"&gt;Capitalized text.&lt;/p&gt;
+```
+</code></pre>
+<h4 id="6-abbreviations"><a name="user-content-6-abbreviations" href="#6-abbreviations" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>6-Abbreviations</h4>
+<p>Stylized implementation of HTML&rsquo;s <code>&lt;abbr&gt;</code> element for abbreviations and acronyms to show the expanded version on hover. Abbreviations with a <code>title</code> attribute have a light dotted bottom border and a help cursor on hover, providing additional context on hover and to users of assistive technologies.</p>
+<h5 id="a-basic-abbreviation"><a name="user-content-a-basic-abbreviation" href="#a-basic-abbreviation" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>a-Basic abbreviation</h5>
+<pre><code>Example
+An abbreviation of the word attribute is attr.
+
+```html
+&lt;abbr title="attribute"&gt;attr&lt;/abbr&gt;
+```
+</code></pre>
+<h6 id="initialism"><a name="user-content-initialism" href="#initialism" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Initialism</h6>
+<p>Add <code>.initialism</code> to an abbreviation for a slightly smaller font-size.</p>
+<pre><code>Example
+HTML is the best thing since sliced bread.
+
+```html
+&lt;abbr title="HyperText Markup Language" class="initialism"&gt;HTML&lt;/abbr&gt;
+```
+</code></pre>
+<h4 id="7-addresses"><a name="user-content-7-addresses" href="#7-addresses" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>7-Addresses</h4>
+<p>Present contact information for the nearest ancestor or the entire body of work. Preserve formatting by ending all lines with <code>&lt;br&gt;</code>.</p>
+<pre><code>Example
+Twitter, Inc.
+1355 Market Street, Suite 900
+San Francisco, CA 94103
+P: (123) 456-7890
+Full Name
+first.last@example.com
+
+```html
+&lt;address&gt;
+  &lt;strong&gt;Twitter, Inc.&lt;/strong&gt;&lt;br&gt;
+  1355 Market Street, Suite 900&lt;br&gt;
+  San Francisco, CA 94103&lt;br&gt;
+  &lt;abbr title="Phone"&gt;P:&lt;/abbr&gt; (123) 456-7890
+&lt;/address&gt;
+&lt;address&gt;
+  &lt;strong&gt;Full Name&lt;/strong&gt;&lt;br&gt;
+  &lt;a href="mailto:#"&gt;first.last@example.com&lt;/a&gt;
+&lt;/address&gt;
+```
+</code></pre>
+<h4 id="8-blockquotes"><a name="user-content-8-blockquotes" href="#8-blockquotes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>8-Blockquotes</h4>
+<p>For quoting blocks of content from another source within your document.</p>
+<h5 id="a-default-blockquote"><a name="user-content-a-default-blockquote" href="#a-default-blockquote" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>a-Default blockquote</h5>
+<p>Wrap <code>&lt;blockquote&gt;</code> around any HTML as the quote. For straight quotes, we recommend a <code>&lt;p&gt;</code>.</p>
+<blockquote>
+<p>Example</p>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+</blockquote>
+</blockquote>
+<pre><code>```html
+&lt;blockquote&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+&lt;/blockquote&gt;
+```
+</code></pre>
+<h5 id="b-blockquote-options"><a name="user-content-b-blockquote-options" href="#b-blockquote-options" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>b-Blockquote options</h5>
+<p>Style and content changes for simple variations on a standard <code>&lt;blockquote&gt;</code>.</p>
+<h6 id="i-naming-a-source"><a name="user-content-i-naming-a-source" href="#i-naming-a-source" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>i-Naming a source</h6>
+<p>Add a <code>&lt;footer&gt;</code> for identifying the source. Wrap the name of the source work in <code>&lt;cite&gt;</code>.</p>
+<blockquote>
+<p>Exaple<br />
+    Lorem ipsum dolor sit amet, consecte  tur adipiscing elit. Integer posuere erat a ante.<br />
+    Someone famous in Source Title</p>
+</blockquote>
+<pre><code>```html
+&lt;blockquote&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+  &lt;footer&gt;Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;
+```
+</code></pre>
+<h6 id="ii-alternate-displays"><a name="user-content-ii-alternate-displays" href="#ii-alternate-displays" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>ii-Alternate displays</h6>
+<p>Add <code>.blockquote-reverse</code> for a blockquote with right-aligned content.</p>
+<pre><code>Example
+ExapleLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+Someone famous in Source Title
+
+```html
+&lt;blockquote class="blockquote-reverse"&gt;
+  ...
+&lt;/blockquote&gt;
+```
+</code></pre>
+<h4 id="9-lists"><a name="user-content-9-lists" href="#9-lists" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>9-Lists</h4>
+<h5 id="a-unordered"><a name="user-content-a-unordered" href="#a-unordered" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>a-Unordered</h5>
+<p>A list of items in which the order does not explicitly matter.</p>
+<p>Example<br />
+<em> Lorem ipsum dolor sit amet<br />
+</em> Consectetur adipiscing elit<br />
+<em> Integer molestie lorem at massa<br />
+</em> Facilisis in pretium nisl aliquet<br />
+<em> Nulla volutpat aliquam velit<br />
+  * Phasellus iaculis neque<br />
+  * Purus sodales ultricies<br />
+  * Vestibulum laoreet porttitor sem<br />
+  * Ac tristique libero volutpat at<br />
+</em> Faucibus porta lacus fringilla vel<br />
+<em> Aenean sit amet erat nunc<br />
+</em> Eget porttitor lorem*</p>
+<pre><code class="html">&lt;ul&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<h5 id="b-ordered"><a name="user-content-b-ordered" href="#b-ordered" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>b-Ordered</h5>
+<p>A list of items in which the order does explicitly matter.</p>
+<p>Example<br />
+1. Lorem ipsum dolor sit amet<br />
+2. Consectetur adipiscing elit<br />
+3. Integer molestie lorem at massa<br />
+4. Facilisis in pretium nisl aliquet<br />
+5. Nulla volutpat aliquam velit<br />
+6. Faucibus porta lacus fringilla vel<br />
+7. Aenean sit amet erat nunc<br />
+8. Eget porttitor lorem</p>
+<pre><code>```html
+&lt;ol&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;
+```
+</code></pre>
+<h5 id="c-unstyled"><a name="user-content-c-unstyled" href="#c-unstyled" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>c-Unstyled</h5>
+<p>Remove the default <code>list-style</code> and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.</p>
+<p>Example<br />
+Lorem ipsum dolor sit amet<br />
+Consectetur adipiscing elit<br />
+Integer molestie lorem at massa<br />
+Facilisis in pretium nisl aliquet<br />
+Nulla volutpat aliquam velit<br />
+  * Phasellus iaculis neque<br />
+  * Purus sodales ultricies<br />
+  * Vestibulum laoreet porttitor sem<br />
+  * Ac tristique libero volutpat at<br />
+Faucibus porta lacus fringilla vel<br />
+Aenean sit amet erat nunc<br />
+Eget porttitor lorem</p>
+<pre><code>```html
+&lt;ul class="list-unstyled"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+```
+</code></pre>
+<h5 id="d-inline"><a name="user-content-d-inline" href="#d-inline" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>d-Inline</h5>
+<p>Place all list items on a single line with <code>display: inline-block;</code> and some light padding.</p>
+<pre><code>Lorem ipsum Phasellus iaculis Nulla volutpat
+
+```html
+&lt;ul class="list-inline"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+```
+</code></pre>
+<h5 id="e-description"><a name="user-content-e-description" href="#e-description" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>e-Description</h5>
+<p>A list of terms with their associated descriptions.</p>
+<p>Example<br />
+<strong>Description lists</strong><br />
+A description list is perfect for defining terms.<br />
+<strong>Euismod</strong><br />
+Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.<br />
+Donec id elit non mi porta gravida at eget metus.<br />
+<strong>Malesuada porta</strong><br />
+Etiam porta sem malesuada magna mollis euismod.</p>
+<pre><code>```html
+&lt;dl&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;
+```
+</code></pre>
+<h6 id="i-horizontal-description"><a name="user-content-i-horizontal-description" href="#i-horizontal-description" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>i-Horizontal description</h6>
+<p>Make terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side. Starts off stacked like default <code>&lt;dl&gt;</code>s, but when the navbar expands, so do these.</p>
+<p>Example<br />
+<strong>Description lists</strong><br />
+    A description list is perfect for defining terms.<br />
+<strong>Euismod</strong><br />
+    Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.<br />
+    Donec id elit non mi porta gravida at eget metus.<br />
+<strong>Malesuada porta</strong><br />
+    Etiam porta sem malesuada magna mollis euismod.<br />
+<strong>Felis euismod semper eget lacinia</strong><br />
+    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+<pre><code class="html">&lt;dl class=&quot;dl-horizontal&quot;&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+
+<blockquote>
+<p><strong>Auto-truncating</strong></p>
+<blockquote>
+<p>Horizontal description lists will truncate terms that are too long to fit in the left column with text-overflow. In narrower viewports, they will change to the default stacked layout.</p>
+</blockquote>
+</blockquote>
+<h3 id="d-code"><a name="user-content-d-code" href="#d-code" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>D-Code</h3>
+<h4 id="1-inline"><a name="user-content-1-inline" href="#1-inline" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1-Inline</h4>
+<p>Wrap inline snippets of code with <code>&lt;code&gt;</code>.</p>
+<p>Example<br />
+For example, <code>&lt;section&gt;</code> should be wrapped as inline.</p>
+<pre><code>```html
+For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped as inline.
+```
+</code></pre>
+<h4 id="2-user-input"><a name="user-content-2-user-input" href="#2-user-input" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2-User input</h4>
+<p>Use the <code>&lt;kbd&gt;</code> to indicate input that is typically entered via keyboard.<br />
+To switch directories, type cd followed by the name of the directory.<br />
+To edit settings, press ctrl + ,</p>
+<p>Example<br />
+<img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" />!</p>
+<pre><code> ```html
+To switch directories, type &lt;kbd&gt;cd&lt;/kbd&gt; followed by the name of the directory.&lt;br&gt;
+To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt;/kbd&gt;&lt;/kbd&gt;
+ ```
+</code></pre>
+<h4 id="3-basic-block"><a name="user-content-3-basic-block" href="#3-basic-block" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3-Basic block</h4>
+<p>Use <code>&lt;pre&gt;</code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
+<pre><code>Example
+&lt;p&gt;Sample text here...&lt;/p&gt;
+
+```html
+&lt;pre&gt;&amp;lt;p&amp;gt;Sample text here...&amp;lt;/p&amp;gt;&lt;/pre&gt;
+```
+</code></pre>
+<p>You may optionally add the <code>.pre-scrollable</code> class, which will set a max-height of 350px and provide a y-axis scrollbar.</p>
+<h4 id="4-variables"><a name="user-content-4-variables" href="#4-variables" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4-Variables</h4>
+<p>For indicating variables use the <code>&lt;var&gt;</code> tag.</p>
+<pre><code>Example
+y = mx + b
+
+ ```html
+&lt;var&gt;y&lt;/var&gt; = &lt;var&gt;m&lt;/var&gt;&lt;var&gt;x&lt;/var&gt; + &lt;var&gt;b&lt;/var&gt;
+```
+</code></pre>
+<h4 id="5-sample-output"><a name="user-content-5-sample-output" href="#5-sample-output" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>5-Sample output</h4>
+<p>For indicating blocks sample output from a program use the <code>&lt;samp&gt;</code> tag.</p>
+<pre><code>Example
+This text is meant to be treated as sample output from a computer program.
+
+```html
+&lt;samp&gt;This text is meant to be treated as sample output from a computer program.&lt;/samp&gt;
+```
+</code></pre>
+<h3 id="e-tables"><a name="user-content-e-tables" href="#e-tables" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>E-Tables</h3>
+<h4 id="1-basic-example"><a name="user-content-1-basic-example" href="#1-basic-example" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1-Basic example</h4>
+<p>For basic styling—light padding and only horizontal dividers—add the base class <code>.table</code> to any <code>&lt;table&gt;</code>. It may seem super redundant, but given the widespread use of tables for other plugins like calendars and date pickers, we&rsquo;ve opted to isolate our custom table styles.</p>
+<p>Example<br />
+Optional table caption.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;table class="table"&gt;
+  ...
+&lt;/table&gt;
+```
+</code></pre>
+<h4 id="2-striped-rows"><a name="user-content-2-striped-rows" href="#2-striped-rows" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2-Striped rows</h4>
+<p>Use <code>.table-striped</code> to add zebra-striping to any table row within the <tbody>.</p>
+<blockquote>
+<p><strong>Cross-browser compatibility</strong></p>
+<blockquote>
+<p>Striped tables are styled via the :nth-child CSS selector, which is not available in Internet Explorer 8.</p>
+</blockquote>
+</blockquote>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;table class="table table-striped"&gt;
+  ...
+&lt;/table&gt;
+```
+</code></pre>
+<h4 id="3-bordered-table"><a name="user-content-3-bordered-table" href="#3-bordered-table" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3-Bordered table</h4>
+<p>Add <code>.table-bordered</code> for borders on all sides of the table and cells.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;table class="table table-bordered"&gt;
+  ...
+&lt;/table&gt;
+```
+</code></pre>
+<h4 id="4-hover-rows"><a name="user-content-4-hover-rows" href="#4-hover-rows" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4-Hover rows</h4>
+<p>Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;table class="table table-hover"&gt;
+  ...
+&lt;/table&gt;
+```
+</code></pre>
+<h4 id="5-condensed-table"><a name="user-content-5-condensed-table" href="#5-condensed-table" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>5-Condensed table</h4>
+<p>Add .table-condensed to make tables more compact by cutting cell padding in half.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;table class="table table-condensed"&gt;
+  ...
+&lt;/table&gt;
+```
+</code></pre>
+<h4 id="6-contextual-classes"><a name="user-content-6-contextual-classes" href="#6-contextual-classes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>6-Contextual classes</h4>
+<p>Use contextual classes to color table rows or individual cells.<br />
+| Class | Description |<br />
+|----|----|<br />
+| <code>.active</code> | Applies the hover color to a particular row or cell |<br />
+| <code>.success</code> | Indicates a successful or positive action |<br />
+| <code>.info</code> | Indicates a neutral informative change or action |<br />
+| <code>.warning</code> | Indicates a warning that might need attention |<br />
+| <code>.danger</code> | Indicates a dangerous or potentially negative action |</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;!-- On rows --&gt;
+&lt;tr class="active"&gt;...&lt;/tr&gt;
+&lt;tr class="success"&gt;...&lt;/tr&gt;
+&lt;tr class="warning"&gt;...&lt;/tr&gt;
+&lt;tr class="danger"&gt;...&lt;/tr&gt;
+&lt;tr class="info"&gt;...&lt;/tr&gt;
+&lt;!-- On cells (`td` or `th`) --&gt;
+&lt;tr&gt;
+  &lt;td class="active"&gt;...&lt;/td&gt;
+  &lt;td class="success"&gt;...&lt;/td&gt;
+  &lt;td class="warning"&gt;...&lt;/td&gt;
+  &lt;td class="danger"&gt;...&lt;/td&gt;
+  &lt;td class="info"&gt;...&lt;/td&gt;
+&lt;/tr&gt;
+```
+</code></pre>
+<blockquote>
+<p><strong>Conveying meaning to assistive technologies</strong></p>
+<blockquote>
+<p>Using color to add meaning to a table row or individual cell only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the visible text in the relevant table row/cell), or is included through alternative means, such as additional text hidden with the .sr-only class.</p>
+</blockquote>
+</blockquote>
+<h4 id="7-responsive-tables"><a name="user-content-7-responsive-tables" href="#7-responsive-tables" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>7-Responsive tables</h4>
+<p>Create responsive tables by wrapping any <code>.table</code> in <code>.table-responsive</code> to make them scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables.</p>
+<blockquote>
+<p><strong>Vertical clipping/truncation</strong></p>
+<blockquote>
+<p>Responsive tables make use of <code>overflow-y: hidden</code>, which clips off any content that goes beyond the bottom or top edges of the table. In particular, this can clip off dropdown menus and other third-party widgets.</p>
+</blockquote>
+<p><strong>Firefox and fieldsets</strong></p>
+<blockquote>
+<p>Firefox has some awkward fieldset styling involving width that interferes <code>with</code> the responsive table. This cannot be overridden without a Firefox-specific hack that we don&rsquo;t provide in Bootstrap:<br />
+    <pre><code class="html">@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
+</code></pre><br />
+For more information, read <a href="https://stackoverflow.com/questions/17408815/fieldset-resizes-wrong-appears-to-have-unremovable-min-width-min-content/17863685#17863685">this Stack Overflow answer</a>.</p>
+</blockquote>
+</blockquote>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;div class="table-responsive"&gt;
+  &lt;table class="table"&gt;
+    ...
+  &lt;/table&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<h3 id="f-forms"><a name="user-content-f-forms" href="#f-forms" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>F-Forms</h3>
+<h4 id="1-basic-example_1"><a name="user-content-1-basic-example_1" href="#1-basic-example_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1-Basic example</h4>
+<p>Individual form controls automatically receive some global styling. All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to <code>width: 100%;</code> by default. Wrap labels and controls in <code>.form-group</code> for optimum spacing.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;form&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+    &lt;input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="exampleInputPassword1"&gt;Password&lt;/label&gt;
+    &lt;input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="exampleInputFile"&gt;File input&lt;/label&gt;
+    &lt;input type="file" id="exampleInputFile"&gt;
+    &lt;p class="help-block"&gt;Example block-level help text here.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="checkbox"&gt;
+    &lt;label&gt;
+      &lt;input type="checkbox"&gt; Check me out
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+```
+</code></pre>
+<blockquote>
+<p><strong>Don&rsquo;t mix form groups with input groups</strong></p>
+<blockquote>
+<p>Do not mix form groups directly with <a href="https://getbootstrap.com/components/#input-groups">input groups</a>. Instead, nest the input group inside of the form group.</p>
+</blockquote>
+</blockquote>
+<h4 id="2-inline-form"><a name="user-content-2-inline-form" href="#2-inline-form" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2-Inline form</h4>
+<p>Add <code>.form-inline</code> to your form (which doesn&rsquo;t have to be a <form>) for left-aligned and inline-block controls. <strong>This only applies to forms within viewports that are at least 768px wide</strong>.</p>
+<blockquote>
+<p><strong>May require custom widths</strong></p>
+<blockquote>
+<p>Inputs and selects have <code>width: 100%;</code> applied by default in Bootstrap. Within inline forms, we reset that to <code>width: auto;</code> so multiple controls can reside on the same line. Depending on your layout, additional custom widths may be required.</p>
+</blockquote>
+<p><strong>Always add labels</strong></p>
+<blockquote>
+<p>Screen readers will have trouble with your forms if you don&rsquo;t include a label for every input. For these inline forms, you can hide the labels using the <code>.sr-only</code> class. There are further alternative methods of providing a label for assistive technologies, such as the <code>aria-label</code>, <code>aria-labelledby</code> or <code>title</code> attribute. If none of these is present, screen readers may resort to using the <code>placeholder</code> attribute, if present, but note that use of <code>placeholder</code> as a replacement for other labelling methods is not advised.</p>
+</blockquote>
+</blockquote>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;form class="form-inline"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="exampleInputName2"&gt;Name&lt;/label&gt;
+    &lt;input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe"&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="exampleInputEmail2"&gt;Email&lt;/label&gt;
+    &lt;input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com"&gt;
+  &lt;/div&gt;
+  &lt;button type="submit" class="btn btn-default"&gt;Send invitation&lt;/button&gt;
+&lt;/form&gt;
+```
+</code></pre>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;form class="form-inline"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label class="sr-only" for="exampleInputEmail3"&gt;Email address&lt;/label&gt;
+    &lt;input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email"&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label class="sr-only" for="exampleInputPassword3"&gt;Password&lt;/label&gt;
+    &lt;input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password"&gt;
+  &lt;/div&gt;
+  &lt;div class="checkbox"&gt;
+    &lt;label&gt;
+      &lt;input type="checkbox"&gt; Remember me
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;button type="submit" class="btn btn-default"&gt;Sign in&lt;/button&gt;
+&lt;/form&gt;
+```
+</code></pre>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;form class="form-inline"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label class="sr-only" for="exampleInputAmount"&gt;Amount (in dollars)&lt;/label&gt;
+    &lt;div class="input-group"&gt;
+      &lt;div class="input-group-addon"&gt;$&lt;/div&gt;
+      &lt;input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount"&gt;
+      &lt;div class="input-group-addon"&gt;.00&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button type="submit" class="btn btn-primary"&gt;Transfer cash&lt;/button&gt;
+&lt;/form&gt;
+```
+</code></pre>
+<h4 id="3-horizontal-form"><a name="user-content-3-horizontal-form" href="#3-horizontal-form" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3-Horizontal form</h4>
+<p>Use Bootstrap&rsquo;s predefined grid classes to align labels and groups of form controls in a horizontal layout by adding <code>.form-horizontal</code> to the form (which doesn&rsquo;t have to be a &lt;<code>form&gt;</code>). Doing so changes <code>.form-groups</code> to behave as grid rows, so no need for <code>.row</code>.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;form class="form-horizontal"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="inputEmail3" class="col-sm-2 control-label"&gt;Email&lt;/label&gt;
+    &lt;div class="col-sm-10"&gt;
+      &lt;input type="email" class="form-control" id="inputEmail3" placeholder="Email"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="inputPassword3" class="col-sm-2 control-label"&gt;Password&lt;/label&gt;
+    &lt;div class="col-sm-10"&gt;
+      &lt;input type="password" class="form-control" id="inputPassword3" placeholder="Password"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;div class="col-sm-offset-2 col-sm-10"&gt;
+      &lt;div class="checkbox"&gt;
+        &lt;label&gt;
+          &lt;input type="checkbox"&gt; Remember me
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;div class="col-sm-offset-2 col-sm-10"&gt;
+      &lt;button type="submit" class="btn btn-default"&gt;Sign in&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+```
+</code></pre>
+<h4 id="4-supported-controls"><a name="user-content-4-supported-controls" href="#4-supported-controls" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4-Supported controls</h4>
+<p>Examples of standard form controls supported in an example form layout.</p>
+<h5 id="a-inputs"><a name="user-content-a-inputs" href="#a-inputs" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>a-Inputs</h5>
+<p>Most common form control, text-based input fields. Includes support for all HTML5 types: <code>text</code>, <code>password</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>, <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code>, and <code>color</code>.</p>
+<blockquote>
+<p><strong>Type declaration required</strong></p>
+<blockquote>
+<p>Inputs will only be fully styled if their <code>type</code> is properly declared.</p>
+</blockquote>
+</blockquote>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;input type="text" class="form-control" placeholder="Text input"&gt;
+```
+</code></pre>
+<blockquote>
+<p><strong>Input groups</strong></p>
+<blockquote>
+<p>To add integrated text or buttons before and/or after any text-based <code>&lt;input&gt;</code>, <a href="https://getbootstrap.com/docs/3.3/components/#input-groups">check out the input group component</a>.</p>
+</blockquote>
+</blockquote>
+<h5 id="b-textarea"><a name="user-content-b-textarea" href="#b-textarea" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>b-Textarea</h5>
+<p>Form control which supports multiple lines of text. Change <code>rows</code> attribute as necessary.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;textarea class="form-control" rows="3"&gt;&lt;/textarea&gt;
+```
+</code></pre>
+<h5 id="c-checkboxes-and-radios"><a name="user-content-c-checkboxes-and-radios" href="#c-checkboxes-and-radios" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>c-Checkboxes and radios</h5>
+<p>Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.</p>
+<p>Disabled checkboxes and radios are supported, but to provide a &ldquo;not-allowed&rdquo; cursor on hover of the parent <code>&lt;label&gt;</code>, you&rsquo;ll need to add the <code>.disabled</code> class to the parent <code>.radio</code>, <code>.radio-inline</code>, <code>.checkbox</code>, or <code>.checkbox-inline</code>.</p>
+<h6 id="i-default-stacked"><a name="user-content-i-default-stacked" href="#i-default-stacked" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>i-Default (stacked)</h6>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;div class="checkbox"&gt;
+  &lt;label&gt;
+    &lt;input type="checkbox" value=""&gt;
+    Option one is this and that&amp;mdash;be sure to include why it's great
+  &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="checkbox disabled"&gt;
+  &lt;label&gt;
+    &lt;input type="checkbox" value="" disabled&gt;
+    Option two is disabled
+  &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="radio"&gt;
+  &lt;label&gt;
+    &lt;input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked&gt;
+    Option one is this and that&amp;mdash;be sure to include why it's great
+  &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="radio"&gt;
+  &lt;label&gt;
+    &lt;input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"&gt;
+    Option two can be something else and selecting it will deselect option one
+  &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="radio disabled"&gt;
+  &lt;label&gt;
+    &lt;input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled&gt;
+    Option three is disabled
+  &lt;/label&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<h6 id="ii-inline-checkboxes-and-radios"><a name="user-content-ii-inline-checkboxes-and-radios" href="#ii-inline-checkboxes-and-radios" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>ii-Inline checkboxes and radios</h6>
+<p>Use the <code>.checkbox-inline</code> or <code>.radio-inline</code> classes on a series of checkboxes or radios for controls that appear on the same line.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;label class="checkbox-inline"&gt;
+  &lt;input type="checkbox" id="inlineCheckbox1" value="option1"&gt; 1
+&lt;/label&gt;
+&lt;label class="checkbox-inline"&gt;
+  &lt;input type="checkbox" id="inlineCheckbox2" value="option2"&gt; 2
+&lt;/label&gt;
+&lt;label class="checkbox-inline"&gt;
+  &lt;input type="checkbox" id="inlineCheckbox3" value="option3"&gt; 3
+&lt;/label&gt;
+&lt;label class="radio-inline"&gt;
+  &lt;input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"&gt; 1
+&lt;/label&gt;
+&lt;label class="radio-inline"&gt;
+  &lt;input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"&gt; 2
+&lt;/label&gt;
+&lt;label class="radio-inline"&gt;
+  &lt;input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"&gt; 3
+&lt;/label&gt;
+```
+</code></pre>
+<h5 id="iii-checkboxes-and-radios-without-label-text"><a name="user-content-iii-checkboxes-and-radios-without-label-text" href="#iii-checkboxes-and-radios-without-label-text" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>iii-Checkboxes and radios without label text</h5>
+<p>Should you have no text within the <code>&lt;label&gt;</code>, the input is positioned as you&rsquo;d expect. Currently only works on non-inline checkboxes and radios. Remember to still provide some form of label for assistive technologies (for instance, using <code>aria-label</code>).</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;div class="checkbox"&gt;
+  &lt;label&gt;
+    &lt;input type="checkbox" id="blankCheckbox" value="option1" aria-label="..."&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="radio"&gt;
+  &lt;label&gt;
+    &lt;input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="..."&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<h5 id="d-selects"><a name="user-content-d-selects" href="#d-selects" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>d-Selects</h5>
+<p>Note that many native select menus—namely in Safari and Chrome—have rounded corners that cannot be modified via <code>border-radius</code> properties.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;select class="form-control"&gt;
+  &lt;option&gt;1&lt;/option&gt;
+  &lt;option&gt;2&lt;/option&gt;
+  &lt;option&gt;3&lt;/option&gt;
+  &lt;option&gt;4&lt;/option&gt;
+  &lt;option&gt;5&lt;/option&gt;
+&lt;/select&gt;
+```
+</code></pre>
+<p>For <code>&lt;select&gt;</code> controls with the <code>multiple</code> attribute, multiple options are shown by default.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;select multiple class="form-control"&gt;
+  &lt;option&gt;1&lt;/option&gt;
+  &lt;option&gt;2&lt;/option&gt;
+  &lt;option&gt;3&lt;/option&gt;
+  &lt;option&gt;4&lt;/option&gt;
+  &lt;option&gt;5&lt;/option&gt;
+&lt;/select&gt;
+```
+</code></pre>
+<h4 id="5-static-control"><a name="user-content-5-static-control" href="#5-static-control" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>5-Static control</h4>
+<p>When you need to place plain text next to a form label within a form, use the <code>.form-control-static</code> class on a <code>&lt;p&gt;</code>.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;form class="form-horizontal"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label class="col-sm-2 control-label"&gt;Email&lt;/label&gt;
+    &lt;div class="col-sm-10"&gt;
+      &lt;p class="form-control-static"&gt;email@example.com&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="inputPassword" class="col-sm-2 control-label"&gt;Password&lt;/label&gt;
+    &lt;div class="col-sm-10"&gt;
+      &lt;input type="password" class="form-control" id="inputPassword" placeholder="Password"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+```
+</code></pre>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;form class="form-inline"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label class="sr-only"&gt;Email&lt;/label&gt;
+    &lt;p class="form-control-static"&gt;email@example.com&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="inputPassword2" class="sr-only"&gt;Password&lt;/label&gt;
+    &lt;input type="password" class="form-control" id="inputPassword2" placeholder="Password"&gt;
+  &lt;/div&gt;
+  &lt;button type="submit" class="btn btn-default"&gt;Confirm identity&lt;/button&gt;
+&lt;/form&gt;
+```
+</code></pre>
+<h4 id="6-focus-state"><a name="user-content-6-focus-state" href="#6-focus-state" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>6-Focus state</h4>
+<p>We remove the default <code>outline</code> styles on some form controls and apply a <code>box-shadow</code> in its place for <code>:focus</code>.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<blockquote>
+<p><strong>Demo <code>:focus</code> state</strong></p>
+<blockquote>
+<p>The above example input uses custom styles in our documentation to demonstrate the :focus state on a <code>.form-control</code>.</p>
+</blockquote>
+</blockquote>
+<h4 id="7-disabled-state"><a name="user-content-7-disabled-state" href="#7-disabled-state" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>7-Disabled state</h4>
+<p>Add the <code>disabled</code> boolean attribute on an input to prevent user interactions. Disabled inputs appear lighter and add a <code>not-allowed</code> cursor.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled&gt;
+```
+</code></pre>
+<h5 id="a-disabled-fieldsets"><a name="user-content-a-disabled-fieldsets" href="#a-disabled-fieldsets" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>a-Disabled fieldsets</h5>
+<p>Add the disabled attribute to a <fieldset> to disable all the controls within the <fieldset> at once.</p>
+<blockquote>
+<p><strong>Caveat about link functionality of <code>&lt;a&gt;</code></strong></p>
+<blockquote>
+<p>By default, browsers will treat all native form controls (<code>&lt;input&gt;</code>, <code>&lt;select&gt;</code> and <code>&lt;button&gt;</code> elements) inside a <code>&lt;fieldset disabled&gt;</code> as disabled, preventing both keyboard and mouse interactions on them. However, if your form also includes <code>&lt;a ... class="btn btn-*"&gt;</code> elements, these will only be given a style of <code>pointer-events: none</code>. As noted in the section about <a href="https://getbootstrap.com/docs/3.3/css/#buttons-disabled">disabled state for buttons</a> (and specifically in the sub-section for anchor elements), this CSS property is not yet standardized and isn&rsquo;t fully supported in Opera 18 and below, or in Internet Explorer 11, and won&rsquo;t prevent keyboard users from being able to focus or activate these links. So to be safe, use custom JavaScript to disable such links.</p>
+</blockquote>
+<p><strong> Cross-browser compatibility</strong></p>
+<blockquote>
+<p>While Bootstrap will apply these styles in all browsers, Internet Explorer 11 and below don&rsquo;t fully support the <code>disabled</code> attribute on a <code>&lt;fieldset&gt;</code>. Use custom JavaScript to disable the fieldset in these browsers.</p>
+</blockquote>
+</blockquote>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;form&gt;
+  &lt;fieldset disabled&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="disabledTextInput"&gt;Disabled input&lt;/label&gt;
+      &lt;input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input"&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="disabledSelect"&gt;Disabled select menu&lt;/label&gt;
+      &lt;select id="disabledSelect" class="form-control"&gt;
+        &lt;option&gt;Disabled select&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+    &lt;div class="checkbox"&gt;
+      &lt;label&gt;
+        &lt;input type="checkbox"&gt; Can't check this
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+```
+</code></pre>
+<h4 id="8-readonly-state"><a name="user-content-8-readonly-state" href="#8-readonly-state" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>8-Readonly state</h4>
+<p>Add the <code>readonly</code> boolean attribute on an input to prevent modification of the input&rsquo;s value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;input class="form-control" type="text" placeholder="Readonly input here…" readonly&gt;
+```
+</code></pre>
+<h4 id="help-text"><a name="user-content-help-text" href="#help-text" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Help text</h4>
+<p>Block level help text for form controls.</p>
+<blockquote>
+<p><strong>Associating help text with form controls</strong></p>
+<blockquote>
+<p>Help text should be explicitly associated with the form control it relates to using the <code>aria-describedby</code> attribute. This will ensure that assistive technologies – such as screen readers – will announce this help text when the user focuses or enters the control.</p>
+</blockquote>
+</blockquote>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;label class="sr-only" for="inputHelpBlock"&gt;Input with help text&lt;/label&gt;
+&lt;input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock"&gt;
+...
+&lt;span id="helpBlock" class="help-block"&gt;A block of help text that breaks onto a new line and may extend beyond one line.&lt;/span&gt;
+```
+</code></pre>
+<h4 id="9-validation-states"><a name="user-content-9-validation-states" href="#9-validation-states" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>9-Validation states</h4>
+<p>Bootstrap includes validation styles for error, warning, and success states on form controls. To use, add .has-warning, <code>.has-error</code>, or <code>.has-success</code> to the parent element. Any <code>.control-label</code>, .<code>form-control</code>, and <code>.help-block</code> within that element will receive the validation styles.</p>
+<blockquote>
+<p><strong>Conveying validation state to assistive technologies and colorblind users</strong></p>
+<blockquote>
+<p>Using these validation styles to denote the state of a form control only provides a visual, color-based indication, which will not be conveyed to users of assistive technologies - such as screen readers - or to colorblind users.<br />
+Ensure that an alternative indication of state is also provided. For instance, you can include a hint about state in the form control&rsquo;s <code>&lt;label&gt;</code> text itself (as is the case in the following code example), include a <a href="https://getbootstrap.com/docs/3.3/components/#glyphicons">Glyphicon</a> (with appropriate alternative text using the <code>.sr-only</code> class - see the <a href="https://getbootstrap.com/docs/3.3/components/#glyphicons-examples">Glyphicon examples</a>), or by providing an additional <a href="https://getbootstrap.com/docs/3.3/css/#forms-help-text">help text</a> block. Specifically for assistive technologies, invalid form controls can also be assigned an <code>aria-invalid="true"</code> attribute.</p>
+</blockquote>
+</blockquote>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;div class="form-group has-success"&gt;
+  &lt;label class="control-label" for="inputSuccess1"&gt;Input with success&lt;/label&gt;
+  &lt;input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2"&gt;
+  &lt;span id="helpBlock2" class="help-block"&gt;A block of help text that breaks onto a new line and may extend beyond one line.&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="form-group has-warning"&gt;
+  &lt;label class="control-label" for="inputWarning1"&gt;Input with warning&lt;/label&gt;
+  &lt;input type="text" class="form-control" id="inputWarning1"&gt;
+&lt;/div&gt;
+&lt;div class="form-group has-error"&gt;
+  &lt;label class="control-label" for="inputError1"&gt;Input with error&lt;/label&gt;
+  &lt;input type="text" class="form-control" id="inputError1"&gt;
+&lt;/div&gt;
+&lt;div class="has-success"&gt;
+  &lt;div class="checkbox"&gt;
+    &lt;label&gt;
+      &lt;input type="checkbox" id="checkboxSuccess" value="option1"&gt;
+      Checkbox with success
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="has-warning"&gt;
+  &lt;div class="checkbox"&gt;
+    &lt;label&gt;
+      &lt;input type="checkbox" id="checkboxWarning" value="option1"&gt;
+      Checkbox with warning
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="has-error"&gt;
+  &lt;div class="checkbox"&gt;
+    &lt;label&gt;
+      &lt;input type="checkbox" id="checkboxError" value="option1"&gt;
+      Checkbox with error
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<h5 id="a-with-optional-icons"><a name="user-content-a-with-optional-icons" href="#a-with-optional-icons" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>a-With optional icons</h5>
+<p>You can also add optional feedback icons with the addition of <code>.has-feedback</code> and the right icon.</p>
+<p><strong>Feedback icons only work with textual <code>&lt;input class="form-control"&gt;</code> elements.</strong></p>
+<blockquote>
+<p><strong>Icons, labels, and input groups</strong></p>
+<blockquote>
+<p>Manual positioning of feedback icons is required for inputs without a label and for input groups with an add-on on the right. You are strongly encouraged to provide labels for all inputs for accessibility reasons. If you wish to prevent labels from being displayed, hide them with the <code>.sr-only</code> class. If you must do without labels, adjust the <code>top</code> value of the feedback icon. For input groups, adjust the <code>right</code> value to an appropriate pixel value depending on the width of your addon.</p>
+</blockquote>
+<p><strong>Conveying the icon&rsquo;s meaning to assistive technologies</strong></p>
+<blockquote>
+<p>To ensure that assistive technologies – such as screen readers – correctly convey the meaning of an icon, additional hidden text should be included with the <code>.sr-only</code> class and explicitly associated with the form control it relates to using <code>aria-describedby</code>. Alternatively, ensure that the meaning (for instance, the fact that there is a warning for a particular text entry field) is conveyed in some other form, such as changing the text of the actual <code>&lt;label&gt;</code> associated with the form control.<br />
+Although the following examples already mention the validation state of their respective form controls in the <code>&lt;label&gt;</code> text itself, the above technique (using <code>.sr-only</code> text and <code>aria-describedby</code>) has been included for illustrative purposes.</p>
+</blockquote>
+</blockquote>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;div class="form-group has-success has-feedback"&gt;
+  &lt;label class="control-label" for="inputSuccess2"&gt;Input with success&lt;/label&gt;
+  &lt;input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status"&gt;
+  &lt;span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"&gt;&lt;/span&gt;
+  &lt;span id="inputSuccess2Status" class="sr-only"&gt;(success)&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="form-group has-warning has-feedback"&gt;
+  &lt;label class="control-label" for="inputWarning2"&gt;Input with warning&lt;/label&gt;
+  &lt;input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status"&gt;
+  &lt;span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"&gt;&lt;/span&gt;
+  &lt;span id="inputWarning2Status" class="sr-only"&gt;(warning)&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="form-group has-error has-feedback"&gt;
+  &lt;label class="control-label" for="inputError2"&gt;Input with error&lt;/label&gt;
+  &lt;input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status"&gt;
+  &lt;span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"&gt;&lt;/span&gt;
+  &lt;span id="inputError2Status" class="sr-only"&gt;(error)&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="form-group has-success has-feedback"&gt;
+  &lt;label class="control-label" for="inputGroupSuccess1"&gt;Input group with success&lt;/label&gt;
+  &lt;div class="input-group"&gt;
+    &lt;span class="input-group-addon"&gt;@&lt;/span&gt;
+    &lt;input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status"&gt;
+  &lt;/div&gt;
+  &lt;span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"&gt;&lt;/span&gt;
+  &lt;span id="inputGroupSuccess1Status" class="sr-only"&gt;(success)&lt;/span&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<h6 id="i-optional-icons-in-horizontal-and-inline-forms"><a name="user-content-i-optional-icons-in-horizontal-and-inline-forms" href="#i-optional-icons-in-horizontal-and-inline-forms" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>i-Optional icons in horizontal and inline forms</h6>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;form class="form-horizontal"&gt;
+  &lt;div class="form-group has-success has-feedback"&gt;
+    &lt;label class="control-label col-sm-3" for="inputSuccess3"&gt;Input with success&lt;/label&gt;
+    &lt;div class="col-sm-9"&gt;
+      &lt;input type="text" class="form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status"&gt;
+      &lt;span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"&gt;&lt;/span&gt;
+      &lt;span id="inputSuccess3Status" class="sr-only"&gt;(success)&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group has-success has-feedback"&gt;
+    &lt;label class="control-label col-sm-3" for="inputGroupSuccess2"&gt;Input group with success&lt;/label&gt;
+    &lt;div class="col-sm-9"&gt;
+      &lt;div class="input-group"&gt;
+        &lt;span class="input-group-addon"&gt;@&lt;/span&gt;
+        &lt;input type="text" class="form-control" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status"&gt;
+      &lt;/div&gt;
+      &lt;span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"&gt;&lt;/span&gt;
+      &lt;span id="inputGroupSuccess2Status" class="sr-only"&gt;(success)&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+```
+</code></pre>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;form class="form-inline"&gt;
+  &lt;div class="form-group has-success has-feedback"&gt;
+    &lt;label class="control-label" for="inputSuccess4"&gt;Input with success&lt;/label&gt;
+    &lt;input type="text" class="form-control" id="inputSuccess4" aria-describedby="inputSuccess4Status"&gt;
+    &lt;span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"&gt;&lt;/span&gt;
+    &lt;span id="inputSuccess4Status" class="sr-only"&gt;(success)&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+&lt;form class="form-inline"&gt;
+  &lt;div class="form-group has-success has-feedback"&gt;
+    &lt;label class="control-label" for="inputGroupSuccess3"&gt;Input group with success&lt;/label&gt;
+    &lt;div class="input-group"&gt;
+      &lt;span class="input-group-addon"&gt;@&lt;/span&gt;
+      &lt;input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status"&gt;
+    &lt;/div&gt;
+    &lt;span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"&gt;&lt;/span&gt;
+    &lt;span id="inputGroupSuccess3Status" class="sr-only"&gt;(success)&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+```
+</code></pre>
+<h6 id="ii-optional-icons-with-hidden-sr-only-labels"><a name="user-content-ii-optional-icons-with-hidden-sr-only-labels" href="#ii-optional-icons-with-hidden-sr-only-labels" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>ii-Optional icons with hidden <code>.sr-only</code> labels</h6>
+<p>If you use the <code>.sr-only</code> class to hide a form control&rsquo;s <code>&lt;label&gt;</code> (rather than using other labelling options, such as the <code>aria-label</code> attribute), Bootstrap will automatically adjust the position of the icon once it&rsquo;s been added.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;div class="form-group has-success has-feedback"&gt;
+  &lt;label class="control-label sr-only" for="inputSuccess5"&gt;Hidden label&lt;/label&gt;
+  &lt;input type="text" class="form-control" id="inputSuccess5" aria-describedby="inputSuccess5Status"&gt;
+  &lt;span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"&gt;&lt;/span&gt;
+  &lt;span id="inputSuccess5Status" class="sr-only"&gt;(success)&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="form-group has-success has-feedback"&gt;
+  &lt;label class="control-label sr-only" for="inputGroupSuccess4"&gt;Input group with success&lt;/label&gt;
+  &lt;div class="input-group"&gt;
+    &lt;span class="input-group-addon"&gt;@&lt;/span&gt;
+    &lt;input type="text" class="form-control" id="inputGroupSuccess4" aria-describedby="inputGroupSuccess4Status"&gt;
+  &lt;/div&gt;
+  &lt;span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"&gt;&lt;/span&gt;
+  &lt;span id="inputGroupSuccess4Status" class="sr-only"&gt;(success)&lt;/span&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<h4 id="10-control-sizing"><a name="user-content-10-control-sizing" href="#10-control-sizing" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>10-Control sizing</h4>
+<p>Set heights using classes like <code>.input-lg</code>, and set widths using grid column classes like <code>.col-lg-*</code>.</p>
+<h5 id="a-height-sizing"><a name="user-content-a-height-sizing" href="#a-height-sizing" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>a-Height sizing</h5>
+<p>Create taller or shorter form controls that match button sizes.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;input class="form-control input-lg" type="text" placeholder=".input-lg"&gt;
+&lt;input class="form-control" type="text" placeholder="Default input"&gt;
+&lt;input class="form-control input-sm" type="text" placeholder=".input-sm"&gt;
+&lt;select class="form-control input-lg"&gt;...&lt;/select&gt;
+&lt;select class="form-control"&gt;...&lt;/select&gt;
+&lt;select class="form-control input-sm"&gt;...&lt;/select&gt;
+```
+</code></pre>
+<h5 id="b-horizontal-form-group-sizes"><a name="user-content-b-horizontal-form-group-sizes" href="#b-horizontal-form-group-sizes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>b-Horizontal form group sizes</h5>
+<p>Quickly size labels and form controls within <code>.form-horizontal</code> by adding <code>.form-group-lg</code> or <code>.form-group-sm</code>.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;form class="form-horizontal"&gt;
+  &lt;div class="form-group form-group-lg"&gt;
+    &lt;label class="col-sm-2 control-label" for="formGroupInputLarge"&gt;Large label&lt;/label&gt;
+    &lt;div class="col-sm-10"&gt;
+      &lt;input class="form-control" type="text" id="formGroupInputLarge" placeholder="Large input"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group form-group-sm"&gt;
+    &lt;label class="col-sm-2 control-label" for="formGroupInputSmall"&gt;Small label&lt;/label&gt;
+    &lt;div class="col-sm-10"&gt;
+      &lt;input class="form-control" type="text" id="formGroupInputSmall" placeholder="Small input"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+```
+</code></pre>
+<h5 id="c-column-sizing"><a name="user-content-c-column-sizing" href="#c-column-sizing" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>c-Column sizing</h5>
+<p>Wrap inputs in grid columns, or any custom parent element, to easily enforce desired widths.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;div class="row"&gt;
+  &lt;div class="col-xs-2"&gt;
+    &lt;input type="text" class="form-control" placeholder=".col-xs-2"&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xs-3"&gt;
+    &lt;input type="text" class="form-control" placeholder=".col-xs-3"&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xs-4"&gt;
+    &lt;input type="text" class="form-control" placeholder=".col-xs-4"&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+```
+</code></pre>
+<h3 id="g-buttons"><a name="user-content-g-buttons" href="#g-buttons" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>G-Buttons</h3>
+<h4 id="1-button-tags"><a name="user-content-1-button-tags" href="#1-button-tags" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1-Button tags</h4>
+<p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;a class="btn btn-default" href="#" role="button"&gt;Link&lt;/a&gt;
+&lt;button class="btn btn-default" type="submit"&gt;Button&lt;/button&gt;
+&lt;input class="btn btn-default" type="button" value="Input"&gt;
+&lt;input class="btn btn-default" type="submit" value="Submit"&gt;
+```
+</code></pre>
+<blockquote>
+<p><strong>Context-specific usage</strong></p>
+<blockquote>
+<p>While button classes can be used on <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements, only <code>&lt;button&gt;</code> elements are supported within our nav and navbar components.</p>
+</blockquote>
+<p><strong>Links acting as buttons</strong></p>
+<blockquote>
+<p>If the <code>&lt;a&gt;</code> elements are used to act as buttons – triggering in-page functionality, rather than navigating to another document or section within the current page – they should also be given an appropriate <code>role="button"</code>.</p>
+</blockquote>
+<p><strong>Cross-browser rendering</strong></p>
+<blockquote>
+<p>As a best practice, <strong>we highly recommend using the <code>&lt;button&gt;</code> element whenever possible</strong> to ensure matching cross-browser rendering.<br />
+Among other things, there&rsquo;s a bug in Firefox &lt;30 that prevents us from setting the <code>line-height</code> of <code>&lt;input&gt;</code>-based buttons, causing them to not exactly match the height of other buttons on Firefox.</p>
+</blockquote>
+</blockquote>
+<h4 id="2-options"><a name="user-content-2-options" href="#2-options" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2-Options</h4>
+<p>Use any of the available button classes to quickly create a styled button.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;!-- Standard button --&gt;
+&lt;button type="button" class="btn btn-default"&gt;Default&lt;/button&gt;
+&lt;!-- Provides extra visual weight and identifies the primary action in a set of buttons --&gt;
+&lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
+&lt;!-- Indicates a successful or positive action --&gt;
+&lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
+&lt;!-- Contextual button for informational alert messages --&gt;
+&lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
+&lt;!-- Indicates caution should be taken with this action --&gt;
+&lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;
+&lt;!-- Indicates a dangerous or potentially negative action --&gt;
+&lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;
+&lt;!-- Deemphasize a button by making it look like a link while maintaining button behavior --&gt;
+&lt;button type="button" class="btn btn-link"&gt;Link&lt;/button&gt;
+```
+</code></pre>
+<blockquote>
+<p><strong>Conveying meaning to assistive technologies</strong></p>
+<blockquote>
+<p>Using color to add meaning to a button only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the visible text of the button), or is included through alternative means, such as additional text hidden with the <code>.sr-only</code> class.</p>
+</blockquote>
+</blockquote>
+<h4 id="3-sizes"><a name="user-content-3-sizes" href="#3-sizes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3-Sizes</h4>
+<p>Fancy larger or smaller buttons? Add <code>.btn-lg</code>, <code>.btn-sm</code>, or <code>.btn-xs</code> for additional sizes.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;p&gt;
+  &lt;button type="button" class="btn btn-primary btn-lg"&gt;Large button&lt;/button&gt;
+  &lt;button type="button" class="btn btn-default btn-lg"&gt;Large button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Default button&lt;/button&gt;
+  &lt;button type="button" class="btn btn-default"&gt;Default button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button type="button" class="btn btn-primary btn-sm"&gt;Small button&lt;/button&gt;
+  &lt;button type="button" class="btn btn-default btn-sm"&gt;Small button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button type="button" class="btn btn-primary btn-xs"&gt;Extra small button&lt;/button&gt;
+  &lt;button type="button" class="btn btn-default btn-xs"&gt;Extra small button&lt;/button&gt;
+&lt;/p&gt;
+```
+</code></pre>
+<p>Create block level buttons—those that span the full width of a parent— by adding <code>.btn-block</code>.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;button type="button" class="btn btn-primary btn-lg btn-block"&gt;Block level button&lt;/button&gt;
+&lt;button type="button" class="btn btn-default btn-lg btn-block"&gt;Block level button&lt;/button&gt;
+```
+</code></pre>
+<h4 id="4-active-state"><a name="user-content-4-active-state" href="#4-active-state" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4-Active state</h4>
+<p>Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. For <code>&lt;button&gt;</code> elements, this is done via <code>:active</code>. For <code>&lt;a&gt;</code> elements, it&rsquo;s done with <code>.active</code>. However, you may use <code>.active</code> on <code>&lt;button&gt;</code>s (and include the <code>aria-pressed="true"</code> attribute) should you need to replicate the active state programmatically.</p>
+<h5 id="a-button-element"><a name="user-content-a-button-element" href="#a-button-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>a-Button element</h5>
+<p>No need to add <code>:active</code> as it&rsquo;s a pseudo-class, but if you need to force the same appearance, go ahead and add <code>.active</code>.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;button type="button" class="btn btn-primary btn-lg active"&gt;Primary button&lt;/button&gt;
+&lt;button type="button" class="btn btn-default btn-lg active"&gt;Button&lt;/button&gt;
+```
+</code></pre>
+<h5 id="b-anchor-element"><a name="user-content-b-anchor-element" href="#b-anchor-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>b-Anchor element</h5>
+<p>Add the <code>.active</code> class to <code>&lt;a&gt;</code> buttons.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;a href="#" class="btn btn-primary btn-lg active" role="button"&gt;Primary link&lt;/a&gt;
+&lt;a href="#" class="btn btn-default btn-lg active" role="button"&gt;Link&lt;/a&gt;
+```
+</code></pre>
+<h4 id="5-disabled-state"><a name="user-content-5-disabled-state" href="#5-disabled-state" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>5-Disabled state</h4>
+<p>Make buttons look unclickable by fading them back with <code>opacity</code>.</p>
+<h5 id="a-button-element_1"><a name="user-content-a-button-element_1" href="#a-button-element_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>a-Button element</h5>
+<p>Add the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;button type="button" class="btn btn-lg btn-primary" disabled="disabled"&gt;Primary button&lt;/button&gt;
+&lt;button type="button" class="btn btn-default btn-lg" disabled="disabled"&gt;Button&lt;/button&gt;
+```
+</code></pre>
+<blockquote>
+<p><strong>Cross-browser compatibility</strong></p>
+<blockquote>
+<p>If you add the <code>disabled</code> attribute to a <code>&lt;button&gt;</code>, Internet Explorer 9 and below will render text gray with a nasty text-shadow that we cannot fix.</p>
+</blockquote>
+</blockquote>
+<h5 id="b-anchor-element_1"><a name="user-content-b-anchor-element_1" href="#b-anchor-element_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>b-Anchor element</h5>
+<p>Add the .disabled class to <code>&lt;a&gt;</code> buttons.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;a href="#" class="btn btn-primary btn-lg disabled" role="button"&gt;Primary link&lt;/a&gt;
+&lt;a href="#" class="btn btn-default btn-lg disabled" role="button"&gt;Link&lt;/a&gt;
+```
+</code></pre>
+<p>We use .disabled as a utility class here, similar to the common <code>.active</code> class, so no prefix is required.</p>
+<blockquote>
+<p><strong>Link functionality caveat</strong></p>
+<blockquote>
+<p>This class uses <code>pointer-events: none</code> to try to disable the link functionality of <code>&lt;a&gt;</code>s, but that CSS property is not yet standardized and isn&rsquo;t fully supported in Opera 18 and below, or in Internet Explorer 11. In addition, even in browsers that do support <code>pointer-events: none</code>, keyboard navigation remains unaffected, meaning that sighted keyboard users and users of assistive technologies will still be able to activate these links. So to be safe, use custom JavaScript to disable such links.</p>
+</blockquote>
+</blockquote>
+<h3 id="h-images"><a name="user-content-h-images" href="#h-images" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>H-Images</h3>
+<h4 id="1-responsive-images"><a name="user-content-1-responsive-images" href="#1-responsive-images" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1-Responsive images</h4>
+<p>Images in Bootstrap 3 can be made responsive-friendly via the addition of the <code>.img-responsive</code> class. This applies <code>max-width: 100%;</code>, <code>height: auto;</code> and <code>display: block;</code> to the image so that it scales nicely to the parent element.</p>
+<p>To center images which use the <code>.img-responsive</code> class, use <code>.center-block</code> instead of <code>.text-center</code>. <a href="https://getbootstrap.com/docs/3.3/css/#helper-classes-center">See the helper classes section</a> for more details about <code>.center-block</code> usage.</p>
+<blockquote>
+<p><strong>SVG images and IE 8-10</strong></p>
+<blockquote>
+<p>In Internet Explorer 8-10, SVG images with <code>.img-responsive</code> are disproportionately sized. To fix this, add <code>width: 100% \9;</code> where necessary. Bootstrap doesn&rsquo;t apply this automatically as it causes complications to other image formats.</p>
+</blockquote>
+</blockquote>
+<pre><code>```html
+&lt;img src="..." class="img-responsive" alt="Responsive image"&gt;
+```
+</code></pre>
+<h4 id="2-image-shapes"><a name="user-content-2-image-shapes" href="#2-image-shapes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2-Image shapes</h4>
+<p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p>
+<blockquote>
+<p><strong>Cross-browser compatibility</strong></p>
+<blockquote>
+<p>Keep in mind that Internet Explorer 8 lacks support for rounded corners.</p>
+</blockquote>
+</blockquote>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;img src="..." alt="..." class="img-rounded"&gt;
+&lt;img src="..." alt="..." class="img-circle"&gt;
+&lt;img src="..." alt="..." class="img-thumbnail"&gt;
+```
+</code></pre>
+<h3 id="i-helper-classes"><a name="user-content-i-helper-classes" href="#i-helper-classes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>I-Helper classes</h3>
+<h4 id="1-contextual-colors"><a name="user-content-1-contextual-colors" href="#1-contextual-colors" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1-Contextual colors</h4>
+<p>Convey meaning through color with a handful of emphasis utility classes. These may also be applied to links and will darken on hover just like our default link styles.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;p class="text-muted"&gt;...&lt;/p&gt;
+&lt;p class="text-primary"&gt;...&lt;/p&gt;
+&lt;p class="text-success"&gt;...&lt;/p&gt;
+&lt;p class="text-info"&gt;...&lt;/p&gt;
+&lt;p class="text-warning"&gt;...&lt;/p&gt;
+&lt;p class="text-danger"&gt;...&lt;/p&gt;
+```
+</code></pre>
+<blockquote>
+<p><strong>Dealing with specificity</strong></p>
+<blockquote>
+<p>Sometimes emphasis classes cannot be applied due to the specificity of another selector. In most cases, a sufficient workaround is to wrap your text in a <code>&lt;span&gt;</code> with the class.</p>
+</blockquote>
+<p><strong>Conveying meaning to assistive technologies</strong><br />
+Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the contextual colors are only used to reinforce meaning that is already present in the text/markup), or is included through alternative means, such as additional text hidden with the <code>.sr-only</code> class.</p>
+</blockquote>
+<h4 id="2-contextual-backgrounds"><a name="user-content-2-contextual-backgrounds" href="#2-contextual-backgrounds" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2-Contextual backgrounds</h4>
+<p>Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;p class="bg-primary"&gt;...&lt;/p&gt;
+&lt;p class="bg-success"&gt;...&lt;/p&gt;
+&lt;p class="bg-info"&gt;...&lt;/p&gt;
+&lt;p class="bg-warning"&gt;...&lt;/p&gt;
+&lt;p class="bg-danger"&gt;...&lt;/p&gt;
+```
+</code></pre>
+<blockquote>
+<p><strong>Dealing with specificity</strong></p>
+<blockquote>
+<p>Sometimes contextual background classes cannot be applied due to the specificity of another selector. In some cases, a sufficient workaround is to wrap your element&rsquo;s content in a <code>&lt;div&gt;</code> with the class.</p>
+</blockquote>
+<p><strong>Conveying meaning to assistive technologies</strong></p>
+<blockquote>
+<p>As with <a href="https://getbootstrap.com/docs/3.3/css/#helper-classes-colors">contextual colors</a>, ensure that any meaning conveyed through color is also conveyed in a format that is not purely presentational.</p>
+</blockquote>
+</blockquote>
+<h4 id="3-close-icon"><a name="user-content-3-close-icon" href="#3-close-icon" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3-Close icon</h4>
+<p>Use the generic close icon for dismissing content like modals and alerts.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;button type="button" class="close" aria-label="Close"&gt;&lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+```
+</code></pre>
+<h4 id="4-carets"><a name="user-content-4-carets" href="#4-carets" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4-Carets</h4>
+<p>Use carets to indicate dropdown functionality and direction. Note that the default caret will reverse automatically in <a href="https://getbootstrap.com/docs/3.3/components/#btn-dropdowns-dropup">dropup menus</a>.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```html
+&lt;span class="caret"&gt;&lt;/span&gt;
+```
+</code></pre>
+<h4 id="5-quick-floats"><a name="user-content-5-quick-floats" href="#5-quick-floats" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>5-Quick floats</h4>
+<p>Float an element to the left or right with a class. <code>!important</code> is included to avoid specificity issues. Classes can also be used as mixins.</p>
+<pre><code>```html
+&lt;div class="pull-left"&gt;...&lt;/div&gt;
+&lt;div class="pull-right"&gt;...&lt;/div&gt;
+```
+
+```less
+// Classes
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+// Usage as mixins
+.element {
+  .pull-left();
+}
+.another-element {
+  .pull-right();
+}
+```
+</code></pre>
+<blockquote>
+<p><strong>Not for use in navbars</strong></p>
+<blockquote>
+<p>To align components in navbars with utility classes, use <code>.navbar-left</code> or <code>.navbar-right</code> instead. <a href="https://getbootstrap.com/docs/3.3/components/#navbar-component-alignment">See the navbar docs for details</a>.</p>
+</blockquote>
+</blockquote>
+<h4 id="6-center-content-blocks"><a name="user-content-6-center-content-blocks" href="#6-center-content-blocks" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>6-Center content blocks</h4>
+<p>Set an element to <code>display: block</code> and center via <code>margin</code>. Available as a mixin and class.</p>
+<pre><code>```html
+&lt;div class="center-block"&gt;...&lt;/div&gt;
+```
+
+```less
+// Class
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+// Usage as a mixin
+.element {
+  .center-block();
+}
+```
+</code></pre>
+<h4 id="7-clearfix"><a name="user-content-7-clearfix" href="#7-clearfix" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>7-Clearfix</h4>
+<p>Easily clear <code>floats</code> by adding <code>.clearfix</code> <strong>to the parent element</strong>. Utilizes <a href="http://nicolasgallagher.com/micro-clearfix-hack/">the micro clearfix</a> as popularized by Nicolas Gallagher. Can also be used as a mixin.</p>
+<pre><code>```html
+&lt;!-- Usage as a class --&gt;
+&lt;div class="clearfix"&gt;...&lt;/div&gt;
+```
+
+```less
+// Mixin itself
+.clearfix() {
+  &amp;:before,
+  &amp;:after {
+    content: " ";
+    display: table;
+  }
+  &amp;:after {
+    clear: both;
+  }
+}
+// Usage as a mixin
+.element {
+  .clearfix();
+}
+```
+</code></pre>
+<h4 id="8-showing-and-hiding-content"><a name="user-content-8-showing-and-hiding-content" href="#8-showing-and-hiding-content" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>8-Showing and hiding content</h4>
+<p>Force an element to be shown or hidden (<strong>including for screen readers</strong>) with the use of <code>.show</code> and <code>.hidden</code> classes. These classes use <code>!important</code> to avoid specificity conflicts, just like the quick floats. They are only available for block level toggling. They can also be used as mixins.</p>
+<p><code>.hide</code> is available, but it does not always affect screen readers and is <strong>deprecated</strong> as of v3.0.1. Use .hidden or <code>.sr-only</code> instead.</p>
+<p>Furthermore, <code>.invisible</code> can be used to toggle only the visibility of an element, meaning its <code>display</code> is not modified and the element can still affect the flow of the document.</p>
+<pre><code>```html
+&lt;div class="show"&gt;...&lt;/div&gt;
+&lt;div class="hidden"&gt;...&lt;/div&gt;
+```
+
+```less
+// Classes
+.show {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+}
+.invisible {
+  visibility: hidden;
+}
+// Usage as mixins
+.element {
+  .show();
+}
+.another-element {
+  .hidden();
+}
+```
+</code></pre>
+<h4 id="9-screen-reader-and-keyboard-navigation-content"><a name="user-content-9-screen-reader-and-keyboard-navigation-content" href="#9-screen-reader-and-keyboard-navigation-content" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>9-Screen reader and keyboard navigation content</h4>
+<p>Hide an element to all devices <strong>except screen readers</strong> with <code>.sr-only.</code> Combine <code>.sr-only</code> with <code>.sr-only-focusable</code> to show the element again when it&rsquo;s focused (e.g. by a keyboard-only user). Necessary for following <a href="https://getbootstrap.com/docs/3.3/getting-started/#accessibility">accessibility best practices</a>. Can also be used as mixins.</p>
+<pre><code>```html
+&lt;a class="sr-only sr-only-focusable" href="#content"&gt;Skip to main content&lt;/a&gt;
+```
+
+```less
+// Usage as a mixin
+.skip-navigation {
+  .sr-only();
+  .sr-only-focusable();
+}
+```
+</code></pre>
+<h4 id="10-image-replacement"><a name="user-content-10-image-replacement" href="#10-image-replacement" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>10-Image replacement</h4>
+<p>Utilize the <code>.text-hide</code> class or mixin to help replace an element&rsquo;s text content with a background image.</p>
+<pre><code>```html
+&lt;h1 class="text-hide"&gt;Custom heading&lt;/h1&gt;
+```
+
+```less
+// Usage as a mixin
+.heading {
+  .text-hide();
+}
+```
+</code></pre>
+<h3 id="j-responsive-utilities"><a name="user-content-j-responsive-utilities" href="#j-responsive-utilities" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>J-Responsive utilities</h3>
+<p><strong>For faster mobile-friendly development, use these utility classes for showing and hiding content by device via media query. Also included are utility classes for toggling content when printed.</strong></p>
+<p>Try to use these on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device&rsquo;s presentation.</p>
+<h4 id="1-available-classes"><a name="user-content-1-available-classes" href="#1-available-classes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1-Available classes</h4>
+<p>Use a single or combination of the available classes for toggling content across viewport breakpoints.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Extra small devices Phones (&lt;768px)</th>
+<th>Small devices Tablets (≥768px)</th>
+<th>Medium devices Desktops (≥992px)</th>
+<th>Large devices Desktops (≥1200px)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.visible-xs-*</code></td>
+<td>Visible</td>
+<td>Hidden</td>
+<td>Hidden</td>
+<td>Hidden</td>
+</tr>
+<tr>
+<td><code>.visible-sm-*</code></td>
+<td>Hidden</td>
+<td>Visible</td>
+<td>Hidden</td>
+<td>Hidden</td>
+</tr>
+<tr>
+<td><code>.visible-md-*</code></td>
+<td>Hidden</td>
+<td>Hidden</td>
+<td>Visible</td>
+<td>Hidden</td>
+</tr>
+<tr>
+<td><code>.visible-lg-*</code></td>
+<td>Hidden</td>
+<td>Hidden</td>
+<td>Hidden</td>
+<td>Visible</td>
+</tr>
+<tr>
+<td><code>.hidden-xs</code></td>
+<td>Hidden</td>
+<td>Visible</td>
+<td>Visible</td>
+<td>Visible</td>
+</tr>
+<tr>
+<td><code>.hidden-sm</code></td>
+<td>Visible</td>
+<td>Hidden</td>
+<td>Visible</td>
+<td>Visible</td>
+</tr>
+<tr>
+<td><code>.hidden-md</code></td>
+<td>Visible</td>
+<td>Visible</td>
+<td>Hidden</td>
+<td>Visible</td>
+</tr>
+<tr>
+<td><code>.hidden-lg</code></td>
+<td>Visible</td>
+<td>Visible</td>
+<td>Visible</td>
+<td>Hidden</td>
+</tr>
+</tbody>
+</table>
+<p>As of v3.2.0, the <code>.visible-*-*</code> classes for each breakpoint come in three variations, one for each CSS display property value listed below.</p>
+<table>
+<thead>
+<tr>
+<th>Group of classes</th>
+<th>CSS <code>display|</code></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><code>.visible-*-block</code></td>
+<td><code>display: block;|</code></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><code>.visible-*-inline</code></td>
+<td><code>display: inline;|</code></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><code>.visible-*-inline-block</code></td>
+<td><code>display: inline-block;|</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>So, for extra small (xs) screens for example, the available <code>.visible-*-*</code> classes are: <code>.visible-xs-block</code>, <code>.visible-xs-inline</code>, and <code>.visible-xs-inline-block</code>.</p>
+<p>The classes <code>.visible-xs</code>, <code>.visible-sm</code>, <code>.visible-md</code>, and <code>.visible-lg</code> also exist, but are <strong>deprecated as of v3.2.0</strong>. They are approximately equivalent to <code>.visible-*-block</code>, except with additional special cases for toggling <code>&lt;table&gt;</code>-related elements.</p>
+<h4 id="2-print-classes"><a name="user-content-2-print-classes" href="#2-print-classes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2-Print classes</h4>
+<p>Similar to the regular responsive classes, use these for toggling content for print.<br />
+| Classes | Browser | Print |<br />
+|----|----|----|<br />
+| <code>.visible-print-block</code>, <code>.visible-print-inline</code>, <code>.visible-print-inline-block</code> | Hidden | Visible |<br />
+| <code>.hidden-print</code> | Visible | Hidden |</p>
+<p>The class <code>.visible-print</code> also exists but is <strong>deprecated</strong> as of v3.2.0. It is approximately equivalent to <code>.visible-print-block</code>, except with additional special cases for <code>&lt;table&gt;</code>-related elements.</p>
+<h4 id="3-test-cases"><a name="user-content-3-test-cases" href="#3-test-cases" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3-Test cases</h4>
+<p>Resize your browser or load on different devices to test the responsive utility classes.</p>
+<h5 id="a-visible-on"><a name="user-content-a-visible-on" href="#a-visible-on" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>a-Visible on&hellip;</h5>
+<p>Green checkmarks indicate the element <strong>is visible</strong> in your current viewport.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<h4 id="b-hidden-on"><a name="user-content-b-hidden-on" href="#b-hidden-on" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>b-Hidden on&hellip;</h4>
+<p>Here, green checkmarks also indicate the element <strong>is hidden</strong> in your current viewport.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<h3 id="k-using-less"><a name="user-content-k-using-less" href="#k-using-less" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>K-Using Less</h3>
+<p><strong>Bootstrap&rsquo;s CSS is built on Less, a preprocessor with additional functionality like variables, mixins, and functions for compiling CSS. Those looking to use the source Less files instead of our compiled CSS files can make use of the numerous variables and mixins we use throughout the framework.</strong></p>
+<p>Grid variables and mixins are covered <a href="https://getbootstrap.com/docs/3.3/css/#grid-less">within the Grid system section</a>.</p>
+<h4 id="1-compiling-bootstrap"><a name="user-content-1-compiling-bootstrap" href="#1-compiling-bootstrap" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1-Compiling Bootstrap</h4>
+<p>Bootstrap can be used in at least two ways: with the compiled CSS or with the source Less files. To compile the Less files, <a href="https://getbootstrap.com/docs/3.3/getting-started/#grunt">consult the Getting Started section</a> for how to setup your development environment to run the necessary commands.</p>
+<p>Third party compilation tools may work with Bootstrap, but they are not supported by our core team.</p>
+<h4 id="2-variables"><a name="user-content-2-variables" href="#2-variables" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2-Variables</h4>
+<p>Variables are used throughout the entire project as a way to centralize and share commonly used values like colors, spacing, or font stacks. For a complete breakdown, please see <a href="https://getbootstrap.com/docs/3.3/customize/#less-variables-section">the Customizer</a>.</p>
+<h5 id="a-colors"><a name="user-content-a-colors" href="#a-colors" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>a-Colors</h5>
+<p>Easily make use of two color schemes: grayscale and semantic. Grayscale colors provide quick access to commonly used shades of black while semantic include various colors assigned to meaningful contextual values.</p>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```less
+@gray-darker:  lighten(#000, 13.5%); // #222
+@gray-dark:    lighten(#000, 20%);   // #333
+@gray:         lighten(#000, 33.5%); // #555
+@gray-light:   lighten(#000, 46.7%); // #777
+@gray-lighter: lighten(#000, 93.5%); // #eee
+```
+</code></pre>
+<p><img alt="IMG" src="///C://Users/renob/Documents/GitHub/RB/RB-Fiches-Programmation/documentation/CSS/frameworks/Bootstrap3/IMG" /></p>
+<pre><code>```less
+@brand-primary: darken(#428bca, 6.5%); // #337ab7
+@brand-success: #5cb85c;
+@brand-info:    #5bc0de;
+@brand-warning: #f0ad4e;
+@brand-danger:  #d9534f;
+```
+</code></pre>
+<p>Use any of these color variables as they are or reassign them to more meaningful variables for your project.</p>
+<pre><code>```less
+// Use as-is
+.masthead {
+  background-color: @brand-primary;
+}
+// Reassigned variables in Less
+@alert-message-background: @brand-info;
+.alert {
+  background-color: @alert-message-background;
+}
+```
+</code></pre>
+<h5 id="b-scaffolding"><a name="user-content-b-scaffolding" href="#b-scaffolding" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>b-Scaffolding</h5>
+<p>A handful of variables for quickly customizing key elements of your site&rsquo;s skeleton.</p>
+<pre><code>```less
+// Scaffolding
+@body-bg:    #fff;
+@text-color: @black-50;
+```
+</code></pre>
+<h5 id="c-links"><a name="user-content-c-links" href="#c-links" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>c-Links</h5>
+<p>Easily style your links with the right color with only one value.</p>
+<pre><code>```less
+// Variables
+@link-color:       @brand-primary;
+@link-hover-color: darken(@link-color, 15%);
+// Usage
+a {
+  color: @link-color;
+  text-decoration: none;
+  &amp;:hover {
+    color: @link-hover-color;
+    text-decoration: underline;
+  }
+}
+```
+</code></pre>
+<p>Note that the <code>@link-hover-color</code> uses a function, another awesome tool from Less, to automagically create the right hover color. You can use <code>darken</code>, <code>lighten</code>, <code>saturate</code>, and <code>desaturate</code>.</p>
+<h5 id="d-typography"><a name="user-content-d-typography" href="#d-typography" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>d-Typography</h5>
+<p>Easily set your typeface, text size, leading, and more with a few quick variables. Bootstrap makes use of these as well to provide easy typographic mixins.</p>
+<pre><code>```less
+@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
+@font-size-base:          14px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+@line-height-base:        1.428571429; // 20/14
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+@headings-font-family:    inherit;
+@headings-font-weight:    500;
+@headings-line-height:    1.1;
+@headings-color:          inherit;
+```
+</code></pre>
+<h5 id="e-icons"><a name="user-content-e-icons" href="#e-icons" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>e-Icons</h5>
+<p>Two quick variables for customizing the location and filename of your icons.</p>
+<pre><code>```less
+@icon-font-path:          "../fonts/";
+@icon-font-name:          "glyphicons-halflings-regular";
+```
+</code></pre>
+<h5 id="f-components"><a name="user-content-f-components" href="#f-components" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>f-Components</h5>
+<p>Components throughout Bootstrap make use of some default variables for setting common values. Here are the most commonly used.</p>
+<pre><code>```less
+@padding-base-vertical:          6px;
+@padding-base-horizontal:        12px;
+@padding-large-vertical:         10px;
+@padding-large-horizontal:       16px;
+@padding-small-vertical:         5px;
+@padding-small-horizontal:       10px;
+@padding-xs-vertical:            1px;
+@padding-xs-horizontal:          5px;
+@line-height-large:              1.33;
+@line-height-small:              1.5;
+@border-radius-base:             4px;
+@border-radius-large:            6px;
+@border-radius-small:            3px;
+@component-active-color:         #fff;
+@component-active-bg:            @brand-primary;
+@caret-width-base:               4px;
+@caret-width-large:              5px;
+```
+</code></pre>
+<h4 id="3-vendor-mixins"><a name="user-content-3-vendor-mixins" href="#3-vendor-mixins" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3-Vendor mixins</h4>
+<p>Vendor mixins are mixins to help support multiple browsers by including all relevant vendor prefixes in your compiled CSS.</p>
+<h5 id="a-box-sizing"><a name="user-content-a-box-sizing" href="#a-box-sizing" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>a-Box-sizing</h5>
+<p>Reset your components&rsquo; box model with a single mixin. For context, see this <a href="https://developer.mozilla.org/en-US/docs/CSS/box-sizing">helpful article from Mozilla</a>.</p>
+<p>The mixin is <strong>deprecated</strong> as of v3.2.0, with the introduction of Autoprefixer. To preserve backwards-compatibility, Bootstrap will continue to use the mixin internally until Bootstrap v4.</p>
+<pre><code>```less
+.box-sizing(@box-model) {
+  -webkit-box-sizing: @box-model; // Safari &lt;= 5
+     -moz-box-sizing: @box-model; // Firefox &lt;= 19
+          box-sizing: @box-model;
+}
+```
+</code></pre>
+<h5 id="b-rounded-corners"><a name="user-content-b-rounded-corners" href="#b-rounded-corners" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>b-Rounded corners</h5>
+<p>Today all modern browsers support the non-prefixed <code>border-radius</code> property. As such, there is no <code>.border-radius()</code> mixin, but Bootstrap does include shortcuts for quickly rounding two corners on a particular side of an object.</p>
+<pre><code>```less
+.border-top-radius(@radius) {
+  border-top-right-radius: @radius;
+   border-top-left-radius: @radius;
+}
+.border-right-radius(@radius) {
+  border-bottom-right-radius: @radius;
+     border-top-right-radius: @radius;
+}
+.border-bottom-radius(@radius) {
+  border-bottom-right-radius: @radius;
+   border-bottom-left-radius: @radius;
+}
+.border-left-radius(@radius) {
+  border-bottom-left-radius: @radius;
+     border-top-left-radius: @radius;
+}
+```
+</code></pre>
+<h5 id="c-box-drop-shadows"><a name="user-content-c-box-drop-shadows" href="#c-box-drop-shadows" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>c-Box (Drop) shadows</h5>
+<p>If your target audience is using the latest and greatest browsers and devices, be sure to just use the <code>box-shadow</code> property on its own. If you need support for older Android (pre-v4) and iOS devices (pre-iOS 5), use the <strong>deprecated</strong> mixin to pick up the required <code>-webkit</code> prefix.</p>
+<p>The mixin is <strong>deprecated</strong> as of v3.1.0, since Bootstrap doesn&rsquo;t officially support the outdated platforms that don&rsquo;t support the standard property. To preserve backwards-compatibility, Bootstrap will continue to use the mixin internally until Bootstrap v4.</p>
+<p>Be sure to use <code>rgba()</code> colors in your box shadows so they blend as seamlessly as possible with backgrounds.</p>
+<pre><code>```less
+.box-shadow(@shadow: 0 1px 3px rgba(0,0,0,.25)) {
+  -webkit-box-shadow: @shadow; // iOS &lt;4.3 &amp; Android &lt;4.1
+          box-shadow: @shadow;
+}
+```
+</code></pre>
+<h5 id="d-transitions"><a name="user-content-d-transitions" href="#d-transitions" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>d-Transitions</h5>
+<p>Multiple mixins for flexibility. Set all transition information with one, or specify a separate delay and duration as needed.</p>
+<p>The mixins are <strong>deprecated</strong> as of v3.2.0, with the introduction of Autoprefixer. To preserve backwards-compatibility, Bootstrap will continue to use the mixins internally until Bootstrap v4.</p>
+<pre><code>```less
+.transition(@transition) {
+  -webkit-transition: @transition;
+          transition: @transition;
+}
+.transition-property(@transition-property) {
+  -webkit-transition-property: @transition-property;
+          transition-property: @transition-property;
+}
+.transition-delay(@transition-delay) {
+  -webkit-transition-delay: @transition-delay;
+          transition-delay: @transition-delay;
+}
+.transition-duration(@transition-duration) {
+  -webkit-transition-duration: @transition-duration;
+          transition-duration: @transition-duration;
+}
+.transition-timing-function(@timing-function) {
+  -webkit-transition-timing-function: @timing-function;
+          transition-timing-function: @timing-function;
+}
+.transition-transform(@transition) {
+  -webkit-transition: -webkit-transform @transition;
+     -moz-transition: -moz-transform @transition;
+       -o-transition: -o-transform @transition;
+          transition: transform @transition;
+}
+```
+</code></pre>
+<h5 id="e-transformations"><a name="user-content-e-transformations" href="#e-transformations" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>e-Transformations</h5>
+<p>Rotate, scale, translate (move), or skew any object.</p>
+<p>The mixins are <strong>deprecated</strong> as of v3.2.0, with the introduction of Autoprefixer. To preserve backwards-compatibility, Bootstrap will continue to use the mixins internally until Bootstrap v4.</p>
+<pre><code>```less
+.rotate(@degrees) {
+  -webkit-transform: rotate(@degrees);
+      -ms-transform: rotate(@degrees); // IE9 only
+          transform: rotate(@degrees);
+}
+.scale(@ratio; @ratio-y...) {
+  -webkit-transform: scale(@ratio, @ratio-y);
+      -ms-transform: scale(@ratio, @ratio-y); // IE9 only
+          transform: scale(@ratio, @ratio-y);
+}
+.translate(@x; @y) {
+  -webkit-transform: translate(@x, @y);
+      -ms-transform: translate(@x, @y); // IE9 only
+          transform: translate(@x, @y);
+}
+.skew(@x; @y) {
+  -webkit-transform: skew(@x, @y);
+      -ms-transform: skewX(@x) skewY(@y); // See https://github.com/twbs/bootstrap/issues/4885; IE9+
+          transform: skew(@x, @y);
+}
+.translate3d(@x; @y; @z) {
+  -webkit-transform: translate3d(@x, @y, @z);
+          transform: translate3d(@x, @y, @z);
+}
+.rotateX(@degrees) {
+  -webkit-transform: rotateX(@degrees);
+      -ms-transform: rotateX(@degrees); // IE9 only
+          transform: rotateX(@degrees);
+}
+.rotateY(@degrees) {
+  -webkit-transform: rotateY(@degrees);
+      -ms-transform: rotateY(@degrees); // IE9 only
+          transform: rotateY(@degrees);
+}
+.perspective(@perspective) {
+  -webkit-perspective: @perspective;
+     -moz-perspective: @perspective;
+          perspective: @perspective;
+}
+.perspective-origin(@perspective) {
+  -webkit-perspective-origin: @perspective;
+     -moz-perspective-origin: @perspective;
+          perspective-origin: @perspective;
+}
+.transform-origin(@origin) {
+  -webkit-transform-origin: @origin;
+     -moz-transform-origin: @origin;
+      -ms-transform-origin: @origin; // IE9 only
+          transform-origin: @origin;
+}
+```
+</code></pre>
+<h5 id="f-animations"><a name="user-content-f-animations" href="#f-animations" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>f-Animations</h5>
+<p>A single mixin for using all of CSS3&rsquo;s animation properties in one declaration and other mixins for individual properties.</p>
+<p>The mixins are <strong>deprecated</strong> as of v3.2.0, with the introduction of Autoprefixer. To preserve backwards-compatibility, Bootstrap will continue to use the mixins internally until Bootstrap v4.</p>
+<pre><code>```less
+.animation(@animation) {
+  -webkit-animation: @animation;
+          animation: @animation;
+}
+.animation-name(@name) {
+  -webkit-animation-name: @name;
+          animation-name: @name;
+}
+.animation-duration(@duration) {
+  -webkit-animation-duration: @duration;
+          animation-duration: @duration;
+}
+.animation-timing-function(@timing-function) {
+  -webkit-animation-timing-function: @timing-function;
+          animation-timing-function: @timing-function;
+}
+.animation-delay(@delay) {
+  -webkit-animation-delay: @delay;
+          animation-delay: @delay;
+}
+.animation-iteration-count(@iteration-count) {
+  -webkit-animation-iteration-count: @iteration-count;
+          animation-iteration-count: @iteration-count;
+}
+.animation-direction(@direction) {
+  -webkit-animation-direction: @direction;
+          animation-direction: @direction;
+}
+```
+</code></pre>
+<h5 id="g-opacity"><a name="user-content-g-opacity" href="#g-opacity" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>g-Opacity</h5>
+<p>Set the opacity for all browsers and provide a <code>filter</code> fallback for IE8.</p>
+<pre><code>```less
+.opacity(@opacity) {
+  opacity: @opacity;
+  // IE8 filter
+  @opacity-ie: (@opacity * 100);
+  filter: ~"alpha(opacity=@{opacity-ie})";
+}
+```
+</code></pre>
+<h5 id="h-placeholder-text"><a name="user-content-h-placeholder-text" href="#h-placeholder-text" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>h-Placeholder text</h5>
+<p>Provide context for form controls within each field.</p>
+<pre><code>```less
+.placeholder(@color: @input-color-placeholder) {
+  &amp;::-moz-placeholder           { color: @color; } // Firefox
+  &amp;:-ms-input-placeholder       { color: @color; } // Internet Explorer 10+
+  &amp;::-webkit-input-placeholder  { color: @color; } // Safari and Chrome
+}
+```
+</code></pre>
+<h5 id="i-columns"><a name="user-content-i-columns" href="#i-columns" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>i-Columns</h5>
+<p>Generate columns via CSS within a single element.</p>
+<pre><code>```less
+.content-columns(@width; @count; @gap) {
+  -webkit-column-width: @width;
+     -moz-column-width: @width;
+          column-width: @width;
+  -webkit-column-count: @count;
+     -moz-column-count: @count;
+          column-count: @count;
+  -webkit-column-gap: @gap;
+     -moz-column-gap: @gap;
+          column-gap: @gap;
+}
+```
+</code></pre>
+<h5 id="j-gradients"><a name="user-content-j-gradients" href="#j-gradients" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>j-Gradients</h5>
+<p>Easily turn any two colors into a background gradient. Get more advanced and set a direction, use three colors, or use a radial gradient. With a single mixin you get all the prefixed syntaxes you&rsquo;ll need.</p>
+<pre><code>```less
+#gradient &gt; .vertical(#333; #000);
+#gradient &gt; .horizontal(#333; #000);
+#gradient &gt; .radial(#333; #000);
+```
+</code></pre>
+<p>You can also specify the angle of a standard two-color, linear gradient:</p>
+<pre><code>```less
+#gradient &gt; .directional(#333; #000; 45deg);
+```
+</code></pre>
+<p>If you need a barber-stripe style gradient, that&rsquo;s easy, too. Just specify a single color and we&rsquo;ll overlay a translucent white stripe.</p>
+<pre><code>```less
+#gradient &gt; .striped(#333; 45deg);
+```
+</code></pre>
+<p>Up the ante and use three colors instead. Set the first color, the second color, the second color&rsquo;s color stop (a percentage value like 25%), and the third color with these mixins:</p>
+<pre><code>```less
+#gradient &gt; .vertical-three-colors(#777; #333; 25%; #000);
+#gradient &gt; .horizontal-three-colors(#777; #333; 25%; #000);
+```
+</code></pre>
+<p><strong>Heads up!</strong> Should you ever need to remove a gradient, be sure to remove any IE-specific <code>filter</code> you may have added. You can do that by using the <code>.reset-filter()</code> mixin alongside <code>background-image: none;</code>.</p>
+<h4 id="4-utility-mixins"><a name="user-content-4-utility-mixins" href="#4-utility-mixins" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4-Utility mixins</h4>
+<p>Utility mixins are mixins that combine otherwise unrelated CSS properties to achieve a specific goal or task.</p>
+<h5 id="a-clearfix"><a name="user-content-a-clearfix" href="#a-clearfix" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>a-Clearfix</h5>
+<p>Forget adding <code>class="clearfix"</code> to any element and instead add the <code>.clearfix()</code> mixin where appropriate. Uses the <a href="http://nicolasgallagher.com/micro-clearfix-hack/">micro clearfix</a> from <a href="https://twitter.com/necolas">Nicolas Gallagher</a>.</p>
+<pre><code>```less
+// Mixin
+.clearfix() {
+  &amp;:before,
+  &amp;:after {
+    content: " ";
+    display: table;
+  }
+  &amp;:after {
+    clear: both;
+  }
+}
+// Usage
+.container {
+  .clearfix();
+}
+```
+</code></pre>
+<h5 id="b-horizontal-centering"><a name="user-content-b-horizontal-centering" href="#b-horizontal-centering" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>b-Horizontal centering</h5>
+<p>Quickly center any element within its parent. Requires <code>width</code> or <code>max-width</code> to be set.</p>
+<pre><code>```less
+// Mixin
+.center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+// Usage
+.container {
+  width: 940px;
+  .center-block();
+}
+```
+</code></pre>
+<h5 id="d-sizing-helpers"><a name="user-content-d-sizing-helpers" href="#d-sizing-helpers" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>d-Sizing helpers</h5>
+<p>Specify the dimensions of an object more easily.</p>
+<pre><code>```less
+// Mixins
+.size(@width; @height) {
+  width: @width;
+  height: @height;
+}
+.square(@size) {
+  .size(@size; @size);
+}
+// Usage
+.image { .size(400px; 300px); }
+.avatar { .square(48px); }
+```
+</code></pre>
+<h5 id="e-resizable-textareas"><a name="user-content-e-resizable-textareas" href="#e-resizable-textareas" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>e-Resizable textareas</h5>
+<p>Easily configure the resize options for any textarea, or any other element. Defaults to normal browser behavior (<code>both</code>).</p>
+<pre><code>```less
+.resizable(@direction: both) {
+  // Options: horizontal, vertical, both
+  resize: @direction;
+  // Safari fix
+  overflow: auto;
+}
+```
+</code></pre>
+<h5 id="f-truncating-text"><a name="user-content-f-truncating-text" href="#f-truncating-text" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>f-Truncating text</h5>
+<p><strong>Easily truncate text with an ellipsis with a single mixin. Requires element to be <code>block</code> or <code>inline-block</code> level.</strong></p>
+<pre><code>```less
+// Mixin
+.text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+// Usage
+.branch-name {
+  display: inline-block;
+  max-width: 200px;
+  .text-overflow();
+}
+```
+</code></pre>
+<h5 id="g-retina-images"><a name="user-content-g-retina-images" href="#g-retina-images" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>g-Retina images</h5>
+<p>Specify two image paths and the @1x image dimensions, and Bootstrap will provide an @2x media query. <strong>If you have many images to serve, consider writing your retina image CSS manually in a single media query.</strong></p>
+<pre><code>```less
+.img-retina(@file-1x; @file-2x; @width-1x; @height-1x) {
+  background-image: url("@{file-1x}");
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+    background-image: url("@{file-2x}");
+    background-size: @width-1x @height-1x;
+  }
+}
+// Usage
+.jumbotron {
+  .img-retina("/img/bg-1x.png", "/img/bg-2x.png", 100px, 100px);
+}
+```
+</code></pre>
+<h3 id="l-using-sass"><a name="user-content-l-using-sass" href="#l-using-sass" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>L-Using Sass</h3>
+<p><strong>While Bootstrap is built on Less, it also has an <a href="https://github.com/twbs/bootstrap-sass">official Sass port</a>. We maintain it in a separate GitHub repository and handle updates with a conversion script.</strong></p>
+<h4 id="1-whats-included"><a name="user-content-1-whats-included" href="#1-whats-included" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1-What&rsquo;s included</h4>
+<p>Since the Sass port has a separate repo and serves a slightly different audience, the contents of the project differ greatly from the main Bootstrap project. This ensures the Sass port is as compatible with as many Sass-based systems as possible.</p>
+<table>
+<thead>
+<tr>
+<th>Path</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lib/</code></td>
+<td>Ruby gem code (Sass configuration, Rails and Compass integrations)</td>
+</tr>
+<tr>
+<td><code>tasks/</code></td>
+<td>Converter scripts (turning upstream Less to Sass)</td>
+</tr>
+<tr>
+<td><code>test/</code></td>
+<td>Compilation tests</td>
+</tr>
+<tr>
+<td><code>templates/</code></td>
+<td>Compass package manifest</td>
+</tr>
+<tr>
+<td><code>vendor/assets/</code></td>
+<td>Sass, JavaScript, and font files</td>
+</tr>
+<tr>
+<td><code>Rakefile</code></td>
+<td>Internal tasks, such as rake and convert</td>
+</tr>
+</tbody>
+</table>
+<p>Visit the Sass port&rsquo;s GitHub repository to see these files in action.</p>
+<h4 id="2-installation"><a name="user-content-2-installation" href="#2-installation" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2-Installation</h4>
+<p>For information on how to install and use Bootstrap for Sass, consult the <a href="https://github.com/twbs/bootstrap-sass">GitHub repository readme</a>. It&rsquo;s the most up to date source and includes information for use with Rails, Compass, and standard Sass projects.</p>
+<p><a href="https://github.com/twbs/bootstrap-sass">Bootstrap for Sass</a></p></article></body></html>
